@@ -118,7 +118,7 @@
   };
 
   # sddm itself
-  services.displayManager = {
+  services.xserver.displayManager = {
     sddm = {
       enable = true;
       settings.General.InputMethod = lib.mkForce ""; 
@@ -136,11 +136,7 @@
     };
   };
 
-  # Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  # services.xserver.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
+  # configure keymap in x11
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -167,7 +163,7 @@
   programs.niri.useNautilus = true;
   programs.fish.enable = true;
   programs.fish.shellAliases = {
-    nixswitch = "sudo nix-channel --update && sudo nixos-rebuild switch"; };
+    nixswitch = "sudo nix flake update --flake /home/chriz/nixos-config && sudo nixos-rebuild switch --flake /home/chriz/nixos-config#nixosbtw"; };
   programs.xwayland.enable = true;
   services.blueman.enable = true;
 
