@@ -23,7 +23,7 @@
     options = "--delete-older-than 7d";
   };
 
-  networking.hostName = "nixos"; # define your hostname.
+  networking.hostName = "nixosbtw"; # define your hostname.
 
   # enable networking
   networking.networkmanager.enable = true;
@@ -50,8 +50,12 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # sddm
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    autoLogin.enable = true;
+    autoLogin.user = "chriz";
+    wayland.enable = true;
+  };
 
   # Enable the GNOME Desktop Environment.
   # services.xserver.displayManager.gdm.enable = true;
@@ -106,6 +110,7 @@
   programs.firefox.enable = true;
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
+  programs.gpu-screen-recorder.enable = true;
 
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -158,7 +163,6 @@
   adwaita-qt6
   cava
   gnome-themes-extra
-  gpu-screen-recorder
   libadwaita
   loupe
   mako
@@ -182,6 +186,7 @@
   btop
   killall
   adwaita-fonts
+  gpu-screen-recorder
 
   ];
 
