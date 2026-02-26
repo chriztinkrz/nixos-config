@@ -1,9 +1,10 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 
 {
   imports =
     [
       ./hardware-configuration.nix
+      inputs.silentSDDM.nixosModules.default
     ];
 
   nix.nixPath = [
@@ -55,15 +56,84 @@
   # flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # sddm
-  services.displayManager.sddm = {
+# silent sddm theme ( finally )
+  programs.silentSDDM = {
     enable = true;
-    wayland.enable = true;
+    theme = "rei";
+    settings = {
+      General.animated-background-placeholder = "../../../../../../../../../${./rei3.png}";
+      LockScreen = {
+        background = "../../../../../../../../../${./rei3.mp4}";
+        blur = 12;
+      };
+      "LockScreen.Clock" = {
+        format = "h:mm AP";
+        color = "#C0C0C0";
+      };
+      "LockScreen.Date".color = "#C0C0C0";
+      "LockScreen.Message".display = true;
+      "LoginScreen.LoginArea.Avatar" = {
+        active-border-color = "#C0C0C0";
+        inactive-border-color = "#C0C0C0";
+      };
+      "LoginScreen.LoginArea.Username".color = "#C0C0C0";
+      "LoginScreen.LoginArea.PasswordInput" = {
+        content-color = "#C0C0C0";
+        border-color = "#C0C0C0";
+      };
+      "LoginScreen.LoginArea.LoginButton" = {
+        background-color = "#C0C0C0";
+        active-background-color = "#C0C0C0";
+        content-color = "#C0C0C0";
+        border-color = "#C0C0C0";
+      };
+      "LoginScreen.MenuArea.Popups" = {
+        active-option-background-color = "#C0C0C0";
+        content-color = "#C0C0C0";
+        border-color = "#C0C0C0";
+      };
+      "LoginScreen.MenuArea.Session" = {
+        content-color = "#C0C0C0";
+        background-color = "#C0C0C0";
+      };
+      "LoginScreen.MenuArea.Layout" = {
+        background-color = "#C0C0C0";
+        content-color = "#C0C0C0";
+      };
+      "LoginScreen.MenuArea.Keyboard" .display = false;
+      "LoginScreen.MenuArea.Power" = {
+        background-color = "#C0C0C0";
+        content-color = "#C0C0C0";
+      };
+      "LoginScreen.VirtualKeyboard" = {
+        background-color = "#C0C0C0";
+        key-content-color = "#C0C0C0";
+        selection-background-color = "#000000";
+        selection-content-color = "#C0C0C0";
+        primary-color = "#C0C0C0";
+        border-color = "#C0C0C0";
+      };
+      Tooltips.content-color = "#C0C0C0";
+    };
   };
-  # sddm autologin
-  services.displayManager.autoLogin = {
-    enable = true;
-    user = "chriz";
+
+  # sddm itself
+  services.displayManager = {
+    sddm = {
+      enable = true;
+      settings.General.InputMethod = lib.mkForce ""; 
+      extraPackages = with pkgs; [
+        kdePackages.qtmultimedia
+        kdePackages.qtsvg
+        kdePackages.qt5compat
+        ffmpeg
+      ];
+    };
+    
+    autoLogin = {
+      enable = true;
+      user = "chriz";
+    };
   };
 
   # Enable the GNOME Desktop Environment.
@@ -97,9 +167,7 @@
   programs.niri.useNautilus = true;
   programs.fish.enable = true;
   programs.fish.shellAliases = {
-    nixswitch = "sudo nixos-rebuild switch"; };
-  programs.fish.shellAliases = {
-    update = "sudo nix-channel --update && sudo nixos-rebuild switch"; };
+    nixswitch = "sudo nix-channel --update && sudo nixos-rebuild switch"; };
   programs.xwayland.enable = true;
   services.blueman.enable = true;
 
@@ -115,7 +183,7 @@
     ];
   };
 
-  # apps which have programs option
+  # packages which have programs option
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
   programs.gpu-screen-recorder.enable = true;
@@ -133,6 +201,7 @@
   fira-code
   fira-code-symbols
   noto-fonts-color-emoji
+  redhat-official-fonts
   ];
 
   # rofi-power-menu and packages from nixpkgs
