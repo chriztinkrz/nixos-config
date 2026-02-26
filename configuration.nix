@@ -23,6 +23,12 @@
     options = "--delete-older-than 7d";
   };
 
+  # automatic upgrades
+  system.autoUpgrade = {
+    enable = true;
+    allowReboot = false;
+  };
+
   networking.hostName = "nixosbtw"; # define your hostname.
 
   # enable networking
