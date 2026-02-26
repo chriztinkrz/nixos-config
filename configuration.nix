@@ -187,6 +187,7 @@
   killall
   adwaita-fonts
   gpu-screen-recorder
+  nitch
 
   ];
 
