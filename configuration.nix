@@ -107,7 +107,6 @@
   };
 
   # apps which have programs option
-  programs.firefox.enable = true;
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
   programs.gpu-screen-recorder.enable = true;
