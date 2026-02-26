@@ -52,9 +52,12 @@
   # sddm
   services.displayManager.sddm = {
     enable = true;
-    autoLogin.enable = true;
-    autoLogin.user = "chriz";
     wayland.enable = true;
+  };
+  # sddm autologin
+  services.displayManager.autoLogin = {
+    enable = true;
+    user = "chriz";
   };
 
   # Enable the GNOME Desktop Environment.
