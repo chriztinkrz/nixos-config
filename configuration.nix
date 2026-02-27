@@ -142,6 +142,16 @@
     variant = "";
   };
 
+  # flatpak
+  services.flatpak = {
+    enable = true;
+    packages = [
+    "app.zen_browser.zen" 
+    ];
+    update.auto.enable = true;
+    update.auto.onCalendar = "daily";
+    uninstallUnmanaged = true;
+  };
 
   # system stuff
   services.printing.enable = true;
@@ -155,7 +165,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-  services.flatpak.enable = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   services.devmon.enable = true;
