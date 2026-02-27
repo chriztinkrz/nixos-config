@@ -224,7 +224,6 @@ programs.fish.shellAliases = {
       ];
     })
 
-  alacritty
   xdg-desktop-portal-gnome
   xdg-desktop-portal-gtk
   cliphist
@@ -235,7 +234,6 @@ programs.fish.shellAliases = {
   avizo
   playerctl
   waybar
-  rofi-power-menu
   ffmpegthumbnailer
   bluez
   choose
@@ -249,9 +247,6 @@ programs.fish.shellAliases = {
   libadwaita
   loupe
   mako
-  nwg-look
-  pavucontrol
-  unimatrix
   xsel
   brightnessctl
   tty-clock
@@ -260,7 +255,6 @@ programs.fish.shellAliases = {
   upscayl
   mpv
   gammastep
-  font-awesome
   meson
   wl-clipboard
   git
@@ -268,7 +262,6 @@ programs.fish.shellAliases = {
   sublime4
   btop
   killall
-  adwaita-fonts
   gpu-screen-recorder
   nitch
 

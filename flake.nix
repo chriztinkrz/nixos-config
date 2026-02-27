@@ -21,6 +21,7 @@
       modules = [
         ./configuration.nix
         nix-flatpak.nixosModules.nix-flatpak
+        
       ];
     };
   };
