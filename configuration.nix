@@ -184,7 +184,6 @@
     shell = pkgs.fish;
     password = "9027q";
     packages = with pkgs; [
-    #  thunderbird
     ];
   };
 
