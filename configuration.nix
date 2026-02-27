@@ -118,7 +118,7 @@
   };
 
   # sddm itself
-  services.xserver.displayManager = {
+  services.displayManager = {
     sddm = {
       enable = true;
       settings.General.InputMethod = lib.mkForce ""; 
@@ -171,8 +171,8 @@
   programs.niri.enable = true;
   programs.niri.useNautilus = true;
   programs.fish.enable = true;
-  programs.fish.shellAliases = {
-    nixswitch = "sudo nix flake update --flake /home/chriz/nixos-config && sudo nixos-rebuild switch --flake /home/chriz/nixos-config#nixosbtw"; };
+programs.fish.shellAliases = {
+  nixswitch = "cd ~/nixos-config && sudo nix flake update --flake . && git add . && sudo nixos-rebuild switch --flake .#nixosbtw"; };
   programs.xwayland.enable = true;
   services.blueman.enable = true;
 
