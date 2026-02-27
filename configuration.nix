@@ -209,6 +209,7 @@
     redhat-official-fonts
     adwaita-fonts
 
+    # gravitas one
     (pkgs.runCommand "gravitas-one" { } ''
       mkdir -p $out/share/fonts/truetype
       cp ${pkgs.fetchurl {
@@ -216,6 +217,7 @@
         sha256 = "sha256-tA3EXzNU8oIQcoas8VQgctJYxxfI7fHRGO8BBfJeYns=";
       }} $out/share/fonts/truetype/GravitasOne.ttf
     '')
+
   ];
 
   # rofi-power-menu and packages from nixpkgs
@@ -271,7 +273,6 @@
   btop
   killall
   gpu-screen-recorder
-  nitch
 
   ];
 
