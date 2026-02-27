@@ -171,7 +171,7 @@
   programs.niri.enable = true;
   programs.niri.useNautilus = true;
   programs.fish.enable = true;
-programs.fish.shellAliases = {
+  programs.fish.shellAliases = {
   nixswitch = "cd ~/nixos-config && sudo nix flake update --flake . && git add . && sudo nixos-rebuild switch --flake .#nixosbtw"; };
   programs.xwayland.enable = true;
   services.blueman.enable = true;
@@ -196,18 +196,26 @@ programs.fish.shellAliases = {
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # fonts
+# fonts
   fonts.packages = with pkgs; [
-  inter
-  hermit
-  noto-fonts
-  noto-fonts-cjk-sans
-  nerd-fonts.symbols-only
-  fira-code
-  fira-code-symbols
-  noto-fonts-color-emoji
-  redhat-official-fonts
-  adwaita-fonts
+    inter
+    hermit
+    noto-fonts
+    noto-fonts-cjk-sans
+    nerd-fonts.symbols-only
+    fira-code
+    fira-code-symbols
+    noto-fonts-color-emoji
+    redhat-official-fonts
+    adwaita-fonts
+
+    (pkgs.runCommand "gravitas-one" { } ''
+      mkdir -p $out/share/fonts/truetype
+      cp ${pkgs.fetchurl {
+        url = "https://github.com/google/fonts/raw/main/ofl/gravitasone/GravitasOne.ttf";
+        sha256 = "sha256-tA3EXzNU8oIQcoas8VQgctJYxxfI7fHRGO8BBfJeYns=";
+      }} $out/share/fonts/truetype/GravitasOne.ttf
+    '')
   ];
 
   # rofi-power-menu and packages from nixpkgs
