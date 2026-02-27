@@ -272,6 +272,7 @@
   btop
   killall
   gpu-screen-recorder
+  yt-dlp
 
   ];
 
