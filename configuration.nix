@@ -207,6 +207,7 @@
   fira-code-symbols
   noto-fonts-color-emoji
   redhat-official-fonts
+  adwaita-fonts
   ];
 
   # rofi-power-menu and packages from nixpkgs
