@@ -117,7 +117,7 @@
   };
 
   # sddm itself
-  services.displayManager = {
+  services.xserver.displayManager = {
     sddm = {
       enable = true;
       settings.General.InputMethod = lib.mkForce ""; 
@@ -272,6 +272,19 @@
   gpu-screen-recorder
   yt-dlp
   inputs.zen-browser.packages."${system}".default
+(pkgs.stdenv.mkDerivation rec {
+    pname = "comix-cursors";
+    version = "0.10.1";
+    src = pkgs.fetchurl {
+      url = "https://limitland.gitlab.io/comixcursors/ComixCursors-${version}.tar.bz2";
+      sha256 = "sha256-UdgXOGmLsgBjRwy9XouXvxL+2r+Nwn/8zD+V4JwBWcI=";
+    };
+    sourceRoot = ".";
+    installPhase = ''
+      mkdir -p $out/share/icons
+      cp -r * $out/share/icons/
+    '';
+  })
 
   ];
 
