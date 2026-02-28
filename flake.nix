@@ -12,9 +12,14 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = { nixpkgs.follows = "nixpkgs"; };
+    };
+
   };
 
-  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, ... }@inputs: {
+  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, ... }@inputs: {
     nixosConfigurations.nixosbtw = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; }; # This passes inputs to configuration.nix
