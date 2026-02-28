@@ -152,6 +152,20 @@
   #  uninstallUnmanaged = true;
   #  };
 
+  # appimage
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+  programs.appimage.package = pkgs.appimage-run.override 
+   {
+      extraPkgs = pkgs: 
+    [
+      pkgs.icu
+      pkgs.libxcrypt-legacy
+      pkgs.python312
+      pkgs.python312Packages.torch
+  ]; 
+};
+
   # system stuff
   services.printing.enable = true;
   hardware.bluetooth.enable = true;
@@ -232,6 +246,20 @@
       ];
     })
 
+  (pkgs.stdenv.mkDerivation rec {
+    pname = "comix-cursors";
+    version = "0.10.1";
+    src = pkgs.fetchurl {
+      url = "https://limitland.gitlab.io/comixcursors/ComixCursors-${version}.tar.bz2";
+      sha256 = "sha256-UdgXOGmLsgBjRwy9XouXvxL+2r+Nwn/8zD+V4JwBWcI=";
+    };
+    sourceRoot = ".";
+    installPhase = ''
+      mkdir -p $out/share/icons
+      cp -r * $out/share/icons/
+    '';
+  })
+
   xdg-desktop-portal-gnome
   xdg-desktop-portal-gtk
   cliphist
@@ -272,19 +300,7 @@
   gpu-screen-recorder
   yt-dlp
   inputs.zen-browser.packages."${system}".default
-(pkgs.stdenv.mkDerivation rec {
-    pname = "comix-cursors";
-    version = "0.10.1";
-    src = pkgs.fetchurl {
-      url = "https://limitland.gitlab.io/comixcursors/ComixCursors-${version}.tar.bz2";
-      sha256 = "sha256-UdgXOGmLsgBjRwy9XouXvxL+2r+Nwn/8zD+V4JwBWcI=";
-    };
-    sourceRoot = ".";
-    installPhase = ''
-      mkdir -p $out/share/icons
-      cp -r * $out/share/icons/
-    '';
-  })
+  appimage-run
 
   ];
 
