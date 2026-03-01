@@ -30,9 +30,7 @@
     allowReboot = false;
   };
 
-  networking.hostName = "nixosbtw"; # define your hostname.
-
-  # enable networking
+  networking.hostName = "nixosbtw";
   networking.networkmanager.enable = true;
 
   # set your time zone.
@@ -55,7 +53,7 @@
   # flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-# silent sddm theme ( finally )
+  # silent sddm theme ( finally )
   programs.silentSDDM = {
     enable = true;
     theme = "rei";
@@ -301,6 +299,7 @@
   yt-dlp
   inputs.zen-browser.packages."${system}".default
   appimage-run
+  libnotify
 
   ];
 
