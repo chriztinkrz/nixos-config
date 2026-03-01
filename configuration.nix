@@ -245,6 +245,7 @@
       ];
     })
 
+  # comix cursors
   (pkgs.stdenv.mkDerivation rec {
     pname = "comix-cursors";
     version = "0.10.1";
@@ -259,20 +260,21 @@
     '';
   })
 
-  # Create an FHS environment using the command `fhs`, enabling the execution of non-NixOS packages in NixOS!
+  # create an fhs environment using the command `fhs`, enabling the execution of non-nixos packages in nixos
     (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
       pkgs.buildFHSEnv (base // {
       name = "fhs";
       targetPkgs = pkgs:
-        # pkgs.buildFHSEnv provides only a minimal FHS environment,
-        # lacking many basic packages needed by most software.
-        # Therefore, we need to add them manually.
-        
+
+        # pkgs.buildFHSEnv provides only a minimal FHS environment lacking many basic packages needed by most software.
         # pkgs.appimageTools provides basic packages required by most software.
+
         (base.targetPkgs pkgs) ++ (with pkgs; [
           pkg-config
           ncurses
-          # Feel free to add more packages here if needed.
+
+          # add more if needed
+
         ]
       );
       profile = "export FHS=1";
