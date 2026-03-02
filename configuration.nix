@@ -230,9 +230,10 @@
 
   ];
 
-  # rofi-power-menu and packages from nixpkgs
+  # packages
   environment.systemPackages = with pkgs; [
 
+  # rofi-power
   (pkgs.writeShellScriptBin "rofi-power" ''
     ${pkgs.rofi}/bin/rofi -show power -modi "power:${pkgs.bash}/bin/bash /home/chriz/.config/rofi/scripts/rofi-power-menu" -theme-str 'window { width: 11%; }'
   '')
@@ -282,6 +283,17 @@
       extraOutputsToInstall = ["dev"];
     }))
 
+  # ns - package search
+  (pkgs.writeShellApplication {
+    name = "ns"; # This will be the command you type in terminal
+    runtimeInputs = with pkgs; [
+      fzf
+      nix-search-tv
+    ];
+    # This reads the existing script from the source of the nix-search-tv package
+    text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+  })
+
   xdg-desktop-portal-gnome
   xdg-desktop-portal-gtk
   cliphist
@@ -308,11 +320,9 @@
   xsel
   brightnessctl
   tty-clock
-  fzf
   imagemagick
   mpv
   gammastep
-  meson
   wl-clipboard
   git
   pulseaudio
@@ -322,7 +332,6 @@
   gpu-screen-recorder
   yt-dlp
   inputs.zen-browser.packages."${system}".default
-  appimage-run
   libnotify
 
   ];
