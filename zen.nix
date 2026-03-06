@@ -28,6 +28,7 @@
         "browser.zoom.fullRescale" = true;
         "toolkit.zoomManager.fallbackLocalZoom" = 133;
         "browser.zoom.siteSpecific" = false;
+        "privacy.resistFingerprinting" = false;
 
         # --- Tab & Workspace Management ---
         "zen.workspaces.continue-where-left-off" = true;
