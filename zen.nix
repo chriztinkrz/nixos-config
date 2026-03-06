@@ -70,12 +70,12 @@
           modifiers.alt = true;
         }
         {
-          id = "goBackKb2";
+          id = "goBackKb";
           key = "q";
           modifiers.alt = true;
         }
         {
-          id = "goForwardKb2";
+          id = "goForwardKb";
           key = "e";
           modifiers.alt = true;
         }
