@@ -27,6 +27,7 @@
         "zen.theme.content-element-separation" = 0;
         "browser.zoom.fullRescale" = true;
         "toolkit.zoomManager.fallbackLocalZoom" = 133;
+        "browser.zoom.siteSpecific" = false;
 
         # --- Tab & Workspace Management ---
         "zen.workspaces.continue-where-left-off" = true;
@@ -69,12 +70,12 @@
           modifiers.alt = true;
         }
         {
-          id = "Browser:Back";
+          id = "goBackKb2";
           key = "q";
           modifiers.alt = true;
         }
         {
-          id = "Browser:Forward";
+          id = "goForwardKb2";
           key = "e";
           modifiers.alt = true;
         }

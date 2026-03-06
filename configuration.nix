@@ -332,6 +332,7 @@
   yt-dlp
   libnotify
   jq
+  fzf
 
   ];
 
