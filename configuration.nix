@@ -285,12 +285,11 @@
 
   # ns - package search
   (pkgs.writeShellApplication {
-    name = "ns"; # This will be the command you type in terminal
+    name = "ns"; # command name
     runtimeInputs = with pkgs; [
-      fzf
       nix-search-tv
     ];
-    # This reads the existing script from the source of the nix-search-tv package
+    # reads existing script from nix-search-tv package
     text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
   })
 
@@ -331,8 +330,8 @@
   killall
   gpu-screen-recorder
   yt-dlp
-  inputs.zen-browser.packages."${system}".default
   libnotify
+  jq
 
   ];
 
