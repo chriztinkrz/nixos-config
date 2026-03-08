@@ -12,6 +12,11 @@
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # openssl is required for some package but exceeded eol, only package which requires compiling
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.1.1w"
+  ];
+
 # fonts
   fonts.packages = with pkgs; [
     inter

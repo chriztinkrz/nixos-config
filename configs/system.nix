@@ -61,15 +61,15 @@
   };
 
   # flatpak
-  #  services.flatpak = {
-  #  enable = true;
-  #  packages = [
-  #  "app.zen_browser.zen" 
-  #  ];
-  #  update.auto.enable = true;
-  #  update.auto.onCalendar = "daily";
-  #  uninstallUnmanaged = true;
-  #  };
+  # services.flatpak = {
+  # enable = true;
+    # packages = [
+    # "app.zen_browser.zen" 
+    # ];
+    # update.auto.enable = true;
+    # update.auto.onCalendar = "daily";
+    # uninstallUnmanaged = true;
+    # };
 
   # appimage
   # programs.appimage.enable = true;
@@ -116,11 +116,6 @@
     packages = with pkgs; [
     ];
   };
-
-  # openssl is required for some package but exceeded eol, only package which requires compiling
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.1.1w"
-  ];
 
   # no need to change this ig
   system.stateVersion = "25.11"; 
