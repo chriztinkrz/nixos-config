@@ -5,9 +5,10 @@
   imports = [ inputs.silentSDDM.nixosModules.default ];
 
   # sddm itself
-  services.xserver.displayManager = {
+  services.displayManager = {
     sddm = {
       enable = true;
+      wayland.enable = lib.mkForce true;
       settings.General.InputMethod = lib.mkForce ""; 
       extraPackages = with pkgs; [
         kdePackages.qtmultimedia
@@ -21,6 +22,25 @@
       enable = true;
       user = "chriz";
     };
+  };
+
+  # cursor shi
+  services.xserver = {
+    enable = true; # Necessary for SDDM to hook into input/fonts correctly
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
+  };
+  services.displayManager.sddm.settings = {
+    Theme = {
+      CursorTheme = "ComixCursors-Black"; # Must match the folder name
+    };
+  };
+  environment.variables = {
+    XCURSOR_THEME = "ComixCursors-Black";
+    XCURSOR_SIZE = "40";
+    XCURSOR_PATH = lib.mkForce "/run/current-system/sw/share/icons:$HOME/.icons";
   };
 
   # silent sddm

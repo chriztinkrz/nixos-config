@@ -105,6 +105,7 @@
   nixswitch = "cd ~/nixos-config && sudo nix flake update --flake . && git add . && sudo nixos-rebuild switch --flake .#nixosbtw"; };
   programs.xwayland.enable = true;
   services.blueman.enable = true;
+  programs.dconf.enable = true;
 
   # user account
   users.users.chriz = {

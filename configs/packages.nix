@@ -59,7 +59,7 @@
 
   # comix cursors
   (pkgs.stdenv.mkDerivation rec {
-    pname = "comix-cursors";
+    pname = "comixcursors";
     version = "0.10.1";
     src = pkgs.fetchurl {
       url = "https://limitland.gitlab.io/comixcursors/ComixCursors-${version}.tar.bz2";
@@ -143,6 +143,7 @@
   gpu-screen-recorder
   yt-dlp
   libnotify
+  comixcursors
 
   ];
 
