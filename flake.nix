@@ -33,7 +33,7 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; }; # This passes inputs to configuration.nix
       modules = [
-        ./configs/configuration.nix
+        ./configs/system.nix
         nix-flatpak.nixosModules.nix-flatpak
         inputs.silentSDDM.nixosModules.default
 
