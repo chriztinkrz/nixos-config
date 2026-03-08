@@ -8,7 +8,7 @@
     ];
 
   nix.nixPath = [
-  "nixos-config=/home/chriz/nixos-config/configuration.nix"
+  "nixos-config=/home/chriz/nixos-config/configs/configuration.nix"
   "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos"
 ];
 
@@ -58,9 +58,9 @@
     enable = true;
     theme = "rei";
     settings = {
-      General.animated-background-placeholder = "../../../../../../../../../${./rei3.png}";
+      General.animated-background-placeholder = "../../../../../../../../../${../silentsddm/rei3.png}";
       LockScreen = {
-        background = "../../../../../../../../../${./rei3.mp4}";
+        background = "../../../../../../../../../${../silentsddm/rei3.mp4}";
         blur = 12;
       };
       "LockScreen.Clock" = {
@@ -287,6 +287,7 @@
   (pkgs.writeShellApplication {
     name = "ns"; # command name
     runtimeInputs = with pkgs; [
+      fzf
       nix-search-tv
     ];
     # reads existing script from nix-search-tv package
@@ -331,8 +332,6 @@
   gpu-screen-recorder
   yt-dlp
   libnotify
-  jq
-  fzf
 
   ];
 

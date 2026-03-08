@@ -10,18 +10,19 @@
 
   programs.zen-browser = {
     enable = true;
-    suppressXdgMigrationWarning = true;
+    # suppressXdgMigrationWarning = true; # commented bc it seems to have no effect?
 
     profiles.${config.home.username} = {    
       id = 0;
       isDefault = true;
       
       settings = {
+
         # --- UI & Layout ---
         "zen.view.compact.enable-at-startup" = true;
         "zen.view.compact.show-sidebar-and-toolbar-on-hover" = false;
-        "zen.tabs.show-newtab-vertical" = false;            # New tab button on list
-        "zen.view.show-newtab-button-top" = false;          # New tab button to top
+        "zen.tabs.show-newtab-vertical" = false;
+        "zen.view.show-newtab-button-top" = false;
         "zen.urlbar.behavior" = "float";
         "zen.theme.accent-color" = "#17171a";
         "zen.theme.content-element-separation" = 0;
@@ -37,7 +38,7 @@
         "zen.glance.enabled" = false;
 
         # --- Files & Downloads ---
-        "browser.download.useDownloadDir" = false;  # always ask where to save
+        "browser.download.useDownloadDir" = false;
 
         # --- System & Logic ---
         "zen.welcome-screen.seen" = true;

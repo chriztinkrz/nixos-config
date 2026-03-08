@@ -33,7 +33,7 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; }; # This passes inputs to configuration.nix
       modules = [
-        ./configuration.nix
+        ./configs/configuration.nix
         nix-flatpak.nixosModules.nix-flatpak
         inputs.silentSDDM.nixosModules.default
 
@@ -43,7 +43,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.users.chriz = import ./zen.nix;
+          home-manager.users.chriz = import ./configs/zen.nix;
         }
       ];
     };
