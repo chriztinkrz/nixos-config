@@ -26,7 +26,7 @@
 
   # cursor shi
   services.xserver = {
-    enable = true; # Necessary for SDDM to hook into input/fonts correctly
+    enable = true;
     xkb = {
       layout = "us";
       variant = "";
@@ -34,7 +34,7 @@
   };
   services.displayManager.sddm.settings = {
     Theme = {
-      CursorTheme = "ComixCursors-Black"; # Must match the folder name
+      CursorTheme = "ComixCursors-Black";
     };
   };
   environment.variables = {

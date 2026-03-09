@@ -5,9 +5,6 @@
     inputs.zen-browser.homeModules.beta
   ];
 
-  home.username = "chriz";
-  home.homeDirectory = "/home/chriz";
-
   programs.zen-browser = {
     enable = true;
     # suppressXdgMigrationWarning = true; # commented bc it seems to have no effect?
@@ -89,7 +86,4 @@
       ];
     };
   };
-
-  home.stateVersion = "25.11";
-
 }

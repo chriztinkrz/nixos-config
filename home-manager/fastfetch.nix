@@ -1,0 +1,27 @@
+{ config, pkgs, ... }:
+
+{
+  home.packages = [ pkgs.fastfetch ];
+  xdg.configFile."fastfetch/config.jsonc".text = ''
+  {
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "os",
+    "kernel",
+    "uptime",
+    "de",
+    "wm",
+    "packages",
+    "disk",
+    {
+      "type": "command",
+      "key": "OS Age",
+      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+    },
+    "break",
+    "colors"
+  ]
+}
+'';
+
+}

@@ -43,7 +43,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.users.chriz = import ./configs/zen.nix;
+          home-manager.users.chriz = import ./home-manager/home.nix;
         }
       ];
     };
