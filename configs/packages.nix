@@ -114,7 +114,6 @@
   swww
   avizo
   playerctl
-  waybar
   ffmpegthumbnailer
   bluez
   choose

@@ -1,0 +1,156 @@
+[{
+    "height": 24,
+    "spacing": 0,
+    "layer":"top", 
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+    "margin-bottom": 5,
+    "margin-top": 11,
+    "reload_style_on_change": true,
+    "fixed-center": true,
+
+    "modules-left": [
+        "group/cpuram",
+        "custom/music",
+    ],
+    "modules-center": [
+        "niri/workspaces",
+        "clock",
+    ],
+    "modules-right": [
+        "wireplumber",
+        "backlight",
+        "battery",
+    ],
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "niri msg action focus-workspace-up",
+        "on-scroll-down": "niri msg action focus-workspace-down",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "default": "•"
+        }
+    },
+
+    "group/cpuram": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "memory",
+        ]
+    },
+    "cpu": {
+        "format": " {usage}%", // CPU Icon
+        "tooltip": false,
+        "interval": 2,
+        "on-click": "foot btop",
+        "on-scroll-up": "niri msg action focus-workspace-up",
+        "on-scroll-down": "niri msg action focus-workspace-down",
+        "max-length": 6,
+        "min-length": 6
+    },
+
+    "memory":{
+        "format": " {}%",  // RAM Icon
+        "tooltip": false,
+        "interval": 2,
+        "on-click": "foot btop",
+        "on-scroll-up": "niri msg action focus-workspace-up",
+        "on-scroll-down": "niri msg action focus-workspace-down",
+        "min-length": 6,
+        "max-length": 6
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p, %A %d.%m.20%g}",
+        "on-scroll-up": "niri msg action focus-workspace-up",
+        "on-scroll-down": "niri msg action focus-workspace-down",
+        "tooltip": false,
+    },
+
+"battery": {
+    "min-length": 5,
+    "max-length": 5,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"], // Battery levels
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+    "on-click": "rofi-power"
+},
+
+
+"backlight": {
+    "device": "amdgpu_bl",
+    "min-length": 6,
+    "max-length": 6,
+    "on-scroll-up": "lightctl up",
+    "on-scroll-down": "lightctl down",
+    "format": "{icon}  {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""] // Brightness phases
+},
+
+"wireplumber": {
+    "format": "  {volume}%",
+    "min-length": 6,
+    "max-length": 6,
+    "on-scroll-up": "volumectl -u up",
+    "on-scroll-down": "volumectl -u down",
+    "format-muted": " ",
+    /* "format-icons": {
+        "default": ["", "", ""] // Volume levels
+    }, */
+    "on-click": "~/.config/rofi/scripts/select-audio.sh",
+},
+
+"custom/cava": {
+    "exec": "sleep 1 && ~/.config/waybar/scripts/cava.sh",
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+    "max-length": 24,
+    "min-length": 24
+},
+
+"custom/music": {
+    "exec": "playerctl metadata --format '{{title}}' 2>/dev/null || echo 'nothing playing.'",
+    "interval": 2,
+    "max-length": 27,
+    "min-length": 27,
+    "format": "{}",
+    "on-click": "playerctl play-pause",
+    "tooltip": false,
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+},
+
+"mpris": {
+    "format": "{title}",
+    "format-paused": "<i>▶ {title}</i>",
+    "format-stopped": "nothing playing.",
+    "max-length": 27,
+    "min-length": 27,
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+},
+
+}]

@@ -46,7 +46,7 @@
     [templates.btop]
     input_path = "~/.config/matugen/templates/btop.theme"
     output_path = "~/.config/btop/themes/matugen.theme"
-    post_hook = 'pkill -USR2 btop'
+    post_hook = 'pkill -USR2 btop || true'
 
     [templates.hyprland]
     input_path = "~/.config/matugen/templates/hyprland.conf"

@@ -101,11 +101,11 @@
   services.udisks2.enable = true;
   services.devmon.enable = true;
   programs.fish.enable = true;
-  programs.fish.shellAliases = {
-  nixswitch = "cd ~/nixos-config && sudo nix flake update --flake . && git add . && sudo nixos-rebuild switch --flake .#nixosbtw"; };
   programs.xwayland.enable = true;
   services.blueman.enable = true;
   programs.dconf.enable = true;
+  services.avahi.enable = true;
+  services.avahi.nssmdns4 = true;
 
   # user account
   users.users.chriz = {

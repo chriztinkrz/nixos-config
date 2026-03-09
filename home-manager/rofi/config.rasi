@@ -1,0 +1,21 @@
+@theme "theme"
+configuration {
+    display-drun: "";
+    display-calc: "";
+    display-emoji: "";
+    kb-mode-next: "Shift+Right";
+    kb-mode-previous: "Shift+Left"; 
+    kb-secondary-copy: "Alt+c";
+    kb-remove-char-forward: "Delete";
+    modes: "window,drun";
+    disable-history: true;
+    matching: "prefix";
+    sort: true;
+    sorting-method: "fzf";
+    show-icons: true;
+    /* show: "drun"; */
+    /* You can also set the default mode to show on launch */
+    filebrowser {
+                show-hidden: true;
+    }
+}

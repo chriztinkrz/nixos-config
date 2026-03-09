@@ -31,8 +31,4 @@
     noise_reduction = 77
   '';
 
-  # 2. THE THEME FILE (Placeholder/Link)
-  # This ensures the directory exists and Matugen has a place to write.
-  # We use the template method we set up in matugen.nix earlier.
-  xdg.configFile."cava/themes/matugen".source = ./matugen;
 }
