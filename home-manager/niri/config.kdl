@@ -1,10 +1,4 @@
-{ config, pkgs, ... }: {
-  # we use the standard nixpkgs niri, no flake needed
-  home.packages = [ pkgs.niri ];
 
-  # we write the config file directly as a string
-  xdg.configFile."niri/config.kdl".text = ''
-    
 //  input configuration //
 input {
     keyboard {
@@ -14,8 +8,8 @@ input {
         numlock; // Enable numlock on startup
 };
     mouse {
-      accel-speed -0.15
-      accel-profile "flat"
+    	accel-speed -0.15
+    	accel-profile "flat"
     }
     touchpad {
         accel-speed 0.25
@@ -239,8 +233,8 @@ binds {
 
 // layout settings //
 overview {
-  zoom 0.3333
-  backdrop-color "#141414"
+	zoom 0.3333
+	backdrop-color "#141414"
 }
 layout {
     gaps 3; // Gap between windows
@@ -477,6 +471,3 @@ debug {
 
 prefer-no-csd
 include "./colors.kdl"
-  '';
-
-}

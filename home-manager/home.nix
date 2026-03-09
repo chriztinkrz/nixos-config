@@ -3,7 +3,7 @@
 {
   imports = [
     ./zen.nix
-    ./niri.nix
+    ./niri/niri.nix
     ./matugen/matugen.nix
     ./avizo.nix
     ./btop/btop.nix
