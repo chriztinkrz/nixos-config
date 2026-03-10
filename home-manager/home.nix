@@ -19,8 +19,8 @@
     ./waybar/waybar.nix
   ];
 
-  home.username = "chriz";
-  home.homeDirectory = "/home/chriz";
+  home.username = pkgs.lib.mkDefault "chriz";
+  home.homeDirectory = pkgs.lib.mkDefault "/home/${config.home.username}";
   home.stateVersion = "25.11";
 
 }

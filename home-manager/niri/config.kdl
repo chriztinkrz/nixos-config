@@ -51,7 +51,7 @@ output "eDP-1" {
 
 
 //  startup applications  //
-spawn-at-startup "~/.config/niri/scripts/hyprlock_swww.sh"
+spawn-at-startup "~/.config/niri/scripts/startup_script.sh"
 // spawn-at-startup "hyprlock"
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &";
 // spawn-at-startup "swww-daemon"
