@@ -34,8 +34,5 @@
     save_config_on_exit = false 
   '';
 
-  # 2. THE THEME TEMPLATE (For Matugen)
-  # If you are using the Matugen method we discussed, 
-  # map your template into the btop themes folder:
-  xdg.configFile."btop/themes/matugen.theme".source = ./matugen.theme;
+  # xdg.configFile."btop/themes/matugen.theme".source = ./matugen.theme;
 }
