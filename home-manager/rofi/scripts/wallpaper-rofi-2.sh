@@ -88,7 +88,7 @@ if [ -n "$chosen" ]; then
     swww img "$full" --transition-type grow --transition-duration 2 &
     (
         ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
-        matugen image "$full" --mode dark --type scheme-content --source-color-index 0
+        hellwal -i "$full" --bright-offset 0.3
         blurred_wall="$HOME/.cache/blurred_wallpaper.png"
         magick "$full" -blur 0x5 "$blurred_wall"
         swww img -n overlay "$blurred_wall" --transition-type grow

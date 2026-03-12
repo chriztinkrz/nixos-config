@@ -6,7 +6,7 @@
   xdg.configFile."foot/foot.ini".text = ''
   
   [main]
-  include=~/.config/foot/themes/matugen.ini
+  include=~/.cache/hellwal/foot-colors.ini
   font=Hermit:size=13.5
   [cursor]
   style=beam

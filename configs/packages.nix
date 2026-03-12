@@ -6,6 +6,8 @@
   programs.niri.enable = true;
   programs.niri.useNautilus = true;
   programs.gpu-screen-recorder.enable = true;
+  programs.foot.enable = true;
+  programs.hyprlock.enable = true;
 
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -41,6 +43,19 @@
 
   # packages
   environment.systemPackages = with pkgs; [
+
+  # rofi-power
+  (pkgs.writeShellScriptBin "rofi-power" ''
+    ${pkgs.rofi}/bin/rofi -show power -modi "power:${pkgs.bash}/bin/bash /home/chriz/.config/rofi/scripts/rofi-power-menu" -theme-str 'window { width: 11%; }'
+  '')
+
+    # rofi external modes
+  ( rofi.override {
+      plugins = [
+         rofi-emoji
+         rofi-calc
+      ];
+    })
 
   # comix cursors
   (pkgs.stdenv.mkDerivation rec {
@@ -122,6 +137,14 @@
   yt-dlp
   libnotify
   comixcursors
+  hellwal
+  avizo
+  btop
+  cava
+  fastfetch
+  mako
+  matugen
+  waybar
 
   ];
 

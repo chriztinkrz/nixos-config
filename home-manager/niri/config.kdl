@@ -470,4 +470,4 @@ debug {
             }
 
 prefer-no-csd
-include "./colors.kdl"
+include "../../.cache/hellwal/niri-colors.kdl"

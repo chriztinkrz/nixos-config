@@ -105,7 +105,12 @@
   programs.dconf.enable = true;
   services.avahi.enable = true;
   services.avahi.nssmdns4 = true;
-  programs.fish.enable = true;
+  programs.fish = {
+    enable = true;
+    shellAliases = {
+      nixswitch = "cd ~/nixos-config && git add . || true && sudo nixos-rebuild switch --flake .#nixosbtw";
+    };
+  };
 
   # user account
   users.users.chriz = {

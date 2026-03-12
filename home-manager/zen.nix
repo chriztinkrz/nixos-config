@@ -1,6 +1,11 @@
 { config, pkgs, inputs, ... }:
 
 {
+
+  home.username = pkgs.lib.mkDefault "chriz";
+  home.homeDirectory = pkgs.lib.mkDefault "/home/${config.home.username}";
+  home.stateVersion = "25.11";
+
   imports = [
     inputs.zen-browser.homeModules.beta
   ];
