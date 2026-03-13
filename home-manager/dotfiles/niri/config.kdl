@@ -57,7 +57,7 @@ spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &";
 // spawn-at-startup "swww-daemon"
 // spawn-at-startup "swww-daemon" "-n" "overlay"
 // spawn-at-startup "waybar"
-spawn-at-startup "avizo-service -c ~/.cache/hellwal/avizo.ini"
+spawn-sh-at-startup "avizo-service -c ~/.cache/hellwal/avizo.ini"
 spawn-sh-at-startup "input-remapper-control --command autoload"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--pwl-pasterimary" "--watch" "cliphist" "store"  

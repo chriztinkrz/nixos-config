@@ -13,6 +13,20 @@
   programs.zen-browser = {
     enable = true;
     # suppressXdgMigrationWarning = true; # commented bc it seems to have no effect?
+    policies = {
+      ExtensionSettings = {
+        "uBlock0@raymondhill.net" = {
+          installation_mode = "allowed";
+          allowed_types = ["extension"];
+          private_browsing = true;
+        };
+        "@hoxx-vpn" = {
+          installation_mode = "allowed";
+          allowed_types = ["extension"];
+          private_browsing = true;
+        };
+      };
+    };
 
     profiles.${config.home.username} = {    
       id = 0;

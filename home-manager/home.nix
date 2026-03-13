@@ -1,10 +1,11 @@
 { config, lib, pkgs, ... }:
 
+/*
 let
   homeDir = "/home/chriz";
   dotfiles = "${homeDir}/nixos-config/home-manager/dotfiles";
   hellCache = "${homeDir}/.cache/hellwal";
-in
+in */
 
 {
   imports = [
@@ -12,7 +13,7 @@ in
     ./git.nix
   ];
 
-  xdg.configFile = {
+  /* xdg.configFile = {
     "fastfetch".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/fastfetch";
     "fish".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/fish";
     "foot".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/foot";
@@ -25,7 +26,6 @@ in
     "mango".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/mango";
     "matugen".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/matugen";
     "niri".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/niri";
-    "noctalia".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/noctalia";
     "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/qt5ct";
     "qt6ct".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/qt6ct";
     "rofi".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/rofi";
@@ -34,7 +34,7 @@ in
     "avizo/config.ini".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/.cache/hellwal/avizo.ini";
     "btop/btop.conf".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/btop/btop.conf";
     "btop/themes/hellwal.theme".source = config.lib.file.mkOutOfStoreSymlink "${hellCache}/btop.theme";
-  };
+  }; */
 
   home.username = "chriz";
   home.homeDirectory = "/home/chriz";
