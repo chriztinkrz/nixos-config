@@ -1,0 +1,20 @@
+/* Base */
+@define-color foreground {{colors.on_surface.default.hex}};
+@define-color background {{colors.surface.default.hex}};
+
+/* Accent */
+@define-color primary {{colors.primary.default.hex}};
+@define-color primary_text {{colors.on_primary.default.hex}};
+@define-color secondary {{colors.secondary.default.hex}};
+@define-color tertiary {{colors.tertiary.default.hex}};
+@define-color urgent {{colors.error.default.hex}};
+
+/* --- compatibility with your old style.css --- */
+
+@define-color text @foreground;
+@define-color focused @primary;
+@define-color focused2 @secondary;
+@define-color second-background alpha(@primary, 0.25);
+@define-color color1 @primary;
+@define-color color2 @secondary;
+@define-color color3 @tertiary;

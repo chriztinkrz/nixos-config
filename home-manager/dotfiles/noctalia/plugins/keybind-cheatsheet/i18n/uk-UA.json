@@ -1,0 +1,33 @@
+{
+  "keybind-cheatsheet": {
+    "panel": {
+      "loading": "Завантаження..."
+    },
+    "settings": {
+      "title": "Налаштування гарячих клавіш",
+      "description": "Налаштуйте зовнішній вигляд та джерела гарячих клавіш для панелі.",
+      "window-size": "Розмір вікна",
+      "width": "Ширина:",
+      "height": "Висота:",
+      "auto-height": "Авто",
+      "auto-height-hint": "Коли увімкнено 'Авто', висота автоматично підлаштовується під вміст.",
+      "layout": "Макет",
+      "columns": "Кількість колонок:",
+      "columns-hint": "Більше колонок краще працює з ширшими вікнами.",
+      "config-paths": "Файли конфігурації",
+      "config-paths-description": "Вкажіть власні шляхи до файлів конфігурації гарячих клавіш. Плагін автоматично слідує всім директивам include/source.",
+      "hyprland-format-hint": "Очікуваний формат: bind = $mod, KEY, action #\"опис\"\nКатегорії: # 1. НАЗВА КАТЕГОРІЇ",
+      "niri-format-hint": "Категорії створюються за допомогою: // #\"Назва категорії\"\nОписи: hotkey-overlay-title=\"опис\"",
+      "actions": "Дії",
+      "refresh-keybinds": "Оновити клавіші",
+      "refresh-message": "Гарячі клавіші будуть перезавантажені при відкритті панелі.",
+      "reset-defaults": "Скинути налаштування",
+      "reset-message": "Налаштування скинуто до значень за замовчуванням.",
+      "saved": "Налаштування успішно збережено.",
+      "keybind-setup": "Налаштування клавіші",
+      "keybind-setup-description": "Щоб відкрити шпаргалку за допомогою клавіші, додайте цей bind до конфігурації композитора:",
+      "keybind-example-hyprland": "Hyprland: bind = $mod, F1, exec, qs -c \"noctalia-shell\" ipc call \"keybind-cheatsheet\" \"toggle\"",
+      "keybind-example-niri": "Niri: Super+F1 { spawn \"qs\" \"-c\" \"noctalia-shell\" \"ipc\" \"call\" \"keybind-cheatsheet\" \"toggle\"; }"
+    }
+  }
+}

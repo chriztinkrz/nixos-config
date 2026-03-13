@@ -1,0 +1,60 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 273,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0"
+            },
+            {
+                "type": 1,
+                "code": 272,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0"
+            },
+            {
+                "type": 2,
+                "code": 0,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0",
+                "analog_threshold": -1
+            },
+            {
+                "type": 2,
+                "code": 1,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0",
+                "analog_threshold": -1
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_LEFTMETA + KEY_LEFTALT + KEY_Z",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 273,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0"
+            },
+            {
+                "type": 1,
+                "code": 272,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0"
+            },
+            {
+                "type": 2,
+                "code": 0,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0",
+                "analog_threshold": 1
+            },
+            {
+                "type": 2,
+                "code": 1,
+                "origin_hash": "f0c3238ca810d38d415fd65943b90ee0",
+                "analog_threshold": 1
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_LEFTMETA + KEY_LEFTALT + KEY_x",
+        "mapping_type": "key_macro"
+    }
+]

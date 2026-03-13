@@ -1,0 +1,438 @@
+{
+  "detectedCompositor": "niri",
+  "cheatsheetData": [
+    {
+      "title": "Applications",
+      "binds": [
+        {
+          "keys": "SUPER+F5",
+          "desc": "spawn-sh \"qs -c noctalia-shell ipc call plugin:screen-recorder toggle\""
+        },
+        {
+          "keys": "SUPER+N",
+          "desc": "spawn-sh \"qs -c noctalia-shell ipc call notifications dismissAll\""
+        },
+        {
+          "keys": "SUPER+GRAVE",
+          "desc": "spawn-sh \"qs -c noctalia-shell ipc call wallpaper toggle\""
+        },
+        {
+          "keys": "SUPER+I",
+          "desc": "noctalia-settings"
+        },
+        {
+          "keys": "SUPER+ALT+V",
+          "desc": "noctalia-clipboard"
+        },
+        {
+          "keys": "SHIFT+ALT+V",
+          "desc": "noctalia-emoji_picker"
+        },
+        {
+          "keys": "SUPER+Escape",
+          "desc": "noctalia-power-menu"
+        },
+        {
+          "keys": "SUPER+L",
+          "desc": "Lock Screen: noctalia-lock"
+        },
+        {
+          "keys": "SHIFT+F2",
+          "desc": "increase_brightness"
+        },
+        {
+          "keys": "SHIFT+F1",
+          "desc": "decrease_brightness"
+        },
+        {
+          "keys": "SUPER+RETURN",
+          "desc": "Open Terminal: foot"
+        },
+        {
+          "keys": "SUPER+SPACE",
+          "desc": "Open App Launcher: noctalia-app_launcher"
+        },
+        {
+          "keys": "SUPER+B",
+          "desc": "Open Browser: zen"
+        },
+        {
+          "keys": "SUPER+V",
+          "desc": "noctalia-clipboard"
+        },
+        {
+          "keys": "SUPER+E",
+          "desc": "File Manager: nautilus"
+        },
+        {
+          "keys": "ALT+F2",
+          "desc": "spawn-sh \"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+\""
+        },
+        {
+          "keys": "ALT+F1",
+          "desc": "spawn-sh \"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-\""
+        },
+        {
+          "keys": "ALT+F3",
+          "desc": "spawn-sh \"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle\""
+        },
+        {
+          "keys": "Mic Mute",
+          "desc": "spawn-sh \"wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle\""
+        },
+        {
+          "keys": "F1",
+          "desc": "spawn-sh \"playerctl previous\""
+        },
+        {
+          "keys": "F2",
+          "desc": "spawn-sh \"playerctl play-pause\""
+        },
+        {
+          "keys": "F3",
+          "desc": "spawn-sh \"playerctl next\""
+        }
+      ]
+    },
+    {
+      "title": "Window Management",
+      "binds": [
+        {
+          "keys": "CTRL+SHIFT+Z",
+          "desc": "Close Window"
+        },
+        {
+          "keys": "SUPER+CTRL+SHIFT+Q",
+          "desc": "Consume Window Into Column"
+        },
+        {
+          "keys": "SUPER+CTRL+SHIFT+W",
+          "desc": "Expel Window From Column"
+        },
+        {
+          "keys": "SUPER+F",
+          "desc": "Fullscreen Window"
+        }
+      ]
+    },
+    {
+      "title": "Column Navigation",
+      "binds": [
+        {
+          "keys": "ALT+A",
+          "desc": "Focus Column Left"
+        },
+        {
+          "keys": "ALT+D",
+          "desc": "Focus Column Right"
+        },
+        {
+          "keys": "SUPER+A",
+          "desc": "Focus Column First"
+        },
+        {
+          "keys": "SUPER+D",
+          "desc": "Focus Column Last"
+        },
+        {
+          "keys": "SUPER+WHEELSCROLLRIGHT",
+          "desc": "Focus Column Right"
+        },
+        {
+          "keys": "SUPER+WHEELSCROLLLEFT",
+          "desc": "Focus Column Left"
+        },
+        {
+          "keys": "SUPER+SHIFT+WHEELSCROLLDOWN",
+          "desc": "Focus Column Right"
+        },
+        {
+          "keys": "SUPER+SHIFT+WHEELSCROLLUP",
+          "desc": "Focus Column Left"
+        }
+      ]
+    },
+    {
+      "title": "Window Focus",
+      "binds": [
+        {
+          "keys": "ALT+W",
+          "desc": "Focus Window Up"
+        },
+        {
+          "keys": "ALT+S",
+          "desc": "Focus Window Down"
+        }
+      ]
+    },
+    {
+      "title": "Workspace Navigation",
+      "binds": [
+        {
+          "keys": "SUPER+S",
+          "desc": "Focus Workspace Down"
+        },
+        {
+          "keys": "SUPER+W",
+          "desc": "Focus Workspace Up"
+        },
+        {
+          "keys": "SUPER+1",
+          "desc": "Focus Workspace 1"
+        },
+        {
+          "keys": "SUPER+2",
+          "desc": "Focus Workspace 2"
+        },
+        {
+          "keys": "SUPER+3",
+          "desc": "Focus Workspace 3"
+        },
+        {
+          "keys": "SUPER+4",
+          "desc": "Focus Workspace 4"
+        },
+        {
+          "keys": "SUPER+5",
+          "desc": "Focus Workspace 5"
+        },
+        {
+          "keys": "SUPER+6",
+          "desc": "Focus Workspace 6"
+        },
+        {
+          "keys": "SUPER+7",
+          "desc": "Focus Workspace 7"
+        },
+        {
+          "keys": "SUPER+8",
+          "desc": "Focus Workspace 8"
+        },
+        {
+          "keys": "SUPER+9",
+          "desc": "Focus Workspace 9"
+        },
+        {
+          "keys": "SUPER+TAB",
+          "desc": "Focus Workspace Previous"
+        }
+      ]
+    },
+    {
+      "title": "Move Columns",
+      "binds": [
+        {
+          "keys": "SUPER+SHIFT+LEFT",
+          "desc": "Move Column Left"
+        },
+        {
+          "keys": "CTRL+SHIFT+A",
+          "desc": "Move Column Left"
+        },
+        {
+          "keys": "SUPER+SHIFT+RIGHT",
+          "desc": "Move Column Right"
+        },
+        {
+          "keys": "CTRL+SHIFT+D",
+          "desc": "Move Column Right"
+        },
+        {
+          "keys": "SUPER+ALT+A",
+          "desc": "Move Column To First"
+        },
+        {
+          "keys": "SUPER+ALT+D",
+          "desc": "Move Column To Last"
+        },
+        {
+          "keys": "SUPER+SHIFT+S",
+          "desc": "Move Column To Workspace Down"
+        },
+        {
+          "keys": "SUPER+SHIFT+W",
+          "desc": "Move Column To Workspace Up"
+        },
+        {
+          "keys": "SUPER+CTRL+WHEELSCROLLRIGHT",
+          "desc": "Move Column Right"
+        },
+        {
+          "keys": "SUPER+CTRL+WHEELSCROLLLEFT",
+          "desc": "Move Column Left"
+        },
+        {
+          "keys": "SUPER+CTRL+SHIFT+WHEELSCROLLDOWN",
+          "desc": "Move Column Right"
+        },
+        {
+          "keys": "SUPER+CTRL+SHIFT+WHEELSCROLLUP",
+          "desc": "Move Column Left"
+        },
+        {
+          "keys": "CTRL+SHIFT+1",
+          "desc": "Move Column To Workspace 1"
+        },
+        {
+          "keys": "CTRL+SHIFT+2",
+          "desc": "Move Column To Workspace 2"
+        },
+        {
+          "keys": "CTRL+SHIFT+3",
+          "desc": "Move Column To Workspace 3"
+        },
+        {
+          "keys": "CTRL+SHIFT+4",
+          "desc": "Move Column To Workspace 4"
+        },
+        {
+          "keys": "CTRL+SHIFT+5",
+          "desc": "Move Column To Workspace 5"
+        },
+        {
+          "keys": "CTRL+SHIFT+6",
+          "desc": "Move Column To Workspace 6"
+        },
+        {
+          "keys": "CTRL+SHIFT+7",
+          "desc": "Move Column To Workspace 7"
+        },
+        {
+          "keys": "CTRL+SHIFT+8",
+          "desc": "Move Column To Workspace 8"
+        },
+        {
+          "keys": "CTRL+SHIFT+9",
+          "desc": "Move Column To Workspace 9"
+        }
+      ]
+    },
+    {
+      "title": "Move Windows",
+      "binds": [
+        {
+          "keys": "SUPER+SHIFT+UP",
+          "desc": "Move Window Up"
+        },
+        {
+          "keys": "CTRL+SHIFT+W",
+          "desc": "Move Window Up"
+        },
+        {
+          "keys": "SUPER+SHIFT+DOWN",
+          "desc": "Move Window Down"
+        },
+        {
+          "keys": "CTRL+SHIFT+S",
+          "desc": "Move Window Down"
+        }
+      ]
+    },
+    {
+      "title": "Column Management",
+      "binds": [
+        {
+          "keys": "SUPER+CTRL+SHIFT+X",
+          "desc": "Maximize Column"
+        }
+      ]
+    },
+    {
+      "title": "Column Width",
+      "binds": [
+        {
+          "keys": "SUPER+CTRL+SHIFT+Z",
+          "desc": "Switch Preset Column Width"
+        },
+        {
+          "keys": "SUPER+CTRL+A",
+          "desc": "Set Column Width \" 3%\""
+        },
+        {
+          "keys": "SUPER+CTRL+D",
+          "desc": "Set Column Width \"+3%\""
+        }
+      ]
+    },
+    {
+      "title": "Screenshots",
+      "binds": [
+        {
+          "keys": "SUPER+F7",
+          "desc": "Screenshot"
+        },
+        {
+          "keys": "SUPER+F6",
+          "desc": "Screenshot Window"
+        },
+        {
+          "keys": "SUPER+F8",
+          "desc": "Screenshot Screen"
+        }
+      ]
+    },
+    {
+      "title": "Power",
+      "binds": [
+        {
+          "keys": "SUPER+SHIFT+P",
+          "desc": "Power Off Monitors"
+        }
+      ]
+    },
+    {
+      "title": "System",
+      "binds": [
+        {
+          "keys": "CTRL+ALT+DELETE",
+          "desc": "Quit"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "binds": [
+        {
+          "keys": "SUPER+SHIFT+ESCAPE",
+          "desc": "Show Hotkey Overlay"
+        },
+        {
+          "keys": "SUPER+SHIFT+X",
+          "desc": "Switch Focus Between Floating And Tiling"
+        },
+        {
+          "keys": "SUPER+CTRL+X",
+          "desc": "Expand Column To Available Width"
+        },
+        {
+          "keys": "SUPER+C",
+          "desc": "Center Column"
+        },
+        {
+          "keys": "SUPER+CTRL+C",
+          "desc": "Center Visible Columns"
+        },
+        {
+          "keys": "SUPER+CTRL+S",
+          "desc": "Set Window Height \" 3%\""
+        },
+        {
+          "keys": "SUPER+CTRL+W",
+          "desc": "Set Window Height \"+3%\""
+        },
+        {
+          "keys": "SUPER+T",
+          "desc": "Toggle Window Floating"
+        },
+        {
+          "keys": "SUPER+Z",
+          "desc": "Toggle Column Tabbed Display"
+        },
+        {
+          "keys": "ALT+SHIFT+S",
+          "desc": "Toggle Overview"
+        }
+      ]
+    }
+  ]
+}

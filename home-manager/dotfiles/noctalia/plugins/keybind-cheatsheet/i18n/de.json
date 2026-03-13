@@ -1,0 +1,33 @@
+{
+  "keybind-cheatsheet": {
+    "panel": {
+      "loading": "Laden..."
+    },
+    "settings": {
+      "title": "Tastenkurzel-Ubersicht Einstellungen",
+      "description": "Konfigurieren Sie das Aussehen und die Quellen der Tastenkurzel fur das Panel.",
+      "window-size": "Fenstergrosse",
+      "width": "Breite:",
+      "height": "Hohe:",
+      "auto-height": "Auto",
+      "auto-height-hint": "Wenn 'Auto' aktiviert ist, passt sich die Hohe automatisch an den Inhalt an.",
+      "layout": "Layout",
+      "columns": "Anzahl der Spalten:",
+      "columns-hint": "Mehr Spalten funktionieren besser mit breiteren Fenstern.",
+      "config-paths": "Konfigurationsdateien",
+      "config-paths-description": "Geben Sie benutzerdefinierte Pfade zu Ihren Tastenkurzel-Konfigurationsdateien an. Das Plugin folgt automatisch allen include/source Direktiven.",
+      "hyprland-format-hint": "Erwartetes Format: bind = $mod, KEY, action #\"beschreibung\"\nKategorien: # 1. KATEGORIENAME",
+      "niri-format-hint": "Kategorien werden erstellt mit: // #\"Kategoriename\"\nBeschreibungen: hotkey-overlay-title=\"beschreibung\"",
+      "actions": "Aktionen",
+      "refresh-keybinds": "Tastenkurzel aktualisieren",
+      "refresh-message": "Tastenkurzel werden beim Offnen des Panels neu geladen.",
+      "reset-defaults": "Auf Standard zurucksetzen",
+      "reset-message": "Einstellungen wurden auf Standard zuruckgesetzt.",
+      "saved": "Einstellungen erfolgreich gespeichert.",
+      "keybind-setup": "Tastenkurzel-Einrichtung",
+      "keybind-setup-description": "Um die Ubersicht mit einer Tastenkombination zu offnen, fuge diese Bindung zu deiner Compositor-Konfiguration hinzu:",
+      "keybind-example-hyprland": "Hyprland: bind = $mod, F1, exec, qs -c \"noctalia-shell\" ipc call \"keybind-cheatsheet\" \"toggle\"",
+      "keybind-example-niri": "Niri: Super+F1 { spawn \"qs\" \"-c\" \"noctalia-shell\" \"ipc\" \"call\" \"keybind-cheatsheet\" \"toggle\"; }"
+    }
+  }
+}

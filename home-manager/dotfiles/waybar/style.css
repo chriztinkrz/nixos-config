@@ -1,0 +1,149 @@
+@import '../../.cache/hellwal/waybar.css';
+
+/* font declared */
+* {
+  font-family: "Inter";
+  font-size: 15px;
+}
+
+/* idk what all this does */
+window#waybar {
+  background-color: transparent;
+  border-bottom: 0;
+  color: @text;
+  transition: background-color 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+
+/* configuring the modules */
+
+.modules-left {
+  margin: 0px 0 0 350px;
+  padding: 0 0px;
+
+  background-color: @color1;   /* primary fill */
+  color: @color15;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.modules-center {
+  margin: 0px 0 0 0;
+  padding: 0 0px;
+
+  background-color: @color1;
+  color: @color15;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.modules-right {
+  margin: 0px 352px 0 0;
+  padding: 0 0px;
+
+  background-color: @color1;
+  color: @color15;
+
+  border: none;
+  border-radius: 4px;
+}
+
+/* whats this?? */
+button {
+  border: none;
+}
+
+/* workspace panel */
+#workspaces button {
+  min-width: 0;
+  padding: 0 7px;
+  background-color: @color1;
+  color: @color15;
+  border-radius: 4;
+}
+
+/*  #workspaces button:hover {
+  color: @secondary_text;
+  background-color: @focused2;
+} */
+
+#workspaces button.active {
+  color: @color1;
+  background-color: @color15;
+}
+
+#workspaces button.urgent {
+  background-color: @urgent;
+}
+
+/* no idea what this does */
+.modules-left>widget:first-child>#workspaces {
+  margin-left: 0;
+}
+
+.modules-right>widget:last-child>#workspaces {
+  margin-right: 0;
+}
+
+/* module general styles */
+
+#wireplumber {
+  min-width: 172px;
+}
+
+#battery {
+  min-width: 165px;
+}
+
+#workspaces {
+  padding-right: 7px;
+}
+
+#clock {
+  padding-right: 6px;
+}
+
+#custom-music {
+  padding-left: 4px;
+  padding-right: 4.99px;
+}
+
+#mpris {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cpu {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#battery.charging,
+#battery.plugged {
+  background-color: @color1 ;
+  color: @color15;
+  border-radius: 0 4px 4px 0;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #FF6B52;
+  color: #000000;
+  animation: blink 0.3s steps(20) infinite alternate;
+}
+
+@keyframes blink {
+  to {
+    background-color: @second-background;
+    color: #000000;
+  }
+}

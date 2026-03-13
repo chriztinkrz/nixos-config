@@ -1,0 +1,66 @@
+# Hellwal template for btop
+
+# Main background - empty for terminal transparency
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#%%color14.hex%%"
+
+# Title color for boxes
+theme[title]="#%%color14.hex%%"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#%%color4.hex%%"
+
+# Selected item in processes box
+theme[selected_bg]="#%%color14.hex%%"
+theme[selected_fg]="#%%background%%"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#%%color14.hex%%"
+
+# Misc colors for processes box
+theme[proc_misc]="#%%color14.hex%%"
+
+# Box outline colors
+theme[cpu_box]="#%%color1.hex%%"
+theme[mem_box]="#%%color1.hex%%"
+theme[net_box]="#%%color1.hex%%"
+theme[proc_box]="#%%color1.hex%%"
+theme[div_line]="#%%color1.hex%%"
+
+# Temperature graph colors (Gradient: Cyan -> Bright Cyan -> Teal)
+theme[temp_start]="#%%color6.hex%%"
+theme[temp_mid]="#%%color14.hex%%"
+theme[temp_end]="#%%color6.hex%%"
+
+# CPU graph colors (Primary Cyan Gradient)
+theme[cpu_start]="#%%color6.hex%%"
+theme[cpu_mid]="#%%color14.hex%%"
+theme[cpu_end]="#%%color14.hex%%"
+
+# Mem/Disk meters (Anchor on 14)
+theme[free_start]="#%%color1.hex%%"
+theme[free_mid]=""
+theme[free_end]="#%%color6.hex%%"
+
+theme[cached_start]="#%%color14.hex%%"
+theme[cached_mid]=""
+theme[cached_end]="#%%color6.hex%%"
+
+theme[available_start]="#%%color14.hex%%"
+theme[available_mid]=""
+theme[available_end]="#%%color6.hex%%"
+
+theme[used_start]="#%%color14.hex%%"
+theme[used_mid]=""
+theme[used_end]="#%%color6.hex%%"
+
+# Download/Upload graph colors (Flowing through 14)
+theme[download_start]="#%%color6.hex%%"
+theme[download_mid]="#%%color14.hex%%"
+theme[download_end]="#%%color14.hex%%"
+
+theme[upload_start]="#%%color6.hex%%"
+theme[upload_mid]="#%%color14.hex%%"
+theme[upload_end]="#%%color14.hex%%"

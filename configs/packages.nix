@@ -130,7 +130,6 @@
   mpv
   gammastep
   wl-clipboard
-  git
   pulseaudio
   sublime4
   killall

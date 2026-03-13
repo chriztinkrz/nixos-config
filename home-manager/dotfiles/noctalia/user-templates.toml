@@ -1,0 +1,26 @@
+[config]
+
+[templates]
+
+[templates.rofi]
+input_path = "~/.config/matugen/templates/rofi.rasi"
+output_path = "~/.config/rofi/theme.rasi"
+post_hook = "pkill rofi && rofi -show drun"
+
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk.tmp"
+output_path = "~/.config/gtk-3.0/colors.css"
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk.tmp"
+output_path = "~/.config/gtk-4.0/colors.css"
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.mako]
+input_path = '~/.config/matugen/templates/mako.conf'
+output_path = '~/.config/mako/mako-colors'
+post_hook = 'makoctl reload'

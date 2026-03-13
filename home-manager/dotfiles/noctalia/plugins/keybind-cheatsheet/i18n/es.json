@@ -1,0 +1,33 @@
+{
+  "keybind-cheatsheet": {
+    "panel": {
+      "loading": "Cargando..."
+    },
+    "settings": {
+      "title": "Configuracion de Atajos de Teclado",
+      "description": "Configure la apariencia y las fuentes de atajos de teclado para el panel.",
+      "window-size": "Tamano de Ventana",
+      "width": "Ancho:",
+      "height": "Alto:",
+      "auto-height": "Auto",
+      "auto-height-hint": "Cuando 'Auto' esta activado, la altura se ajusta automaticamente al contenido.",
+      "layout": "Diseno",
+      "columns": "Numero de columnas:",
+      "columns-hint": "Mas columnas funcionan mejor con ventanas mas anchas.",
+      "config-paths": "Archivos de Configuracion",
+      "config-paths-description": "Especifique rutas personalizadas a sus archivos de configuracion de atajos. El plugin seguira automaticamente todas las directivas include/source.",
+      "hyprland-format-hint": "Formato esperado: bind = $mod, KEY, action #\"descripcion\"\nCategorias: # 1. NOMBRE DE CATEGORIA",
+      "niri-format-hint": "Las categorias se crean con: // #\"Nombre de categoria\"\nDescripciones: hotkey-overlay-title=\"descripcion\"",
+      "actions": "Acciones",
+      "refresh-keybinds": "Actualizar Atajos",
+      "refresh-message": "Los atajos se recargaran al abrir el panel.",
+      "reset-defaults": "Restablecer Predeterminados",
+      "reset-message": "La configuracion se ha restablecido a los valores predeterminados.",
+      "saved": "Configuracion guardada correctamente.",
+      "keybind-setup": "Configuracion de Atajo",
+      "keybind-setup-description": "Para abrir el cheatsheet con un atajo de teclado, agrega este bind a la configuracion de tu compositor:",
+      "keybind-example-hyprland": "Hyprland: bind = $mod, F1, exec, qs -c \"noctalia-shell\" ipc call \"keybind-cheatsheet\" \"toggle\"",
+      "keybind-example-niri": "Niri: Super+F1 { spawn \"qs\" \"-c\" \"noctalia-shell\" \"ipc\" \"call\" \"keybind-cheatsheet\" \"toggle\"; }"
+    }
+  }
+}

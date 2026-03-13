@@ -1,0 +1,33 @@
+{
+  "keybind-cheatsheet": {
+    "panel": {
+      "loading": "Yukleniyor..."
+    },
+    "settings": {
+      "title": "Klavye Kisayollari Ayarlari",
+      "description": "Panel icin klavye kisayollarinin gorunumunu ve kaynaklarini yapilandirin.",
+      "window-size": "Pencere Boyutu",
+      "width": "Genislik:",
+      "height": "Yukseklik:",
+      "auto-height": "Otomatik",
+      "auto-height-hint": "'Otomatik' etkinlestirildiginde, yukseklik icerge gore otomatik olarak ayarlanir.",
+      "layout": "Duzen",
+      "columns": "Sutun sayisi:",
+      "columns-hint": "Daha fazla sutun daha genis pencerelerle daha iyi calisir.",
+      "config-paths": "Yapilandirma Dosyalari",
+      "config-paths-description": "Klavye kisayolu yapilandirma dosyalariniza ozel yollar belirtin. Eklenti otomatik olarak tum include/source yonergelerini takip eder.",
+      "hyprland-format-hint": "Beklenen format: bind = $mod, KEY, action #\"aciklama\"\nKategoriler: # 1. KATEGORI ADI",
+      "niri-format-hint": "Kategoriler su sekilde olusturulur: // #\"Kategori adi\"\nAciklamalar: hotkey-overlay-title=\"aciklama\"",
+      "actions": "Islemler",
+      "refresh-keybinds": "Kisayollari Yenile",
+      "refresh-message": "Paneli actinizda kisayollar yeniden yuklenecektir.",
+      "reset-defaults": "Varsayilanlara Sifirla",
+      "reset-message": "Ayarlar varsayilan degerlere sifirlandi.",
+      "saved": "Ayarlar basariyla kaydedildi.",
+      "keybind-setup": "Kisayol Ayari",
+      "keybind-setup-description": "Cheatsheet'i bir klavye kisayoluyla acmak icin, bu bind'i compositor yapilandirmaniza ekleyin:",
+      "keybind-example-hyprland": "Hyprland: bind = $mod, F1, exec, qs -c \"noctalia-shell\" ipc call \"keybind-cheatsheet\" \"toggle\"",
+      "keybind-example-niri": "Niri: Super+F1 { spawn \"qs\" \"-c\" \"noctalia-shell\" \"ipc\" \"call\" \"keybind-cheatsheet\" \"toggle\"; }"
+    }
+  }
+}

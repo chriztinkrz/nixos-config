@@ -1,0 +1,287 @@
+// Niri configuration for CachyOS
+// Niri configuration for CachyOS
+// For documentation and full reference, see: https://github.com/YaLTeR/niri/wiki
+
+// ────────────── Input Configuration ──────────────
+input {
+    keyboard {
+        xkb {
+            layout "us"; // Use the US keyboard layout
+        };
+        numlock; // Enable numlock on startup
+};
+    mouse {
+    	accel-speed 0.1
+    	accel-profile "flat"
+    }
+    touchpad {
+        accel-speed 0.1
+        accel-profile "flat";
+        tap; // Enable tap-to-click
+        natural-scroll; // Enable natural (macOS-style) scrolling
+    };
+
+    focus-follows-mouse; // Automatically focus windows under the mouse pointer
+    workspace-auto-back-and-forth; // Enable workspace back & forth switching
+};
+
+gestures {
+  hot-corners {
+  off
+}
+  }
+// ────────────── Output Configuration ──────────────
+/- output "DP-1" {
+    mode "2560x1440@359.979"; // Set resolution and refresh rate
+    scale 1; // No scaling (use 2 for HiDPI)
+};
+
+// ────────────── Keybindings ──────────────
+binds {
+  
+    MOD+SHIFT+ESCAPE { show-hotkey-overlay; };
+    SUPER+Escape hotkey-overlay-title="dms-power-menu" { spawn-sh "dms ipc call powermenu toggle"; };
+    SUPER+L hotkey-overlay-title="lock" { spawn-sh "cd /usr/share/sddm/themes/silent && ./test.sh"; }; 
+    // MOD+ALT+V hotkey-overlay-title="clipboard" { spawn "bash" "-c" "cliphist list | fuzzel -w 120 --dmenu | cliphist decode | wl-copy -p; wl-paste -p --no-newline | xclip"; } // 
+    // brightness controls
+    SHIFT+F2 hotkey-overlay-title="increase_brightness" { spawn-sh "brightnessctl s +5%" ; };
+    SHIFT+F1 hotkey-overlay-title="decrease_brightness" { spawn-sh "brightnessctl s 5%-" ; };
+    // Applications
+    MOD+RETURN hotkey-overlay-title="Open Terminal: kitty" { spawn-sh "kitty"; };
+    MOD+SPACE hotkey-overlay-title="Open App Launcher: dms-spotlight" { spawn-sh "dms ipc call spotlight toggle"; };
+    MOD+B hotkey-overlay-title="Open Browser: zen" { spawn-sh "zen-browser"; };
+    MOD+ALT+L hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; };
+    SUPER+ALT+V hotkey-overlay-title="dms-clipboard" { spawn-sh "dms ipc call clipboard toggle"; };
+    MOD+E hotkey-overlay-title="File Manager: Nautilus" { spawn-sh "nautilus --new-window"; };
+
+    // Audio Controls
+    ALT+F2 allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"; };
+    ALT+F1 allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; };
+    ALT+F3 allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; };
+    XF86AudioMicMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; };
+    SUPER+F3 allow-when-locked=true { spawn-sh "playerctl next"; };
+    SUPER+F2 allow-when-locked=true { spawn-sh "playerctl play-pause"; };
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; };
+    SUPER+F1 allow-when-locked=true { spawn-sh "playerctl previous"; };
+
+    // Window Movement and Focus
+    CTRL+SHIFT+Z { close-window; };
+
+    MOD+CTRL+SHIFT+Q { consume-window-into-column; };
+    MOD+CTRL+SHIFT+A { expel-window-from-column; };		
+  
+    // MOD+LEFT { focus-column-left; };
+    ALT+A { focus-column-left; };
+    // MOD+RIGHT { focus-column-right; };
+    ALT+D { focus-column-right; };
+    // MOD+UP { focus-window-up; };
+    ALT+W { focus-window-up; };
+    // MOD+DOWN { focus-window-down; };
+    ALT+S { focus-window-down; };
+
+    MOD+SHIFT+LEFT { move-column-left; };
+    CTRL+SHIFT+A { move-column-left; };
+    MOD+SHIFT+RIGHT { move-column-right; };
+    CTRL+SHIFT+D { move-column-right; };
+    MOD+SHIFT+UP { move-window-up; };
+    CTRL+SHIFT+W { move-window-up; };
+    MOD+SHIFT+DOWN { move-window-down; };
+    CTRL+SHIFT+S { move-window-down; };
+
+    ALT+HOME { focus-column-first; };
+    ALT+END { focus-column-last; };
+    ALT+CTRL+HOME { move-column-to-first; };
+    ALT+CTRL+END { move-column-to-last; };
+
+    // MOD+SHIFT+CTRL+LEFT { move-column-to-monitor-left; };
+    // MOD+SHIFT+CTRL+RIGHT { move-column-to-monitor-right; };
+    // MOD+SHIFT+CTRL+UP { move-column-to-monitor-up; };
+    // MOD+SHIFT+CTRL+DOWN { move-column-to-monitor-down; };
+  
+    MOD+CTRL+SHIFT+X { maximize-column; };
+    MOD+CTRL+SHIFT+Z { switch-preset-column-width; };
+
+    // Workspace Switching
+    MOD+S  cooldown-ms=150 { focus-workspace-down; };
+    MOD+W cooldown-ms=150 { focus-workspace-up; };
+    MOD+SHIFT+S cooldown-ms=150 { move-column-to-workspace-down; };
+    MOD+SHIFT+W cooldown-ms=150 { move-column-to-workspace-up; };
+
+    MOD+WHEELSCROLLRIGHT { focus-column-right; };
+    MOD+WHEELSCROLLLEFT { focus-column-left; };
+    MOD+CTRL+WHEELSCROLLRIGHT { move-column-right; };
+    MOD+CTRL+WHEELSCROLLLEFT { move-column-left; };
+
+    MOD+SHIFT+WHEELSCROLLDOWN { focus-column-right; };
+    MOD+SHIFT+WHEELSCROLLUP { focus-column-left; };
+    MOD+CTRL+SHIFT+WHEELSCROLLDOWN { move-column-right; };
+    MOD+CTRL+SHIFT+WHEELSCROLLUP { move-column-left; };
+
+    MOD+1 { focus-workspace 1; };
+    MOD+2 { focus-workspace 2; };
+    MOD+3 { focus-workspace 3; };
+    MOD+4 { focus-workspace 4; };
+    MOD+5 { focus-workspace 5; };
+    MOD+6 { focus-workspace 6; };
+    MOD+7 { focus-workspace 7; };
+    MOD+8 { focus-workspace 8; };
+    MOD+9 { focus-workspace 9; };
+
+    CTRL+SHIFT+1 { move-column-to-workspace 1; };
+    CTRL+SHIFT+2 { move-column-to-workspace 2; };
+    CTRL+SHIFT+3 { move-column-to-workspace 3; };
+    CTRL+SHIFT+4 { move-column-to-workspace 4; };
+    CTRL+SHIFT+5 { move-column-to-workspace 5; };
+    CTRL+SHIFT+6 { move-column-to-workspace 6; };
+    CTRL+SHIFT+7 { move-column-to-workspace 7; };
+    CTRL+SHIFT+8 { move-column-to-workspace 8; };
+    CTRL+SHIFT+9 { move-column-to-workspace 9; };
+
+    MOD+TAB { focus-workspace-previous; };
+
+    // Layout Controls
+    MOD+CTRL+X { expand-column-to-available-width; };
+    MOD+C { center-column; };
+    MOD+CTRL+C { center-visible-columns; };
+    MOD+CTRL+A { set-column-width "-5%"; };
+    MOD+CTRL+D { set-column-width "+5%"; };
+    MOD+CTRL+S { set-window-height "-5%"; };
+    MOD+CTRL+W { set-window-height "+5%"; };
+
+    // Modes
+    MOD+T { toggle-window-floating; };
+    MOD+F { fullscreen-window; };
+    MOD+Z { toggle-column-tabbed-display; };
+
+    // Screenshots
+    PRINT { screenshot; };
+    ALT+PRINT { screenshot-window; };
+    SUPER+PRINT { screenshot-screen; };
+
+    // Emergency Escape Key
+    // MOD+ESCAPE allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; };
+
+    // Exit / Power
+    CTRL+ALT+DELETE { quit; }; // Also quits Niri
+    MOD+SHIFT+P { power-off-monitors; };
+    ALT+SHIFT+S repeat=false { toggle-overview; };
+ 
+   }
+
+// ────────────── Startup Applications ──────────────
+spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &";
+spawn-sh-at-startup "swww-daemon";
+spawn-sh-at-startup "swww img /home/chriz/Pictures/Pictures/wallpapers/wp12265656_upscayl_4x_digital-art-4x.png";
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--pwl-pasterimary" "--watch" "cliphist" "store"  
+spawn-sh-at-startup "~/scripts/battery_warning.sh &";
+prefer-no-csd; // Disable program decorations
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// ────────────── Layout Settings ──────────────
+
+overview {
+	zoom 0.35
+	backdrop-color "#141414"
+}
+layout {
+    gaps 1.5; // Gap between windows
+    center-focused-column "never";
+
+    preset-column-widths {
+        proportion 0.25;
+        proportion 0.5;
+        proportion 0.66667;
+    };
+
+    focus-ring {
+        width 2.5;
+        active-color "#C0C0C0";
+    //     inactive-color "#a7b3e5";
+    };
+
+    shadow {
+        softness 30;
+        spread 5;
+        offset x=0 y=5;
+        color "#0007";
+    };
+    
+    default-column-width { proportion 0.3333; }
+  
+    struts {};
+};
+
+// ────────────── Animation Settings ──────────────
+animations {
+    workspace-switch {
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001;
+    };
+    window-open {
+        duration-ms 300;
+        curve "ease-out-quad";
+    };
+    window-close {
+        duration-ms 300;
+        curve "ease-out-cubic";
+    };
+    horizontal-view-movement {
+        spring damping-ratio=1.0 stiffness=900 epsilon=0.0001;
+    };
+    window-movement {
+        spring damping-ratio=1.0 stiffness=800 epsilon=0.0001;
+    };
+    window-resize {
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001;
+    };
+    config-notification-open-close {
+        spring damping-ratio=0.6 stiffness=1200 epsilon=0.001;
+    };
+    screenshot-ui-open {
+        duration-ms 300;
+        curve "ease-out-quad";
+    };
+    overview-open-close {
+        spring damping-ratio=1.0 stiffness=900 epsilon=0.0001;
+    };
+};
+
+// ────────────── Window Rules ──────────────
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$";
+    open-floating true;
+};
+
+window-rule {
+    geometry-corner-radius 20;
+    clip-to-geometry true;
+};
+
+window-rule {
+    match is-active=false;
+    opacity 0.95;
+};
+
+window-rule {
+    match app-id="kitty"
+    opacity 0.9
+}
+// ────────────── Environment Variables ──────────────
+environment {
+    DISPLAY ":1";
+    ELECTRON_OZONE_PLATFORM_HINT "auto";
+    QT_QPA_PLATFORM "wayland";
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1";
+    XDG_SESSION_TYPE "wayland";
+    XDG_CURRENT_DESKTOP "niri";
+};
+
+hotkey-overlay {
+    skip-at-startup;
+};
+
+cursor {
+    xcursor-theme "ComixCursors-Black"
+    xcursor-size 32
+}
+

@@ -1,0 +1,50 @@
+* {
+    /* Map Hellwal colors to Rofi variables */
+    bg: #%%background%%;
+    fg: #%%foreground%%;
+    accent: #%%color2.hex%%;
+    muted: #%%color8.hex%%;
+    on-accent: #%%background%%;
+    color15: #%%color15%%;
+    color1: #%%color1%%;
+    color7: #%%color7%%;
+
+    font: "Inter 15";
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    width: 35%;
+    padding: 16px;
+    background-color: @bg;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 4px;
+}
+
+listview {
+    lines: 3;
+    spacing: 6px;
+}
+
+element {
+    padding: 8px;
+    background-color: transparent;
+    text-color: @fg;
+    border-radius: 5px;
+}
+
+/* Selected item gets the vibrant primary color background */
+element selected {
+    background-color: @color7;
+    text-color: @color1;
+}
+
+element-text selected {
+    text-color: @color1;
+}
+
+element-icon {
+    size: 0.0ch;
+}
