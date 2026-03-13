@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 
 let
-  # Fixed the circular reference here
   homeDir = "/home/chriz";
   dotfiles = "${homeDir}/nixos-config/home-manager/dotfiles";
   hellCache = "${homeDir}/.cache/hellwal";
@@ -14,7 +13,6 @@ in
   ];
 
   xdg.configFile = {
-    # --- Directory Symlinks (Live edits to your repo apply instantly) ---
     "fastfetch".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/fastfetch";
     "fish".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/fish";
     "foot".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/foot";
