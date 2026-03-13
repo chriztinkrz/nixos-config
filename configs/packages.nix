@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
 
@@ -8,6 +8,7 @@
   programs.gpu-screen-recorder.enable = true;
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
+  services.input-remapper.enable = true; # small exception 👍🏻
 
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -145,6 +146,9 @@
   mako
   matugen
   waybar
+  inputs.hexecute.packages.${pkgs.system}.default
+  input-remapper
+  polkit_gnome
 
   ];
 

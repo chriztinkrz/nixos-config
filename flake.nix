@@ -17,12 +17,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    nixos-hardware = {
-      url = "github:NixOS/nixos-hardware/master";
-    };
+    hexecute.url = "github:ThatOtherAndrew/Hexecute";
   };
 
-  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, nixos-hardware, ... }@inputs: {  
+  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, hexecute, ... }@inputs: {  
     nixosConfigurations.nixosbtw = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
@@ -31,7 +29,6 @@
         inputs.nix-flatpak.nixosModules.nix-flatpak
         inputs.silentSDDM.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
-        nixos-hardware.nixosModules.hp-elitebook-845g7
 
         {
           home-manager.useGlobalPkgs = true;

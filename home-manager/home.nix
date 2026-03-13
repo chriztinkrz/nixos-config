@@ -17,6 +17,7 @@
     # ./mako.nix
     # ./rofi/rofi.nix
     # ./waybar/waybar.nix
+    ./git.nix
   ];
 
   home.username = pkgs.lib.mkDefault "chriz";
