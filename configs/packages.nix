@@ -145,7 +145,6 @@
   mako
   matugen
   waybar
-  inputs.hexecute.packages.${pkgs.system}.default
   input-remapper
   polkit_gnome
 

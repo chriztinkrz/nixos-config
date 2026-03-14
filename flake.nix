@@ -17,14 +17,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    hexecute.url = "github:ThatOtherAndrew/Hexecute";
   };
 
-  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, hexecute, ... }@inputs: {  
+  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, ... }@inputs: {  
     nixosConfigurations.nixosbtw = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      # system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
+        { nixpkgs.hostPlatform = "x86_64-linux"; }
         ./configs/system.nix
         inputs.nix-flatpak.nixosModules.nix-flatpak
         inputs.silentSDDM.nixosModules.default

@@ -12,7 +12,6 @@
 
   programs.zen-browser = {
     enable = true;
-    # suppressXdgMigrationWarning = true; # commented bc it seems to have no effect?
     policies = {
       ExtensionSettings = {
         "uBlock0@raymondhill.net" = {
@@ -60,9 +59,9 @@
         "zen.welcome-screen.seen" = true;
         "zen.keyboard.shortcuts.version" = 16;
         "browser.shell.checkDefaultBrowser" = false;
+
       };
 
-      # --- Declarative Keyboard Shortcuts ---
       keyboardShortcuts = [
         {
           id = "zen-compact-mode-toggle";

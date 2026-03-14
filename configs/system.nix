@@ -31,6 +31,13 @@
     allowReboot = false;
   };
 
+  # disable suspend on lid close
+  services.logind.settings.Login = {
+    HandleLidSwitch = "ignore";
+    HandleLidSwitchExternalPower = "ignore";
+    HandleLidSwitchDocked = "ignore";
+  };
+
   networking.hostName = "nixosbtw";
   networking.networkmanager.enable = true;
 
