@@ -22,6 +22,7 @@
       enable = true;
       user = "chriz";
     };
+    defaultSession = "hyprland";
   };
 
   # cursor shi

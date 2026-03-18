@@ -9,6 +9,7 @@
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
   services.input-remapper.enable = true; # small exception 👍🏻
+  programs.hyprland.enable = true;
 
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -147,6 +148,8 @@
   waybar
   input-remapper
   polkit_gnome
+  hyprshot
+  jq
 
   ];
 
