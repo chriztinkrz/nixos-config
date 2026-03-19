@@ -20,6 +20,23 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # plymouth
+  boot = {
+    plymouth = {
+      enable = true;
+      theme = "mac-style";
+      themePackages = with pkgs; [ mac-style-plymouth ];
+    };
+    # silent boot
+    consoleLogLevel = 3;
+    initrd.verbose = false;
+    kernelParams = [
+      "quiet"
+      "udev.log_level=3"
+      "systemd.show_status=auto"
+    ];
+  };
+
   # garbage collection
   nix.settings.auto-optimise-store = true;
   nix.gc = {
@@ -126,7 +143,13 @@
   users.users.chriz = {
     isNormalUser = true;
     description = "chriz";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ 
+    "networkmanager" 
+    "wheel" 
+    "uucp"
+    "lock"
+    "dialout"
+    ];
     shell = pkgs.fish;
     password = "9027q";
     packages = with pkgs; [

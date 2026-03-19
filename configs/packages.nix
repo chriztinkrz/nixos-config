@@ -19,6 +19,9 @@
     "openssl-1.1.1w"
   ];
 
+  # arduino
+  services.udev.packages = [ pkgs.arduino-ide ];
+
 # fonts
   fonts.packages = with pkgs; [
     inter
@@ -150,6 +153,7 @@
   polkit_gnome
   hyprshot
   jq
+  inkscape
 
   ];
 

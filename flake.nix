@@ -17,9 +17,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
+    mac-style-plymouth = {
+      url = "github:SergioRibera/s4rchiso-plymouth-theme";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, ... }@inputs: {  
+  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, mac-style-plymouth, ... }@inputs: {  
     nixosConfigurations.nixosbtw = nixpkgs.lib.nixosSystem {
       # system = "x86_64-linux";
       specialArgs = { inherit inputs; };
@@ -29,6 +33,7 @@
         inputs.nix-flatpak.nixosModules.nix-flatpak
         inputs.silentSDDM.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
+        { nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ]; }
 
         {
           home-manager.useGlobalPkgs = true;

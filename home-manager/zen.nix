@@ -24,6 +24,11 @@
           allowed_types = ["extension"];
           private_browsing = true;
         };
+        "addon@darkreader.org" = {
+          installation_mode = "allowed";
+          allowed_types = ["extension"];
+          private_browsing = true;
+        };
       };
     };
 
