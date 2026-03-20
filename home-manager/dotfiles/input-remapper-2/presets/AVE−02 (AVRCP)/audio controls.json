@@ -1,0 +1,38 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 200,
+                "origin_hash": "7c65f5be504b2b11bc32414fa42b8301"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_F2",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 201,
+                "origin_hash": "7c65f5be504b2b11bc32414fa42b8301"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_F2",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 163,
+                "origin_hash": "7c65f5be504b2b11bc32414fa42b8301"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT+KEY_F1",
+        "mapping_type": "key_macro"
+    }
+]

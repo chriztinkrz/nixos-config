@@ -1,6 +1,7 @@
 {
     "version": "2.2.0",
     "autoload": {
-        "2.4G Wireless Receiver  ": "new preset"
+        "2.4G Wireless Receiver  ": "workspace controls",
+        "AVE\u221202 (AVRCP)": "audio controls"
     }
 }

@@ -55,7 +55,7 @@ chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
     -kb-row-down 'Right' \
     -theme-str '
     window { 
-    width: 97.5%; 
+    width: 88%; 
     location: south; 
     anchor: south; 
     margin: 10px; 
@@ -85,16 +85,33 @@ chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
 # --- 4. EXECUTE SELECTION ---
 if [ -n "$chosen" ]; then
     full="$WALL_DIR/$chosen"
-    swww img "$full" --transition-type grow --transition-duration 2 &
+    swww img "$full" --transition-type grow --transition-duration 1.75 &
     (
         ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
         hellwal -i "$full"
+
+        # 1. FIRST PUSH (Instant feedback)
+        if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then
+            sh "$HOME/.cache/hellwal/terminal.sh" > /dev/tty
+        fi
+
+        # 2. RELOAD HEAVY SERVICES
         pkill -USR1 cava
         pkill -USR2 btop
         makoctl reload
-        blurred_wall="$HOME/.cache/blurred_wallpaper.png"
-        magick "$full" -blur 0x5 "$blurred_wall"
-        swww img -n overlay "$blurred_wall" --transition-type grow
+        pkill -USR2 waybar
+
+        # 3. THE "LOCK" DELAY
+        # Wait for Waybar to finish its GTK/DBus initialization
+        sleep 0.15
+
+        # 4. FINAL PUSH (Broadcast to all terminals to override Waybar's reset)
+        if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then
+            sh "$HOME/.cache/hellwal/terminal.sh" > /dev/tty
+            for tty in /dev/pts/[0-9]*; do
+                sh "$HOME/.cache/hellwal/terminal.sh" > "$tty" 2>/dev/null &
+            done
+        fi
     ) &
 fi
 

@@ -8,7 +8,7 @@
   programs.gpu-screen-recorder.enable = true;
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
-  services.input-remapper.enable = true; # small exception 👍🏻
+  # services.input-remapper.enable = true; # small exception 👍🏻
   programs.hyprland.enable = true;
 
   # allow unfree packages
@@ -152,8 +152,8 @@
   mako
   matugen
   waybar
-  input-remapper
-  polkit_gnome
+  # input-remapper
+  # polkit_gnome
   hyprshot
   jq
   inkscape

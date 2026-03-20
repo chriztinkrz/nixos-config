@@ -57,7 +57,7 @@ spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &";
 // spawn-at-startup "swww-daemon"
 // spawn-at-startup "swww-daemon" "-n" "overlay"
 // spawn-at-startup "waybar"
-spawn-sh-at-startup "avizo-service -c ~/.cache/hellwal/avizo.ini"
+spawn-at-startup "avizo-service"
 spawn-sh-at-startup "input-remapper-control --command autoload"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--pwl-pasterimary" "--watch" "cliphist" "store"  
@@ -131,7 +131,6 @@ binds {
     F1 allow-when-locked=true { spawn-sh "playerctl previous"; };
     F2 allow-when-locked=true { spawn-sh "playerctl play-pause"; };
     F3 allow-when-locked=true { spawn-sh "playerctl next"; };
-    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; };
 
 
 
@@ -217,6 +216,7 @@ binds {
     SUPER+F { fullscreen-window; };
     SUPER+Z { toggle-column-tabbed-display; };
     ALT+SHIFT+S repeat=false { toggle-overview; };
+    SUPER+CTRL+Z { spawn "~/.config/niri/scripts/fit_all.sh"; };
 
 
 
@@ -473,4 +473,4 @@ debug {
             }
 
 prefer-no-csd
-include "/home/chriz/.cache/hellwal/niri.kdl"
+include "../../.cache/hellwal/niri.kdl"

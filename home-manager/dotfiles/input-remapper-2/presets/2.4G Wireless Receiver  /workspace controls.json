@@ -26,7 +26,8 @@
         ],
         "target_uinput": "keyboard",
         "output_symbol": "KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_LEFTMETA + KEY_LEFTALT + KEY_Z",
-        "mapping_type": "key_macro"
+        "mapping_type": "key_macro",
+        "release_timeout": 0.35000000000000014
     },
     {
         "input_combination": [
@@ -55,6 +56,7 @@
         ],
         "target_uinput": "keyboard",
         "output_symbol": "KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_LEFTMETA + KEY_LEFTALT + KEY_x",
-        "mapping_type": "key_macro"
+        "mapping_type": "key_macro",
+        "release_timeout": 1.5399999999999996
     }
 ]

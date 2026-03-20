@@ -5,7 +5,7 @@
     "on-scroll-up": "niri msg action focus-workspace-up",
     "on-scroll-down": "niri msg action focus-workspace-down",
     "margin-bottom": 5,
-    "margin-top": 11,
+    "margin-top": 8,
     "reload_style_on_change": true,
     "fixed-center": true,
 
@@ -14,7 +14,7 @@
         "custom/music",
     ],
     "modules-center": [
-        "niri/workspaces",
+        "hyprland/workspaces",
         "clock",
     ],
     "modules-right": [
