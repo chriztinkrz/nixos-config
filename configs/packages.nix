@@ -19,8 +19,8 @@
     "openssl-1.1.1w"
   ];
 
-  # arduino
-  services.udev.packages = [ pkgs.arduino-ide ];
+  # plotter things
+  services.udev.packages = with pkgs; [ arduino-ide ugs ];
 
 # fonts
   fonts.packages = with pkgs; [
@@ -34,6 +34,8 @@
     noto-fonts-color-emoji
     redhat-official-fonts
     adwaita-fonts
+    dejavu_fonts
+    liberation_ttf
 
     # gravitas one
     (pkgs.runCommand "gravitas-one" { } ''
@@ -45,6 +47,7 @@
     '')
 
   ];
+  fonts.fontconfig.enable = true;
 
   # packages
   environment.systemPackages = with pkgs; [
@@ -154,6 +157,8 @@
   hyprshot
   jq
   inkscape
+  arduino-ide
+  ugs
 
   ];
 

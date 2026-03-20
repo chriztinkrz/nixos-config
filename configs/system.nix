@@ -19,6 +19,7 @@
   # bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.initrd.kernelModules = [ "amdgpu" ];
 
   # plymouth
   boot = {
@@ -27,14 +28,18 @@
       theme = "mac-style";
       themePackages = with pkgs; [ mac-style-plymouth ];
     };
-    # silent boot
-    consoleLogLevel = 3;
-    initrd.verbose = false;
     kernelParams = [
       "quiet"
-      "udev.log_level=3"
-      "systemd.show_status=auto"
+      "splash"
+      "boot.shell_on_fail"
+      "loglevel=3"
+      "rd.systemd.show_status=false"
+      "rd.udev.log_level=3"
+      "udev.log_priority=3"
     ];
+
+    consoleLogLevel = 0;
+    initrd.verbose = false;
   };
 
   # garbage collection
