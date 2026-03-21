@@ -21,6 +21,11 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.initrd.kernelModules = [ "amdgpu" ];
 
+  # required for boot entry label ig?
+  system.nixos.label = let
+  label = builtins.getEnv "NIXOS_LABEL";
+  in if label != "" then label else "unlabeled";
+
   # plymouth
   boot = {
     plymouth = {
@@ -138,11 +143,28 @@
   services.avahi.enable = true;
   services.avahi.nssmdns4 = true;
   programs.fish = {
-    enable = true;
-    shellAliases = {
-      nixswitch = "cd ~/nixos-config && git add . || true && sudo nixos-rebuild switch --flake .#nixosbtw";
-    };
+  enable = true;
+  shellAliases = {
+    # remove nixswitch from here if it's still there
   };
+  interactiveShellInit = ''
+  function nixswitch
+  set label $argv[1]
+  set dt (date "+%d.%m.%y_%I:%M%p")
+
+  if test -z "$label"
+    set full_label "$dt"
+  else
+    set safe_label (string replace -a ' ' '_' $label)
+    set full_label "$dt"_"$safe_label"
+  end
+
+  cd ~/nixos-config && \
+  git add -A; and \
+  NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#nixosbtw --impure
+end
+'';
+};
 
   # user account
   users.users.chriz = {
