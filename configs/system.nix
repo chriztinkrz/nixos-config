@@ -144,9 +144,6 @@
   services.avahi.nssmdns4 = true;
   programs.fish = {
   enable = true;
-  shellAliases = {
-    # remove nixswitch from here if it's still there
-  };
   interactiveShellInit = ''
   function nixswitch
     set label $argv[1]
