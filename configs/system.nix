@@ -149,20 +149,20 @@
   };
   interactiveShellInit = ''
   function nixswitch
-  set label $argv[1]
-  set dt (date "+%d.%m.%y_%I:%M%p")
+    set label $argv[1]
+    set dt (date "+%I:%M%p")
 
-  if test -z "$label"
-    set full_label "$dt"
-  else
-    set safe_label (string replace -a ' ' '_' $label)
-    set full_label "$dt"_"$safe_label"
+    if test -z "$label"
+      set full_label "$dt"
+    else
+      set safe_label (string replace -ar '[^a-zA-Z0-9:_.-]' '_' $label)
+      set full_label "$dt"_"$safe_label"
+    end
+
+    cd ~/nixos-config
+    git add -A
+    NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#nixosbtw --impure
   end
-
-  cd ~/nixos-config && \
-  git add -A; and \
-  NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#nixosbtw --impure
-end
 '';
 };
 
