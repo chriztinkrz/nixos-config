@@ -92,30 +92,30 @@
     variant = "";
   };
 
-  # flatpak
-  # services.flatpak = {
-  # enable = true;
-    # packages = [
-    # "app.zen_browser.zen" 
-    # ];
-    # update.auto.enable = true;
-    # update.auto.onCalendar = "daily";
-    # uninstallUnmanaged = true;
-    # };
+  /* flatpak
+  services.flatpak = {
+  enable = true;
+    packages = [
+    "app.zen_browser.zen" 
+  ];
+    update.auto.enable = true;
+    update.auto.onCalendar = "daily";
+    uninstallUnmanaged = true;
+  };
 
-  # appimage
-  # programs.appimage.enable = true;
-  # programs.appimage.binfmt = true;
-  # programs.appimage.package = pkgs.appimage-run.override 
-   # {
-      # extraPkgs = pkgs: 
-    # [
-      # pkgs.icu
-      # pkgs.libxcrypt-legacy
-      # pkgs.python312
-      # pkgs.python312Packages.torch
-  # ]; 
-# };
+  appimage
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+  programs.appimage.package = pkgs.appimage-run.override 
+  {
+    extraPkgs = pkgs: 
+    [
+      pkgs.icu
+      pkgs.libxcrypt-legacy
+      pkgs.python312
+      pkgs.python312Packages.torch
+    ]; 
+  }; */
 
   # system stuff
   services.printing.enable = true;
