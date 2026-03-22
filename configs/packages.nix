@@ -123,7 +123,6 @@
   bluez
   choose
   fd
-  cnijfilter2
   adw-gtk3
   adwaita-qt
   adwaita-qt6

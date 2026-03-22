@@ -40,6 +40,7 @@
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.chriz = import ./home-manager/home.nix;
+          home-manager.backupFileExtension = "backup";
         }
       ];
     };

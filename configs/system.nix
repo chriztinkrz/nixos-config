@@ -124,8 +124,10 @@
 
   # system stuff
   services.printing.enable = true;
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
+  services.printing.drivers = [ pkgs.cnijfilter2 ];
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true; };
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {

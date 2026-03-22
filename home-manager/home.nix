@@ -10,14 +10,13 @@ in
   imports = [
     ./zen.nix
     ./git.nix
+    ./gtk.nix
   ];
 
   xdg.configFile = {
     "fastfetch".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/fastfetch";
     "fish".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/fish";
     "foot".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/foot";
-    "gtk-3.0".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/gtk-3.0";
-    "gtk-4.0".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/gtk-4.0";
     "hellwal".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/hellwal";
     "hypr".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/hypr";
     "input-remapper-2".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/input-remapper-2";
@@ -38,4 +37,5 @@ in
   home.username = "chriz";
   home.homeDirectory = "/home/chriz";
   home.stateVersion = "25.11";
+  
 }
