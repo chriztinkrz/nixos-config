@@ -65,21 +65,6 @@
       ];
     })
 
-  # comix cursors
-  (pkgs.stdenv.mkDerivation rec {
-    pname = "comixcursors";
-    version = "0.10.1";
-    src = pkgs.fetchurl {
-      url = "https://limitland.gitlab.io/comixcursors/ComixCursors-${version}.tar.bz2";
-      sha256 = "sha256-UdgXOGmLsgBjRwy9XouXvxL+2r+Nwn/8zD+V4JwBWcI=";
-    };
-    sourceRoot = ".";
-    installPhase = ''
-      mkdir -p $out/share/icons
-      cp -r * $out/share/icons/
-    '';
-  })
-
   # create an fhs environment using the command `fhs`, enabling the execution of non-nixos packages in nixos
     (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
       pkgs.buildFHSEnv (base // {
@@ -126,6 +111,7 @@
   adw-gtk3
   adwaita-qt
   adwaita-qt6
+  adwaita-icon-theme
   gnome-themes-extra
   libadwaita
   loupe
@@ -142,7 +128,8 @@
   gpu-screen-recorder
   yt-dlp
   libnotify
-  comixcursors
+  (comixcursors.override { })
+  bibata-cursors
   hellwal
   avizo
   btop
@@ -151,13 +138,14 @@
   mako
   matugen
   waybar
-  # input-remapper
-  # polkit_gnome
   hyprshot
   jq
   inkscape
   arduino-ide
   ugs
+  /* these both are required for input-remapper along with the service
+  input-remapper
+  polkit_gnome */
 
   ];
 
