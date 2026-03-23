@@ -123,8 +123,10 @@
   }; */
 
   # system stuff
-  services.printing.enable = true;
-  services.printing.drivers = [ pkgs.cnijfilter2 ];
+  services.printing = {
+    enable = true;
+    drivers = [ pkgs.cnijfilter2 ];
+    };
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true; };

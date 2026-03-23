@@ -27,8 +27,8 @@
 
   # bibata cursor
   home.pointerCursor = {
-    name = "Bibata-Modern-Classic"; 
-    package = pkgs.bibata-cursors; # already referred in packages.nix
+    name = "ComixCursors-Black"; 
+    package = pkgs.comixcursors; # already referred in packages.nix
     size = 28;
     gtk.enable = true;
     x11.enable = true; # needed for some apps
