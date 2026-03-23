@@ -1,4 +1,4 @@
-# ❄️ chriztinkrz's NixOS Config
+# ❄️ chriztinkrz's nixos config
 
 ### install commands:
 ```bash
