@@ -1,7 +1,6 @@
 # ❄️ chriztinkrz's NixOS Config
 
-### install commands
-
+### install commands:
 ```bash
 nix-shell -p git --run "git clone [https://github.com/chriztinkrz/nixos-config.git](https://github.com/chriztinkrz/nixos-config.git) ~/nixos-config"
 cd ~/nixos-config
