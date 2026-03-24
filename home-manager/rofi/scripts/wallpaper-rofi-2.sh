@@ -4,6 +4,7 @@ WALL_DIR="$HOME/Pictures/Pictures/wallpapers"
 THUMB_DIR="$HOME/.cache/wallthumbs"
 CACHE_FILE="$HOME/.cache/wall_rofi_list.txt"
 LOCK_FILE="/tmp/wall_gen.lock"
+
 mkdir -p "$THUMB_DIR"
 
 # --- 1. ATOMIC CACHE GENERATOR (Improved) ---
@@ -100,8 +101,8 @@ if [ -n "$chosen" ]; then
         pkill -USR2 btop
         makoctl reload
         pkill -USR2 waybar
-
-        # 3. THE "LOCK" DELAY
+ 
+       # 3. THE "LOCK" DELAY
         # Wait for Waybar to finish its GTK/DBus initialization
         sleep 0.15
 
