@@ -62,7 +62,7 @@
 
         # --- New Tab & Home Page ---
         "browser.newtabpage.enabled" = false;
-        "browser.startup.page" = 0;
+        "browser.startup.page" = 3;
         "browser.startup.homepage" = "about:blank";
 
       };
