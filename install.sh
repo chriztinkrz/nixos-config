@@ -10,8 +10,13 @@ sudo nixos-rebuild switch --flake .#nixosbtw
 nix-shell -p swww hellwal imagemagick --run "
   ~/nixos-config/home-manager/hypr/scripts/install_wallpaper_cache.sh
   swww-daemon & 
-  sleep 1
-  swww img ~/Pictures/Pictures/wallpapers/fluid2.jpg --transition-type grow --transition-duration 1.75
+  for i in {1..5}; do
+    if swww query >/dev/null 2>&1; then
+      swww img ~/Pictures/Pictures/wallpapers/fluid2.jpg --transition-type grow
+      break
+    fi
+    sleep 1
+  done
   ln -sf ~/Pictures/Pictures/wallpapers/fluid2.jpg $HOME/.cache/current_wallpaper.png
   hellwal -i ~/Pictures/Pictures/wallpapers/fluid2.jpg
 "
