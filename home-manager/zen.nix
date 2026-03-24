@@ -24,11 +24,6 @@
           allowed_types = ["extension"];
           private_browsing = true;
         };
-        "addon@darkreader.org" = {
-          installation_mode = "allowed";
-          allowed_types = ["extension"];
-          private_browsing = true;
-        };
       };
     };
 
@@ -64,6 +59,11 @@
         "zen.welcome-screen.seen" = true;
         "zen.keyboard.shortcuts.version" = 16;
         "browser.shell.checkDefaultBrowser" = false;
+
+        # --- New Tab & Home Page ---
+        "browser.newtabpage.enabled" = false;
+        "browser.startup.page" = 0;
+        "browser.startup.homepage" = "about:blank";
 
       };
 

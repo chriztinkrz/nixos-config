@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -23,9 +23,11 @@
     gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
 
+    gtk4.theme = config.gtk.theme;
+
   };
 
-  # bibata cursor
+  # comixcursors
   home.pointerCursor = {
     name = "ComixCursors-Black"; 
     package = pkgs.comixcursors; # already referred in packages.nix
