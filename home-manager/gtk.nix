@@ -1,11 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    adwaita-icon-theme
-    adw-gtk3
-  ];
-
   gtk = {
     enable = true;
 
