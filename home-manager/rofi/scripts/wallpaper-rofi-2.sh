@@ -4,38 +4,52 @@ WALL_DIR="$HOME/Pictures/Pictures/wallpapers"
 THUMB_DIR="$HOME/.cache/wallthumbs"
 CACHE_FILE="$HOME/.cache/wall_rofi_list.txt"
 LOCK_FILE="/tmp/wall_gen.lock"
-
 mkdir -p "$THUMB_DIR"
+ORDER_FILE="$HOME/.cache/wall_order.txt"
 
-# --- 1. ATOMIC CACHE GENERATOR (Improved) ---
 generate_list() {
     if [ -f "$LOCK_FILE" ]; then return; fi
     touch "$LOCK_FILE"
 
     local tmp_cache="${CACHE_FILE}.tmp"
-    
-    # We scan the directory fresh every time to ensure deleted files are gone
+
+    # 1. Find all current wallpapers on disk
     find "$WALL_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -printf "%T@ %f\n" | \
-    sort -n | \
-    cut -d' ' -f2- | \
+    sort -k1,1n -k2,2 | cut -d' ' -f2- > /tmp/wall_current.txt
+
+    # 2. Create order file if it doesn't exist
+    touch "$ORDER_FILE"
+
+    # 3. Remove entries from order file that no longer exist on disk
+    tmp_order="${ORDER_FILE}.tmp"
+    while read -r name; do
+        [ -f "$WALL_DIR/$name" ] && echo "$name"
+    done < "$ORDER_FILE" > "$tmp_order"
+    mv "$tmp_order" "$ORDER_FILE"
+
+    # 4. Append new wallpapers (not in order file) sorted oldest->newest
+    while read -r name; do
+        if ! grep -qxF "$name" "$ORDER_FILE"; then
+            echo "$name" >> "$ORDER_FILE"
+        fi
+    done < /tmp/wall_current.txt
+
+    rm /tmp/wall_current.txt
+
+    # 5. Build cache from order file
     while read -r name; do
         full_path="$WALL_DIR/$name"
         hash=$(cksum <<< "$full_path" | cut -f1 -d' ')
         thumb="$THUMB_DIR/$hash.jpg"
-        
+
         echo "$name|$thumb"
-        
-        # Only generate the thumbnail if it's missing
+
         if [ ! -f "$thumb" ]; then
             magick "$full_path" -thumbnail 300x300^ -gravity center -extent 300x300 "$thumb" >/dev/null 2>&1
         fi
-    done > "$tmp_cache"
+    done < "$ORDER_FILE" > "$tmp_cache"
 
     mv "$tmp_cache" "$CACHE_FILE"
-
-    # OPTIONAL: Cleanup orphaned thumbnails (files in cache folder that aren't in the list)
-    # find "$THUMB_DIR" -type f -not -name "$(cut -d'|' -f2 "$CACHE_FILE" | xargs -I{} basename {})" -delete 2>/dev/null
-
     rm "$LOCK_FILE"
 }
 
@@ -101,8 +115,8 @@ if [ -n "$chosen" ]; then
         pkill -USR2 btop
         makoctl reload
         pkill -USR2 waybar
- 
-       # 3. THE "LOCK" DELAY
+
+        # 3. THE "LOCK" DELAY
         # Wait for Waybar to finish its GTK/DBus initialization
         sleep 0.15
 

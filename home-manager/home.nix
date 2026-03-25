@@ -34,6 +34,11 @@ in
     "btop/themes/hellwal.theme".source = config.lib.file.mkOutOfStoreSymlink "${hellCache}/btop.theme";
   };
 
+  home.file = {
+    ".cache/wall_order.txt".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/nixos-config/wall_script_cache/wall_order.txt";    
+    ".cache/wallthumbs".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/nixos-config/wall_script_cache/wallthumbs/";
+  };
+
   home.username = "chriz";
   home.homeDirectory = "/home/chriz";
   home.stateVersion = "25.11";
