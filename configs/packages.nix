@@ -157,6 +157,8 @@
   inkscape
   arduino-ide
   ugs
+  pavucontrol
+
   /* these both are required for input-remapper along with the service
   input-remapper
   polkit_gnome */

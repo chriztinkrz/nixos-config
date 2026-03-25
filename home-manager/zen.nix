@@ -51,6 +51,7 @@
         "zen.window-sync.sync-only-pinned-tabs" = true;
         "zen.urlbar.replace-newtab" = false;
         "zen.glance.enabled" = false;
+        "browser.tabs.loadInBackground" = false;
 
         # --- Files & Downloads ---
         "browser.download.useDownloadDir" = false;
@@ -63,7 +64,7 @@
         # --- New Tab & Home Page ---
         "browser.newtabpage.enabled" = false;
         "browser.startup.page" = 3;
-        "browser.startup.homepage" = "about:blank";
+        "browser.sessionstore.resume_session" = true;
 
       };
 
