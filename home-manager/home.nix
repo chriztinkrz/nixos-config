@@ -32,6 +32,7 @@ in
     "avizo/config.ini".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/.cache/hellwal/avizo.ini";
     "btop/btop.conf".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/btop/btop.conf";
     "btop/themes/hellwal.theme".source = config.lib.file.mkOutOfStoreSymlink "${hellCache}/btop.theme";
+    "sublime-text".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/sublime-text";
   };
 
   home.file = {
