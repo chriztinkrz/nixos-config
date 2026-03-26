@@ -3,7 +3,6 @@
 {
   imports =
     [
-      ./hardware-configuration.nix
       ../silentsddm/sddm.nix
       ./packages.nix
     ];
@@ -19,8 +18,7 @@
   # boot thingies
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.kernelModules = [ "amdgpu" ];
-
+  
   # required for boot entry label ig?
   system.nixos.label = let
   label = builtins.getEnv "NIXOS_LABEL";
