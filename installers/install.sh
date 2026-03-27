@@ -4,7 +4,7 @@ nix-shell -p git --run "git clone https://github.com/chriztinkrz/wallpapers.git 
 cd ~/nixos-config
 sudo nixos-generate-config --show-hardware-config > ./configs/hardware.nix
 git add .
-sudo nixos-rebuild switch --flake .#nixosbtw
+sudo nixos-rebuild switch --flake .#common
 nix-shell -p swww hellwal imagemagick --run "
   ln -sf ~/Pictures/Pictures/wallpapers/fluid2.jpg $HOME/.cache/current_wallpaper.png
   hellwal -i ~/Pictures/Pictures/wallpapers/fluid2.jpg

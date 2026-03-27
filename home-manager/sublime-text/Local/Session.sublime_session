@@ -1,146 +1,18 @@
 {
 	"file_history":
 	[
-		"/home/chriz/nixos-config/home-manager/zen.nix",
-		"/home/chriz/nixos-config/home-manager/gtk.nix",
-		"/home/chriz/nixos-config/configs/hardware-configuration.nix",
-		"/home/chriz/nixos-config/configs/system.nix",
-		"/home/chriz/nixos-config/home-manager/home.nix",
-		"/home/chriz/nixos-config/README.md",
-		"/home/chriz/nixos-config/configs/packages.nix",
-		"/home/chriz/.config/caelestia/shell.json",
-		"/home/chriz/nixos-config/hardware-configuration.nix",
-		"/home/chriz/nixos-config/configs/end4.nix",
-		"/home/chriz/.config/rofi/config.rasi",
-		"/home/chriz/.config/rofi/theme.rasi",
-		"/home/chriz/nixos-config/home-manager/ax-shell.nix",
-		"/home/chriz/nixos-config/home-manager/waybar/style.css",
-		"/home/chriz/nixos-config/home-manager/niri/config.kdl",
-		"/home/chriz/nixos-config/flake.nix",
-		"/home/chriz/nixos-config/home-manager/hypr/hyprland.conf",
-		"/home/chriz/nixos-config/home-manager/hellwal/templates/waybar.css",
-		"/home/chriz/nixos-config/home-manager/hypr/scripts/startup_script.sh",
-		"/home/chriz/.config/rofi/scripts/wallpaper-rofi-2.sh",
-		"/home/chriz/nixos-config/home-manager/dotfiles/rofi/scripts/wallpaper-rofi-2.sh",
-		"/home/chriz/nixos-config/home-manager/dotfiles/fastfetch/logo.txt",
-		"/home/chriz/nixos-config/home-manager/dotfiles/waybar/config",
-		"/home/chriz/.config/hypr/hyprland.conf",
-		"/home/chriz/.config/waybar/config",
-		"/home/chriz/.config/niri/config.kdl",
-		"/home/chriz/nixos-config/home-manager/git.nix",
-		"/home/chriz/.config/hypr/scripts/move_all_windows_in_workspace.sh",
-		"/home/chriz/.config/hypr/scripts/move-window-with-same_width.sh",
-		"/home/chriz/.config/hypr/scripts/toggle_layout.sh",
-		"/home/chriz/.config/hypr/scripts/move-window-to-workspace.sh",
-		"/home/chriz/.config/hellwal/templates/hyprlock.conf",
-		"/home/chriz/.config/niri/scripts/fit_all.sh",
-		"/home/chriz/.config/hypr/scripts/previous_workspace.sh",
-		"/home/chriz/.config/hypr/scripts/next_workspace.sh",
-		"/home/chriz/.cache/hellwal/foot.ini",
-		"/home/chriz/.config/hellwal/templates/foot.ini",
-		"/home/chriz/.config/hypr/scripts/startup_script.sh",
-		"/home/chriz/nixos-config/silentsddm/sddm.nix",
-		"/home/chriz/.config/niri/scripts/startup_script.sh",
-		"/home/chriz/.config/hellwal/templates/hyprland.conf",
-		"/home/chriz/.cache/hellwal/hyprland.conf",
-		"/home/chriz/.config/hellwal/templates/avizo.ini",
-		"/home/chriz/.config/hellwal/templates/niri.kdl",
-		"/home/chriz/.config/fish/functions/clock.fish",
-		"/home/chriz/nixos-config/home-manager/dotfiles/waybar/style.css",
-		"/home/chriz/nixos-config/home-manager/dotfiles/hellwal/templates/avizo.ini",
-		"/home/chriz/nixos-config/home-manager/dotfiles/waybar/colors.css",
-		"/home/chriz/nixos-config/home-manager/dotfiles/avizo/config.ini",
-		"/home/chriz/nixos-config/home-manager/avizo.nix",
-		"/home/chriz/nixos-config/home-manager/btop.nix",
-		"/home/chriz/.config/.gitignore",
-		"/home/chriz/nixos-config/home-manager/dotfiles/btop/btop.conf",
-		"/home/chriz/nixos-config/home-manager/dotfiles/niri/config.kdl",
-		"/home/chriz/.config/btop/btop.conf",
-		"/home/chriz/.config/fastfetch/config.jsonc",
-		"/home/chriz/nixos-config/home-manager/cava.nix",
-		"/home/chriz/.cache/hellwal/avizo.ini",
-		"/home/chriz/.config/waybar/style.css",
-		"/home/chriz/.config/hellwal/templates/variablesfish.fish",
-		"/home/chriz/.config/hellwal/templates/waybar.css",
-		"/home/chriz/.config/hellwal/templates/cava.ini",
-		"/home/chriz/.config/fish/functions/cv.fish",
-		"/home/chriz/.config/hellwal/templates/terminal.sh",
-		"/home/chriz/.config/fish/config.fish",
-		"/home/chriz/.config/input-remapper-2/presets/2.4G Wireless Receiver  /new preset.json",
-		"/home/chriz/.config/input-remapper-2/config.json",
-		"/home/chriz/.config/hexecute/gestures.json",
-		"/home/chriz/nixos-config/flake.lock",
-		"/home/chriz/.config/avizo/config.ini",
-		"/home/chriz/.config/hellwal/templates/btop.theme",
-		"/home/chriz/.config/hellwal/templates/niri-colors.kdl",
-		"/home/chriz/.config/hellwal/templates/rofi.rasi",
-		"/home/chriz/.config/hellwal/templates/waybar-colors.css",
-		"/home/chriz/.config/foot/foot.ini",
-		"/home/chriz/.config/hel",
-		"/home/chriz/.config/cava/config",
-		"/home/chriz/.config/btop/themes/hellwal.theme",
-		"/home/chriz/nixos-config/home-manager/btop/btop.nix",
-		"/home/chriz/.cache/hellwal/btop.theme",
-		"/home/chriz/.config/hellwal/templates/mako.conf",
-		"/home/chriz/.config/matugen/templates/btop.theme",
-		"/home/chriz/.config/matugen/templates/mako.conf",
-		"/home/chriz/.config/mako/mako-colors",
-		"/home/chriz/.cache/hellwal/mako.conf",
-		"/home/chriz/.config/mako/config",
-		"/home/chriz/.config/matugen/templates/avizo.ini",
-		"/home/chriz/.config/matugen/templates/rofi.rasi",
-		"/home/chriz/.config/matugen/config.toml",
-		"/home/chriz/.cache/hellwal/rofi.rasi",
-		"/home/chriz/dotfiles/waybar/style.css",
-		"/home/chriz/dotfiles/waybar/config",
-		"/home/chriz/.cache/hellwal/waybar-colors.css",
-		"/home/chriz/.config/hellwal/templates/foot-colors.ini",
-		"/home/chriz/.config/hypr/hyprlock.conf",
-		"/home/chriz/.config/matugen/templates/cava.ini",
-		"/home/chriz/linux_stuff/backups/nixos/flakes/zen-home_manager2/configuration.nix",
-		"/home/chriz/.config/matugen/templates/hyprlock.conf",
-		"/home/chriz/nixos-config/home-manager/rofi/scripts/wallpaper-rofi-2.sh",
-		"/home/chriz/nixos-config/home-manager/fish/fish.nix",
-		"/home/chriz/nixos-config/home-manager/foot.nix",
-		"/home/chriz/nixos-config/home-manager/rofi/rofi.nix",
-		"/home/chriz/nixos-config/home-manager/matugen/templates/waybar.css",
-		"/home/chriz/nixos-config/home-manager/matugen/templates/foot.ini",
-		"/home/chriz/nixos-config/home-manager/niri/scripts/startup_script.sh",
-		"/home/chriz/.config/hellwal/templates/variables.sh",
-		"/home/chriz/nixos-config/home-manager/matugen/matugen.nix",
-		"/home/chriz/nixos-config/home-manager/niri/niri.nix",
-		"/home/chriz/nixos-config/home-manager/rofi/config.rasi",
-		"/home/chriz/nixos-config/home-manager/rofi/theme.rasi",
-		"/home/chriz/.config/fish/pixel-push",
-		"/home/chriz/.config/matugen/templates/sequences.conf",
-		"/home/chriz/nixos-config/home-manager/fish/other_stuff/config.fish",
-		"/home/chriz/nixos-config/home-manager/matugen/templates/terminal.sh",
-		"/home/chriz/nixos-config/home-manager/matugen/templates/shell-env.sh",
-		"/home/chriz/nixos-config/home-manager/waybar/waybar.nix",
-		"/home/chriz/nixos-config/home-manager/niri/startup_script.sh",
-		"/home/chriz/nixos-config/home-manager/niri.nix",
-		"/home/chriz/nixos-config/home-manager/mako.nix",
-		"/home/chriz/nixos-config/home-manager/hyprlock.nix",
-		"/home/chriz/nixos-config/home-manager/gtk-3.0.nix",
-		"/home/chriz/nixos-config/home-manager/gtk-4.0.nix",
-		"/home/chriz/.config/gtk-4.0/settings.ini",
-		"/home/chriz/.config/gtk-4.0/gtk.css",
-		"/home/chriz/.config/gtk-3.0/settings.ini",
-		"/home/chriz/nixos-config/home-manager/gtk-3.0.mox",
-		"/home/chriz/.config/gtk-3.0/bookmarks",
-		"/home/chriz/nixos-config/home-manager/fastfetch.nix"
 	],
 	"folder_history":
 	[
 	],
 	"last_version": 4200,
-	"last_window_id": 36,
+	"last_window_id": 3,
 	"log_indexing": false,
-	"next_update_check": 1774423461,
+	"next_update_check": 1774683629,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1245.0,
+		"new_window_height": 1243.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -153,10 +25,6 @@
 			{
 				"selected_items":
 				[
-					[
-						"app",
-						"appimage-run"
-					]
 				]
 			},
 			"build_system_choices":
@@ -169,14 +37,6 @@
 				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"nix",
-						"Set Syntax: Nix"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
-					]
 				],
 				"width": 0.0
 			},
@@ -198,134 +58,12 @@
 			},
 			"file_history":
 			[
-				"/home/chriz/nixos-config/home-manager/hypr/hyprland.conf",
-				"/home/chriz/nixos-config/flake.nix",
-				"/home/chriz/nixos-config/home-manager/waybar/style.css",
-				"/home/chriz/nixos-config/configs/packages.nix",
+				"/home/chriz/nixos-config/install.sh",
 				"/home/chriz/nixos-config/home-manager/zen.nix",
-				"/home/chriz/nixos-config/home-manager/gtk.nix",
-				"/home/chriz/nixos-config/configs/hardware-configuration.nix",
-				"/home/chriz/nixos-config/configs/system.nix",
 				"/home/chriz/nixos-config/home-manager/home.nix",
-				"/home/chriz/nixos-config/README.md",
-				"/home/chriz/.config/caelestia/shell.json",
-				"/home/chriz/nixos-config/hardware-configuration.nix",
-				"/home/chriz/nixos-config/configs/end4.nix",
-				"/home/chriz/.config/rofi/config.rasi",
-				"/home/chriz/.config/rofi/theme.rasi",
-				"/home/chriz/nixos-config/home-manager/ax-shell.nix",
-				"/home/chriz/nixos-config/home-manager/niri/config.kdl",
-				"/home/chriz/nixos-config/home-manager/hellwal/templates/waybar.css",
-				"/home/chriz/nixos-config/home-manager/hypr/scripts/startup_script.sh",
-				"/home/chriz/.config/rofi/scripts/wallpaper-rofi-2.sh",
-				"/home/chriz/nixos-config/home-manager/dotfiles/rofi/scripts/wallpaper-rofi-2.sh",
-				"/home/chriz/nixos-config/home-manager/dotfiles/fastfetch/logo.txt",
-				"/home/chriz/nixos-config/home-manager/dotfiles/waybar/config",
-				"/home/chriz/.config/hypr/hyprland.conf",
-				"/home/chriz/.config/waybar/config",
-				"/home/chriz/.config/niri/config.kdl",
-				"/home/chriz/nixos-config/home-manager/git.nix",
-				"/home/chriz/.config/hypr/scripts/move_all_windows_in_workspace.sh",
-				"/home/chriz/.config/hypr/scripts/move-window-with-same_width.sh",
-				"/home/chriz/.config/hypr/scripts/toggle_layout.sh",
-				"/home/chriz/.config/hypr/scripts/move-window-to-workspace.sh",
-				"/home/chriz/.config/hellwal/templates/hyprlock.conf",
-				"/home/chriz/.config/niri/scripts/fit_all.sh",
-				"/home/chriz/.config/hypr/scripts/previous_workspace.sh",
-				"/home/chriz/.config/hypr/scripts/next_workspace.sh",
-				"/home/chriz/.cache/hellwal/foot.ini",
-				"/home/chriz/.config/hellwal/templates/foot.ini",
-				"/home/chriz/.config/hypr/scripts/startup_script.sh",
-				"/home/chriz/nixos-config/silentsddm/sddm.nix",
-				"/home/chriz/.config/hellwal/templates/hyprland.conf",
-				"/home/chriz/.cache/hellwal/hyprland.conf",
-				"/home/chriz/.config/hellwal/templates/avizo.ini",
-				"/home/chriz/.config/hellwal/templates/niri.kdl",
-				"/home/chriz/.config/fish/functions/clock.fish",
-				"/home/chriz/nixos-config/home-manager/dotfiles/waybar/style.css",
-				"/home/chriz/nixos-config/home-manager/dotfiles/hellwal/templates/avizo.ini",
-				"/home/chriz/nixos-config/home-manager/dotfiles/waybar/colors.css",
-				"/home/chriz/nixos-config/home-manager/dotfiles/avizo/config.ini",
-				"/home/chriz/nixos-config/home-manager/avizo.nix",
-				"/home/chriz/nixos-config/home-manager/btop.nix",
-				"/home/chriz/.config/.gitignore",
-				"/home/chriz/nixos-config/home-manager/dotfiles/btop/btop.conf",
-				"/home/chriz/nixos-config/home-manager/dotfiles/niri/config.kdl",
-				"/home/chriz/.config/btop/btop.conf",
-				"/home/chriz/.config/fastfetch/config.jsonc",
-				"/home/chriz/nixos-config/home-manager/cava.nix",
-				"/home/chriz/.cache/hellwal/avizo.ini",
-				"/home/chriz/.config/waybar/style.css",
-				"/home/chriz/.config/hellwal/templates/variablesfish.fish",
-				"/home/chriz/.config/hellwal/templates/waybar.css",
-				"/home/chriz/.config/hellwal/templates/cava.ini",
-				"/home/chriz/.config/fish/functions/cv.fish",
-				"/home/chriz/.config/hellwal/templates/terminal.sh",
-				"/home/chriz/.config/fish/config.fish",
-				"/home/chriz/.config/input-remapper-2/presets/2.4G Wireless Receiver  /new preset.json",
-				"/home/chriz/.config/input-remapper-2/config.json",
-				"/home/chriz/.config/hexecute/gestures.json",
-				"/home/chriz/nixos-config/flake.lock",
-				"/home/chriz/.config/avizo/config.ini",
-				"/home/chriz/.config/hellwal/templates/btop.theme",
-				"/home/chriz/.config/hellwal/templates/niri-colors.kdl",
-				"/home/chriz/.config/hellwal/templates/rofi.rasi",
-				"/home/chriz/.config/hellwal/templates/waybar-colors.css",
-				"/home/chriz/.config/foot/foot.ini",
-				"/home/chriz/.config/hel",
-				"/home/chriz/.config/cava/config",
-				"/home/chriz/.config/btop/themes/hellwal.theme",
-				"/home/chriz/nixos-config/home-manager/btop/btop.nix",
-				"/home/chriz/.cache/hellwal/btop.theme",
-				"/home/chriz/.config/hellwal/templates/mako.conf",
-				"/home/chriz/.config/matugen/templates/btop.theme",
-				"/home/chriz/.config/matugen/templates/avizo.ini",
-				"/home/chriz/.config/niri/scripts/startup_script.sh",
-				"/home/chriz/.config/matugen/templates/rofi.rasi",
-				"/home/chriz/.config/matugen/config.toml",
-				"/home/chriz/.cache/hellwal/rofi.rasi",
-				"/home/chriz/dotfiles/waybar/style.css",
-				"/home/chriz/dotfiles/waybar/config",
-				"/home/chriz/.cache/hellwal/waybar-colors.css",
-				"/home/chriz/.config/hellwal/templates/foot-colors.ini",
-				"/home/chriz/.config/hypr/hyprlock.conf",
-				"/home/chriz/.config/matugen/templates/cava.ini",
-				"/home/chriz/linux_stuff/backups/nixos/flakes/zen-home_manager2/configuration.nix",
-				"/home/chriz/.config/matugen/templates/hyprlock.conf",
-				"/home/chriz/nixos-config/home-manager/rofi/scripts/wallpaper-rofi-2.sh",
-				"/home/chriz/nixos-config/home-manager/fish/fish.nix",
-				"/home/chriz/nixos-config/home-manager/foot.nix",
-				"/home/chriz/nixos-config/home-manager/rofi/rofi.nix",
-				"/home/chriz/nixos-config/home-manager/matugen/templates/waybar.css",
-				"/home/chriz/nixos-config/home-manager/matugen/templates/foot.ini",
-				"/home/chriz/nixos-config/home-manager/niri/scripts/startup_script.sh",
-				"/home/chriz/.config/hellwal/templates/variables.sh",
-				"/home/chriz/nixos-config/home-manager/matugen/matugen.nix",
-				"/home/chriz/nixos-config/home-manager/niri/niri.nix",
-				"/home/chriz/nixos-config/home-manager/rofi/config.rasi",
-				"/home/chriz/nixos-config/home-manager/rofi/theme.rasi",
-				"/home/chriz/.config/matugen/templates/terminal.sh",
-				"/home/chriz/nixos-config/home-manager/fish/other_stuff/config.fish",
-				"/home/chriz/nixos-config/home-manager/waybar/waybar.nix",
-				"/home/chriz/nixos-config/home-manager/niri/startup_script.sh",
-				"/home/chriz/nixos-config/home-manager/niri.nix",
-				"/home/chriz/.config/mako/config",
-				"/home/chriz/nixos-config/home-manager/mako.nix",
-				"/home/chriz/nixos-config/home-manager/hyprlock.nix",
-				"/home/chriz/nixos-config/home-manager/gtk-3.0.nix",
-				"/home/chriz/nixos-config/home-manager/gtk-4.0.nix",
-				"/home/chriz/.config/gtk-4.0/settings.ini",
-				"/home/chriz/.config/gtk-4.0/gtk.css",
-				"/home/chriz/.config/gtk-3.0/settings.ini",
-				"/home/chriz/.config/gtk-3.0/bookmarks",
-				"/home/chriz/nixos-config/home-manager/fastfetch.nix",
-				"/home/chriz/nixos-config/home-manager/matugen/templates/niri.kdl",
-				"/home/chriz/nixos-config/hm-configs/niri.nix",
-				"/home/chriz/nixos-config/hm-configs/home.nix",
-				"/home/chriz/nixos-config/hm-configs/matugen/matugen.nix",
-				"/home/chriz/nixos-config/hm-configs/matugen.nix",
-				"/home/chriz/nixos-config/configs/zen.nix",
-				"/home/chriz/nixos-config/configs/niri.nix"
+				"/home/chriz/nixos-config/configs/elitebook.nix",
+				"/home/chriz/nixos-config/configs/system.nix",
+				"/home/chriz/nixos-config/flake.nix"
 			],
 			"find":
 			{
@@ -343,114 +81,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"anima",
-					"wall",
-					"nixosbtw",
-					"comix",
-					"gtk3",
-					"gtk",
-					"opacity",
-					"${dotfiles}",
-					"blur",
-					"blur\\",
-					"blur",
-					"arduino",
-					"opacity",
-					"blur",
-					"opacity",
-					"zen",
-					"natural_scroll",
-					"cursor",
-					"animations",
-					"blur",
-					"down",
-					"blur",
-					"V",
-					"animations",
-					"blur",
-					":)\n",
-					"$mod",
-					"ctrl shift, z",
-					"$mainMod",
-					"gap",
-					"scrolling",
-					"binds",
-					";",
-					"scrol",
-					"windowsOut",
-					"window",
-					"windowIn",
-					"windowOut",
-					"* ",
-					"workspaces",
-					"device",
-					"1",
-					"windowsOut",
-					"4",
-					"col.active_border",
-					"scroll",
-					"T",
-					"system",
-					"color14",
-					"done",
-					"cava",
-					"${config.home.homeDirectory}",
-					"${configDir}",
-					"color14",
-					"color8",
-					"color15",
-					"color14",
-					"git",
-					"color14",
-					"color15",
-					"networking",
-					"%%;\n",
-					"source",
-					"color8",
-					"proc_banner_fg",
-					"#",
-					"window",
-					"background2",
-					"zen",
-					"source",
-					"color6",
-					"home",
-					"{",
-					"cursor",
-					"common",
-					"home",
-					"waybar",
-					"fish",
-					"rofi",
-					"niri",
-					"comixcursors",
-					"xserver",
-					"pkgs",
-					"lib",
-					"programs",
-					"zen",
-					"fzf",
-					"zoom",
-					"zen.theme.accent-color",
-					"zen.view.window.scheme",
-					"firefox",
-					"dconf",
-					"commit",
-					"monitor",
-					"system",
-					"dwindle",
-					"color",
-					"exec-once",
-					"scrolling",
-					"05",
-					"togglesplit",
-					"CTRL SHIFT, A,",
-					"dwindle",
-					"S",
-					"cursor",
-					"sddm",
-					"ns",
-					"layout"
+					"homeDir"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -458,19 +89,6 @@
 				"regex": false,
 				"replace_history":
 				[
-					"${configDirectory}",
-					".",
-					"SUPER",
-					"color7",
-					"${dotfiles}",
-					"${config.home.homeDirectory}",
-					"color7",
-					"color8",
-					"color15",
-					"color9",
-					"color14",
-					"color1",
-					"color14"
 				],
 				"reverse": false,
 				"scrollbar_highlights": true,
@@ -539,7 +157,7 @@
 			{
 			}
 		},
-		"new_window_width": 755.0
+		"new_window_width": 1136.0
 	},
 	"windows":
 	[
@@ -548,749 +166,592 @@
 			{
 				"selected_items":
 				[
-					[
-						"app",
-						"appimage-run"
-					]
 				]
 			},
 			"buffers":
 			[
 				{
-					"file": "/home/chriz/nixos-config/configs/packages.nix",
+					"contents": "{\n  description = \"flake config\";\n\n  inputs = {\n    nixpkgs.url = \"github:nixos/nixpkgs/nixos-unstable\";\n    home-manager = {\n      url = \"github:nix-community/home-manager\";\n      inputs.nixpkgs.follows = \"nixpkgs\";\n    };\n    silentSDDM = {\n      url = \"github:uiriansan/SilentSDDM\";\n      inputs.nixpkgs.follows = \"nixpkgs\";\n    };\n    nix-flatpak.url = \"github:gmodena/nix-flatpak\";\n    zen-browser = {\n      url = \"github:0xc000022070/zen-browser-flake/beta\";\n      inputs.nixpkgs.follows = \"nixpkgs\";\n      inputs.home-manager.follows = \"home-manager\";\n    };\n    mac-style-plymouth = {\n      url = \"github:SergioRibera/s4rchiso-plymouth-theme\";\n      inputs.nixpkgs.follows = \"nixpkgs\";\n    };\n  };\n\n  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, mac-style-plymouth, ... }@inputs: {  \n    nixosConfigurations.nixosbtw = nixpkgs.lib.nixosSystem {\n      # system = \"x86_64-linux\";\n      specialArgs = { inherit inputs; };\n      modules = [\n        { nixpkgs.hostPlatform = \"x86_64-linux\"; }\n        ./configs/system.nix\n        ./configs/hardware.nix\n        ./configs/elitebook.nix inputs.nix-flatpak.nixosModules.nix-flatpak\n          inputs.silentSDDM.nixosModules.default\n          inputs.home-manager.nixosModules.home-manager{ nixpkgs.overlays =\n          [ inputs.mac-style-plymouth.overlays.default ]; }\n\n        {\n          home-manager.useGlobalPkgs = true;\n          home-manager.useUserPackages = true;\n          home-manager.extraSpecialArgs = { inherit inputs; };\n          home-manager.users.chriz = import ./home-manager/home.nix;\n          home-manager.backupFileExtension = \"backup\";\n        }\n      ];\n    };\n    nixosConfigurations.vostro = nixpkgs.lib.nixosSystem {\n      # system = \"x86_64-linux\";\n      specialArgs = { inherit inputs; };\n      modules = [\n        { nixpkgs.hostPlatform = \"x86_64-linux\"; }\n        ./configs/system.nix\n        ./configs/hardware_vostro.nix\n        ./configs/vostro.nix\n        inputs.nix-flatpak.nixosModules.nix-flatpak\n        inputs.silentSDDM.nixosModules.default\n        inputs.home-manager.nixosModules.home-manager\n        { nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ]; }\n\n        {\n          home-manager.useGlobalPkgs = true;\n          home-manager.useUserPackages = true;\n          home-manager.extraSpecialArgs = { inherit inputs; };\n          home-manager.users.chriz = import ./home-manager/home.nix;\n          home-manager.backupFileExtension = \"backup\";\n        }\n      ];\n    };\n    nixosConfigurations.common = nixpkgs.lib.nixosSystem {\n      # system = \"x86_64-linux\";\n      specialArgs = { inherit inputs; };\n      modules = [\n        { nixpkgs.hostPlatform = \"x86_64-linux\"; }\n        ./configs/system.nix\n        ./configs/hardware.nix\n        inputs.nix-flatpak.nixosModules.nix-flatpak\n        inputs.silentSDDM.nixosModules.default\n        inputs.home-manager.nixosModules.home-manager\n        { nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ]; }\n\n        {\n          home-manager.useGlobalPkgs = true;\n          home-manager.useUserPackages = true;\n          home-manager.extraSpecialArgs = { inherit inputs; };\n          home-manager.users.chriz = import ./home-manager/home.nix;\n          home-manager.backupFileExtension = \"backup\";\n        }\n      ];\n    };\n  };\n}",
+					"file": "/home/chriz/nixos-config/flake.nix",
+					"file_size": 3332,
+					"file_write_time": 134190712508913359,
 					"settings":
 					{
-						"buffer_size": 3793,
-						"encoding": "UTF-8",
+						"buffer_size": 3329,
 						"line_ending": "Unix"
 					},
 					"undo_stack":
 					[
-						[
-							6,
-							1,
-							"insert",
-							{
-								"characters": "\n\n"
-							},
-							"AwAAAE8OAAAAAAAAUg4AAAAAAAAAAAAAUg4AAAAAAABVDgAAAAAAAAAAAABQDgAAAAAAAFAOAAAAAAAAAgAAACAg",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABPDgAAAAAAAE8OAAAAAAAA////////738"
-						],
-						[
-							8,
-							1,
-							"insert",
-							{
-								"characters": "   "
-							},
-							"BAAAAFAOAAAAAAAAUQ4AAAAAAAAAAAAAUg4AAAAAAABSDgAAAAAAAAIAAAAgIFEOAAAAAAAAUg4AAAAAAAAAAAAAUg4AAAAAAABTDgAAAAAAAAAAAAA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABQDgAAAAAAAFAOAAAAAAAAAAAAAAAAOEA"
-						],
 						[
 							9,
-							1,
-							"left_delete",
-							null,
-							"AQAAAFIOAAAAAAAAUg4AAAAAAAABAAAAIA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABTDgAAAAAAAFMOAAAAAAAAAAAAAAAA8L8"
-						],
-						[
-							10,
-							1,
-							"insert",
-							{
-								"characters": "pavucontrol"
-							},
-							"CwAAAFIOAAAAAAAAUw4AAAAAAAAAAAAAUw4AAAAAAABUDgAAAAAAAAAAAABUDgAAAAAAAFUOAAAAAAAAAAAAAFUOAAAAAAAAVg4AAAAAAAAAAAAAVg4AAAAAAABXDgAAAAAAAAAAAABXDgAAAAAAAFgOAAAAAAAAAAAAAFgOAAAAAAAAWQ4AAAAAAAAAAAAAWQ4AAAAAAABaDgAAAAAAAAAAAABaDgAAAAAAAFsOAAAAAAAAAAAAAFsOAAAAAAAAXA4AAAAAAAAAAAAAXA4AAAAAAABdDgAAAAAAAAAAAAA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABSDgAAAAAAAFIOAAAAAAAAAAAAAAAA8L8"
-						]
-					]
-				},
-				{
-					"file": "/home/chriz/nixos-config/home-manager/waybar/style.css",
-					"settings":
-					{
-						"buffer_size": 2172,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-						[
-							3,
-							1,
-							"left_delete",
-							null,
-							"AQAAALoBAAAAAAAAugEAAAAAAAABAAAAMw",
-							"AQAAAAAAAAABAAAAuwEAAAAAAAC7AQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							4,
-							1,
-							"insert",
-							{
-								"characters": "2"
-							},
-							"AQAAALoBAAAAAAAAuwEAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAugEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							5,
-							1,
-							"left_delete",
-							null,
-							"AQAAALoBAAAAAAAAugEAAAAAAAABAAAAMg",
-							"AQAAAAAAAAABAAAAuwEAAAAAAAC7AQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							6,
-							1,
-							"insert",
-							{
-								"characters": "3"
-							},
-							"AQAAALoBAAAAAAAAuwEAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAugEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							11,
-							1,
-							"insert",
-							{
-								"characters": "400"
-							},
-							"AwAAALoBAAAAAAAAuwEAAAAAAAADAAAAMzUwuwEAAAAAAAC8AQAAAAAAAAAAAAC8AQAAAAAAAL0BAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAvQEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							16,
-							1,
-							"insert",
-							{
-								"characters": "400"
-							},
-							"AwAAAPYCAAAAAAAA9wIAAAAAAAADAAAAMzUy9wIAAAAAAAD4AgAAAAAAAAAAAAD4AgAAAAAAAPkCAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA+QIAAAAAAAD2AgAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							17,
-							1,
-							"left_delete",
-							null,
-							"AQAAAPgCAAAAAAAA+AIAAAAAAAABAAAAMA",
-							"AQAAAAAAAAABAAAA+QIAAAAAAAD5AgAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							18,
-							1,
-							"insert",
-							{
-								"characters": "2"
-							},
-							"AQAAAPgCAAAAAAAA+QIAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA+AIAAAAAAAD4AgAAAAAAAAAAAAAAAPC/"
-						]
-					]
-				},
-				{
-					"file": "/home/chriz/nixos-config/flake.nix",
-					"settings":
-					{
-						"buffer_size": 1613,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-						[
-							50,
 							1,
 							"insert",
 							{
 								"characters": "\n"
 							},
-							"AQAAALwCAAAAAAAAwQIAAAAAAAAAAAAA",
-							"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAvAIAAAAAAAC8AgAAAAAAAAAAAAAAAPC/"
+							"AQAAALMJAAAAAAAAuAkAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACzCQAAAAAAALMJAAAAAAAAAAAAAAAA8L8"
 						],
 						[
-							52,
+							10,
 							1,
-							"",
+							"paste",
 							null,
-							"AQAAAMECAAAAAAAAmAMAAAAAAAAAAAAA",
-							"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAwQIAAAAAAADBAgAAAAAAAAAAAAAAAPC/"
+							"AQAAALgJAAAAAAAA3wwAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC4CQAAAAAAALgJAAAAAAAAAAAAAAAA8L8"
 						],
+						[
+							13,
+							1,
+							"delete_word",
+							{
+								"forward": false
+							},
+							"AQAAAMwJAAAAAAAAzAkAAAAAAAAIAAAAbml4b3NidHc",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADUCQAAAAAAANQJAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							14,
+							1,
+							"insert",
+							{
+								"characters": "common"
+							},
+							"BgAAAMwJAAAAAAAAzQkAAAAAAAAAAAAAzQkAAAAAAADOCQAAAAAAAAAAAADOCQAAAAAAAM8JAAAAAAAAAAAAAM8JAAAAAAAA0AkAAAAAAAAAAAAA0AkAAAAAAADRCQAAAAAAAAAAAADRCQAAAAAAANIJAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADMCQAAAAAAAMwJAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							17,
+							1,
+							"insert",
+							{
+								"characters": "\n./ci"
+							},
+							"BQAAAEEEAAAAAAAASgQAAAAAAAAAAAAASgQAAAAAAABLBAAAAAAAAAAAAABLBAAAAAAAAEwEAAAAAAAAAAAAAEwEAAAAAAAATQQAAAAAAAAAAAAATQQAAAAAAABOBAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABBBAAAAAAAAEEEAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							18,
+							1,
+							"left_delete",
+							null,
+							"AQAAAE0EAAAAAAAATQQAAAAAAAABAAAAaQ",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABOBAAAAAAAAE4EAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							19,
+							1,
+							"insert",
+							{
+								"characters": "onfigs/"
+							},
+							"BwAAAE0EAAAAAAAATgQAAAAAAAAAAAAATgQAAAAAAABPBAAAAAAAAAAAAABPBAAAAAAAAFAEAAAAAAAAAAAAAFAEAAAAAAAAUQQAAAAAAAAAAAAAUQQAAAAAAABSBAAAAAAAAAAAAABSBAAAAAAAAFMEAAAAAAAAAAAAAFMEAAAAAAAAVAQAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABNBAAAAAAAAE0EAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							20,
+							1,
+							"insert",
+							{
+								"characters": "elitebook,"
+							},
+							"CgAAAFQEAAAAAAAAVQQAAAAAAAAAAAAAVQQAAAAAAABWBAAAAAAAAAAAAABWBAAAAAAAAFcEAAAAAAAAAAAAAFcEAAAAAAAAWAQAAAAAAAAAAAAAWAQAAAAAAABZBAAAAAAAAAAAAABZBAAAAAAAAFoEAAAAAAAAAAAAAFoEAAAAAAAAWwQAAAAAAAAAAAAAWwQAAAAAAABcBAAAAAAAAAAAAABcBAAAAAAAAF0EAAAAAAAAAAAAAF0EAAAAAAAAXgQAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABUBAAAAAAAAFQEAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							21,
+							1,
+							"left_delete",
+							null,
+							"AQAAAF0EAAAAAAAAXQQAAAAAAAABAAAALA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABeBAAAAAAAAF4EAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							22,
+							1,
+							"insert",
+							{
+								"characters": ".nix"
+							},
+							"BAAAAF0EAAAAAAAAXgQAAAAAAAAAAAAAXgQAAAAAAABfBAAAAAAAAAAAAABfBAAAAAAAAGAEAAAAAAAAAAAAAGAEAAAAAAAAYQQAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABdBAAAAAAAAF0EAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							23,
+							1,
+							"wrap_lines",
+							null,
+							"CwAAAGEEAAAAAAAAYgQAAAAAAAAJAAAACiAgICAgICAgjQQAAAAAAACOBAAAAAAAAAkAAAAKICAgICAgICC0BAAAAAAAALUEAAAAAAAACQAAAAogICAgICAgIOIEAAAAAAAA4gQAAAAAAAAJAAAACiAgICAgICAgjQQAAAAAAACOBAAAAAAAAAEAAAAgjgQAAAAAAACYBAAAAAAAAAAAAAC+BAAAAAAAAL8EAAAAAAAAAQAAACC/BAAAAAAAAMkEAAAAAAAAAAAAAAoFAAAAAAAACgUAAAAAAAABAAAAIAoFAAAAAAAACwUAAAAAAAAAAAAACwUAAAAAAAAVBQAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABhBAAAAAAAAGEEAAAAAAAAAAAAAAAA8L8"
+						]
+					]
+				},
+				{
+					"file": "/home/chriz/nixos-config/configs/system.nix",
+					"settings":
+					{
+						"buffer_size": 4216,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/chriz/nixos-config/configs/elitebook.nix",
+					"settings":
+					{
+						"buffer_size": 61,
+						"encoding": "UTF-8",
+						"line_ending": "Unix",
+						"name": "{ config, pkgs, ... }:"
+					},
+					"undo_stack":
+					[
 						[
 							1,
 							1,
-							"revert",
-							null,
-							"AwAAAAAAAAAAAAAAAAAAAAAAAADyBgAAewogIGRlc2NyaXB0aW9uID0gImZsYWtlIGNvbmZpZyI7CgogIGlucHV0cyA9IHsKICAgIG5peHBrZ3MudXJsID0gImdpdGh1YjpuaXhvcy9uaXhwa2dzL25peG9zLXVuc3RhYmxlIjsKICAgIGhvbWUtbWFuYWdlciA9IHsKICAgICAgdXJsID0gImdpdGh1YjpuaXgtY29tbXVuaXR5L2hvbWUtbWFuYWdlciI7CiAgICAgIGlucHV0cy5uaXhwa2dzLmZvbGxvd3MgPSAibml4cGtncyI7CiAgICB9OwogICAgc2lsZW50U0RETSA9IHsKICAgICAgdXJsID0gImdpdGh1Yjp1aXJpYW5zYW4vU2lsZW50U0RETSI7CiAgICAgIGlucHV0cy5uaXhwa2dzLmZvbGxvd3MgPSAibml4cGtncyI7CiAgICB9OwogICAgbml4LWZsYXRwYWsudXJsID0gImdpdGh1YjpnbW9kZW5hL25peC1mbGF0cGFrIjsKICAgIHplbi1icm93c2VyID0gewogICAgICB1cmwgPSAiZ2l0aHViOjB4YzAwMDAyMjA3MC96ZW4tYnJvd3Nlci1mbGFrZS9iZXRhIjsKICAgICAgaW5wdXRzLm5peHBrZ3MuZm9sbG93cyA9ICJuaXhwa2dzIjsKICAgICAgaW5wdXRzLmhvbWUtbWFuYWdlci5mb2xsb3dzID0gImhvbWUtbWFuYWdlciI7CiAgICB9OwogICAgbWFjLXN0eWxlLXBseW1vdXRoID0gewogICAgICB1cmwgPSAiZ2l0aHViOlNlcmdpb1JpYmVyYS9zNHJjaGlzby1wbHltb3V0aC10aGVtZSI7CiAgICAgIGlucHV0cy5uaXhwa2dzLmZvbGxvd3MgPSAibml4cGtncyI7CiAgICB9OwogICAgY2FlbGVzdGlhLXNoZWxsLnVybCA9ICJnaXRodWI6Y2FlbGVzdGlhLWRvdHMvc2hlbGwiOwogICAgY2FlbGVzdGlhLXNoZWxsLmlucHV0cy5uaXhwa2dzLmZvbGxvd3MgPSAibml4cGtncyI7CiAgICBjYWVsZXN0aWEtY2xpLnVybCA9ICJnaXRodWI6Y2FlbGVzdGlhLWRvdHMvY2xpIjsKICAgIGNhZWxlc3RpYS1jbGkuaW5wdXRzLm5peHBrZ3MuZm9sbG93cyA9ICJuaXhwa2dzIjsKICB9OwoKICBvdXRwdXRzID0geyBzZWxmLCBuaXhwa2dzLCBzaWxlbnRTRERNLCBuaXgtZmxhdHBhaywgemVuLWJyb3dzZXIsIGhvbWUtbWFuYWdlciwgbWFjLXN0eWxlLXBseW1vdXRoLCAuLi4gfUBpbnB1dHM6IHsgIAogICAgbml4b3NDb25maWd1cmF0aW9ucy5uaXhvc2J0dyA9IG5peHBrZ3MubGliLm5peG9zU3lzdGVtIHsKICAgICAgIyBzeXN0ZW0gPSAieDg2XzY0LWxpbnV4IjsKICAgICAgc3BlY2lhbEFyZ3MgPSB7IGluaGVyaXQgaW5wdXRzOyB9OwogICAgICBtb2R1bGVzID0gWwogICAgICAgIHsgbml4cGtncy5ob3N0UGxhdGZvcm0gPSAieDg2XzY0LWxpbnV4IjsgfQogICAgICAgIC4vY29uZmlncy9zeXN0ZW0ubml4CiAgICAgICAgaW5wdXRzLm5peC1mbGF0cGFrLm5peG9zTW9kdWxlcy5uaXgtZmxhdHBhawogICAgICAgIGlucHV0cy5zaWxlbnRTRERNLm5peG9zTW9kdWxlcy5kZWZhdWx0CiAgICAgICAgaW5wdXRzLmhvbWUtbWFuYWdlci5uaXhvc01vZHVsZXMuaG9tZS1tYW5hZ2VyCiAgICAgICAgeyBuaXhwa2dzLm92ZXJsYXlzID0gWyBpbnB1dHMubWFjLXN0eWxlLXBseW1vdXRoLm92ZXJsYXlzLmRlZmF1bHQgXTsgfQoKICAgICAgICB7CiAgICAgICAgICBob21lLW1hbmFnZXIudXNlR2xvYmFsUGtncyA9IHRydWU7CiAgICAgICAgICBob21lLW1hbmFnZXIudXNlVXNlclBhY2thZ2VzID0gdHJ1ZTsKICAgICAgICAgIGhvbWUtbWFuYWdlci5leHRyYVNwZWNpYWxBcmdzID0geyBpbmhlcml0IGlucHV0czsgfTsKICAgICAgICAgIGhvbWUtbWFuYWdlci51c2Vycy5jaHJpeiA9IGltcG9ydCAuL2hvbWUtbWFuYWdlci9ob21lLm5peDsKICAgICAgICB9CiAgICAgIF07CiAgICB9OwogIH07Cn0AAAAAAAAAAE0GAAAAAAAAAAAAAAAAAAAAAAAATQYAAAAAAAAAAAAA",
-							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAmAMAAAAAAACYAwAAAAAAAAAAAAAAAPC/"
+							"insert_snippet",
+							{
+								"contents": "{$0}"
+							},
+							"AQAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							2,
+							1,
+							"insert",
+							{
+								"characters": " config,"
+							},
+							"CAAAAAEAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABQAAAAAAAAAAAAAABQAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAJAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							3,
 							1,
 							"insert",
 							{
-								"characters": "\nend"
+								"characters": " pkl"
 							},
-							"BAAAALwCAAAAAAAAwQIAAAAAAAAAAAAAwQIAAAAAAADCAgAAAAAAAAAAAADCAgAAAAAAAMMCAAAAAAAAAAAAAMMCAAAAAAAAxAIAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALwCAAAAAAAAvAIAAAAAAAAAAAAAAADwvw"
+							"BAAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADQAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							4,
 							1,
-							"insert",
-							{
-								"characters": "4"
-							},
-							"AQAAAMQCAAAAAAAAxQIAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMQCAAAAAAAAxAIAAAAAAAAAAAAAAADwvw"
+							"left_delete",
+							null,
+							"AQAAAAwAAAAAAAAADAAAAAAAAAABAAAAbA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAANAAAAAAAAAA0AAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							5,
 							1,
 							"insert",
 							{
-								"characters": " ="
+								"characters": "gs,"
 							},
-							"AgAAAMUCAAAAAAAAxgIAAAAAAAAAAAAAxgIAAAAAAADHAgAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMUCAAAAAAAAxQIAAAAAAAAAAAAAAADwvw"
+							"AwAAAAwAAAAAAAAADQAAAAAAAAAAAAAADQAAAAAAAAAOAAAAAAAAAAAAAAAOAAAAAAAAAA8AAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAMAAAAAAAAAAwAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							6,
 							1,
 							"insert",
 							{
-								"characters": " P"
+								"characters": " ."
 							},
-							"AgAAAMcCAAAAAAAAyAIAAAAAAAAAAAAAyAIAAAAAAADJAgAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMcCAAAAAAAAxwIAAAAAAAAAAAAAAADwvw"
+							"AgAAAA8AAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							7,
-							5,
-							"left_delete",
-							null,
-							"BQAAAMgCAAAAAAAAyAIAAAAAAAABAAAAUMcCAAAAAAAAxwIAAAAAAAABAAAAIMYCAAAAAAAAxgIAAAAAAAABAAAAPcUCAAAAAAAAxQIAAAAAAAABAAAAIMQCAAAAAAAAxAIAAAAAAAABAAAANA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMkCAAAAAAAAyQIAAAAAAAAAAAAAAADwvw"
+							1,
+							"insert",
+							{
+								"characters": ".."
+							},
+							"AgAAABEAAAAAAAAAEgAAAAAAAAAAAAAAEgAAAAAAAAATAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAARAAAAAAAAABEAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							8,
 							1,
 							"insert",
 							{
-								"characters": "4.url"
+								"characters": " "
 							},
-							"BQAAAMQCAAAAAAAAxQIAAAAAAAAAAAAAxQIAAAAAAADGAgAAAAAAAAAAAADGAgAAAAAAAMcCAAAAAAAAAAAAAMcCAAAAAAAAyAIAAAAAAAAAAAAAyAIAAAAAAADJAgAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMQCAAAAAAAAxAIAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							9,
-							1,
-							"insert",
-							{
-								"characters": " ="
-							},
-							"AgAAAMkCAAAAAAAAygIAAAAAAAAAAAAAygIAAAAAAADLAgAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMkCAAAAAAAAyQIAAAAAAAAAAAAAAADwvw"
+							"AQAAABMAAAAAAAAAFAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAATAAAAAAAAABMAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							10,
 							1,
 							"insert",
 							{
-								"characters": " "
+								"characters": ":"
 							},
-							"AQAAAMsCAAAAAAAAzAIAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMsCAAAAAAAAywIAAAAAAAAAAAAAAADwvw"
+							"AQAAABUAAAAAAAAAFgAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAVAAAAAAAAABUAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							11,
 							1,
-							"insert_snippet",
+							"insert",
 							{
-								"contents": "\"$0\""
+								"characters": "\n"
 							},
-							"AQAAAMwCAAAAAAAAzgIAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMwCAAAAAAAAzAIAAAAAAAAAAAAAAADwvw"
+							"AQAAABYAAAAAAAAAFwAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAWAAAAAAAAABYAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							12,
 							1,
 							"insert",
 							{
-								"characters": "firh"
+								"characters": "\n"
 							},
-							"BAAAAM0CAAAAAAAAzgIAAAAAAAAAAAAAzgIAAAAAAADPAgAAAAAAAAAAAADPAgAAAAAAANACAAAAAAAAAAAAANACAAAAAAAA0QIAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAM0CAAAAAAAAzQIAAAAAAAAAAAAAAADwvw"
+							"AQAAABcAAAAAAAAAGAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAXAAAAAAAAABcAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							13,
-							3,
-							"left_delete",
-							null,
-							"AwAAANACAAAAAAAA0AIAAAAAAAABAAAAaM8CAAAAAAAAzwIAAAAAAAABAAAAcs4CAAAAAAAAzgIAAAAAAAABAAAAaQ",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAANECAAAAAAAA0QIAAAAAAAAAAAAAAADwvw"
+							1,
+							"insert",
+							{
+								"characters": "boot.kerne"
+							},
+							"CgAAABgAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAaAAAAAAAAAAAAAAAaAAAAAAAAABsAAAAAAAAAAAAAABsAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAdAAAAAAAAAAAAAAAdAAAAAAAAAB4AAAAAAAAAAAAAAB4AAAAAAAAAHwAAAAAAAAAAAAAAHwAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAACEAAAAAAAAAAAAAACEAAAAAAAAAIgAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							14,
 							1,
-							"delete_word",
+							"insert",
 							{
-								"forward": false
+								"characters": "nel"
 							},
-							"AQAAAM0CAAAAAAAAzQIAAAAAAAABAAAAZg",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAM4CAAAAAAAAzgIAAAAAAAAAAAAAAADwvw"
+							"AwAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACUAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							15,
+							3,
+							"left_delete",
+							null,
+							"AwAAACQAAAAAAAAAJAAAAAAAAAABAAAAbCMAAAAAAAAAIwAAAAAAAAABAAAAZSIAAAAAAAAAIgAAAAAAAAABAAAAbg",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAlAAAAAAAAACUAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							16,
 							1,
-							"",
-							null,
-							"AQAAAM0CAAAAAAAABAMAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAM0CAAAAAAAAzQIAAAAAAAAAAAAAAADwvw"
+							"insert",
+							{
+								"characters": "lParams"
+							},
+							"BwAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACUAAAAAAAAAAAAAACUAAAAAAAAAJgAAAAAAAAAAAAAAJgAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKQAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							17,
+							1,
+							"insert",
+							{
+								"characters": " ="
+							},
+							"AgAAACkAAAAAAAAAKgAAAAAAAAAAAAAAKgAAAAAAAAArAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAApAAAAAAAAACkAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							18,
 							1,
 							"insert",
 							{
-								"characters": ";"
+								"characters": " "
 							},
-							"AQAAAAUDAAAAAAAABgMAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAUDAAAAAAAABQMAAAAAAAAAAAAAAADwvw"
+							"AQAAACsAAAAAAAAALAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArAAAAAAAAACsAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							19,
 							1,
-							"insert",
+							"delete_word",
 							{
-								"characters": "\n"
+								"forward": false
 							},
-							"AQAAAAYDAAAAAAAACwMAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAYDAAAAAAAABgMAAAAAAAAAAAAAAADwvw"
+							"AQAAACoAAAAAAAAAKgAAAAAAAAACAAAAPSA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAAAAAAAAACwAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							20,
-							3,
+							7,
 							"left_delete",
 							null,
-							"AwAAAAkDAAAAAAAACQMAAAAAAAACAAAAICAHAwAAAAAAAAcDAAAAAAAAAgAAACAgBgMAAAAAAAAGAwAAAAAAAAEAAAAK",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAsDAAAAAAAACwMAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							32,
-							1,
-							"",
-							null,
-							"AQAAAMECAAAAAAAA+gIAAAAAAABFAAAAZW5kNC51cmwgPSAiaHR0cHM6Ly9naXRodWIuY29tL3hCTEFDS0lDRXgvZW5kLTQtZG90cy1oeXBybGFuZC1uaXhvcyI7",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMECAAAAAAAABgMAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							40,
-							1,
-							"",
-							null,
-							"AQAAAMECAAAAAAAA1gIAAAAAAAAIAAAAZW5kNC51cmw",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMkCAAAAAAAAwQIAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							41,
-							1,
-							"revert",
-							null,
-							"BAAAAAAAAAAAAAAAAAAAAAAAAACYBgAAewogIGRlc2NyaXB0aW9uID0gImZsYWtlIGNvbmZpZyI7CgogIGlucHV0cyA9IHsKICAgIG5peHBrZ3MudXJsID0gImdpdGh1YjpuaXhvcy9uaXhwa2dzL25peG9zLXVuc3RhYmxlIjsKICAgIGhvbWUtbWFuYWdlciA9IHsKICAgICAgdXJsID0gImdpdGh1YjpuaXgtY29tbXVuaXR5L2hvbWUtbWFuYWdlciI7CiAgICAgIGlucHV0cy5uaXhwa2dzLmZvbGxvd3MgPSAibml4cGtncyI7CiAgICB9OwogICAgc2lsZW50U0RETSA9IHsKICAgICAgdXJsID0gImdpdGh1Yjp1aXJpYW5zYW4vU2lsZW50U0RETSI7CiAgICAgIGlucHV0cy5uaXhwa2dzLmZvbGxvd3MgPSAibml4cGtncyI7CiAgICB9OwogICAgbml4LWZsYXRwYWsudXJsID0gImdpdGh1YjpnbW9kZW5hL25peC1mbGF0cGFrIjsKICAgIHplbi1icm93c2VyID0gewogICAgICB1cmwgPSAiZ2l0aHViOjB4YzAwMDAyMjA3MC96ZW4tYnJvd3Nlci1mbGFrZS9iZXRhIjsKICAgICAgaW5wdXRzLm5peHBrZ3MuZm9sbG93cyA9ICJuaXhwa2dzIjsKICAgICAgaW5wdXRzLmhvbWUtbWFuYWdlci5mb2xsb3dzID0gImhvbWUtbWFuYWdlciI7CiAgICB9OwogICAgbWFjLXN0eWxlLXBseW1vdXRoID0gewogICAgICB1cmwgPSAiZ2l0aHViOlNlcmdpb1JpYmVyYS9zNHJjaGlzby1wbHltb3V0aC10aGVtZSI7CiAgICAgIGlucHV0cy5uaXhwa2dzLmZvbGxvd3MgPSAibml4cGtncyI7CiAgICB9OwogICAgaWxsb2dpY2FsLWltcHVsc2UudXJsID0gImdpdGh1Yjp4QkxBQ0tJQ0V4L2VuZC00LWRvdHMtaHlwcmxhbmQtbml4b3MiOwogIH07CgogIG91dHB1dHMgPSB7IHNlbGYsIG5peHBrZ3MsIHNpbGVudFNERE0sIG5peC1mbGF0cGFrLCB6ZW4tYnJvd3NlciwgaG9tZS1tYW5hZ2VyLCBtYWMtc3R5bGUtcGx5bW91dGgsIC4uLiB9QGlucHV0czogeyAgCiAgICBuaXhvc0NvbmZpZ3VyYXRpb25zLm5peG9zYnR3ID0gbml4cGtncy5saWIubml4b3NTeXN0ZW0gewogICAgICAjIHN5c3RlbSA9ICJ4ODZfNjQtbGludXgiOwogICAgICBzcGVjaWFsQXJncyA9IHsgaW5oZXJpdCBpbnB1dHM7IH07CiAgICAgIG1vZHVsZXMgPSBbCiAgICAgICAgeyBuaXhwa2dzLmhvc3RQbGF0Zm9ybSA9ICJ4ODZfNjQtbGludXgiOyB9CiAgICAgICAgLi9jb25maWdzL3N5c3RlbS5uaXgKICAgICAgICBpbnB1dHMubml4LWZsYXRwYWsubml4b3NNb2R1bGVzLm5peC1mbGF0cGFrCiAgICAgICAgaW5wdXRzLnNpbGVudFNERE0ubml4b3NNb2R1bGVzLmRlZmF1bHQKICAgICAgICBpbnB1dHMuaG9tZS1tYW5hZ2VyLm5peG9zTW9kdWxlcy5ob21lLW1hbmFnZXIKICAgICAgICB7IG5peHBrZ3Mub3ZlcmxheXMgPSBbIGlucHV0cy5tYWMtc3R5bGUtcGx5bW91dGgub3ZlcmxheXMuZGVmYXVsdCBdOyB9CgogICAgICAgIHsKICAgICAgICAgIGhvbWUtbWFuYWdlci51c2VHbG9iYWxQa2dzID0gdHJ1ZTsKICAgICAgICAgIGhvbWUtbWFuYWdlci51c2VVc2VyUGFja2FnZXMgPSB0cnVlOwogICAgICAgICAgaG9tZS1tYW5hZ2VyLmV4dHJhU3BlY2lhbEFyZ3MgPSB7IGluaGVyaXQgaW5wdXRzOyB9OwogICAgICAgICAgaG9tZS1tYW5hZ2VyLnVzZXJzLmNocml6ID0gaW1wb3J0IC4vaG9tZS1tYW5hZ2VyL2hvbWUubml4OwogICAgICAgICAgaG9tZS1tYW5hZ2VyLmJhY2t1cEZpbGVFeHRlbnNpb24gPSAiYmFja3VwIjsKICAgICAgICB9CiAgICAgIF07CiAgICB9OwogIH07Cn0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATQYAAAAAAAAAAAAAAAAAAAAAAABNBgAAAAAAAAAAAAA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADWAgAAAAAAANYCAAAAAAAAAAAAAAAA8L8"
-						]
-					]
-				},
-				{
-					"file": "/home/chriz/nixos-config/home-manager/hypr/hyprland.conf",
-					"settings":
-					{
-						"buffer_size": 10880,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-						[
-							8,
-							1,
-							"insert",
-							{
-								"characters": "Bibata0"
-							},
-							"BwAAANgBAAAAAAAA2QEAAAAAAAASAAAAQ29taXhDdXJzb3JzLUJsYWNr2QEAAAAAAADaAQAAAAAAAAAAAADaAQAAAAAAANsBAAAAAAAAAAAAANsBAAAAAAAA3AEAAAAAAAAAAAAA3AEAAAAAAADdAQAAAAAAAAAAAADdAQAAAAAAAN4BAAAAAAAAAAAAAN4BAAAAAAAA3wEAAAAAAAAAAAAA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOoBAAAAAAAA2AEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							9,
-							1,
-							"left_delete",
-							null,
-							"AQAAAN4BAAAAAAAA3gEAAAAAAAABAAAAMA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN8BAAAAAAAA3wEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							10,
-							1,
-							"insert",
-							{
-								"characters": "-Modern"
-							},
-							"BwAAAN4BAAAAAAAA3wEAAAAAAAAAAAAA3wEAAAAAAADgAQAAAAAAAAAAAADgAQAAAAAAAOEBAAAAAAAAAAAAAOEBAAAAAAAA4gEAAAAAAAAAAAAA4gEAAAAAAADjAQAAAAAAAAAAAADjAQAAAAAAAOQBAAAAAAAAAAAAAOQBAAAAAAAA5QEAAAAAAAAAAAAA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN4BAAAAAAAA3gEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							11,
-							1,
-							"insert",
-							{
-								"characters": "-Classic"
-							},
-							"CAAAAOUBAAAAAAAA5gEAAAAAAAAAAAAA5gEAAAAAAADnAQAAAAAAAAAAAADnAQAAAAAAAOgBAAAAAAAAAAAAAOgBAAAAAAAA6QEAAAAAAAAAAAAA6QEAAAAAAADqAQAAAAAAAAAAAADqAQAAAAAAAOsBAAAAAAAAAAAAAOsBAAAAAAAA7AEAAAAAAAAAAAAA7AEAAAAAAADtAQAAAAAAAAAAAAA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOUBAAAAAAAA5QEAAAAAAAAAAAAAAADwvw"
+							"BwAAACkAAAAAAAAAKQAAAAAAAAABAAAAICgAAAAAAAAAKAAAAAAAAAABAAAAcycAAAAAAAAAJwAAAAAAAAABAAAAbSYAAAAAAAAAJgAAAAAAAAABAAAAYSUAAAAAAAAAJQAAAAAAAAABAAAAciQAAAAAAAAAJAAAAAAAAAABAAAAYSMAAAAAAAAAIwAAAAAAAAABAAAAUA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAqAAAAAAAAACoAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							21,
-							2,
-							"left_delete",
-							null,
-							"AgAAAL8BAAAAAAAAvwEAAAAAAAABAAAAML4BAAAAAAAAvgEAAAAAAAABAAAANA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMABAAAAAAAAwAEAAAAAAAAAAAAAAADwvw"
+							1,
+							"insert",
+							{
+								"characters": "Modules"
+							},
+							"BwAAACMAAAAAAAAAJAAAAAAAAAAAAAAAJAAAAAAAAAAlAAAAAAAAAAAAAAAlAAAAAAAAACYAAAAAAAAAAAAAACYAAAAAAAAAJwAAAAAAAAAAAAAAJwAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAACkAAAAAAAAAAAAAACkAAAAAAAAAKgAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAjAAAAAAAAACMAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							22,
 							1,
 							"insert",
 							{
-								"characters": "25"
+								"characters": " ="
 							},
-							"AgAAAL4BAAAAAAAAvwEAAAAAAAAAAAAAvwEAAAAAAADAAQAAAAAAAAAAAAA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAL4BAAAAAAAAvgEAAAAAAAAAAAAAAADwvw"
+							"AgAAACoAAAAAAAAAKwAAAAAAAAAAAAAAKwAAAAAAAAAsAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAqAAAAAAAAACoAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							23,
 							1,
-							"left_delete",
-							null,
-							"AQAAAL8BAAAAAAAAvwEAAAAAAAABAAAANQ",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMABAAAAAAAAwAEAAAAAAAAAAAAAAADwvw"
+							"insert",
+							{
+								"characters": " p"
+							},
+							"AgAAACwAAAAAAAAALQAAAAAAAAAAAAAALQAAAAAAAAAuAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAAAAAAAAACwAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							24,
 							1,
-							"insert",
-							{
-								"characters": "7"
-							},
-							"AQAAAL8BAAAAAAAAwAEAAAAAAAAAAAAA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAL8BAAAAAAAAvwEAAAAAAAAAAAAAAADwvw"
+							"left_delete",
+							null,
+							"AQAAAC0AAAAAAAAALQAAAAAAAAABAAAAcA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAuAAAAAAAAAC4AAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							25,
 							1,
-							"left_delete",
-							null,
-							"AQAAAL8BAAAAAAAAvwEAAAAAAAABAAAANw",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMABAAAAAAAAwAEAAAAAAAAAAAAAAADwvw"
+							"insert_snippet",
+							{
+								"contents": "[$0]"
+							},
+							"AQAAAC0AAAAAAAAALwAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							26,
 							1,
 							"insert",
 							{
-								"characters": "8"
+								"characters": " "
 							},
-							"AQAAAL8BAAAAAAAAwAEAAAAAAAAAAAAA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAL8BAAAAAAAAvwEAAAAAAAAAAAAAAADwvw"
+							"AQAAAC4AAAAAAAAALwAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAuAAAAAAAAAC4AAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							27,
+							1,
+							"insert_snippet",
+							{
+								"contents": "\"$0\""
+							},
+							"AQAAAC8AAAAAAAAAMQAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAvAAAAAAAAAC8AAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							28,
-							2,
-							"left_delete",
-							null,
-							"AgAAAKYBAAAAAAAApgEAAAAAAAABAAAAMKUBAAAAAAAApQEAAAAAAAABAAAANA",
-							"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKcBAAAAAAAApwEAAAAAAAAAAAAAAAByQA"
-						],
-						[
-							29,
 							1,
 							"insert",
 							{
-								"characters": "28"
+								"characters": "amdgpu"
 							},
-							"AgAAAKUBAAAAAAAApgEAAAAAAAAAAAAApgEAAAAAAACnAQAAAAAAAAAAAAA",
-							"CgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAApQEAAAAAAAClAQAAAAAAAAAAAAAAAPC/"
+							"BgAAADAAAAAAAAAAMQAAAAAAAAAAAAAAMQAAAAAAAAAyAAAAAAAAAAAAAAAyAAAAAAAAADMAAAAAAAAAAAAAADMAAAAAAAAANAAAAAAAAAAAAAAANAAAAAAAAAA1AAAAAAAAAAAAAAA1AAAAAAAAADYAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							30,
+							1,
+							"insert",
+							{
+								"characters": " "
+							},
+							"AQAAADcAAAAAAAAAOAAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA3AAAAAAAAADcAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							32,
 							1,
 							"insert",
 							{
-								"characters": "Nordzy-"
+								"characters": ";"
 							},
-							"BwAAAN8BAAAAAAAA4AEAAAAAAAAOAAAATW9kZXJuLUNsYXNzaWPgAQAAAAAAAOEBAAAAAAAAAAAAAOEBAAAAAAAA4gEAAAAAAAAAAAAA4gEAAAAAAADjAQAAAAAAAAAAAADjAQAAAAAAAOQBAAAAAAAAAAAAAOQBAAAAAAAA5QEAAAAAAAAAAAAA5QEAAAAAAADmAQAAAAAAAAAAAAA",
-							"CgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA7QEAAAAAAADfAQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							33,
-							1,
-							"insert",
-							{
-								"characters": "Hybrid"
-							},
-							"BgAAAOYBAAAAAAAA5wEAAAAAAAAAAAAA5wEAAAAAAADoAQAAAAAAAAAAAADoAQAAAAAAAOkBAAAAAAAAAAAAAOkBAAAAAAAA6gEAAAAAAAAAAAAA6gEAAAAAAADrAQAAAAAAAAAAAADrAQAAAAAAAOwBAAAAAAAAAAAAAA",
-							"CgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA5gEAAAAAAADmAQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							10,
-							1,
-							"",
-							null,
-							"AQAAAMEBAAAAAAAA6QEAAAAAAAArAAAAZW52ID0gSFlQUkNVUlNPUl9USEVNRSxCaWJhdGEtTm9yZHp5LUh5YnJpZA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOwBAAAAAAAAwQEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							18,
-							1,
-							"insert",
-							{
-								"characters": "#"
-							},
-							"AQAAAKgBAAAAAAAAqQEAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKgBAAAAAAAAqAEAAAAAAAAAAAAAAAAAAA"
-						],
-						[
-							19,
-							1,
-							"insert",
-							{
-								"characters": " "
-							},
-							"AQAAAKkBAAAAAAAAqgEAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKkBAAAAAAAAqQEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							20,
-							2,
-							"left_delete",
-							null,
-							"AgAAAKkBAAAAAAAAqQEAAAAAAAABAAAAIKgBAAAAAAAAqAEAAAAAAAABAAAAIw",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKoBAAAAAAAAqgEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							21,
-							1,
-							"insert",
-							{
-								"characters": "#"
-							},
-							"AQAAAKgBAAAAAAAAqQEAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKgBAAAAAAAAqAEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							22,
-							1,
-							"insert",
-							{
-								"characters": " "
-							},
-							"AQAAAKkBAAAAAAAAqgEAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKkBAAAAAAAAqQEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							23,
-							2,
-							"left_delete",
-							null,
-							"AgAAAKkBAAAAAAAAqQEAAAAAAAABAAAAIKgBAAAAAAAAqAEAAAAAAAABAAAAIw",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKoBAAAAAAAAqgEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							27,
-							1,
-							"insert",
-							{
-								"characters": "Cursors-"
-							},
-							"CAAAANwBAAAAAAAA3QEAAAAAAAANAAAATm9yZHp5LUh5YnJpZN0BAAAAAAAA3gEAAAAAAAAAAAAA3gEAAAAAAADfAQAAAAAAAAAAAADfAQAAAAAAAOABAAAAAAAAAAAAAOABAAAAAAAA4QEAAAAAAAAAAAAA4QEAAAAAAADiAQAAAAAAAAAAAADiAQAAAAAAAOMBAAAAAAAAAAAAAOMBAAAAAAAA5AEAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOkBAAAAAAAA3AEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							28,
-							1,
-							"insert",
-							{
-								"characters": "Classic"
-							},
-							"BwAAAOQBAAAAAAAA5QEAAAAAAAAAAAAA5QEAAAAAAADmAQAAAAAAAAAAAADmAQAAAAAAAOcBAAAAAAAAAAAAAOcBAAAAAAAA6AEAAAAAAAAAAAAA6AEAAAAAAADpAQAAAAAAAAAAAADpAQAAAAAAAOoBAAAAAAAAAAAAAOoBAAAAAAAA6wEAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOQBAAAAAAAA5AEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							29,
-							1,
-							"revert",
-							null,
-							"AgAAAAAAAAAAAAAAAAAAAAAAAACBKgAAc291cmNlID0gfi8uY2FjaGUvaGVsbHdhbC9oeXBybGFuZC5jb25mCgojIG1vbml0b3JzCm1vbml0b3IgPSBlRFAtMSwxOTIweDEwODBANjAsMHgwLDAuODMKbW9uaXRvciA9IEhETUktQS0xLDM4NDB4MjE2MEA2MCwzODQweDAsMS41CgojIGF1dG9zdGFydAojIGV4ZWMtb25jZSA9IGh5cHJjdGwgc2V0Y3Vyc29yIENvbWl4Q3Vyc29ycy1CbGFjayA0MApleGVjLW9uY2UgPSB+Ly5jb25maWcvaHlwci9zY3JpcHRzL3N0YXJ0dXBfc2NyaXB0LnNoCmV4ZWMtb25jZSA9IGF2aXpvLXNlcnZpY2UKZXhlYy1vbmNlID0gd2wtcGFzdGUgLS13YXRjaCBjbGlwaGlzdCBzdG9yZQpleGVjLW9uY2UgPSBpbnB1dC1yZW1hcHBlci1jb250cm9sIC0tY29tbWFuZCBhdXRvbG9hZAoKIyBlbnZpcm9ubWVudCB2YXJpYWJsZXMKZW52ID0gWENVUlNPUl9TSVpFLDI4CmVudiA9IEhZUFJDVVJTT1JfU0laRSwyOAplbnYgPSBYQ1VSU09SX1RIRU1FLEJpYmF0YS1DdXJzb3JzLUNsYXNzaWMKCiMgZXllIGNhbmR5CmdlbmVyYWwgewogICAgZ2Fwc19pbiA9IDMKICAgIGdhcHNfb3V0ID0gMwogICAgYm9yZGVyX3NpemUgPSA0CiAgICBjb2wuYWN0aXZlX2JvcmRlciA9ICRjb2xvcjcKICAgIGNvbC5pbmFjdGl2ZV9ib3JkZXIgPSAkY29sb3IxCgogICAgcmVzaXplX29uX2JvcmRlciA9IGZhbHNlCiAgICBhbGxvd190ZWFyaW5nID0gZmFsc2UKCiAgICBsYXlvdXQgPSBzY3JvbGxpbmcKfQpkZWNvcmF0aW9uIHsKICAgIHJvdW5kaW5nID0gNgogICAgcm91bmRpbmdfcG93ZXIgPSAzCiAgICBhY3RpdmVfb3BhY2l0eSA9IDAuOTUKICAgIGluYWN0aXZlX29wYWNpdHkgPSAwLjkKICAgIHNoYWRvdyB7CiAgICAgICAgZW5hYmxlZCA9IHRydWUKICAgICAgICByYW5nZSA9IDQKICAgICAgICByZW5kZXJfcG93ZXIgPSAzCiAgICAgICAgY29sb3IgPSByZ2JhKDFhMWExYWVlKQogICAgfQogICAgYmx1ciB7CiAgICAgICAgZW5hYmxlZCA9IHRydWUKICAgICAgICBzaXplID0gNAogICAgICAgIHBhc3NlcyA9IDIKICAgICAgICBpZ25vcmVfb3BhY2l0eSA9IHRydWUKICAgICAgICB2aWJyYW5jeSA9IDAuMTY5NgogICAgfQp9CmFuaW1hdGlvbnMgewogICAgZW5hYmxlZCA9IHllcywgcGxlYXNlIDopCgogICAgIyBhbmltYXRpb24gY3VydmVzCiAgICBiZXppZXIgPSB3aW5kLCAwLjIsIDAuNiwgMC4xLCAxLjA1CiAgICBiZXppZXIgPSB3aW5kMiwgMC4wNSwgMS4xLCAwLjEsIDEuNQogICAgYmV6aWVyID0gd2luSW4sIDAuMSwgMS4xLCAwLjEsIDEuMQogICAgYmV6aWVyID0gbGluZXIsIDEsIDEsIDEsIDEKICAgIGJlemllciA9IG1kM19kZWNlbCwgMC4wNSwgMC43LCAwLjEsIDEKICAgIGJlemllciA9IG1lbnVfZGVjZWwsIDAuMSwgMSwgMCwgMQogICAgYmV6aWVyID0gbWVudV9hY2NlbCwgMC4zOCwgMC4wNCwgMSwgMC4wNwogICAgYmV6aWVyID0gd29ya3NwYWNlLCAwLjIyLCAxLCAwLjM2LCAxLjA1CiAgICBiZXppZXIgPSB3aW5DbG9zZSwgMC44LCAxLCAwLjksIDEuMDUKICAgIGJlemllciA9IHNwcmluZywgMC40NSwgMS4yNSwgMC40NSwgMS4xNQogICAgCiAgICAjIGFuaW1hdGlvbiBjb25maWdzCiAgICBhbmltYXRpb24gPSBib3JkZXIsIDEsIDEsIGxpbmVyCiAgICBhbmltYXRpb24gPSBib3JkZXJhbmdsZSwgMSwgMzAsIGxpbmVyLCBsb29wCiAgICBhbmltYXRpb24gPSB3aW5kb3dzLCAxLCAyLCB3aW5kLCBzbGlkZQogICAgYW5pbWF0aW9uID0gd2luZG93c0luLCAxLCAxNSwgd2luSW4sIHNsaWRlCiAgICBhbmltYXRpb24gPSB3aW5kb3dzT3V0LCAxLCAzNSwgd2luQ2xvc2UsIHNsaWRlCiAgICBhbmltYXRpb24gPSB3aW5kb3dzTW92ZSwgMSwgMjUsIHdpbmQsIHBvcGlucwogICAgYW5pbWF0aW9uID0gZmFkZSwgMSwgMywgbWQzX2RlY2VsCiAgICBhbmltYXRpb24gPSBsYXllcnNJbiwgMSwgOSwgbWVudV9kZWNlbCwgc2xpZGUKICAgIGFuaW1hdGlvbiA9IGxheWVyc091dCwgMSwgOSwgbWVudV9kZWNlbCwgc2xpZGUKICAgIGFuaW1hdGlvbiA9IGZhZGVMYXllcnNJbiwgMSwgMiwgbWVudV9kZWNlbAogICAgYW5pbWF0aW9uID0gZmFkZUxheWVyc091dCwgMSwgNC41LCBtZW51X2FjY2VsCiAgICBhbmltYXRpb24gPSB3b3Jrc3BhY2VzLCAxLCAxMCwgd29ya3NwYWNlLCBzbGlkZXZlcnQKCn0KCiMgbGF5b3V0IHNldHRpbmdzLCBvbmx5IHRvdWNoIHNjcm9sbGluZwpzY3JvbGxpbmcgewogICAgY29sdW1uX3dpZHRoID0gMC4zMzMzCiAgICBleHBsaWNpdF9jb2x1bW5fd2lkdGhzID0gMC4zMzMzLDAuNSwwLjY2NwogICAgZm9sbG93X21pbl92aXNpYmxlID0gMC4xNQogICAgZGlyZWN0aW9uID0gcmlnaHQKICAgIGZ1bGxzY3JlZW5fb25fb25lX2NvbHVtbiA9IGZhbHNlCn0KZHdpbmRsZSB7CiAgICBwc2V1ZG90aWxlID0gdHJ1ZQogICAgcHJlc2VydmVfc3BsaXQgPSB0cnVlCn0KbWFzdGVyIHsKICAgIG5ld19zdGF0dXMgPSBtYXN0ZXIKfQoKbWlzYyB7CiAgICBmb3JjZV9kZWZhdWx0X3dhbGxwYXBlciA9IC0xCiAgICBkaXNhYmxlX2h5cHJsYW5kX2xvZ28gPSBmYWxzZQp9CgojIGlucHV0IChkdWgpCmlucHV0IHsKICAgIGtiX2xheW91dCA9IHVzCiAgICBrYl92YXJpYW50ID0KICAgIGtiX21vZGVsID0KICAgIGtiX29wdGlvbnMgPQogICAga2JfcnVsZXMgPQogICAgZm9sbG93X21vdXNlID0gMQogICAgc2Vuc2l0aXZpdHkgPSAtMC42OCAjIC0xLjAgLSAxLjAsIDAgbWVhbnMgbm8gbW9kaWZpY2F0aW9uLgogICAgdG91Y2hwYWQgewogICAgICAgIG5hdHVyYWxfc2Nyb2xsID0gdHJ1ZQogICAgfQp9CmRldmljZSB7CiAgICBuYW1lID0gc3luYTMwYjA6MDAtMDZjYjpjZTA4CiAgICBzZW5zaXRpdml0eSA9IDEuMAogICAgYWNjZWxfcHJvZmlsZSA9IGZsYXQKfQoKIyMjIyMjIyMjIyMjIyMjIyMjIwojIyMgS0VZQklORElOR1MgIyMjCiMjIyMjIyMjIyMjIyMjIyMjIyMKCiMgZm9jdXMgd2luZG93CmJpbmQgPSBBTFQsIEEsIG1vdmVmb2N1cywgbApiaW5kID0gQUxULCBELCBtb3ZlZm9jdXMsIHIKYmluZCA9IEFMVCwgVywgbW92ZWZvY3VzLCB1CmJpbmQgPSBBTFQsIFMsIG1vdmVmb2N1cywgZApiaW5kID0gQUxULCBUYWIsIGZvY3VzY3VycmVudG9ybGFzdAoKIyBzd2l0Y2ggd29ya3NwYWNlIGJ5IG51bWJlcgpiaW5kID0gU1VQRVIsIDEsIHdvcmtzcGFjZSwgMQpiaW5kID0gU1VQRVIsIDIsIHdvcmtzcGFjZSwgMgpiaW5kID0gU1VQRVIsIDMsIHdvcmtzcGFjZSwgMwpiaW5kID0gU1VQRVIsIDQsIHdvcmtzcGFjZSwgNApiaW5kID0gU1VQRVIsIDUsIHdvcmtzcGFjZSwgNQpiaW5kID0gU1VQRVIsIDYsIHdvcmtzcGFjZSwgNgpiaW5kID0gU1VQRVIsIDcsIHdvcmtzcGFjZSwgNwpiaW5kID0gU1VQRVIsIDgsIHdvcmtzcGFjZSwgOApiaW5kID0gU1VQRVIsIDksIHdvcmtzcGFjZSwgOQpiaW5kID0gU1VQRVIsIDAsIHdvcmtzcGFjZSwgMTAKCiMgc3dpdGNoIHdvcmtzcGFjZXMgcmVsYXRpdmVseQpiaW5kZSA9IFNVUEVSLCBXLCB3b3Jrc3BhY2UsIHItMQpiaW5kZSA9IFNVUEVSLCBTLCB3b3Jrc3BhY2UsIHIrMQpiaW5kID0gU1VQRVIsIFRhYiwgd29ya3NwYWNlLCBwcmV2aW91cwpiaW5kID0gU1VQRVIsIFosIHdvcmtzcGFjZSwgZW1wdHkKCiMgbW92ZSB3aW5kb3cgdG8gd29ya3NwYWNlCmJpbmQgPSBDVFJMIFNISUZULCAxLCBtb3ZldG93b3Jrc3BhY2UsIDEKYmluZCA9IENUUkwgU0hJRlQsIDIsIG1vdmV0b3dvcmtzcGFjZSwgMgpiaW5kID0gQ1RSTCBTSElGVCwgMywgbW92ZXRvd29ya3NwYWNlLCAzCmJpbmQgPSBDVFJMIFNISUZULCA0LCBtb3ZldG93b3Jrc3BhY2UsIDQKYmluZCA9IENUUkwgU0hJRlQsIDUsIG1vdmV0b3dvcmtzcGFjZSwgNQpiaW5kID0gQ1RSTCBTSElGVCwgNiwgbW92ZXRvd29ya3NwYWNlLCA2CmJpbmQgPSBDVFJMIFNISUZULCA3LCBtb3ZldG93b3Jrc3BhY2UsIDcKYmluZCA9IENUUkwgU0hJRlQsIDgsIG1vdmV0b3dvcmtzcGFjZSwgOApiaW5kID0gQ1RSTCBTSElGVCwgOSwgbW92ZXRvd29ya3NwYWNlLCA5CmJpbmQgPSBDVFJMIFNISUZULCAwLCBtb3ZldG93b3Jrc3BhY2UsIDEwCmJpbmQgPSBTVVBFUiBTSElGVCwgVywgbW92ZXRvd29ya3NwYWNlLCAtMQpiaW5kID0gU1VQRVIgU0hJRlQsIFMsIG1vdmV0b3dvcmtzcGFjZSwgKzEKYmluZCA9IFNVUEVSIFNISUZULCBaLCBtb3ZldG93b3Jrc3BhY2UsIGVtcHR5CgojIG1vdmUgYWxsIHdpbmRvd3MgdG8gd29ya3NwYWNlCmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCAxLCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCAxCmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCAyLCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCAyCmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCAzLCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCAzCmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCA0LCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCA0CmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCA1LCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCA1CmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCA2LCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCA2CmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCA3LCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCA3CmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCA4LCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCA4CmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCA5LCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCA5CmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCAwLCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCAxMApiaW5kID0gU1VQRVIgQUxULCBXLCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCAtMQpiaW5kID0gU1VQRVIgQUxULCBTLCBleGVjLCAuY29uZmlnL2h5cHIvc2NyaXB0cy9tb3ZlX2FsbF93aW5kb3dzX2luX3dvcmtzcGFjZS5zaCArMQoKIyBtb3ZlIHdpbmRvdwpiaW5kID0gQ1RSTCBTSElGVCwgQSwgbGF5b3V0bXNnLCBzd2FwY29sIGwKYmluZCA9IENUUkwgU0hJRlQsIEQsIGxheW91dG1zZywgc3dhcGNvbCByCmJpbmQgPSBDVFJMIFNISUZULCBXLCBtb3Zld2luZG93LCB1CmJpbmQgPSBDVFJMIFNISUZULCBTLCBtb3Zld2luZG93LCBkCgojIHNvbWUgbGF5b3V0IHRoaW5naWVzIApiaW5kID0gU1VQRVIgQ1RSTCwgWCwgbGF5b3V0bXNnLCBmaXQgdmlzaWJsZQpiaW5kID0gU1VQRVIgQ1RSTCwgWiwgbGF5b3V0bXNnLCBmaXQgYWxsCmJpbmQgPSBTVVBFUiBDVFJMLCBRLCBsYXlvdXRtc2csIGZpdCB0b2JlZwpiaW5kID0gU1VQRVIgQ1RSTCwgVywgbGF5b3V0bXNnLCBmaXQgdG9lbmQKYmluZCA9IFNVUEVSLCBULCB0b2dnbGVmbG9hdGluZwpiaW5kID0gU1VQRVIgU0hJRlQsIFQsIGN5Y2xlbmV4dCwgdGlsZWQKYmluZCA9IFNVUEVSLCBGLCBmdWxsc2NyZWVuLCAwCmJpbmQgPSBTVVBFUiwgUSwgZXhlYywgLmNvbmZpZy9oeXByL3NjcmlwdHMvdG9nZ2xlX2xheW91dC5zaApiaW5kID0gQ1RSTCBTSElGVCwgWiwga2lsbGFjdGl2ZSwKCiMgZm9jdXMgZmlyc3QgYW5kIGxhc3Qgd2luZG93IGluIHdvcmtzcGFjZSAKYmluZCA9IFNVUEVSLCBBLCBleGVjLCBoeXByY3RsIGRpc3BhdGNoIGZvY3Vzd2luZG93IGFkZHJlc3M6JChoeXByY3RsIGNsaWVudHMgLWogfCBqcSAtciAnWy5bXSB8IHNlbGVjdCgud29ya3NwYWNlLmlkID09ICckKGh5cHJjdGwgYWN0aXZld29ya3NwYWNlIC1qIHwganEgLmlkKScpIF0gfCBzb3J0X2J5KC5hdFswXSkgfCBmaXJzdCB8IC5hZGRyZXNzJykKYmluZCA9IFNVUEVSLCBELCBleGVjLCBoeXByY3RsIGRpc3BhdGNoIGZvY3Vzd2luZG93IGFkZHJlc3M6JChoeXByY3RsIGNsaWVudHMgLWogfCBqcSAtciAnWy5bXSB8IHNlbGVjdCgud29ya3NwYWNlLmlkID09ICckKGh5cHJjdGwgYWN0aXZld29ya3NwYWNlIC1qIHwganEgLmlkKScpIF0gfCBzb3J0X2J5KC5hdFswXSkgfCBsYXN0IHwgLmFkZHJlc3MnKQoKIyByZXNpemUgd2luZG93CmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCBaLCBsYXlvdXRtc2csIGNvbHJlc2l6ZSArY29uZgpiaW5kID0gU1VQRVIgQ1RSTCwgRCwgbGF5b3V0bXNnLCBjb2xyZXNpemUgKzAuMDMKYmluZCA9IFNVUEVSIENUUkwsIEEsIGxheW91dG1zZywgY29scmVzaXplIC0wLjAzCmJpbmQgPSBTVVBFUiBDVFJMIFNISUZULCBYLCBsYXlvdXRtc2csIGZpdCBhY3RpdmUKCiMgc2NyYXRjaHBhZCwgbm90IHVzaW5nIHBlcnNvbmFsbHkKIyBiaW5kID0gU1VQRVIsIFMsIHRvZ2dsZXNwZWNpYWx3b3Jrc3BhY2UsIG1hZ2ljCiMgYmluZCA9IFNVUEVSIFNISUZULCBTLCBtb3ZldG93b3Jrc3BhY2UsIHNwZWNpYWw6bWFnaWMKCiMgc2Nyb2xsIHRocm91Z2ggd29ya3NwYWNlcyB3aXRoIHN1cGVyIG1vdXNlc2Nyb2xsCmJpbmQgPSBTVVBFUiwgbW91c2VfdXAsIHdvcmtzcGFjZSwgcisxCmJpbmQgPSBTVVBFUiwgbW91c2VfZG93biwgd29ya3NwYWNlLCByLTEKCiMgbW92ZS9yZXNpemUgd2luZG93IHdpdGggbW91c2UgYnV0dG9ucwpiaW5kbSA9IFNVUEVSLCBtb3VzZToyNzIsIG1vdmV3aW5kb3cKYmluZG0gPSBTVVBFUiwgbW91c2U6MjczLCByZXNpemV3aW5kb3cKCiMgbGFwdG9wIGtleXMgZm9yIGF1ZGlvL2JyaWdodG5lc3MKYmluZGVsID0gLFhGODZBdWRpb1JhaXNlVm9sdW1lLCBleGVjLCB2b2x1bWVjdGwgLXUgdXAKYmluZGVsID0gLFhGODZBdWRpb0xvd2VyVm9sdW1lLCBleGVjLCB2b2x1bWVjdGwgLXUgZG93bgpiaW5kZWwgPSAsWEY4Nk1vbkJyaWdodG5lc3NVcCwgZXhlYywgbGlnaHRjdGwgdXAKYmluZGVsID0gLFhGODZNb25CcmlnaHRuZXNzRG93biwgZXhlYywgbGlnaHRjdGwgZG93bgoKIyByb2ZpIHN0dWZmCmJpbmQgPSBTVVBFUiwgViwgZXhlYywgfi8uY29uZmlnL3JvZmkvc2NyaXB0cy9jbGlwYm9hcmQuc2gKYmluZCA9IFNVUEVSIFNISUZULCBWLCBleGVjLCByb2ZpIC1tb2RpIGVtb2ppIC1zaG93IGVtb2ppIC10aGVtZS1zdHIgJ2xpc3R2aWV3IHtsaW5lczogMTA7fScgLXRoZW1lLXN0ciAnd2luZG93IHt3aWR0aDogMzAlO30nCmJpbmQgPSBTVVBFUiwgRVNDQVBFLCBleGVjLCByb2ZpLXBvd2VyCmJpbmQgPSBTVVBFUiBTSElGVCwgQywgZXhlYywgcm9maSAtc2hvdyBjYWxjIC10aGVtZS1zdHIgJ3dpbmRvdyB7IHdpZHRoOiAxNSU7IH0nIC10aGVtZS1zdHIgJ2xpc3R2aWV3IHtsaW5lczogMTt9JwpiaW5kID0gU1VQRVIgU0hJRlQsIEIsIGV4ZWMsIH4vLmNvbmZpZy9yb2ZpL3NjcmlwdHMvcm9maS1ibHVldG9vdGgtY2xhdWRlLnNoCmJpbmQgPSBBTFQgQ1RSTCwgUywgZXhlYywgfi8uY29uZmlnL3JvZmkvc2NyaXB0cy9zZWxlY3QtYXVkaW8uc2gKYmluZCA9IFNVUEVSLCBTUEFDRSwgZXhlYywgcm9maSAtc2hvdyBkcnVuIC10aGVtZS1zdHIgJ2xpc3R2aWV3IHtsaW5lczogMTA7fScgLXRoZW1lLXN0ciAnd2luZG93IHt3aWR0aDogMTclO30nCmJpbmQgPSBTVVBFUiwgR1JBVkUsIGV4ZWMsIH4vLmNvbmZpZy9yb2ZpL3NjcmlwdHMvd2FsbHBhcGVyLXJvZmktMi5zaApiaW5kID0gU1VQRVIgQUxULCBFLCBleGVjLCB+Ly5jb25maWcvcm9maS9zY3JpcHRzL2ZpbGUtc2VsZWN0b3Ivcm9maS1maWxlLXNlbGVjdG9yLnNoCgojIG90aGVyIHN0dWZmIHRvIGVzY2FwZSBxdWlja3NoZWxsCmJpbmQgPSBTVVBFUiwgTCwgZXhlYywgaHlwcmxvY2sKYmluZCA9IFNVUEVSLCBOLCBleGVjLCBtYWtvY3RsIGRpc21pc3MgLWEKYmluZCA9IFNVUEVSLCBGNSwgZXhlYywgZ3B1LXNjcmVlbi1yZWNvcmRlciAtdyBzY3JlZW4gLWYgNjAgLWZtIGNmciAtayBoMjY0IC1jIG1wNCAtYSAkKHBhY3RsIGdldC1kZWZhdWx0LXNpbmspLm1vbml0b3IgLW8gfi9WaWRlb3MvJChkYXRlICslZC4lbS4lWV8lSTolTSVwKS5tcDQgJiBub3RpZnktc2VuZCAncmVjb3JkaW5nIHN0YXJ0ZWQnCmJpbmQgPSBTVVBFUiwgRjQsIGV4ZWMsIHBraWxsIC1JTlQgLWYgZ3B1LXNjcmVlbi1yZWNvcmRlciAmJiBub3RpZnktc2VuZCAncmVjb3JkaW5nIHN0b3BwZWQnCgojIGF1ZGlvIGFuZCBicmlnaHRuZXNzIGNvbnRyb2xzCmJpbmRsZSA9IEFMVCwgRjIsIGV4ZWMsIHZvbHVtZWN0bCAtdSB1cApiaW5kbGUgPSBBTFQsIEYxLCBleGVjLCB2b2x1bWVjdGwgLXUgZG93bgpiaW5kbCA9IEFMVCwgRjMsIGV4ZWMsIHdwY3RsIHNldC1tdXRlIEBERUZBVUxUX0FVRElPX1NJTktAIHRvZ2dsZQpiaW5kbCA9ICwgRjIsIGV4ZWMsIHBsYXllcmN0bCBwbGF5LXBhdXNlCmJpbmRsID0gLCBGMSwgZXhlYywgcGxheWVyY3RsIHByZXZpb3VzCmJpbmRsID0gLCBGMywgZXhlYywgcGxheWVyY3RsIG5leHQKYmluZGxlID0gU0hJRlQsIEYyLCBleGVjLCBsaWdodGN0bCB1cApiaW5kbGUgPSBTSElGVCwgRjEsIGV4ZWMsIGxpZ2h0Y3RsIGRvd24KCiMgYXBwbGljYXRpb25zCmJpbmQgPSBTVVBFUiwgUkVUVVJOLCBleGVjLCBmb290CmJpbmQgPSBTVVBFUiwgQiwgZXhlYywgemVuLWJldGEKYmluZCA9IFNVUEVSLCBFLCBleGVjLCBuYXV0aWx1cyAtLW5ldy13aW5kb3cKCiMgem9vbSBtb3VzZSB2ZXJzaW9uCmJpbmQgPSBTVVBFUiBTSElGVCwgbW91c2VfZG93biwgZXhlYywgaHlwcmN0bCAtcSBrZXl3b3JkIGN1cnNvcjp6b29tX2ZhY3RvciAkKGh5cHJjdGwgZ2V0b3B0aW9uIGN1cnNvcjp6b29tX2ZhY3RvciB8IGF3ayAnL15mbG9hdC4qLyB7cHJpbnQgJDIgKiAxLjF9JykKYmluZCA9IFNVUEVSIFNISUZULCBtb3VzZV91cCwgZXhlYywgaHlwcmN0bCAtcSBrZXl3b3JkIGN1cnNvcjp6b29tX2ZhY3RvciAkKGh5cHJjdGwgZ2V0b3B0aW9uIGN1cnNvcjp6b29tX2ZhY3RvciB8IGF3ayAnL15mbG9hdC4qLyB7cHJpbnQgJDIgKiAwLjl9JykKCiMgem9vbSBrYiB2ZXJzaW9uCmJpbmRlID0gU1VQRVIsIGVxdWFsLCBleGVjLCBoeXByY3RsIC1xIGtleXdvcmQgY3Vyc29yOnpvb21fZmFjdG9yICQoaHlwcmN0bCBnZXRvcHRpb24gY3Vyc29yOnpvb21fZmFjdG9yIHwgYXdrICcvXmZsb2F0LiovIHtwcmludCAkMiAqIDEuMX0nKQpiaW5kZSA9IFNVUEVSLCBtaW51cywgZXhlYywgaHlwcmN0bCAtcSBrZXl3b3JkIGN1cnNvcjp6b29tX2ZhY3RvciAkKGh5cHJjdGwgZ2V0b3B0aW9uIGN1cnNvcjp6b29tX2ZhY3RvciB8IGF3ayAnL15mbG9hdC4qLyB7cHJpbnQgJDIgKiAwLjl9JykKCiMgc2NyZWVuc2hvdApiaW5kID0gU1VQRVIsIEY4LCBleGVjLCBoeXByc2hvdCAtbSBvdXRwdXQgLW0gYWN0aXZlIC1vIH4vUGljdHVyZXMvU2NyZWVuc2hvdHMgLWYgIiQoZGF0ZSArJyVkLiVtLiVZICVJOiVNICVwJykucG5nIgpiaW5kID0gU1VQRVIsIEY3LCBleGVjLCBoeXByc2hvdCAtbSByZWdpb24gLW8gfi9QaWN0dXJlcy9TY3JlZW5zaG90cyAtZiAiJChkYXRlICsnJWQuJW0uJVkgJUk6JU0gJXAnKS5wbmciCmJpbmQgPSBTVVBFUiwgRjYsIGV4ZWMsIGh5cHJzaG90IC1tIHdpbmRvdyAtbSBhY3RpdmUgLW8gfi9QaWN0dXJlcy9TY3JlZW5zaG90cyAtZiAiJChkYXRlICsnJWQuJW0uJVkgJUk6JU0gJXAnKS5wbmciCgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKIyMjIEtFWUJJTkRJTkdTIEVORCAjIyMKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKCiMgd2luZG93IHJ1bGVzCndpbmRvd3J1bGUgewogICAgbmFtZSA9IHN1cHByZXNzLW1heGltaXplLWV2ZW50cwogICAgbWF0Y2g6Y2xhc3MgPSAuKgogICAgc3VwcHJlc3NfZXZlbnQgPSBtYXhpbWl6ZQp9CndpbmRvd3J1bGUgewogICAgbmFtZSA9IGZpeC14d2F5bGFuZC1kcmFncwogICAgbWF0Y2g6Y2xhc3MgPSBeJAogICAgbWF0Y2g6dGl0bGUgPSBeJAogICAgbWF0Y2g6eHdheWxhbmQgPSB0cnVlCiAgICBtYXRjaDpmbG9hdCA9IHRydWUKICAgIG1hdGNoOmZ1bGxzY3JlZW4gPSBmYWxzZQogICAgbWF0Y2g6cGluID0gZmFsc2UKICAgIG5vX2ZvY3VzID0gdHJ1ZQp9CndpbmRvd3J1bGUgewogICAgbmFtZSA9IG1vdmUtaHlwcmxhbmQtcnVuCiAgICBtYXRjaDpjbGFzcyA9IGh5cHJsYW5kLXJ1bgogICAgbW92ZSA9IDIwIG1vbml0b3JfaC0xMjAKICAgIGZsb2F0ID0geWVzCn0Kd2luZG93cnVsZSB7CiAgICBuYW1lID0gZm9vdCBibHVyIGFuZCBvcGFjaXR5CiAgICBtYXRjaDpjbGFzcyA9IGZvb3QKICAgIG9wYWNpdHkgPSAwLjYgb3ZlcnJpZGUgMC42IG92ZXJyaWRlCn0Kd2luZG93cnVsZSB7CiAgICBuYW1lID0gemVuIGJsdXIKICAgIG1hdGNoOmNsYXNzID0gemVuLWJldGEKICAgIG9wYWNpdHkgPSAwLjg3IG92ZXJyaWRlIDAuODcgb3ZlcnJpZGUKfQp3aW5kb3dydWxlIHsKICAgIG5hbWUgPSB6ZW4gc29saWQgZnVsbHNjcmVlbgogICAgbWF0Y2g6ZnVsbHNjcmVlbiA9IHRydWUgICAKICAgIG9wYWNpdHkgPSAxLjAKfQp3aW5kb3dydWxlIHsKICAgIG5hbWUgPSBuYXV0aWx1cyBibHVyCiAgICBtYXRjaDpjbGFzcyA9IG9yZy5nbm9tZS5OYXV0aWx1cwogICAgb3BhY2l0eSA9IDAuODUgb3ZlcnJpZGUgMC44NSBvdmVycmlkZQp9CgojIGxheWVyIHJ1bGVzCmxheWVycnVsZSA9IGRpbV9hcm91bmQgb24sIG1hdGNoOm5hbWVzcGFjZSByb2ZpCgojIHNvbWUgdGhpbmdzCm1pc2MgewogICAgZm9jdXNfb25fYWN0aXZhdGUgPSB0cnVlCiAgICBhbmltYXRlX21hbnVhbF9yZXNpemVzID0gdHJ1ZQp9AAAAAAAAAACDKgAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOsBAAAAAAAA6wEAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							33,
-							1,
-							"left_delete",
-							null,
-							"AQAAAOoCAAAAAAAA6gIAAAAAAAABAAAANg",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOsCAAAAAAAA6wIAAAAAAAAAAAAAAIBpQA"
+							"AQAAADkAAAAAAAAAOgAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA5AAAAAAAAADkAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							34,
 							1,
-							"insert",
+							"insert_snippet",
 							{
-								"characters": "4"
+								"contents": "{$0}"
 							},
-							"AQAAAOoCAAAAAAAA6wIAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOoCAAAAAAAA6gIAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							35,
-							1,
-							"left_delete",
-							null,
-							"AQAAAOoCAAAAAAAA6gIAAAAAAAABAAAANA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOsCAAAAAAAA6wIAAAAAAAAAAAAAAADwvw"
+							"AQAAABcAAAAAAAAAGQAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAXAAAAAAAAABcAAAAAAAAAAAAAAABgd0A"
 						],
 						[
 							36,
 							1,
-							"insert",
-							{
-								"characters": "3"
-							},
-							"AQAAAOoCAAAAAAAA6wIAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOoCAAAAAAAA6gIAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							37,
-							1,
 							"left_delete",
 							null,
-							"AQAAAOoCAAAAAAAA6gIAAAAAAAABAAAAMw",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOsCAAAAAAAA6wIAAAAAAAAAAAAAAADwvw"
+							"AQAAABgAAAAAAAAAGAAAAAAAAAABAAAAfQ",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAZAAAAAAAAABkAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							38,
 							1,
 							"insert",
 							{
-								"characters": "4"
+								"characters": "\n}"
 							},
-							"AQAAAOoCAAAAAAAA6wIAAAAAAAAAAAAA",
-							"CQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOoCAAAAAAAA6gIAAAAAAAAAAAAAAADwvw"
+							"AgAAADsAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAAA9AAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA7AAAAAAAAADsAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
-							4,
-							2,
+							39,
+							1,
+							"insert_snippet",
+							{
+								"contents": "'$0'"
+							},
+							"AQAAAD0AAAAAAAAAPwAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA9AAAAAAAAAD0AAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							40,
+							1,
+							"run_macro_file",
+							{
+								"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+							},
+							"AgAAAD0AAAAAAAAAPQAAAAAAAAABAAAAJz0AAAAAAAAAPQAAAAAAAAABAAAAJw",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA+AAAAAAAAAD4AAAAAAAAAAAAAAAAA8L8"
+						]
+					]
+				},
+				{
+					"file": "/home/chriz/nixos-config/home-manager/home.nix",
+					"settings":
+					{
+						"buffer_size": 2367,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							36,
+							1,
 							"left_delete",
 							null,
-							"AgAAAL8BAAAAAAAAvwEAAAAAAAABAAAAOL4BAAAAAAAAvgEAAAAAAAABAAAAMg",
-							"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADAAQAAAAAAAMABAAAAAAAA////////738"
+							"AQAAAKYAAAAAAAAApgAAAAAAAAABAAAACg",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACnAAAAAAAAAKcAAAAAAAAAAAAAAAAANkA"
 						],
+						[
+							37,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AQAAAKYAAAAAAAAApwAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACmAAAAAAAAAKYAAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							38,
+							1,
+							"left_delete",
+							null,
+							"AQAAAKYAAAAAAAAApgAAAAAAAAABAAAACg",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACnAAAAAAAAAKcAAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							39,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AQAAAKYAAAAAAAAApwAAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACmAAAAAAAAAKYAAAAAAAAAAAAAAAAA8L8"
+						]
+					]
+				},
+				{
+					"file": "/home/chriz/nixos-config/home-manager/zen.nix",
+					"settings":
+					{
+						"buffer_size": 3086,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
 						[
 							5,
 							1,
 							"insert",
 							{
-								"characters": "400"
+								"characters": "\n"
 							},
-							"AwAAAL4BAAAAAAAAvwEAAAAAAAAAAAAAvwEAAAAAAADAAQAAAAAAAAAAAADAAQAAAAAAAMEBAAAAAAAAAAAAAA",
-							"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC+AQAAAAAAAL4BAAAAAAAAAAAAAAAA8L8"
+							"AQAAADAIAAAAAAAAOQgAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAwCAAAAAAAADAIAAAAAAAAAAAAAAAA8L8"
 						],
 						[
-							6,
+							7,
 							1,
-							"left_delete",
+							"",
 							null,
-							"AQAAAMABAAAAAAAAwAEAAAAAAAABAAAAMA",
-							"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADBAQAAAAAAAMEBAAAAAAAAAAAAAAAA8L8"
+							"AQAAADkIAAAAAAAAZAgAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA5CAAAAAAAADkIAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							8,
-							2,
-							"left_delete",
-							null,
-							"AgAAAKYBAAAAAAAApgEAAAAAAAABAAAAOKUBAAAAAAAApQEAAAAAAAABAAAAMg",
-							"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACnAQAAAAAAAKcBAAAAAAAAAAAAAAAAckA"
-						],
-						[
-							9,
 							1,
 							"insert",
 							{
-								"characters": "40"
+								"characters": "\n"
 							},
-							"AgAAAKUBAAAAAAAApgEAAAAAAAAAAAAApgEAAAAAAACnAQAAAAAAAAAAAAA",
-							"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAClAQAAAAAAAKUBAAAAAAAAAAAAAAAA8L8"
-						],
-						[
-							15,
-							1,
-							"insert",
-							{
-								"characters": "ComixCursor"
-							},
-							"CwAAANgBAAAAAAAA2QEAAAAAAAAVAAAAQmliYXRhLU1vZGVybi1DbGFzc2lj2QEAAAAAAADaAQAAAAAAAAAAAADaAQAAAAAAANsBAAAAAAAAAAAAANsBAAAAAAAA3AEAAAAAAAAAAAAA3AEAAAAAAADdAQAAAAAAAAAAAADdAQAAAAAAAN4BAAAAAAAAAAAAAN4BAAAAAAAA3wEAAAAAAAAAAAAA3wEAAAAAAADgAQAAAAAAAAAAAADgAQAAAAAAAOEBAAAAAAAAAAAAAOEBAAAAAAAA4gEAAAAAAAAAAAAA4gEAAAAAAADjAQAAAAAAAAAAAAA",
-							"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADtAQAAAAAAANgBAAAAAAAAAAAAAAAA8L8"
-						],
-						[
-							16,
-							1,
-							"insert",
-							{
-								"characters": "s-Black"
-							},
-							"BwAAAOMBAAAAAAAA5AEAAAAAAAAAAAAA5AEAAAAAAADlAQAAAAAAAAAAAADlAQAAAAAAAOYBAAAAAAAAAAAAAOYBAAAAAAAA5wEAAAAAAAAAAAAA5wEAAAAAAADoAQAAAAAAAAAAAADoAQAAAAAAAOkBAAAAAAAAAAAAAOkBAAAAAAAA6gEAAAAAAAAAAAAA",
-							"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADjAQAAAAAAAOMBAAAAAAAAAAAAAAAA8L8"
+							"AQAAAGQIAAAAAAAAbQgAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABkCAAAAAAAAGQIAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							10,
 							1,
-							"left_delete",
+							"",
 							null,
-							"AQAAAOcCAAAAAAAA5wIAAAAAAAABAAAANA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOgCAAAAAAAA6AIAAAAAAAAAAAAAAADwvw"
-						],
+							"AQAAAG0IAAAAAAAAkggAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABtCAAAAAAAAG0IAAAAAAAAAAAAAAAA8L8"
+						]
+					]
+				},
+				{
+					"file": "/home/chriz/nixos-config/install.sh",
+					"settings":
+					{
+						"buffer_size": 584,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
 						[
-							11,
+							4,
 							1,
 							"insert",
 							{
-								"characters": "5"
+								"characters": "common"
 							},
-							"AQAAAOcCAAAAAAAA6AIAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOcCAAAAAAAA5wIAAAAAAAAAAAAAAADwvw"
-						],
-						[
-							13,
-							1,
-							"left_delete",
-							null,
-							"AQAAAK0FAAAAAAAArQUAAAAAAAABAAAANQ",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACuBQAAAAAAAK4FAAAAAAAAAAAAAAAA8L8"
-						],
-						[
-							14,
-							1,
-							"insert",
-							{
-								"characters": "2"
-							},
-							"AQAAAK0FAAAAAAAArgUAAAAAAAAAAAAA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACtBQAAAAAAAK0FAAAAAAAAAAAAAAAA8L8"
+							"BgAAAIUBAAAAAAAAhgEAAAAAAAAIAAAAbml4b3NidHeGAQAAAAAAAIcBAAAAAAAAAAAAAIcBAAAAAAAAiAEAAAAAAAAAAAAAiAEAAAAAAACJAQAAAAAAAAAAAACJAQAAAAAAAIoBAAAAAAAAAAAAAIoBAAAAAAAAiwEAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNAQAAAAAAAIUBAAAAAAAAAAAAAAAA8L8"
 						]
 					]
 				}
@@ -1306,14 +767,6 @@
 				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"nix",
-						"Set Syntax: Nix"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
-					]
 				],
 				"width": 0.0
 			},
@@ -1335,134 +788,6 @@
 			},
 			"file_history":
 			[
-				"/home/chriz/nixos-config/home-manager/zen.nix",
-				"/home/chriz/nixos-config/home-manager/gtk.nix",
-				"/home/chriz/nixos-config/configs/hardware-configuration.nix",
-				"/home/chriz/nixos-config/configs/system.nix",
-				"/home/chriz/nixos-config/home-manager/home.nix",
-				"/home/chriz/nixos-config/README.md",
-				"/home/chriz/nixos-config/configs/packages.nix",
-				"/home/chriz/.config/caelestia/shell.json",
-				"/home/chriz/nixos-config/hardware-configuration.nix",
-				"/home/chriz/nixos-config/configs/end4.nix",
-				"/home/chriz/.config/rofi/config.rasi",
-				"/home/chriz/.config/rofi/theme.rasi",
-				"/home/chriz/nixos-config/home-manager/ax-shell.nix",
-				"/home/chriz/nixos-config/home-manager/waybar/style.css",
-				"/home/chriz/nixos-config/home-manager/niri/config.kdl",
-				"/home/chriz/nixos-config/flake.nix",
-				"/home/chriz/nixos-config/home-manager/hypr/hyprland.conf",
-				"/home/chriz/nixos-config/home-manager/hellwal/templates/waybar.css",
-				"/home/chriz/nixos-config/home-manager/hypr/scripts/startup_script.sh",
-				"/home/chriz/.config/rofi/scripts/wallpaper-rofi-2.sh",
-				"/home/chriz/nixos-config/home-manager/dotfiles/rofi/scripts/wallpaper-rofi-2.sh",
-				"/home/chriz/nixos-config/home-manager/dotfiles/fastfetch/logo.txt",
-				"/home/chriz/nixos-config/home-manager/dotfiles/waybar/config",
-				"/home/chriz/.config/hypr/hyprland.conf",
-				"/home/chriz/.config/waybar/config",
-				"/home/chriz/.config/niri/config.kdl",
-				"/home/chriz/nixos-config/home-manager/git.nix",
-				"/home/chriz/.config/hypr/scripts/move_all_windows_in_workspace.sh",
-				"/home/chriz/.config/hypr/scripts/move-window-with-same_width.sh",
-				"/home/chriz/.config/hypr/scripts/toggle_layout.sh",
-				"/home/chriz/.config/hypr/scripts/move-window-to-workspace.sh",
-				"/home/chriz/.config/hellwal/templates/hyprlock.conf",
-				"/home/chriz/.config/niri/scripts/fit_all.sh",
-				"/home/chriz/.config/hypr/scripts/previous_workspace.sh",
-				"/home/chriz/.config/hypr/scripts/next_workspace.sh",
-				"/home/chriz/.cache/hellwal/foot.ini",
-				"/home/chriz/.config/hellwal/templates/foot.ini",
-				"/home/chriz/.config/hypr/scripts/startup_script.sh",
-				"/home/chriz/nixos-config/silentsddm/sddm.nix",
-				"/home/chriz/.config/hellwal/templates/hyprland.conf",
-				"/home/chriz/.cache/hellwal/hyprland.conf",
-				"/home/chriz/.config/hellwal/templates/avizo.ini",
-				"/home/chriz/.config/hellwal/templates/niri.kdl",
-				"/home/chriz/.config/fish/functions/clock.fish",
-				"/home/chriz/nixos-config/home-manager/dotfiles/waybar/style.css",
-				"/home/chriz/nixos-config/home-manager/dotfiles/hellwal/templates/avizo.ini",
-				"/home/chriz/nixos-config/home-manager/dotfiles/waybar/colors.css",
-				"/home/chriz/nixos-config/home-manager/dotfiles/avizo/config.ini",
-				"/home/chriz/nixos-config/home-manager/avizo.nix",
-				"/home/chriz/nixos-config/home-manager/btop.nix",
-				"/home/chriz/.config/.gitignore",
-				"/home/chriz/nixos-config/home-manager/dotfiles/btop/btop.conf",
-				"/home/chriz/nixos-config/home-manager/dotfiles/niri/config.kdl",
-				"/home/chriz/.config/btop/btop.conf",
-				"/home/chriz/.config/fastfetch/config.jsonc",
-				"/home/chriz/nixos-config/home-manager/cava.nix",
-				"/home/chriz/.cache/hellwal/avizo.ini",
-				"/home/chriz/.config/waybar/style.css",
-				"/home/chriz/.config/hellwal/templates/variablesfish.fish",
-				"/home/chriz/.config/hellwal/templates/waybar.css",
-				"/home/chriz/.config/hellwal/templates/cava.ini",
-				"/home/chriz/.config/fish/functions/cv.fish",
-				"/home/chriz/.config/hellwal/templates/terminal.sh",
-				"/home/chriz/.config/fish/config.fish",
-				"/home/chriz/.config/input-remapper-2/presets/2.4G Wireless Receiver  /new preset.json",
-				"/home/chriz/.config/input-remapper-2/config.json",
-				"/home/chriz/.config/hexecute/gestures.json",
-				"/home/chriz/nixos-config/flake.lock",
-				"/home/chriz/.config/avizo/config.ini",
-				"/home/chriz/.config/hellwal/templates/btop.theme",
-				"/home/chriz/.config/hellwal/templates/niri-colors.kdl",
-				"/home/chriz/.config/hellwal/templates/rofi.rasi",
-				"/home/chriz/.config/hellwal/templates/waybar-colors.css",
-				"/home/chriz/.config/foot/foot.ini",
-				"/home/chriz/.config/hel",
-				"/home/chriz/.config/cava/config",
-				"/home/chriz/.config/btop/themes/hellwal.theme",
-				"/home/chriz/nixos-config/home-manager/btop/btop.nix",
-				"/home/chriz/.cache/hellwal/btop.theme",
-				"/home/chriz/.config/hellwal/templates/mako.conf",
-				"/home/chriz/.config/matugen/templates/btop.theme",
-				"/home/chriz/.config/matugen/templates/avizo.ini",
-				"/home/chriz/.config/niri/scripts/startup_script.sh",
-				"/home/chriz/.config/matugen/templates/rofi.rasi",
-				"/home/chriz/.config/matugen/config.toml",
-				"/home/chriz/.cache/hellwal/rofi.rasi",
-				"/home/chriz/dotfiles/waybar/style.css",
-				"/home/chriz/dotfiles/waybar/config",
-				"/home/chriz/.cache/hellwal/waybar-colors.css",
-				"/home/chriz/.config/hellwal/templates/foot-colors.ini",
-				"/home/chriz/.config/hypr/hyprlock.conf",
-				"/home/chriz/.config/matugen/templates/cava.ini",
-				"/home/chriz/linux_stuff/backups/nixos/flakes/zen-home_manager2/configuration.nix",
-				"/home/chriz/.config/matugen/templates/hyprlock.conf",
-				"/home/chriz/nixos-config/home-manager/rofi/scripts/wallpaper-rofi-2.sh",
-				"/home/chriz/nixos-config/home-manager/fish/fish.nix",
-				"/home/chriz/nixos-config/home-manager/foot.nix",
-				"/home/chriz/nixos-config/home-manager/rofi/rofi.nix",
-				"/home/chriz/nixos-config/home-manager/matugen/templates/waybar.css",
-				"/home/chriz/nixos-config/home-manager/matugen/templates/foot.ini",
-				"/home/chriz/nixos-config/home-manager/niri/scripts/startup_script.sh",
-				"/home/chriz/.config/hellwal/templates/variables.sh",
-				"/home/chriz/nixos-config/home-manager/matugen/matugen.nix",
-				"/home/chriz/nixos-config/home-manager/niri/niri.nix",
-				"/home/chriz/nixos-config/home-manager/rofi/config.rasi",
-				"/home/chriz/nixos-config/home-manager/rofi/theme.rasi",
-				"/home/chriz/.config/matugen/templates/terminal.sh",
-				"/home/chriz/nixos-config/home-manager/fish/other_stuff/config.fish",
-				"/home/chriz/nixos-config/home-manager/waybar/waybar.nix",
-				"/home/chriz/nixos-config/home-manager/niri/startup_script.sh",
-				"/home/chriz/nixos-config/home-manager/niri.nix",
-				"/home/chriz/.config/mako/config",
-				"/home/chriz/nixos-config/home-manager/mako.nix",
-				"/home/chriz/nixos-config/home-manager/hyprlock.nix",
-				"/home/chriz/nixos-config/home-manager/gtk-3.0.nix",
-				"/home/chriz/nixos-config/home-manager/gtk-4.0.nix",
-				"/home/chriz/.config/gtk-4.0/settings.ini",
-				"/home/chriz/.config/gtk-4.0/gtk.css",
-				"/home/chriz/.config/gtk-3.0/settings.ini",
-				"/home/chriz/.config/gtk-3.0/bookmarks",
-				"/home/chriz/nixos-config/home-manager/fastfetch.nix",
-				"/home/chriz/nixos-config/home-manager/matugen/templates/niri.kdl",
-				"/home/chriz/nixos-config/hm-configs/niri.nix",
-				"/home/chriz/nixos-config/hm-configs/home.nix",
-				"/home/chriz/nixos-config/hm-configs/matugen/matugen.nix",
-				"/home/chriz/nixos-config/hm-configs/matugen.nix",
-				"/home/chriz/nixos-config/configs/zen.nix",
-				"/home/chriz/nixos-config/configs/niri.nix"
 			],
 			"find":
 			{
@@ -1480,114 +805,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"anima",
-					"wall",
-					"nixosbtw",
-					"comix",
-					"gtk3",
-					"gtk",
-					"opacity",
-					"${dotfiles}",
-					"blur",
-					"blur\\",
-					"blur",
-					"arduino",
-					"opacity",
-					"blur",
-					"opacity",
-					"zen",
-					"natural_scroll",
-					"cursor",
-					"animations",
-					"blur",
-					"down",
-					"blur",
-					"V",
-					"animations",
-					"blur",
-					":)\n",
-					"$mod",
-					"ctrl shift, z",
-					"$mainMod",
-					"gap",
-					"scrolling",
-					"binds",
-					";",
-					"scrol",
-					"windowsOut",
-					"window",
-					"windowIn",
-					"windowOut",
-					"* ",
-					"workspaces",
-					"device",
-					"1",
-					"windowsOut",
-					"4",
-					"col.active_border",
-					"scroll",
-					"T",
-					"system",
-					"color14",
-					"done",
-					"cava",
-					"${config.home.homeDirectory}",
-					"${configDir}",
-					"color14",
-					"color8",
-					"color15",
-					"color14",
-					"git",
-					"color14",
-					"color15",
-					"networking",
-					"%%;\n",
-					"source",
-					"color8",
-					"proc_banner_fg",
-					"#",
-					"window",
-					"background2",
-					"zen",
-					"source",
-					"color6",
-					"home",
-					"{",
-					"cursor",
-					"common",
-					"home",
-					"waybar",
-					"fish",
-					"rofi",
-					"niri",
-					"comixcursors",
-					"xserver",
-					"pkgs",
-					"lib",
-					"programs",
-					"zen",
-					"fzf",
-					"zoom",
-					"zen.theme.accent-color",
-					"zen.view.window.scheme",
-					"firefox",
-					"dconf",
-					"commit",
-					"monitor",
-					"system",
-					"dwindle",
-					"color",
-					"exec-once",
-					"scrolling",
-					"05",
-					"togglesplit",
-					"CTRL SHIFT, A,",
-					"dwindle",
-					"S",
-					"cursor",
-					"sddm",
-					"ns",
-					"layout"
+					"homeDir"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1595,19 +813,6 @@
 				"regex": false,
 				"replace_history":
 				[
-					"${configDirectory}",
-					".",
-					"SUPER",
-					"color7",
-					"${dotfiles}",
-					"${config.home.homeDirectory}",
-					"color7",
-					"color8",
-					"color15",
-					"color9",
-					"color14",
-					"color1",
-					"color14"
 				],
 				"reverse": false,
 				"scrollbar_highlights": true,
@@ -1624,61 +829,30 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/chriz/nixos-config/configs/packages.nix",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3793,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										3677,
-										3677
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Nix/nix.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2837.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"stack_multiselect": false,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/chriz/nixos-config/home-manager/waybar/style.css",
+							"file": "/home/chriz/nixos-config/flake.nix",
 							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2172,
+								"buffer_size": 3329,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										761,
-										761
+										1121,
+										1121
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/CSS/CSS.sublime-syntax",
+									"syntax": "Packages/Text/Plain text.tmLanguage",
 									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 324.0,
+								"translation.y": 416.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -1686,25 +860,86 @@
 							"type": "text"
 						},
 						{
-							"buffer": 2,
-							"file": "/home/chriz/nixos-config/flake.nix",
+							"buffer": 1,
+							"file": "/home/chriz/nixos-config/configs/system.nix",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1613,
+								"buffer_size": 4216,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										726,
-										726
+										0,
+										0
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Nix/nix.tmLanguage",
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/chriz/nixos-config/configs/elitebook.nix",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 61,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										61,
+										61
+									]
+								],
+								"settings":
+								{
+									"auto_name": "{ config, pkgs, ... }:",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 5,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/chriz/nixos-config/home-manager/home.nix",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2367,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										164,
+										164
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
 									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
@@ -1717,33 +952,64 @@
 							"type": "text"
 						},
 						{
-							"buffer": 3,
-							"file": "/home/chriz/nixos-config/home-manager/hypr/hyprland.conf",
+							"buffer": 4,
+							"file": "/home/chriz/nixos-config/home-manager/zen.nix",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 10880,
+								"buffer_size": 3086,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1454,
-										1454
+										2194,
+										2194
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_size": 4,
+									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 869.0,
+								"translation.y": 752.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/chriz/nixos-config/install.sh",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 584,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										395,
+										395
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
 							"stack_multiselect": false,
 							"type": "text"
 						}
@@ -1789,7 +1055,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1135,1245,2304,1296,0",
+			"position": "0,1,0,0,0,0,0,1132,1243,2304,1296,0",
 			"project": "",
 			"replace":
 			{
@@ -1836,7 +1102,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 26,
+			"window_id": 1,
 			"workspace_name": ""
 		}
 	],
