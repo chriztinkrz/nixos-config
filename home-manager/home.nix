@@ -37,7 +37,6 @@ in
     "niri/scripts/".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri/scripts/";
     "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt5ct";
     "zed/settings.json".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/zed/settings.json";
-    "zed/themes/hellwal.json".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/.cache/hellwal/zed.json";
   };
 
   home.file = {
