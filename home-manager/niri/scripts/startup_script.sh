@@ -21,6 +21,7 @@ waybar &
 # 5. Start swww daemons at the same time
 swww-daemon &
 swww-daemon -n overlay &
+swww img "$HOME/.cache/current_wallpaper.png" --transition-type grow --transition-duration 1.75 &
 
 # 6. Final initialization and transition
 # Give daemons a moment to open their sockets before sending the image

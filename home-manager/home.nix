@@ -3,7 +3,7 @@
 let
   homeDir = "/home/chriz";
   configDirectory = "${homeDir}/nixos-config/home-manager/";
-  hellCache = "${homeDir}/.cache/hellwal";
+  hellwalCache = "${homeDir}/.cache/hellwal";
 in
 
 {
@@ -11,6 +11,7 @@ in
     ./zen.nix
     ./git.nix
     ./gtk.nix
+    ./micro.nix
   ];
 
   xdg.configFile = {
@@ -23,16 +24,17 @@ in
     "mako".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/mako";
     "mango".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/mango";
     "matugen".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/matugen";
-    "niri".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri";
-    "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt5ct";
+    "niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri/config.kdl";
     "qt6ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt6ct";
     "rofi".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/rofi";
     "vicinae".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/vicinae";
     "waybar".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/waybar";
     "avizo/config.ini".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/.cache/hellwal/avizo.ini";
     "btop/btop.conf".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/btop/btop.conf";
-    "btop/themes/hellwal.theme".source = config.lib.file.mkOutOfStoreSymlink "${hellCache}/btop.theme";
-    "sublime-text".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/sublime-text";
+    "btop/themes/hellwal.theme".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/btop.theme";
+    "niri/colors.kdl".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/niri.kdl";
+    "niri/scripts/".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri/scripts/";
+    "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt5ct";
   };
 
   home.file = {
