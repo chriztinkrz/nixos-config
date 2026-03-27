@@ -18,7 +18,7 @@
   # boot thingies
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  
+
   # required for boot entry label ig?
   system.nixos.label = let
   label = builtins.getEnv "NIXOS_LABEL";
@@ -99,7 +99,7 @@
   services.flatpak = {
   enable = true;
     packages = [
-    "app.zen_browser.zen" 
+    "app.zen_browser.zen"
   ];
     update.auto.enable = true;
     update.auto.onCalendar = "daily";
@@ -109,15 +109,15 @@
   appimage
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
-  programs.appimage.package = pkgs.appimage-run.override 
+  programs.appimage.package = pkgs.appimage-run.override
   {
-    extraPkgs = pkgs: 
+    extraPkgs = pkgs:
     [
       pkgs.icu
       pkgs.libxcrypt-legacy
       pkgs.python312
       pkgs.python312Packages.torch
-    ]; 
+    ];
   }; */
 
   # system stuff
@@ -130,6 +130,10 @@
     powerOnBoot = true; };
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
+  # following 3 are needed to bypass keyring issue with sddm autologin
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.sddm.enableGnomeKeyring = true;
+  security.pam.services.hyprlock.enableGnomeKeyring = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -170,9 +174,9 @@
   users.users.chriz = {
     isNormalUser = true;
     description = "chriz";
-    extraGroups = [ 
-    "networkmanager" 
-    "wheel" 
+    extraGroups = [
+    "networkmanager"
+    "wheel"
     "uucp"
     "lock"
     "dialout"
@@ -184,6 +188,6 @@
   };
 
   # no need to change this ig
-  system.stateVersion = "25.11"; 
+  system.stateVersion = "25.11";
 
 }

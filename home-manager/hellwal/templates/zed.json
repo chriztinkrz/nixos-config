@@ -1,0 +1,27 @@
+{
+  "name": "Hellwal",
+  "author": "chriz",
+  "themes": [
+    {
+      "name": "Hellwal Dynamic",
+      "appearance": "dark",
+      "style": {
+        "background": "#00000000",
+        "editor.background": "#00000000",
+        "status_bar.background": "#00000000",
+        "title_bar.background": "#00000000",
+        "pane.background": "#00000000",
+        "syntax": {
+          "comment": "#%%color8.hex%%",
+          "function": "#%%color4.hex%%",
+          "keyword": "#%%color5.hex%%",
+          "string": "#%%color2.hex%%",
+          "type": "#%%color3.hex%%",
+          "variable": "#%%color1.hex%%",
+          "variant": "#%%color6.hex%%",
+          "operator": "#%%color7.hex%%"
+        }
+      }
+    }
+  ]
+}

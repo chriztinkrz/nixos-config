@@ -12,6 +12,7 @@ in
     ./git.nix
     ./gtk.nix
     ./micro.nix
+    # ./zed.nix
   ];
 
   xdg.configFile = {
@@ -35,15 +36,17 @@ in
     "niri/colors.kdl".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/niri.kdl";
     "niri/scripts/".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri/scripts/";
     "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt5ct";
+    "zed/settings.json".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/zed/settings.json";
+    "zed/themes/hellwal.json".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/.cache/hellwal/zed.json";
   };
 
   home.file = {
-    ".cache/wall_order.txt".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/nixos-config/wall_script_cache/wall_order.txt";    
+    ".cache/wall_order.txt".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/nixos-config/wall_script_cache/wall_order.txt";
     ".cache/wallthumbs".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/nixos-config/wall_script_cache/wallthumbs/";
   };
 
   home.username = "chriz";
   home.homeDirectory = "/home/chriz";
   home.stateVersion = "25.11";
-  
+
 }

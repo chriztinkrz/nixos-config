@@ -1,0 +1,28 @@
+{
+  "base_keymap": "SublimeText",
+  "ui_font_size": 18,
+  "buffer_font_size": 18.5,
+  "autosave": "on_focus_change",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Dark Violet (Blurred)",
+  },
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "nix": true,
+  },
+  "lsp": {
+    "nixd": {
+      "binary": {
+        "path": "nixd",
+      },
+    },
+  },
+  "languages": {
+    "Nix": {
+      "language_servers": ["nixd"],
+      "format_on_save": "on",
+    },
+  },
+}

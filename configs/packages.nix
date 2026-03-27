@@ -8,7 +8,7 @@
   programs.gpu-screen-recorder.enable = true;
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
-  # services.input-remapper.enable = true; # small exception 👍🏻
+  # services.input-remapper.enable = true; # small exception 👍
   programs.hyprland.enable = true;
 
   # allow unfree packages
@@ -159,6 +159,9 @@
   ugs
   pavucontrol
   micro
+  zed-editor
+  nixd
+  nixpkgs-fmt
 
   /* these both are required for input-remapper along with the service
   input-remapper
