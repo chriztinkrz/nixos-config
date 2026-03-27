@@ -65,6 +65,8 @@
         "browser.newtabpage.enabled" = false;
         "browser.startup.page" = 3;
         "browser.sessionstore.resume_session" = true;
+        "browser.startup.homepage" = "about:blank";
+        "browser.startup.blankWindow" = true;
 
       };
 

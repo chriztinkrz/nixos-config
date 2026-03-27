@@ -31,6 +31,7 @@
         { nixpkgs.hostPlatform = "x86_64-linux"; }
         ./configs/system.nix
         ./configs/hardware.nix
+        ./configs/elitebook.nix
         inputs.nix-flatpak.nixosModules.nix-flatpak
         inputs.silentSDDM.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
@@ -53,6 +54,27 @@
         ./configs/system.nix
         ./configs/hardware_vostro.nix
         ./configs/vostro.nix
+        inputs.nix-flatpak.nixosModules.nix-flatpak
+        inputs.silentSDDM.nixosModules.default
+        inputs.home-manager.nixosModules.home-manager
+        { nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ]; }
+
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = { inherit inputs; };
+          home-manager.users.chriz = import ./home-manager/home.nix;
+          home-manager.backupFileExtension = "backup";
+        }
+      ];
+    };
+    nixosConfigurations.common = nixpkgs.lib.nixosSystem {
+      # system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
+        { nixpkgs.hostPlatform = "x86_64-linux"; }
+        ./configs/system.nix
+        ./configs/hardware.nix
         inputs.nix-flatpak.nixosModules.nix-flatpak
         inputs.silentSDDM.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
