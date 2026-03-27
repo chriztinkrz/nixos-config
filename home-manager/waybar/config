@@ -2,8 +2,8 @@
     "height": 24,
     "spacing": 0,
     "layer":"top", 
-    "on-scroll-up": "niri msg action focus-workspace-up",
-    "on-scroll-down": "niri msg action focus-workspace-down",
+    "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+    "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
     "margin-bottom": 5,
     "margin-top": 8,
     "reload_style_on_change": true,
@@ -23,10 +23,10 @@
         "battery",
     ],
 
-    "niri/workspaces": {
+    "hyprland/workspaces": {
         "format": "{icon}",
-        "on-scroll-up": "niri msg action focus-workspace-up",
-        "on-scroll-down": "niri msg action focus-workspace-down",
+        "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+        "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
         "format-icons": {
             "1": "1",
             "2": "2",
@@ -59,8 +59,8 @@
         "tooltip": false,
         "interval": 2,
         "on-click": "foot btop",
-        "on-scroll-up": "niri msg action focus-workspace-up",
-        "on-scroll-down": "niri msg action focus-workspace-down",
+        "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+        "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
         "max-length": 6,
         "min-length": 6
     },
@@ -70,16 +70,16 @@
         "tooltip": false,
         "interval": 2,
         "on-click": "foot btop",
-        "on-scroll-up": "niri msg action focus-workspace-up",
-        "on-scroll-down": "niri msg action focus-workspace-down",
+        "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+        "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
         "min-length": 6,
         "max-length": 6
     },
 
     "clock": {
         "format": "{:%I:%M %p, %A %d.%m.20%g}",
-        "on-scroll-up": "niri msg action focus-workspace-up",
-        "on-scroll-down": "niri msg action focus-workspace-down",
+        "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+        "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
         "tooltip": false,
     },
 
@@ -94,8 +94,8 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"], // Battery levels
-    "on-scroll-up": "niri msg action focus-workspace-up",
-    "on-scroll-down": "niri msg action focus-workspace-down",
+    "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+    "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
     "on-click": "rofi-power"
 },
 
@@ -139,8 +139,8 @@
     "format": "{}",
     "on-click": "playerctl play-pause",
     "tooltip": false,
-    "on-scroll-up": "niri msg action focus-workspace-up",
-    "on-scroll-down": "niri msg action focus-workspace-down",
+    "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+    "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
 },
 
 "mpris": {
@@ -149,8 +149,8 @@
     "format-stopped": "nothing playing.",
     "max-length": 27,
     "min-length": 27,
-    "on-scroll-up": "niri msg action focus-workspace-up",
-    "on-scroll-down": "niri msg action focus-workspace-down",
+    "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
+    "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
 },
 
 }]
