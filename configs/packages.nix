@@ -168,9 +168,8 @@
   zed-editor
   nixd
   nixpkgs-fmt
-  inkscape
   arduino-ide
-  ugs
+  inkscape
   steam-run
 
   /* these both are required for input-remapper along with the service
