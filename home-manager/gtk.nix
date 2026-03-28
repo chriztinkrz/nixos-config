@@ -6,7 +6,7 @@
 
     # general theme and icon theme
     theme = {
-      name = "adw-gtk3-dark"; 
+      name = "adw-gtk3-dark";
       package = pkgs.adw-gtk3;
     };
     iconTheme = {
@@ -24,8 +24,8 @@
 
   # comixcursors
   home.pointerCursor = {
-    name = "ComixCursors-Black"; 
-    package = pkgs.comixcursors; # already referred in packages.nix
+    name = "ComixCursors-Opaque-Black";
+    package = pkgs.comixcursors.Opaque_Black;
     size = 28;
     gtk.enable = true;
     x11.enable = true; # needed for some apps

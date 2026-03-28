@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # make cursor strictly first
-# hyprctl setcursor ComixCursors-Black 40
+# hyprctl setcursor  ComixCursors-Opaque-Black 40
 
 # 1. Start hyprlock strictly first
 # It runs in the background so the script can proceed with timers
-hyprlock & 
+hyprlock &
 
 # 2. WAIT 2.5 seconds (1.5s + 1.0s extra)
 # This gives you plenty of time to start typing before Waybar launches

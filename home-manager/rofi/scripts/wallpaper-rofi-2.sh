@@ -103,23 +103,17 @@ if [ -n "$chosen" ]; then
     ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
     swww img "$full" --transition-type grow --transition-duration 1.75 &
     (
-        # 1. Generate the colors
         hellwal -i "$full"
 
-        # 2. THE NUCLEAR RELOAD (Works 100% of the time)
-        # We copy the cache file to the ACTUAL Zed config path
-        # Using 'cat' keeps the file-handle open so Zed doesn't lose the watcher
+        # zed reload
         cat "$HOME/.cache/hellwal/zed.json" > "$HOME/.config/zed/settings.json"
-
-        # 3. Nudge the OS to tell Zed "Hey, look at this!"
         touch "$HOME/.config/zed/settings.json"
 
-        # 3. Terminal feedback
+        # 3. terminal things, for tty-clock
         if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then
             sh "$HOME/.cache/hellwal/terminal.sh" > /dev/tty
         fi
 
-        # 4. Reload services
         pkill -USR1 cava
         pkill -USR2 btop
         makoctl reload
@@ -127,7 +121,7 @@ if [ -n "$chosen" ]; then
 
         sleep 0.15
 
-        # Final terminal broadcast
+        # final terminal thing
         if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then
             for tty in /dev/pts/[0-9]*; do
                 sh "$HOME/.cache/hellwal/terminal.sh" > "$tty" 2>/dev/null &

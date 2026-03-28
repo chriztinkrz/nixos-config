@@ -79,7 +79,7 @@
       ];
     })
 
-  # comix cursors
+  /* comix cursors
   (pkgs.stdenv.mkDerivation rec {
     pname = "comixcursors";
     version = "0.10.1";
@@ -92,7 +92,7 @@
       mkdir -p $out/share/icons
       cp -r * $out/share/icons/
     '';
-  })
+  }) */
 
   # create an fhs environment using the command `fhs`, enabling the execution of non-nixos packages in nixos
   (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
@@ -153,7 +153,7 @@
   gpu-screen-recorder
   yt-dlp
   libnotify
-  comixcursors
+  comixcursors.Opaque_Black
   hellwal
   avizo
   btop
