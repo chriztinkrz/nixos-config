@@ -9,7 +9,10 @@
     "light": "One Light",
     "dark": "Ayu Dark"
   },
-  "auto_install_extensions": { "nix": true },
+  "auto_install_extensions": {
+    "nix": true,
+    "hyprlang": true
+  },
   "lsp": { "nixd": { "binary": { "path": "nixd" } } },
   "languages": {
     "Nix": {
