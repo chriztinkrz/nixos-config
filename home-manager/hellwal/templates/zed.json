@@ -54,10 +54,14 @@
         "function": { "color": "#%%color15.hex%%" },
         "keyword": { "color": "#%%color7.hex%%" },
         "type": { "color": "#%%color6.hex%%" },
-        "variable": { "color": "#%%color7.hex%%" },
+        "variable": { "color": "#%%color14.hex%%" },
         "property": { "color": "#%%color15.hex%%" },
-        "boolean": { "color": "#%%color6.hex%%" },
-        "number": { "color": "#%%color13.hex%%" }
+        "boolean": { "color": "#%%color7.hex%%" },
+        "number": { "color": "#%%color13.hex%%" },
+        "type.builtin": { "color": "#%%color5.hex%%" },
+        "constant.builtin": { "color": "#%%color5.hex%%" },
+        "punctuation.special": { "color": "#%%color6.hex%%" },
+        "operator": { "color": "#%%color6.hex%%" }
       }
     }
   }
