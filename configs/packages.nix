@@ -20,7 +20,7 @@
   ];
 
   # plotter things
-  services.udev.packages = with pkgs; [ arduino-ide ugs ];
+  # services.udev.packages = with pkgs; [ arduino-ide ugs ];
 
 # fonts
   fonts.packages = with pkgs; [
@@ -52,6 +52,20 @@
   # packages
   environment.systemPackages = with pkgs; [
 
+  /* svg2gcode
+  (rustPlatform.buildRustPackage rec {
+      pname = "svg2gcode-cli";
+      version = "0.0.18";
+      src = pkgs.fetchurl {
+        name = "${pname}-${version}.tar.gz";
+        url = "https://crates.io/api/v1/crates/${pname}/${version}/download";
+        hash = "sha256-8MKaWeJzu1cFl8H/PQbJU+EWntbFqJtq+/exSFnezso=";
+      };
+      cargoHash = "sha256-txGRVby8MUzycgYY8OYXU6OIt9PBUDyFFHPWysp0KCI=";
+      nativeBuildInputs = [ pkg-config ];
+      buildInputs = [ openssl ];
+    }) */
+
   # rofi-power
   (pkgs.writeShellScriptBin "rofi-power" ''
     ${pkgs.rofi}/bin/rofi -show power -modi "power:${pkgs.bash}/bin/bash /home/chriz/.config/rofi/scripts/rofi-power-menu" -theme-str 'window { width: 11%; }'
@@ -81,26 +95,22 @@
   })
 
   # create an fhs environment using the command `fhs`, enabling the execution of non-nixos packages in nixos
-    (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
-      pkgs.buildFHSEnv (base // {
-      name = "fhs";
-      targetPkgs = pkgs:
-
-        # pkgs.buildFHSEnv provides only a minimal FHS environment lacking many basic packages needed by most software.
-        # pkgs.appimageTools provides basic packages required by most software.
-
-        (base.targetPkgs pkgs) ++ (with pkgs; [
-          pkg-config
-          ncurses
-
-          # add more if needed
-
-        ]
-      );
-      profile = "export FHS=1";
-      runScript = "bash";
-      extraOutputsToInstall = ["dev"];
-    }))
+  (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
+    pkgs.buildFHSEnv (base // {
+    name = "fhs";
+    targetPkgs = pkgs:
+      # pkgs.buildFHSEnv provides only a minimal FHS environment lacking many basic packages needed by most software.
+      # pkgs.appimageTools provides basic packages required by most software.
+      (base.targetPkgs pkgs) ++ (with pkgs; [
+        pkg-config
+        ncurses
+        # add more if needed
+      ]
+    );
+    profile = "export FHS=1";
+    runScript = "bash";
+    extraOutputsToInstall = ["dev"];
+  }))
 
   # ns - package search
   (pkgs.writeShellApplication {
@@ -113,6 +123,7 @@
     text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
   })
 
+  # normal packages
   xdg-desktop-portal-gnome
   xdg-desktop-portal-gtk
   cliphist
@@ -153,14 +164,15 @@
   waybar
   hyprshot
   jq
-  inkscape
-  arduino-ide
-  ugs
   pavucontrol
-  micro
   zed-editor
   nixd
   nixpkgs-fmt
+
+  /* plotter thingies but packages
+  inkscape
+  arduino-ide
+  ugs */
 
   /* these both are required for input-remapper along with the service
   input-remapper
