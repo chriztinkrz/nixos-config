@@ -1,27 +1,53 @@
 {
-  "name": "Hellwal",
-  "author": "chriz",
-  "themes": [
-    {
-      "name": "Hellwal Dynamic",
-      "appearance": "dark",
-      "style": {
-        "background": "#00000000",
-        "editor.background": "#00000000",
-        "status_bar.background": "#00000000",
-        "title_bar.background": "#00000000",
-        "pane.background": "#00000000",
-        "syntax": {
-          "comment": "#%%color8.hex%%",
-          "function": "#%%color4.hex%%",
-          "keyword": "#%%color5.hex%%",
-          "string": "#%%color2.hex%%",
-          "type": "#%%color3.hex%%",
-          "variable": "#%%color1.hex%%",
-          "variant": "#%%color6.hex%%",
-          "operator": "#%%color7.hex%%"
-        }
+  "buffer_font_family": ".ZedMono",
+  "base_keymap": "SublimeText",
+  "ui_font_size": 19,
+  "buffer_font_size": 18.5,
+  "autosave": "on_focus_change",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Ayu Dark"
+  },
+  "auto_install_extensions": {
+    "nix": true
+  },
+  "lsp": {
+    "nixd": {
+      "binary": { "path": "nixd" }
+    }
+  },
+  "languages": {
+    "Nix": {
+      "language_servers": ["nixd"],
+      "format_on_save": "on"
+    }
+  },
+  "theme_overrides": {
+    "Ayu Dark": {
+      "background": "#%%color0.hex%%E6",
+      "editor.background": "#%%color0.hex%%E6",
+      "status_bar.background": "#%%color0.hex%%00",
+      "title_bar.background": "#%%color0.hex%%E6",
+      "title_bar.inactive_background": "#%%color0.hex%%E6",
+
+      /* --- THE ULTIMATE FILENAME PANEL FIXES --- */
+      "toolbar.background": "#%%color0.hex%%00",
+      "pane_header.background": "#%%color0.hex%%00",
+      "breadcrumb_container.background": "#%%color0.hex%%00",
+      "tab_bar.background": "#%%color0.hex%%00",
+      "tab.inactive_background": "#%%color0.hex%%00",
+      "tab.active_background": "#%%color0.hex%%E6",
+
+      /* Gutter and Panel backgrounds */
+      "editor.gutter.background": "#%%color0.hex%%E6",
+      "project_panel.background": "#%%color0.hex%%E6",
+      "dock.background": "#%%color0.hex%%00",
+      /* ----------------------------------------- */
+
+      "syntax": {
+        "type": { "color": "#%%color4.hex%%" }
       }
     }
-  ]
+  }
 }

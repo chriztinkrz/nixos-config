@@ -69,31 +69,31 @@ chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
     -kb-row-up 'Left' \
     -kb-row-down 'Right' \
     -theme-str '
-    window { 
-    width: 88%; 
-    location: south; 
-    anchor: south; 
-    margin: 10px; 
+    window {
+    width: 88%;
+    location: south;
+    anchor: south;
+    margin: 10px;
 }
-    listview { 
-    lines: 1; 
-    columns: 10; 
-    fixed-height: true; 
+    listview {
+    lines: 1;
+    columns: 10;
+    fixed-height: true;
 }
-    element { 
-    orientation: vertical; 
-    children: [ element-icon ]; 
+    element {
+    orientation: vertical;
+    children: [ element-icon ];
 }
-    element-icon { 
-    size: 175px; 
-    horizontal-align: 0.5; 
+    element-icon {
+    size: 175px;
+    horizontal-align: 0.5;
 }
-    element-text { 
-    enabled: false; 
+    element-text {
+    enabled: false;
 }
-    inputbar { 
-    enabled: false; 
-} 
+    inputbar {
+    enabled: false;
+}
 
 ')
 
@@ -102,27 +102,39 @@ if [ -n "$chosen" ]; then
     full="$WALL_DIR/$chosen"
     swww img "$full" --transition-type grow --transition-duration 1.75 &
     (
+        # 1. Update the wallpaper symlink
         ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
+
+        # 2. Run hellwal
         hellwal -i "$full"
 
-        # 1. FIRST PUSH (Instant feedback)
+        # 3. ATOMIC PUSH (The Fix)
+        # Instead of moving files, we stream the content.
+        # This keeps the file "alive" so Zed's watcher doesn't break.
+        if [ -f "$HOME/.cache/hellwal/zed.json" ]; then
+            cp "$HOME/.cache/hellwal/zed.json" "$HOME/.cache/zed_temp.json"
+            cat "$HOME/.cache/zed_temp.json" > "$HOME/.cache/hellwal/zed.json"
+            rm "$HOME/.cache/zed_temp.json"
+
+            # 4. Nudge the config link
+            touch "$HOME/.config/zed/settings.json"
+        fi
+
+        # 3. Terminal feedback
         if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then
             sh "$HOME/.cache/hellwal/terminal.sh" > /dev/tty
         fi
 
-        # 2. RELOAD HEAVY SERVICES
+        # 4. Reload services
         pkill -USR1 cava
         pkill -USR2 btop
         makoctl reload
         pkill -USR2 waybar
 
-        # 3. THE "LOCK" DELAY
-        # Wait for Waybar to finish its GTK/DBus initialization
         sleep 0.15
 
-        # 4. FINAL PUSH (Broadcast to all terminals to override Waybar's reset)
+        # Final terminal broadcast
         if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then
-            sh "$HOME/.cache/hellwal/terminal.sh" > /dev/tty
             for tty in /dev/pts/[0-9]*; do
                 sh "$HOME/.cache/hellwal/terminal.sh" > "$tty" 2>/dev/null &
             done
