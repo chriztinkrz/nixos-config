@@ -20,7 +20,7 @@
   ];
 
   # plotter things
-  # services.udev.packages = with pkgs; [ arduino-ide ugs ];
+  services.udev.packages = with pkgs; [ arduino-ide ugs ];
 
 # fonts
   fonts.packages = with pkgs; [
@@ -168,11 +168,10 @@
   zed-editor
   nixd
   nixpkgs-fmt
-
-  /* plotter thingies but packages
   inkscape
   arduino-ide
-  ugs */
+  ugs
+  steam-run
 
   /* these both are required for input-remapper along with the service
   input-remapper
