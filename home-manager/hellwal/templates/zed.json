@@ -1,8 +1,8 @@
 {
   "buffer_font_family": ".ZedMono",
   "base_keymap": "SublimeText",
-  "ui_font_size": 18,
-  "buffer_font_size": 18.5,
+  "ui_font_size": 18.25,
+  "buffer_font_size": 18,
   "autosave": "on_focus_change",
   "theme": {
     "mode": "system",
@@ -56,12 +56,8 @@
         "type": { "color": "#%%color6.hex%%" },
         "variable": { "color": "#%%color7.hex%%" },
         "property": { "color": "#%%color15.hex%%" },
-        "boolean": {
-          "color": "#%%color6.hex%%"
-        } /* This changes "true" and "false" */,
-        "number": {
-          "color": "#%%color13.hex%%"
-        } /* This changes "18" and "18.5" */
+        "boolean": { "color": "#%%color6.hex%%" },
+        "number": { "color": "#%%color13.hex%%" }
       }
     }
   }
