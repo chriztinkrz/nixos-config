@@ -1,7 +1,7 @@
 {
   "buffer_font_family": ".ZedMono",
   "base_keymap": "SublimeText",
-  "ui_font_size": 19,
+  "ui_font_size": 18,
   "buffer_font_size": 18.5,
   "autosave": "on_focus_change",
   "theme": {
@@ -9,14 +9,8 @@
     "light": "One Light",
     "dark": "Ayu Dark"
   },
-  "auto_install_extensions": {
-    "nix": true
-  },
-  "lsp": {
-    "nixd": {
-      "binary": { "path": "nixd" }
-    }
-  },
+  "auto_install_extensions": { "nix": true },
+  "lsp": { "nixd": { "binary": { "path": "nixd" } } },
   "languages": {
     "Nix": {
       "language_servers": ["nixd"],
@@ -25,28 +19,40 @@
   },
   "theme_overrides": {
     "Ayu Dark": {
-      "background": "#%%color0.hex%%E6",
+      /* Backgrounds */
+      "background": "#%%color0.hex%%F2",
       "editor.background": "#%%color0.hex%%E6",
-      "status_bar.background": "#%%color0.hex%%00",
-      "title_bar.background": "#%%color0.hex%%E6",
-      "title_bar.inactive_background": "#%%color0.hex%%E6",
 
-      /* --- THE ULTIMATE FILENAME PANEL FIXES --- */
-      "toolbar.background": "#%%color0.hex%%00",
-      "pane_header.background": "#%%color0.hex%%00",
-      "breadcrumb_container.background": "#%%color0.hex%%00",
-      "tab_bar.background": "#%%color0.hex%%00",
-      "tab.inactive_background": "#%%color0.hex%%00",
-      "tab.active_background": "#%%color0.hex%%E6",
+      /* --- THE FRAME (Top & Bottom) --- */
+      "title_bar.background": "#%%color1.hex%%",
+      "title_bar.inactive_background": "#%%color0.hex%%",
+      "status_bar.background": "#%%color1.hex%%",
+      /* -------------------------------- */
 
-      /* Gutter and Panel backgrounds */
+      /* --- THE FILENAME PANEL (Breadcrumbs/Toolbar) --- */
+      "toolbar.background": "#00000000",
+      "pane_header.background": "#00000000",
+      "breadcrumb_container.background": "#00000000",
+      "tab_bar.background": "#%%color2.hex%%4D",
+      "tab.active_background": "#%%color2.hex%%80",
+      "tab.inactive_background": "#00000000",
+
+      /* --- LINE NUMBERS (Gutter) --- */
       "editor.gutter.background": "#%%color0.hex%%E6",
+      "editor.line_number": "#%%color7.hex%%80",
+      "editor.active_line_number": "#%%color1.hex%%",
+
+      /* Project Panel & Docks */
       "project_panel.background": "#%%color0.hex%%E6",
-      "dock.background": "#%%color0.hex%%00",
-      /* ----------------------------------------- */
+      "dock.background": "#00000000",
 
       "syntax": {
-        "type": { "color": "#%%color4.hex%%" }
+        "comment": { "color": "#%%color7.hex%%A6" },
+        "string": { "color": "#%%color14.hex%%" },
+        "function": { "color": "#%%color4.hex%%" },
+        "keyword": { "color": "#%%color5.hex%%" },
+        "type": { "color": "#%%color6.hex%%" },
+        "variable": { "color": "#%%color7.hex%%A6" }
       }
     }
   }
