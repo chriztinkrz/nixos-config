@@ -6,10 +6,9 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Dark Vaporwave (Blurred)",
+    "dark": "Ayu Dark",
   },
   "auto_install_extensions": {
-    "catppuccin": true,
     "nix": true,
   },
   "lsp": {

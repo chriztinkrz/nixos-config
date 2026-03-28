@@ -14,7 +14,7 @@
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # openssl is required for some package but exceeded eol, only package which requires compiling
+  # openssl is required for sublime4 but exceeded eol, only package which requires compiling
   nixpkgs.config.permittedInsecurePackages = [
     "openssl-1.1.1w"
   ];
@@ -138,7 +138,6 @@
   gammastep
   wl-clipboard
   pulseaudio
-  sublime4
   killall
   gpu-screen-recorder
   yt-dlp

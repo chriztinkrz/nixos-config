@@ -23,7 +23,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, mac-style-plymouth, ... }@inputs: {  
+  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, mac-style-plymouth, ... }@inputs: {
     nixosConfigurations.nixosbtw = nixpkgs.lib.nixosSystem {
       # system = "x86_64-linux";
       specialArgs = { inherit inputs; };

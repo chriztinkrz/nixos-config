@@ -130,7 +130,7 @@
     powerOnBoot = true; };
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
-  # following 3 are needed to bypass keyring issue with sddm autologin
+  # following 3 are needed to bypass keyring issue with sddm autologin in zed
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.sddm.enableGnomeKeyring = true;
   security.pam.services.hyprlock.enableGnomeKeyring = true;
@@ -155,14 +155,12 @@
   function nixswitch
     set label $argv[1]
     set dt (date "+%I:%M%p")
-
     if test -z "$label"
       set full_label "$dt"
     else
       set safe_label (string replace -ar '[^a-zA-Z0-9:_.-]' '_' $label)
       set full_label "$dt"_"$safe_label"
     end
-
     cd ~/nixos-config
     git add -A
     NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#nixosbtw --impure
@@ -183,8 +181,6 @@
     ];
     shell = pkgs.fish;
     password = "9027q";
-    packages = with pkgs; [
-    ];
   };
 
   # no need to change this ig
