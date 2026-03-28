@@ -19,40 +19,49 @@
   },
   "theme_overrides": {
     "Ayu Dark": {
-      /* Backgrounds */
+      /* 1. Window & Editor Surfaces */
       "background": "#%%color0.hex%%F2",
       "editor.background": "#%%color0.hex%%E6",
 
-      /* --- THE FRAME (Top & Bottom) --- */
-      "title_bar.background": "#%%color1.hex%%",
+      /* 2. Top/Bottom Frames */
+      "title_bar.background": "#%%color0.hex%%",
       "title_bar.inactive_background": "#%%color0.hex%%",
-      "status_bar.background": "#%%color1.hex%%",
-      /* -------------------------------- */
+      "status_bar.background": "#%%color0.hex%%",
 
-      /* --- THE FILENAME PANEL (Breadcrumbs/Toolbar) --- */
-      "toolbar.background": "#00000000",
-      "pane_header.background": "#00000000",
-      "breadcrumb_container.background": "#00000000",
-      "tab_bar.background": "#%%color2.hex%%4D",
+      /* 3. The Explorer (Project Panel) Fix */
+      "project_panel.background": "#%%color0.hex%%E6",
+      "project_panel.indent_guide": "#%%color7.hex%%33",
+      "panel.background": "#%%color0.hex%%E6",
+      "left_dock.background": "#%%color0.hex%%E6",
+
+      /* 4. Tabs & Filename Strip */
+      "tab_bar.background": "#00000000",
       "tab.active_background": "#%%color2.hex%%80",
       "tab.inactive_background": "#00000000",
+      "tab.border": "#00000000",
+      "toolbar.background": "#00000000",
+      "pane_header.background": "#00000000",
 
-      /* --- LINE NUMBERS (Gutter) --- */
+      /* 5. Gutter */
       "editor.gutter.background": "#%%color0.hex%%E6",
       "editor.line_number": "#%%color7.hex%%80",
-      "editor.active_line_number": "#%%color1.hex%%",
+      "editor.active_line_number": "#%%color7.hex%%",
 
-      /* Project Panel & Docks */
-      "project_panel.background": "#%%color0.hex%%E6",
-      "dock.background": "#00000000",
-
+      /* 6. Syntax */
       "syntax": {
-        "comment": { "color": "#%%color7.hex%%A6" },
+        "comment": { "color": "#%%color6.hex%%A6" },
         "string": { "color": "#%%color14.hex%%" },
-        "function": { "color": "#%%color4.hex%%" },
-        "keyword": { "color": "#%%color5.hex%%" },
+        "function": { "color": "#%%color15.hex%%" },
+        "keyword": { "color": "#%%color7.hex%%" },
         "type": { "color": "#%%color6.hex%%" },
-        "variable": { "color": "#%%color7.hex%%A6" }
+        "variable": { "color": "#%%color7.hex%%" },
+        "property": { "color": "#%%color15.hex%%" },
+        "boolean": {
+          "color": "#%%color6.hex%%"
+        } /* This changes "true" and "false" */,
+        "number": {
+          "color": "#%%color13.hex%%"
+        } /* This changes "18" and "18.5" */
       }
     }
   }

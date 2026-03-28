@@ -100,6 +100,7 @@ chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
 # --- 4. EXECUTE SELECTION ---
 if [ -n "$chosen" ]; then
     full="$WALL_DIR/$chosen"
+    ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
     swww img "$full" --transition-type grow --transition-duration 1.75 &
     (
         # 1. Generate the colors
