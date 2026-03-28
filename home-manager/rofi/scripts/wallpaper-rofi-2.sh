@@ -102,23 +102,16 @@ if [ -n "$chosen" ]; then
     full="$WALL_DIR/$chosen"
     swww img "$full" --transition-type grow --transition-duration 1.75 &
     (
-        # 1. Update the wallpaper symlink
-        ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
-
-        # 2. Run hellwal
+        # 1. Generate the colors
         hellwal -i "$full"
 
-        # 3. ATOMIC PUSH (The Fix)
-        # Instead of moving files, we stream the content.
-        # This keeps the file "alive" so Zed's watcher doesn't break.
-        if [ -f "$HOME/.cache/hellwal/zed.json" ]; then
-            cp "$HOME/.cache/hellwal/zed.json" "$HOME/.cache/zed_temp.json"
-            cat "$HOME/.cache/zed_temp.json" > "$HOME/.cache/hellwal/zed.json"
-            rm "$HOME/.cache/zed_temp.json"
+        # 2. THE NUCLEAR RELOAD (Works 100% of the time)
+        # We copy the cache file to the ACTUAL Zed config path
+        # Using 'cat' keeps the file-handle open so Zed doesn't lose the watcher
+        cat "$HOME/.cache/hellwal/zed.json" > "$HOME/.config/zed/settings.json"
 
-            # 4. Nudge the config link
-            touch "$HOME/.config/zed/settings.json"
-        fi
+        # 3. Nudge the OS to tell Zed "Hey, look at this!"
+        touch "$HOME/.config/zed/settings.json"
 
         # 3. Terminal feedback
         if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then

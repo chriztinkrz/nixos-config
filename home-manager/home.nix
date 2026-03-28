@@ -36,7 +36,6 @@ in
     "niri/colors.kdl".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/niri.kdl";
     "niri/scripts/".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri/scripts/";
     "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt5ct";
-    "zed/settings.json".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/zed.json";
   };
 
   home.file = {
