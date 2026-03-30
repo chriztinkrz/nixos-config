@@ -23,71 +23,30 @@
     };
   };
 
-  outputs = { self, nixpkgs, silentSDDM, nix-flatpak, zen-browser, home-manager, mac-style-plymouth, ... }@inputs: {
-    nixosConfigurations.nixosbtw = nixpkgs.lib.nixosSystem {
-      # system = "x86_64-linux";
-      specialArgs = { inherit inputs; };
-      modules = [
-        { nixpkgs.hostPlatform = "x86_64-linux"; }
-        ./configs/system.nix
-        ./configs/hardware.nix
-        ./configs/elitebook.nix
-        inputs.nix-flatpak.nixosModules.nix-flatpak
-        inputs.silentSDDM.nixosModules.default
-        inputs.home-manager.nixosModules.home-manager
-        { nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ]; }
+  outputs = { self, nixpkgs, ... }@inputs:
+    let
+      mkSystem = extraModules: nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          { nixpkgs.hostPlatform = "x86_64-linux"; }
+          ./configs/shared.nix
+        ] ++ extraModules;
+      };
+    in {
+      nixosConfigurations = {
+        nixosbtw = mkSystem [
+          ./configs/hardware.nix
+          ./configs/elitebook.nix
+        ];
 
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.users.chriz = import ./home-manager/home.nix;
-          home-manager.backupFileExtension = "backup";
-        }
-      ];
-    };
-    nixosConfigurations.vostro = nixpkgs.lib.nixosSystem {
-      # system = "x86_64-linux";
-      specialArgs = { inherit inputs; };
-      modules = [
-        { nixpkgs.hostPlatform = "x86_64-linux"; }
-        ./configs/system.nix
-        ./configs/hardware_vostro.nix
-        ./configs/vostro.nix
-        inputs.nix-flatpak.nixosModules.nix-flatpak
-        inputs.silentSDDM.nixosModules.default
-        inputs.home-manager.nixosModules.home-manager
-        { nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ]; }
+        vostro = mkSystem [
+          ./configs/hardware_vostro.nix
+          ./configs/vostro.nix
+        ];
 
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.users.chriz = import ./home-manager/home.nix;
-          home-manager.backupFileExtension = "backup";
-        }
-      ];
+        common = mkSystem [
+          ./configs/hardware.nix
+        ];
+      };
     };
-    nixosConfigurations.common = nixpkgs.lib.nixosSystem {
-      # system = "x86_64-linux";
-      specialArgs = { inherit inputs; };
-      modules = [
-        { nixpkgs.hostPlatform = "x86_64-linux"; }
-        ./configs/system.nix
-        ./configs/hardware.nix
-        inputs.nix-flatpak.nixosModules.nix-flatpak
-        inputs.silentSDDM.nixosModules.default
-        inputs.home-manager.nixosModules.home-manager
-        { nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ]; }
-
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.users.chriz = import ./home-manager/home.nix;
-          home-manager.backupFileExtension = "backup";
-        }
-      ];
-    };
-  };
-}
+  }
