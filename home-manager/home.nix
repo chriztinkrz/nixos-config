@@ -9,7 +9,7 @@ in
 {
   imports = [
     ./zen.nix
-    ./git.nix
+    ./git/git.nix
     ./gtk.nix
   ];
 
