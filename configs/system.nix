@@ -66,6 +66,14 @@
     HandleLidSwitchDocked = "ignore";
   };
 
+  # speed up shut down things
+  systemd.settings.Manager = {
+    DefaultTimeoutStopSec = "10s";
+  };
+  services.logind.settings.Login = {
+    KillUserProcesses = true;
+  };
+
   networking.hostName = "nixosbtw";
   networking.networkmanager.enable = true;
 

@@ -2,7 +2,7 @@
   "buffer_font_family": ".ZedMono",
   "base_keymap": "SublimeText",
   "ui_font_size": 18.25,
-  "buffer_font_size": 18,
+  "buffer_font_size": 18.2,
   "autosave": "on_focus_change",
   "theme": {
     "mode": "system",
