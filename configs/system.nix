@@ -1,11 +1,6 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports =
-    [
-      ./silentsddm/sddm.nix
-      ./packages.nix
-    ];
 
   nix.nixPath = [
   "nixos-config=/home/chriz/nixos-config/configs/configuration.nix"

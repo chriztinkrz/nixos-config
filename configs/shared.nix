@@ -2,6 +2,8 @@
 
   imports = [
     ./system.nix
+    ./silentsddm/sddm.nix
+    ./packages.nix
     inputs.nix-flatpak.nixosModules.nix-flatpak
     inputs.home-manager.nixosModules.home-manager
   ];
