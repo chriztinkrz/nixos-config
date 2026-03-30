@@ -8,4 +8,6 @@ sudo nixos-rebuild switch --flake .#vostro
 nix-shell -p swww hellwal imagemagick --run "
   ln -sf ~/Pictures/Pictures/wallpapers/fluid2.jpg $HOME/.cache/current_wallpaper.png
   hellwal -i ~/Pictures/Pictures/wallpapers/fluid2.jpg
+  cat "$HOME/.cache/hellwal/zed.json" > "$HOME/.config/zed/settings.json"
+  touch "$HOME/.config/zed/settings.json"
 "

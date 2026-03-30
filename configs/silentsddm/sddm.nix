@@ -1,6 +1,6 @@
-{ config, inputs, pkgs, lib, ... }: 
+{ config, inputs, pkgs, lib, ... }:
 
-{  
+{
 
   imports = [ inputs.silentSDDM.nixosModules.default ];
 
@@ -9,7 +9,7 @@
     sddm = {
       enable = true;
       wayland.enable = lib.mkForce true;
-      settings.General.InputMethod = lib.mkForce ""; 
+      settings.General.InputMethod = lib.mkForce "";
       extraPackages = with pkgs; [
         kdePackages.qtmultimedia
         kdePackages.qtsvg
@@ -17,7 +17,7 @@
         ffmpeg
       ];
     };
-    
+
     autoLogin = {
       enable = true;
       user = "chriz";
@@ -35,11 +35,11 @@
   };
   services.displayManager.sddm.settings = {
     Theme = {
-      CursorTheme = "ComixCursors-Black";
+      CursorTheme = "ComixCursors-Opaque-Black";
     };
   };
   environment.variables = {
-    XCURSOR_THEME = "ComixCursors-Black";
+    XCURSOR_THEME = "ComixCursors-Opaque-Black";
     XCURSOR_SIZE = "40";
     XCURSOR_PATH = lib.mkForce "/run/current-system/sw/share/icons:$HOME/.icons";
   };
@@ -49,9 +49,9 @@
     enable = true;
     theme = "rei";
     settings = {
-      General.animated-background-placeholder = "../../../../../../../../../${./rei3.png}";
+      General.animated-background-placeholder = "../../../../../../../../../../${./rei3.png}";
       LockScreen = {
-        background = "../../../../../../../../../${./rei3.mp4}";
+        background = "../../../../../../../../../../${./rei3.mp4}";
         blur = 12;
       };
       "LockScreen.Clock" = {

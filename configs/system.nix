@@ -3,7 +3,7 @@
 {
   imports =
     [
-      ../silentsddm/sddm.nix
+      ./silentsddm/sddm.nix
       ./packages.nix
     ];
 
