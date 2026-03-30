@@ -35,17 +35,17 @@
     in {
       nixosConfigurations = {
         nixosbtw = mkSystem [
-          ./configs/hardware.nix
-          ./configs/elitebook.nix
+          ./configs/hardware/hardware.nix
+          ./configs/hardware/elitebook.nix
         ];
 
         vostro = mkSystem [
-          ./configs/hardware_vostro.nix
-          ./configs/vostro.nix
+          ./configs/hardware/hardware_vostro.nix
+          ./configs/hardware/vostro.nix
         ];
 
         common = mkSystem [
-          ./configs/hardware.nix
+          ./configs/hardware/hardware.nix
         ];
       };
     };
