@@ -155,19 +155,37 @@
   programs.fish = {
   enable = true;
   interactiveShellInit = ''
-  function nixswitch
-    set label $argv[1]
-    set dt (date "+%I:%M%p")
-    if test -z "$label"
-      set full_label "$dt"
-    else
-      set safe_label (string replace -ar '[^a-zA-Z0-9:_.-]' '_' $label)
-      set full_label "$dt"_"$safe_label"
+    function nixswitch
+      set label ""
+      set host "nixosbtw"
+
+      set i 1
+      while test $i -le (count $argv)
+        switch $argv[$i]
+          case "-c"
+            set host "common"
+          case "-e"
+            set host "nixosbtw"
+          case "-v"
+            set host "vostro"
+          case "*"
+            set label $argv[$i]
+        end
+        set i (math $i + 1)
+      end
+
+      set dt (date "+%I:%M%p")
+      if test -z "$label"
+        set full_label "$dt"
+      else
+        set safe_label (string replace -a -r -- '[^a-zA-Z0-9:_.-]' '_' $label)
+        set full_label "$dt"_"$safe_label"
+      end
+
+      cd ~/nixos-config
+      git add -A
+      NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#$host --impure
     end
-    cd ~/nixos-config
-    git add -A
-    NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#nixosbtw --impure
-  end
 '';
 };
 
