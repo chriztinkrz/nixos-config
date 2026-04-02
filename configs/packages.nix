@@ -36,6 +36,7 @@
     adwaita-fonts
     dejavu_fonts
     liberation_ttf
+    aileron
 
     # gravitas one
     (pkgs.runCommand "gravitas-one" { } ''
