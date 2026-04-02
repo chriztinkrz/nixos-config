@@ -19,8 +19,8 @@
     "openssl-1.1.1w"
   ];
 
-  # plotter things
-  services.udev.packages = with pkgs; [ arduino-ide ugs ];
+  /* plotter things
+  services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
 
 # fonts
   fonts.packages = with pkgs; [
@@ -168,13 +168,15 @@
   zed-editor
   nixd
   nixpkgs-fmt
-  arduino-ide
-  inkscape
   steam-run
 
   /* these both are required for input-remapper along with the service
   input-remapper
   polkit_gnome */
+
+  /* plotter thingies
+  arduino-ide
+  inkscape */
 
   ];
 

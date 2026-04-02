@@ -133,10 +133,6 @@
     powerOnBoot = true; };
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
-  # following 3 are needed to bypass keyring issue with sddm autologin in zed
-  services.gnome.gnome-keyring.enable = true;
-  security.pam.services.sddm.enableGnomeKeyring = true;
-  security.pam.services.hyprlock.enableGnomeKeyring = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
