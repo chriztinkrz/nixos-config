@@ -25,7 +25,7 @@ generate_list() {
     while read -r name; do
         [ -f "$WALL_DIR/$name" ] && echo "$name"
     done < "$ORDER_FILE" > "$tmp_order"
-    mv "$tmp_order" "$ORDER_FILE"
+    cat "$tmp_order" > "$ORDER_FILE" && rm "$tmp_order"
 
     # 4. Append new wallpapers (not in order file) sorted oldest->newest
     while read -r name; do
@@ -49,7 +49,7 @@ generate_list() {
         fi
     done < "$ORDER_FILE" > "$tmp_cache"
 
-    mv "$tmp_cache" "$CACHE_FILE"
+    cat "$tmp_cache" > "$CACHE_FILE" && rm "$tmp_cache"
     rm "$LOCK_FILE"
 }
 
