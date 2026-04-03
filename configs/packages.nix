@@ -129,7 +129,7 @@
   xdg-desktop-portal-gtk
   cliphist
   nautilus
-  swww
+  awww
   playerctl
   ffmpegthumbnailer
   bluez

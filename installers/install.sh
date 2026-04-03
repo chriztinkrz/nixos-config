@@ -5,7 +5,7 @@ cd ~/nixos-config
 sudo nixos-generate-config --show-hardware-config > ./configs/hardware/hardware.nix
 git add .
 sudo nixos-rebuild switch --flake .#common
-nix-shell -p swww hellwal imagemagick --run "
+nix-shell -p hellwal imagemagick --run "
   ln -sf ~/Pictures/Pictures/wallpapers/fluid2.jpg $HOME/.cache/current_wallpaper.png
   hellwal -i ~/Pictures/Pictures/wallpapers/fluid2.jpg
   cat "$HOME/.cache/hellwal/zed.json" > "$HOME/.config/zed/settings.json"
