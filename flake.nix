@@ -46,6 +46,10 @@
 
         common = mkSystem [
           ./configs/hardware/hardware.nix
+          {
+            services.displayManager.autoLogin.user = "chriz";
+            users.users.chriz.isNormalUser = true;
+          }
         ];
       };
     };

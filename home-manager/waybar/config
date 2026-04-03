@@ -1,11 +1,11 @@
 [{
     "height": 24,
     "spacing": 0,
-    "layer":"top", 
+    "layer":"top",
     "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
     "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
-    "margin-bottom": 5,
-    "margin-top": 8,
+    "margin-bottom": 0,
+    "margin-top": 10,
     "reload_style_on_change": true,
     "fixed-center": true,
 

@@ -127,6 +127,10 @@
   services.printing = {
     enable = true;
     drivers = [ pkgs.canon-cups-ufr2 ];
+    extraConf = ''
+      DefaultOption PrintQuality High
+      DefaultOption Resolution 600dpi
+    '';
   };
   hardware.bluetooth = {
     enable = true;

@@ -101,7 +101,7 @@ chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
 if [ -n "$chosen" ]; then
     full="$WALL_DIR/$chosen"
     ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
-    awww img "$full" --transition-type grow --transition-duration 1.75 &
+    awww img "$full" --transition-type grow --transition-duration 1.65 &
     (
         hellwal -i "$full"
 
