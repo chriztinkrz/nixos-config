@@ -126,11 +126,12 @@
   # system stuff
   services.printing = {
     enable = true;
-    drivers = [ pkgs.cnijfilter2 ];
-    };
+    drivers = [ pkgs.canon-cups-ufr2 ];
+  };
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = true; };
+    powerOnBoot = true;
+  };
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
