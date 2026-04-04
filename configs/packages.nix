@@ -9,6 +9,7 @@
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
   programs.hyprland.enable = true;
+  programs.waybar.enable = true;
 
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -161,7 +162,6 @@
   fastfetch
   mako
   matugen
-  waybar
   hyprshot
   jq
   pavucontrol
