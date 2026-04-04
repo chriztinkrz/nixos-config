@@ -161,7 +161,6 @@
   cava
   fastfetch
   mako
-  matugen
   hyprshot
   jq
   pavucontrol

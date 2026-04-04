@@ -76,7 +76,7 @@ button {
 
 #workspaces button.active {
     color: @color1;
-    background-color: @color15;
+    background-color: @color7;
 }
 
 #workspaces button.urgent {
