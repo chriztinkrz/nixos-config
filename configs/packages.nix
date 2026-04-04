@@ -8,7 +8,6 @@
   programs.gpu-screen-recorder.enable = true;
   programs.foot.enable = true;
   programs.hyprlock.enable = true;
-  # services.input-remapper.enable = true; # small exception 👍
   programs.hyprland.enable = true;
 
   # allow unfree packages
