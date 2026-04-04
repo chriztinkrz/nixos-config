@@ -100,10 +100,10 @@
 
   /* flatpak
   services.flatpak = {
-  enable = true;
+    enable = true;
     packages = [
-    "app.zen_browser.zen"
-  ];
+      "ch.tlaun.TL"
+    ];
     update.auto.enable = true;
     update.auto.onCalendar = "daily";
     uninstallUnmanaged = true;

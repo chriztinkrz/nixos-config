@@ -168,6 +168,7 @@
   nixd
   nixpkgs-fmt
   steam-run
+  inputs.prism-cracked.packages.${pkgs.system}.default
 
   /* these both are required for input-remapper along with the service
   input-remapper
