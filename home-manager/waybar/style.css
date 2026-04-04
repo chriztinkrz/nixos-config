@@ -25,7 +25,6 @@ window#waybar.empty #window {
 /* configuring the modules */
 
 .modules-left {
-    margin: 0px 0 0 400px;
     padding: 0 0px;
 
     background-color: @color1; /* primary fill */
@@ -47,7 +46,6 @@ window#waybar.empty #window {
 }
 
 .modules-right {
-    margin: 0px 402px 0 0;
     padding: 0 0px;
 
     background-color: @color1;
