@@ -1,6 +1,8 @@
 { config, pkgs, inputs, ... }:
 
 {
+  # allow unfree packages
+  nixpkgs.config.allowUnfree = true;
 
   # user packages which have programs option
   programs.niri.enable = true;
@@ -10,10 +12,8 @@
   programs.hyprlock.enable = true;
   programs.hyprland.enable = true;
   programs.waybar.enable = true;
-  programs.steam.enable = true; 
+  programs.steam.enable = true;
 
-  # allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # openssl is required for sublime4 but exceeded eol, only package which requires compiling
   nixpkgs.config.permittedInsecurePackages = [
@@ -23,7 +23,7 @@
   /* plotter things
   services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
 
-# fonts
+  # fonts
   fonts.packages = with pkgs; [
     inter
     hermit

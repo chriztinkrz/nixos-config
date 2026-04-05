@@ -39,11 +39,11 @@ element {
 /* Selected item gets the vibrant primary color background */
 element selected {
     background-color: @color7;
-    text-color: @color8;
+    text-color: @color1;
 }
 
 element-text selected {
-    text-color: @color8;
+    text-color: @color1;
 }
 
 element-icon {
