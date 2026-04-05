@@ -124,6 +124,10 @@
   }; */
 
   # system stuff
+  hardware.graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
   services.printing = {
     enable = true;
     drivers = [ pkgs.canon-cups-ufr2 ];

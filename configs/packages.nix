@@ -10,6 +10,7 @@
   programs.hyprlock.enable = true;
   programs.hyprland.enable = true;
   programs.waybar.enable = true;
+  programs.steam.enable = true; 
 
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -168,7 +169,9 @@
   nixd
   nixpkgs-fmt
   steam-run
-  inputs.prism-cracked.packages.${pkgs.system}.default
+  (inputs.prism-cracked.packages.${pkgs.system}.default.override {
+    jdks = [ openjdk25 ];
+  })
 
   /* these both are required for input-remapper along with the service
   input-remapper
