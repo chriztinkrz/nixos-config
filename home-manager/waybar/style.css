@@ -128,7 +128,7 @@ button {
 #battery.charging,
 #battery.plugged {
     background-color: @color1;
-    color: @color15;
+    color: @color7;
     border-radius: 0 4px 4px 0;
 }
 
