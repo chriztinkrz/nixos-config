@@ -169,9 +169,10 @@
   nixd
   nixpkgs-fmt
   steam-run
-  (inputs.prism-cracked.packages.${pkgs.system}.default.override {
+  (inputs.prism-cracked.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
     jdks = [ openjdk25 ];
   })
+  tree
 
   /* these both are required for input-remapper along with the service
   input-remapper
