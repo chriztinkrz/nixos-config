@@ -173,6 +173,7 @@
     jdks = [ openjdk25 ];
   })
   tree
+  socat
 
   /* these both are required for input-remapper along with the service
   input-remapper
