@@ -8,6 +8,7 @@
     color15: #%%color15%%;
     color1: #%%color1%%;
     color7: #%%color7%%;
+    color8: #%%color8%%;
 
     font: "Inter 15";
     background-color: transparent;
@@ -17,9 +18,9 @@
 window {
     width: 35%;
     padding: 16px;
-    background-color: @bg;
+    background-color: @color1;
     border: 2px;
-    border-color: @accent;
+    border-color: @color7;
     border-radius: 4px;
 }
 
@@ -38,11 +39,11 @@ element {
 /* Selected item gets the vibrant primary color background */
 element selected {
     background-color: @color7;
-    text-color: @color1;
+    text-color: @color8;
 }
 
 element-text selected {
-    text-color: @color1;
+    text-color: @color8;
 }
 
 element-icon {
