@@ -129,3 +129,8 @@ heavy_elevator.png
 Cliff.png
 field.png
 fluid10.jpg
+steins_gate.png
+one_piece.png
+one_piece2.png
+one_piece3.png
+one_piece4.png
