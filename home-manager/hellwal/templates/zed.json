@@ -3,6 +3,7 @@
   "base_keymap": "SublimeText",
   "ui_font_size": 18.25,
   "buffer_font_size": 18.2,
+  "soft_wrap": "editor_width",
   "autosave": {
     "after_delay": {
       "milliseconds": 90000
