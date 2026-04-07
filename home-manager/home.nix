@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 let
-  homeDir = "/home/chriz";
+  homeDir = config.home.homeDirectory;
   configDirectory = "${homeDir}/nixos-config/home-manager/";
   hellwalCache = "${homeDir}/.cache/hellwal";
 in
@@ -28,7 +28,7 @@ in
     "rofi".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/rofi";
     "vicinae".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/vicinae";
     "waybar".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/waybar";
-    "avizo/config.ini".source = config.lib.file.mkOutOfStoreSymlink "/home/chriz/.cache/hellwal/avizo.ini";
+    "avizo/config.ini".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/avizo.ini";
     "btop/btop.conf".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/btop/btop.conf";
     "btop/themes/hellwal.theme".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/btop.theme";
     "niri/colors.kdl".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/niri.kdl";
@@ -42,7 +42,6 @@ in
   };
 
   home.username = "chriz";
-  home.homeDirectory = "/home/chriz";
   home.stateVersion = "25.11";
 
 }
