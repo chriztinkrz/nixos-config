@@ -40,13 +40,14 @@
     initrd.verbose = false;
   };
 
-  # garbage collection
-  nix.settings.auto-optimise-store = true;
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
+  # garbage collection and nh
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep 100";
+    flake = "/home/chriz/nixos-config";
   };
+  nix.settings.auto-optimise-store = true;
 
   # automatic upgrades
   system.autoUpgrade = {
