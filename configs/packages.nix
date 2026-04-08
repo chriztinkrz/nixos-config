@@ -9,8 +9,8 @@
   programs.niri.useNautilus = true;
   programs.gpu-screen-recorder.enable = true;
   programs.foot.enable = true;
-  programs.hyprlock.enable = true;
   programs.hyprland.enable = true;
+  programs.hyprlock.enable = true;
   programs.waybar.enable = true;
   programs.steam.enable = true;
 
