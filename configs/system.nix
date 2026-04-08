@@ -49,12 +49,6 @@
   };
   nix.settings.auto-optimise-store = true;
 
-  # automatic upgrades
-  system.autoUpgrade = {
-    enable = true;
-    allowReboot = false;
-  };
-
   # disable suspend on lid close
   services.logind.settings.Login = {
     HandleLidSwitch = "ignore";
