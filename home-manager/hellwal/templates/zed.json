@@ -9,6 +9,13 @@
       "milliseconds": 90000
     }
   },
+  "gutter": {
+    "line_numbers": true,
+    "code_actions": false,
+    "runnables": false,
+    "breakpoints": false,
+    "folds": false
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
