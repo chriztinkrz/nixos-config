@@ -14,12 +14,6 @@
   programs.waybar.enable = true;
   programs.steam.enable = true;
 
-
-  # openssl is required for sublime4 but exceeded eol, only package which requires compiling
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.1.1w"
-  ];
-
   /* plotter things
   services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
 
