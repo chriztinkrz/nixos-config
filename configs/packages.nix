@@ -13,6 +13,21 @@
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
   programs.steam.enable = true;
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    xorg.libXmu
+    libGL
+    libGLU
+    xorg.libX11
+    xorg.libXext
+    xorg.libXrandr
+    xorg.libXinerama
+    xorg.libXcursor
+    xorg.libXi
+    glib
+    zlib
+    alsa-lib
+  ];
 
   /* plotter things
   services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
