@@ -16,6 +16,15 @@
     "breakpoints": false,
     "folds": false
   },
+  "toolbar": {
+    "quick_actions": false
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
