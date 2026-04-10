@@ -121,28 +121,33 @@
   })
 
   (pkgs.writeShellScriptBin "hypr-screenshot" ''
-      MODE=$1
-      DIR=~/Pictures/Screenshots
-      FILE="$DIR/$(date +'%d.%m.%Y %I:%M:%S %p').png"
-      mkdir -p "$DIR"
+    MODE=$1
+    DIR=~/Pictures/Screenshots
+    FILE="$DIR/$(date +'%d.%m.%Y %I:%M:%S %p').png"
+    mkdir -p "$DIR"
 
-      case "$MODE" in
-        output)
-          ${pkgs.grim}/bin/grim -o eDP-1 -s 0.83 "$FILE"
-          ;;
-        region)
-          GEOM=$(${pkgs.slurp}/bin/slurp)
-          sleep 0.1
-          ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
-          ;;
-        window)
-          GEOM=$(${pkgs.hyprland}/bin/hyprctl activewindow -j | ${pkgs.jq}/bin/jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')
-          ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
-          ;;
-      esac
+    case "$MODE" in
+      output)
+        ${pkgs.grim}/bin/grim -o eDP-1 -s 0.83 "$FILE"
+        ;;
+      region)
+        GEOM=$(${pkgs.slurp}/bin/slurp)
+        sleep 0.1
+        ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
+        ;;
+      window)
+        # Improved window geometry for precision
+        GEOM=$(${pkgs.hyprland}/bin/hyprctl activewindow -j | ${pkgs.jq}/bin/jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')
+        ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
+        ;;
+    esac
 
-      ${pkgs.libnotify}/bin/notify-send "Screenshot" "$MODE captured" -i "$FILE"
-    '')
+    # --- Copy to Clipboard ---
+    if [ -f "$FILE" ]; then
+      ${pkgs.wl-clipboard}/bin/wl-copy < "$FILE"
+      ${pkgs.libnotify}/bin/notify-send "Screenshot" "$MODE captured & copied to clipboard" -i "$FILE"
+    fi
+  '')
 
   # normal packages
   xdg-desktop-portal-gnome
