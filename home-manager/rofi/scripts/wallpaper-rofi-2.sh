@@ -58,6 +58,21 @@ if [ ! -f "$CACHE_FILE" ]; then
     generate_list
 fi
 
+# --- 2.5. PRUNE DELETED ENTRIES ---
+if [ -f "$CACHE_FILE" ] && [ -f "$ORDER_FILE" ]; then
+    tmp_order="${ORDER_FILE}.tmp"
+    while read -r name; do
+        [ -f "$WALL_DIR/$name" ] && echo "$name"
+    done < "$ORDER_FILE" > "$tmp_order"
+    mv "$tmp_order" "$ORDER_FILE"
+
+    tmp_cache="${CACHE_FILE}.tmp"
+    while IFS='|' read -r name thumb; do
+        [ -f "$WALL_DIR/$name" ] && echo "$name|$thumb"
+    done < "$CACHE_FILE" > "$tmp_cache"
+    mv "$tmp_cache" "$CACHE_FILE"
+fi
+
 # --- 3. LAUNCH ROFI ---
 last_row=$(($(wc -l < "$CACHE_FILE") - 1))
 chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
