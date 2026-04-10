@@ -82,28 +82,14 @@
     ${pkgs.rofi}/bin/rofi -show power -modi "power:${pkgs.bash}/bin/bash /home/chriz/.config/rofi/scripts/rofi-power-menu" -theme-str 'window { width: 11%; }'
   '')
 
-    # rofi external modes
+  # rofi external modes
   ( rofi.override {
       plugins = [
          rofi-emoji
          rofi-calc
       ];
-    })
-
-  /* comix cursors
-  (pkgs.stdenv.mkDerivation rec {
-    pname = "comixcursors";
-    version = "0.10.1";
-    src = pkgs.fetchurl {
-      url = "https://limitland.gitlab.io/comixcursors/ComixCursors-${version}.tar.bz2";
-      sha256 = "sha256-UdgXOGmLsgBjRwy9XouXvxL+2r+Nwn/8zD+V4JwBWcI=";
-    };
-    sourceRoot = ".";
-    installPhase = ''
-      mkdir -p $out/share/icons
-      cp -r * $out/share/icons/
-    '';
-  }) */
+    }
+  )
 
   # create an fhs environment using the command `fhs`, enabling the execution of non-nixos packages in nixos
   (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
@@ -133,6 +119,30 @@
     # reads existing script from nix-search-tv package
     text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
   })
+
+  (pkgs.writeShellScriptBin "hypr-screenshot" ''
+      MODE=$1
+      DIR=~/Pictures/Screenshots
+      FILE="$DIR/$(date +'%d.%m.%Y %I:%M:%S %p').png"
+      mkdir -p "$DIR"
+
+      case "$MODE" in
+        output)
+          ${pkgs.grim}/bin/grim -o eDP-1 -s 0.83 "$FILE"
+          ;;
+        region)
+          GEOM=$(${pkgs.slurp}/bin/slurp)
+          sleep 0.1
+          ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
+          ;;
+        window)
+          GEOM=$(${pkgs.hyprland}/bin/hyprctl activewindow -j | ${pkgs.jq}/bin/jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')
+          ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
+          ;;
+      esac
+
+      ${pkgs.libnotify}/bin/notify-send "Screenshot" "$MODE captured" -i "$FILE"
+    '')
 
   # normal packages
   xdg-desktop-portal-gnome
@@ -171,7 +181,6 @@
   cava
   fastfetch
   mako
-  hyprshot
   jq
   pavucontrol
   zed-editor
@@ -182,6 +191,8 @@
     jdks = [ openjdk25 ];
   })
   tree
+  grim
+  slurp
 
   /* these both are required for input-remapper along with the service
   input-remapper
