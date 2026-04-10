@@ -171,6 +171,7 @@
   brightnessctl
   tty-clock
   imagemagick
+  ghostscript # for pdf conversion with imagemagick
   mpv
   gammastep
   wl-clipboard
