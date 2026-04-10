@@ -60,16 +60,23 @@ fi
 
 # --- 2.5. PRUNE DELETED ENTRIES ---
 if [ -f "$CACHE_FILE" ] && [ -f "$ORDER_FILE" ]; then
-    tmp_order="${ORDER_FILE}.tmp"
-    while read -r name; do
-        [ -f "$WALL_DIR/$name" ] && echo "$name"
-    done < "$ORDER_FILE" > "$tmp_order"
-    mv "$tmp_order" "$ORDER_FILE"
-
     tmp_cache="${CACHE_FILE}.tmp"
+    > "$tmp_cache"
+    tmp_order=$(mktemp)
+
     while IFS='|' read -r name thumb; do
-        [ -f "$WALL_DIR/$name" ] && echo "$name|$thumb"
-    done < "$CACHE_FILE" > "$tmp_cache"
+        if [ -f "$WALL_DIR/$name" ]; then
+            echo "$name" >> "$tmp_order"
+            echo "$name|$thumb" >> "$tmp_cache"
+        else
+            [ -f "$thumb" ] && rm -f "$thumb"
+        fi
+    done < "$CACHE_FILE"
+
+    # Write through the symlink, don't replace it
+    cat "$tmp_order" > "$ORDER_FILE"
+    rm "$tmp_order"
+
     mv "$tmp_cache" "$CACHE_FILE"
 fi
 

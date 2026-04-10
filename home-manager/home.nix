@@ -11,7 +11,6 @@ in
     ./zen.nix
     ./git/git.nix
     ./gtk.nix
-    ./micro.nix
   ];
 
   xdg.configFile = {
