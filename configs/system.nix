@@ -2,11 +2,6 @@
 
 {
 
-  nix.nixPath = [
-  "nixos-config=/home/chriz/nixos-config/configs/configuration.nix"
-  "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos"
-];
-
   # kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 

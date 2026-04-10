@@ -15,15 +15,15 @@
   programs.steam.enable = true;
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
-    xorg.libXmu
+    libxmu
     libGL
     libGLU
-    xorg.libX11
-    xorg.libXext
-    xorg.libXrandr
-    xorg.libXinerama
-    xorg.libXcursor
-    xorg.libXi
+    libx11
+    libxext
+    libxrandr
+    libxinerama
+    libxcursor
+    libxi
     glib
     zlib
     alsa-lib
