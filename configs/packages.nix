@@ -1,5 +1,4 @@
 { config, pkgs, inputs, ... }:
-
 {
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -199,6 +198,9 @@
   tree
   grim
   slurp
+  quickshell
+  qt6.qt5compat
+  qt6.qtwayland
 
   /* these both are required for input-remapper along with the service
   input-remapper
