@@ -1,4 +1,13 @@
 { config, pkgs, inputs, ... }:
+let
+  legacyLauncher = pkgs.buildFHSEnv {
+    name = "legacy-launcher";
+    targetPkgs = pkgs: (with pkgs; [
+      jdk21 glfw openal alsa-lib libpulseaudio libGL libx11 udev vulkan-loader
+    ]);
+    runScript = "java -jar ~/nixos-config/configs/legacy_launcher/LegacyLauncher.jar";
+  };
+in
 {
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -201,7 +210,8 @@
   quickshell
   qt6.qt5compat
   qt6.qtwayland
-  hmcl
+  # hmcl
+  legacyLauncher
 
   /* these both are required for input-remapper along with the service
   input-remapper
