@@ -10,7 +10,7 @@
     }
   },
   "gutter": {
-    "line_numbers": true,
+    "line_numbers": false,
     "code_actions": false,
     "runnables": false,
     "breakpoints": false,
