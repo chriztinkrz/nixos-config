@@ -118,7 +118,6 @@
   (pkgs.writeShellApplication {
     name = "ns"; # command name
     runtimeInputs = with pkgs; [
-      fzf
       nix-search-tv
     ];
     # reads existing script from nix-search-tv package
@@ -204,6 +203,7 @@
   quickshell
   qt6.qt5compat
   qt6.qtwayland
+  fzf
 
   /* these both are required for input-remapper along with the service
   input-remapper
