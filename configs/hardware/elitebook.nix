@@ -1,4 +1,7 @@
 { config, pkgs, ... }:
 {
-boot.kernelModules = [ "amdgpu" ];
+  boot.kernelModules = [ "amdgpu" ];
+  hardware.graphics.extraPackages = with pkgs; [
+    rocmPackages.clr.icd
+  ];
 }

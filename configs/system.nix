@@ -97,9 +97,9 @@
     update.auto.enable = true;
     update.auto.onCalendar = "daily";
     uninstallUnmanaged = true;
-  };
+    }; */
 
-  appimage
+  # appimage
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
   programs.appimage.package = pkgs.appimage-run.override
@@ -111,7 +111,7 @@
       pkgs.python312
       pkgs.python312Packages.torch
     ];
-  }; */
+  };
 
   # system stuff
   hardware.graphics = {

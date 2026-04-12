@@ -1,13 +1,4 @@
 { config, pkgs, inputs, ... }:
-let
-  legacyLauncher = pkgs.buildFHSEnv {
-    name = "legacy-launcher";
-    targetPkgs = pkgs: (with pkgs; [
-      jdk21 glfw openal alsa-lib libpulseaudio libGL libx11 udev vulkan-loader
-    ]);
-    runScript = "java -jar ~/nixos-config/configs/legacy_launcher/LegacyLauncher.jar";
-  };
-in
 {
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -21,21 +12,26 @@ in
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
   programs.steam.enable = true;
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    libxmu
-    libGL
-    libGLU
-    libx11
-    libxext
-    libxrandr
-    libxinerama
-    libxcursor
-    libxi
-    glib
-    zlib
-    alsa-lib
-  ];
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      vulkan-loader
+      libvdpau
+      libva
+      libxmu
+      libGL
+      libGLU
+      libx11
+      libxext
+      libxrandr
+      libxinerama
+      libxcursor
+      libxi
+      glib
+      zlib
+      alsa-lib
+    ];
+  };
 
   /* plotter things
   services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
@@ -211,7 +207,7 @@ in
   qt6.qt5compat
   qt6.qtwayland
   # hmcl
-  legacyLauncher
+  upscayl
 
   /* these both are required for input-remapper along with the service
   input-remapper
@@ -221,6 +217,5 @@ in
   arduino-ide
   inkscape */
 
-  ];
-
+  ]++ (import ./legacy_launcher/legacy_launcher.nix { inherit pkgs; });
 }
