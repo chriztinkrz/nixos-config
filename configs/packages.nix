@@ -197,17 +197,12 @@
   nixd
   nixpkgs-fmt
   steam-run
-  /* (inputs.prism-cracked.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
-    jdks = [ openjdk25 ];
-  }) */
   tree
   grim
   slurp
   quickshell
   qt6.qt5compat
   qt6.qtwayland
-  # hmcl
-  upscayl
 
   /* these both are required for input-remapper along with the service
   input-remapper
