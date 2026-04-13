@@ -13,6 +13,10 @@ in
     ./gtk.nix
   ];
 
+  home.username = "chriz";
+  home.homeDirectory = pkgs.lib.mkDefault "/home/${config.home.username}";
+  home.stateVersion = "25.11";
+
   xdg.configFile = {
     "fastfetch".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/fastfetch";
     "fish".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/fish";
@@ -40,9 +44,5 @@ in
     ".cache/wall_order.txt".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wall_script_cache/wall_order.txt";
     ".cache/wallthumbs".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wall_script_cache/wallthumbs/";
   };
-
-  home.username = "chriz";
-  home.homeDirectory = pkgs.lib.mkDefault "/home/${config.home.username}";
-  home.stateVersion = "25.11";
 
 }
