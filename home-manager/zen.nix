@@ -112,6 +112,11 @@
         {
           id = "focusURLBar";
           key = "L";
+          modifiers.control = true;
+        }
+        {
+          id = "focusURLBar2";
+          key = "L";
           modifiers.alt = true;
         }
       ];
