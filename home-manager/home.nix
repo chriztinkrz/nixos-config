@@ -42,6 +42,7 @@ in
   };
 
   home.username = "chriz";
+  home.homeDirectory = pkgs.lib.mkDefault "/home/${config.home.username}";
   home.stateVersion = "25.11";
 
 }
