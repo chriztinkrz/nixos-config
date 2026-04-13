@@ -8,7 +8,7 @@
   services.displayManager = {
     sddm = {
       enable = true;
-      wayland.enable = lib.mkForce true;
+      wayland.enable = lib.mkForce false;
       settings.General.InputMethod = lib.mkForce "";
       extraPackages = with pkgs; [
         kdePackages.qtmultimedia
