@@ -27,10 +27,10 @@
       };
     };
 
-    profiles.${config.home.username} = {    
+    profiles.${config.home.username} = {
       id = 0;
       isDefault = true;
-      
+
       settings = {
 
         # --- UI & Layout ---
@@ -82,7 +82,7 @@
         {
           id = "key_quitApplication";
           disabled = true;
-        }      
+        }
         {
           id = "zen-compact-mode-show-sidebar";
           key = "q";
@@ -107,6 +107,11 @@
         {
           id = "goHome";
           key = "x";
+          modifiers.alt = true;
+        }
+        {
+          id = "focusURLBar";
+          key = "L";
           modifiers.alt = true;
         }
       ];
