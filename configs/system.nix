@@ -65,7 +65,7 @@
   # set your time zone.
   time.timeZone = "Asia/Muscat";
 
-  # select internationalisation properties.
+  # internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
@@ -196,7 +196,6 @@
     "dialout"
     ];
     shell = pkgs.fish;
-    password = "9027q";
   };
 
   # no need to change this ig
