@@ -33,6 +33,23 @@
       (pkgs.runCommand "steamrun-lib" {} "mkdir $out; ln -s ${pkgs.steam-run.fhsenv}/usr/lib64 $out/lib")
     ];
   };
+  programs.scroll = {
+    enable = true;
+    package = inputs.scroll-flake.packages.${pkgs.stdenv.hostPlatform.system}.scroll-git; # read more below
+    extraSessionCommands = ''
+        # tell qt, gdk and others to use the wayland backend by default, x11 if not available
+        export QT_QPA_PLATFORM="wayland;xcb"
+        export GDK_BACKEND="wayland,x11"
+        export SDL_VIDEODRIVER=wayland
+        export CLUTTER_BACKEND=wayland
+
+        # xdg desktop variables to set scroll as the desktop
+        export XDG_CURRENT_DESKTOP=scroll
+        export XDG_SESSION_TYPE=wayland
+        export XDG_SESSION_DESKTOP=scroll
+        export ELECTRON_OZONE_PLATFORM_HINT=wayland
+    '';
+  };
 
   /* plotter things
   services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
@@ -140,7 +157,6 @@
         ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
         ;;
       window)
-        # Improved window geometry for precision
         GEOM=$(${pkgs.hyprland}/bin/hyprctl activewindow -j | ${pkgs.jq}/bin/jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')
         ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
         ;;

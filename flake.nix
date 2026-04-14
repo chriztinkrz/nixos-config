@@ -22,6 +22,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # prism-cracked.url = "github:Diegiwg/PrismLauncher-Cracked";
+    scroll-flake = {
+      url = "github:Diax170/scroll-flake";
+      inputs.nixpkgs.follows = "nixpkgs"; # this assumes nixos unstable
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
