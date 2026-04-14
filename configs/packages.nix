@@ -152,9 +152,13 @@
         ${pkgs.grim}/bin/grim -o eDP-1 -s 0.83 "$FILE"
         ;;
       region)
+        ${pkgs.wayfreeze}/bin/wayfreeze &
+        FREEZE_PID=$!
+        sleep 0.1
         GEOM=$(${pkgs.slurp}/bin/slurp)
         sleep 0.1
         ${pkgs.grim}/bin/grim -s 0.83 -g "$GEOM" "$FILE"
+        kill $FREEZE_PID
         ;;
       window)
         GEOM=$(${pkgs.hyprland}/bin/hyprctl activewindow -j | ${pkgs.jq}/bin/jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')
@@ -220,6 +224,8 @@
   qt6.qt5compat
   qt6.qtwayland
   fzf
+  wayfreeze
+  hyprfreeze
 
   /* these both are required for input-remapper along with the service
   input-remapper
