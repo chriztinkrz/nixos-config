@@ -38,9 +38,12 @@
   # garbage collection and nh
   programs.nh = {
     enable = true;
-    clean.enable = true;
-    clean.extraArgs = "--keep 100";
     flake = "/home/chriz/nixos-config";
+    clean = {
+      enable = true;
+      extraArgs = "--keep 100";
+      dates = "hourly";
+    };
   };
   nix.settings.auto-optimise-store = true;
 

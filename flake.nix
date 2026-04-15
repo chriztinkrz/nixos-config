@@ -21,7 +21,6 @@
       url = "github:SergioRibera/s4rchiso-plymouth-theme";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # prism-cracked.url = "github:Diegiwg/PrismLauncher-Cracked";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
