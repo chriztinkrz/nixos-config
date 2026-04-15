@@ -33,7 +33,7 @@
       (pkgs.runCommand "steamrun-lib" {} "mkdir $out; ln -s ${pkgs.steam-run.fhsenv}/usr/lib64 $out/lib")
     ];
   };
-  programs.scroll = {
+  /* programs.scroll = {
     enable = true;
     package = inputs.scroll-flake.packages.${pkgs.stdenv.hostPlatform.system}.scroll-git; # read more below
     extraSessionCommands = ''
@@ -49,7 +49,7 @@
         export XDG_SESSION_DESKTOP=scroll
         export ELECTRON_OZONE_PLATFORM_HINT=wayland
     '';
-  };
+  }; */
 
   /* plotter things
   services.udev.packages = with pkgs; [ arduino-ide ugs ]; */

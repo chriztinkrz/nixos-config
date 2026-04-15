@@ -138,17 +138,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-  # for dawsers/scroll
-  /* programs.uwsm = {
-    enable = true;
-    waylandCompositors = {
-      scroll = {
-        prettyName = "scroll";
-        comment = "scroll managed by UWSM";
-        binPath = "/run/current-system/sw/bin/scroll";
-      };
-    };
-  }; */
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   services.devmon.enable = true;
