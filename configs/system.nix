@@ -14,7 +14,7 @@
   label = builtins.getEnv "NIXOS_LABEL";
   in if label != "" then label else "unlabeled";
 
-  /* plymouth
+  # plymouth
   boot = {
     plymouth = {
       enable = true;
@@ -33,7 +33,7 @@
 
     consoleLogLevel = 0;
     initrd.verbose = false;
-  }; */
+  };
 
   # garbage collection and nh
   programs.nh = {
