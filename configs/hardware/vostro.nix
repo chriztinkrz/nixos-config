@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
 # vostro 5471 fixes
   nixpkgs.config.allowUnfree = true;
@@ -20,4 +20,5 @@
     "i915.enable_psr=0"
     ];
   boot.blacklistedKernelModules = [ "amdgpu" "radeon" ];
+  programs.nh.clean.extraArgs = lib.mkForce "--keep 35";
 }
