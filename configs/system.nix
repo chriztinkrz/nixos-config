@@ -6,15 +6,20 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # boot thingies
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot = {
+    initrd.systemd.enable = true;
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+  };
 
   # required for boot entry label ig?
   system.nixos.label = let
   label = builtins.getEnv "NIXOS_LABEL";
   in if label != "" then label else "unlabeled";
 
-  # plymouth
+  /* plymouth
   boot = {
     plymouth = {
       enable = true;
@@ -32,8 +37,7 @@
     ];
 
     consoleLogLevel = 0;
-    initrd.verbose = false;
-  };
+  }; */
 
   # garbage collection and nh
   programs.nh = {
