@@ -208,7 +208,6 @@
   qt6.qtwayland
   fzf
   wayfreeze
-  hyprfreeze
 
   /* these both are required for input-remapper along with the service
   input-remapper

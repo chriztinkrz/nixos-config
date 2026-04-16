@@ -129,3 +129,5 @@ field.png
 fluid10.jpg
 steins_gate.png
 one_piece.png
+hut_looking_landscape_with_sheep.jpeg
+white_haired_woman_in_yukata.png
