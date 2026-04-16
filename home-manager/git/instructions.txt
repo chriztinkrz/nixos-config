@@ -1,0 +1,7 @@
+to do for git:
+ssh-keygen -t ed25519
+cat ~/.ssh/id_ed25519.pub
+copy to github > ssh and gpg keys > new ssh key
+cd nixos-config/
+ssh -T "git@github.com"
+git remote set-url origin git@github.com:chriztinkrz/nixos-config.git
