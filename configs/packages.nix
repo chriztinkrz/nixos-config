@@ -208,6 +208,7 @@
   qt6.qtwayland
   fzf
   wayfreeze
+  unimatrix
 
   /* these both are required for input-remapper along with the service
   input-remapper
