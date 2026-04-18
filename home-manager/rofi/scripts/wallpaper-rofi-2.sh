@@ -11,6 +11,7 @@ generate_list() {
     if [ -f "$LOCK_FILE" ]; then return; fi
     touch "$LOCK_FILE"
 
+    trap 'rm -f "$LOCK_FILE"' EXIT INT TERM
     local tmp_cache="${CACHE_FILE}.tmp"
 
     # 1. Find all current wallpapers on disk

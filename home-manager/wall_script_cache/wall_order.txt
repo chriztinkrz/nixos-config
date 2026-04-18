@@ -131,3 +131,11 @@ steins_gate.png
 one_piece.png
 hut_looking_landscape_with_sheep.jpeg
 white_haired_woman_in_yukata.png
+orange_mountain.jpg
+hatsun_miku.png
+nahida.jpeg
+reflection_of_train.png
+reflection_of_train_2.png
+a_house_with_a_bike_and_a_chair.jpg
+cloudy_sky.jpg
+night_landscape.jpeg
