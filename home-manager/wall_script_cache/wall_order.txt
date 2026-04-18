@@ -139,3 +139,4 @@ reflection_of_train_2.png
 a_house_with_a_bike_and_a_chair.jpg
 cloudy_sky.jpg
 night_landscape.jpeg
+blacky_hole.jpg
