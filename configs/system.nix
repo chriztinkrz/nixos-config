@@ -121,6 +121,11 @@
   };
 
   # system stuff
+  programs.sway = {
+    enable = true;
+    package = pkgs.swayfx;
+    # checkConfig = false;
+  };
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-wlr pkgs.xdg-desktop-portal-gtk ];

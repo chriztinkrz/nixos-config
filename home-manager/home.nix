@@ -11,7 +11,7 @@ in
     ./zen.nix
     ./git/git.nix
     ./gtk.nix
-    ./sway.nix
+    # ./sway.nix
   ];
 
   home.username = "chriz";

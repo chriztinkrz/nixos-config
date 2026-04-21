@@ -127,6 +127,12 @@ blur enable
 corner_radius 7
 default_border pixel 4
 
+set $opacity 0.9
+for_window [app_id="foot"] opacity 0.6
+for_window [class=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity
+for_window [app_id="dev.zed.Zed"] opacity 0.7
+
 # reload the configuration file
 bindsym $mod+r reload
 bindsym $mod+Shift+r restart
