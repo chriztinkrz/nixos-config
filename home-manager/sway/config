@@ -125,7 +125,7 @@ gaps top -5
 
 blur enable
 corner_radius 7
-default_border none
+default_border pixel 4
 
 # reload the configuration file
 bindsym $mod+r reload
