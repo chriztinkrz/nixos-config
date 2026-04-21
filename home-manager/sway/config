@@ -123,6 +123,10 @@ gaps inner 16
 gaps top -5
 # gaps outer 0
 
+blur enable
+corner_radius 7
+default_border none
+
 # reload the configuration file
 bindsym $mod+r reload
 bindsym $mod+Shift+r restart

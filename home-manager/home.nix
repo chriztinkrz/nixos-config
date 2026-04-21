@@ -11,6 +11,7 @@ in
     ./zen.nix
     ./git/git.nix
     ./gtk.nix
+    ./sway.nix
   ];
 
   home.username = "chriz";
@@ -38,7 +39,7 @@ in
     "niri/colors.kdl".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/niri.kdl";
     "niri/scripts/".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri/scripts/";
     "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt5ct";
-    "sway".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/sway";
+    "sway/config".source = lib.mkForce (config.lib.file.mkOutOfStoreSymlink "${configDirectory}/sway/config");
   };
 
   home.file = {
