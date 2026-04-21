@@ -79,6 +79,11 @@ button {
     background-color: @color7;
 }
 
+#workspaces button.focused {
+    color: @color1;
+    background-color: @color7;
+}
+
 #workspaces button.urgent {
     background-color: @urgent;
 }

@@ -6,12 +6,13 @@ output eDP-1 resolution 1920x1080 position 1920,1080 scale 0.8
 
 font pango:monospace 8
 
-exec --no-startup-id dex --autostart --environment i3
-exec --autostart hyprlock --immediate
-exec --autostart ~/.config/hypr/scripts/startup_script.sh
-exec --autostart avizo-service
-exec --autostart wl-paste --watch cliphist store
-exec --autostart quickshell -p ~/.config/hypr/qs-hyprview/shell.qml
+# exec --no-startup-id dex --autostart --environment i3
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec hyprlock --immediate
+exec ~/.config/hypr/scripts/startup_script.sh
+exec avizo-service
+exec wl-paste --watch cliphist store
+exec quickshell -p ~/.config/hypr/qs-hyprview/shell.qml
 
 # audio and brightness controls
 bindsym $alt+f2 exec volumectl -u up
