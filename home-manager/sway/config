@@ -18,49 +18,44 @@ output eDP-1 resolution 1920x1080 position 1920,1080 scale 0.8
 # is used in the bar {} block below.
 font pango:monospace 8
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Start XDG autostart .desktop files using dex. See also
-# https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
+# audio and brightness controls
+bindsym $alt+f2 exec volumectl -u up
+bindsym $alt+f1 exec volumectl -u down
+bindsym $alt+f3 exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym f2 exec playerctl play-pause
+bindsym f1 exec playerctl previous
+bindsym f3 exec playerctl next
+bindsym shift+f2 exec lightctl up
+bindsym shift+f1 exec lightctl down
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
-# Use Mouse+$mod to drag floating windows to their wanted position
+# to drag windows with mouse
 floating_modifier $mod
-
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
-# tiling_drag modifier titlebar
-
-# start a terminal
-bindsym $mod+Return exec foot
-bindsym $mod+b exec zen-beta
-bindsym $mod+e exec nautilus --new-window
 
 # kill focused window
 bindsym Ctrl+Shift+z kill
 
-# start dmenu (a program launcher)
+# applications
+bindsym $mod+Return exec foot
+bindsym $mod+b exec zen-beta
+bindsym $mod+e exec nautilus --new-window
+
+# rofi
 bindsym $mod+space exec --no-startup-id "rofi -show drun -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 17%;}'"
+bindsym $alt+ctrl+s exec ~/.config/rofi/scripts/select-audio.sh
+bindsym $mod+grave exec ~/.config/rofi/scripts/wallpaper-rofi-2.sh
+bindsym $mod+shift+b exec ~/.config/rofi/scripts/rofi-bluetooth-claude.sh
+bindsym $mod+v exec ~/.config/rofi/scripts/clipboard.sh
+bindsym $mod+shift+v exec rofi -modi emoji -show emoji -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 30%;}'
+bindsym $mod+escape exec rofi-power
+# bindsym $mod+shift+c exec rofi -show calc -theme-str 'window { width: 15%; }' -theme-str 'listview {lines: 0;}'
+
+# other stuff to escape quickshell
+bindsym $mod+l exec hyprlock --immediate
+bindsym $mod+n exec makoctl dismiss -a
+bindsym $mod+f5 exec gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'
+bindsym $mod+f4 exec pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'
 
 # change focus
 bindsym $alt+a focus left
@@ -75,11 +70,9 @@ bindsym Ctrl+Shift+w move up
 bindsym Ctrl+Shift+d move right
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+v split v
+# split
+bindsym $mod+x split h
+bindsym $mod+c split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -139,8 +132,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+r reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
@@ -170,7 +162,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+# bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
