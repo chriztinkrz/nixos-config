@@ -121,6 +121,16 @@
   };
 
   # system stuff
+  environment.pathsToLink = [ "/libexec" ];
+  services.xserver = {
+    enable = true;
+    desktopManager = {
+      xterm.enable = false;
+    };
+    windowManager.i3 = {
+      enable = true;
+    };
+  };
   hardware.graphics = {
     enable = true;
     enable32Bit = true;

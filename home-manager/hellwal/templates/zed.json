@@ -1,8 +1,8 @@
 {
   "buffer_font_family": ".ZedMono",
   "base_keymap": "SublimeText",
-  "ui_font_size": 18.25,
-  "buffer_font_size": 18.2,
+  "ui_font_size": 18.5,
+  "buffer_font_size": 19,
   "soft_wrap": "editor_width",
   "autosave": {
     "after_delay": {

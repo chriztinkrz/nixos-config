@@ -12,6 +12,10 @@
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
   programs.steam.enable = true;
+  programs.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true;
+  };
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [

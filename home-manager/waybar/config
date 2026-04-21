@@ -17,6 +17,7 @@
     ],
     "modules-center": [
         "hyprland/workspaces",
+        "sway/workspaces",
         "clock",
     ],
     "modules-right": [
