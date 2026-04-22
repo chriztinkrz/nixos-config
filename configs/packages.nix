@@ -149,7 +149,6 @@
         ;;
     esac
 
-    # --- Copy to Clipboard ---
     if [ -f "$FILE" ]; then
       ${pkgs.wl-clipboard}/bin/wl-copy < "$FILE"
       ${pkgs.libnotify}/bin/notify-send "Screenshot" "$MODE captured & copied to clipboard" -i "$FILE"

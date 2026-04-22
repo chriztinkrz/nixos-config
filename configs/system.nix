@@ -124,22 +124,6 @@
   programs.sway = {
     enable = true;
     package = pkgs.swayfx;
-    # checkConfig = false;
-  };
-  xdg.portal = {
-    enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-wlr pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = "*";
-  };
-  environment.pathsToLink = [ "/libexec" ];
-  services.xserver = {
-    enable = true;
-    desktopManager = {
-      xterm.enable = false;
-    };
-    windowManager.i3 = {
-      enable = true;
-    };
   };
   hardware.graphics = {
     enable = true;
