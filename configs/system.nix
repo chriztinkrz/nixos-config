@@ -140,6 +140,13 @@
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
+    settings = {
+      General = {
+        ControllerMode = "dual";
+        Experimental = true;
+        JustWorksRepairing = "always";
+      };
+    };
   };
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
