@@ -1,1 +1,169 @@
-/nix/store/mjy878y9zafsdazxw7baadqx4ncv5lkp-home-manager-files/.config/sway/config
+
+set $mod Mod4
+set $alt Mod1
+
+output eDP-1 resolution 1920x1080 position 1920,1080 scale 0.8
+
+font pango:monospace 8
+
+# exec --no-startup-id dex --autostart --environment i3
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec hyprlock --immediate
+exec ~/.config/hypr/scripts/startup_script.sh
+exec avizo-service
+exec wl-paste --watch cliphist store
+exec quickshell -p ~/.config/hypr/qs-hyprview/shell.qml
+
+# audio and brightness controls
+bindsym $alt+f2 exec volumectl -u up
+bindsym $alt+f1 exec volumectl -u down
+bindsym $alt+f3 exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym f2 exec playerctl play-pause
+bindsym f1 exec playerctl previous
+bindsym f3 exec playerctl next
+bindsym shift+f2 exec lightctl up
+bindsym shift+f1 exec lightctl down
+
+# to drag windows with mouse
+floating_modifier $mod
+
+# kill focused window
+bindsym Ctrl+Shift+z kill
+
+# applications
+bindsym $mod+Return exec foot
+bindsym $mod+b exec zen-beta
+bindsym $mod+e exec nautilus --new-window
+
+# rofi
+bindsym $mod+space exec --no-startup-id "rofi -show drun -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 17%;}'"
+bindsym $alt+ctrl+s exec ~/.config/rofi/scripts/select-audio.sh
+bindsym $mod+grave exec ~/.config/rofi/scripts/wallpaper-rofi-2.sh
+bindsym $mod+shift+b exec ~/.config/rofi/scripts/rofi-bluetooth-claude.sh
+bindsym $mod+v exec ~/.config/rofi/scripts/clipboard.sh
+bindsym $mod+shift+v exec rofi -modi emoji -show emoji -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 30%;}'
+bindsym $mod+escape exec rofi-power
+# bindsym $mod+shift+c exec rofi -show calc -theme-str 'window { width: 15%; }' -theme-str 'listview {lines: 0;}'
+
+# other stuff to escape quickshell
+bindsym $mod+l exec hyprlock --immediate
+bindsym $mod+n exec makoctl dismiss -a
+bindsym $mod+f5 exec gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'
+bindsym $mod+f4 exec pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'
+
+# change focus
+bindsym $alt+a focus left
+bindsym $alt+s focus down
+bindsym $alt+w focus up
+bindsym $alt+d focus right
+
+# move focused window
+bindsym Ctrl+Shift+a move left
+bindsym Ctrl+Shift+s move down
+bindsym Ctrl+Shift+w move up
+bindsym Ctrl+Shift+d move right
+bindsym $mod+Shift+Right move right
+
+# split
+bindsym $mod+x split h
+bindsym $mod+c split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
+
+# tiling / floating
+bindsym $mod+T floating toggle
+bindsym $mod+shift+t focus mode_toggle
+
+# focus the parent / child container
+bindsym $mod+a focus parent
+#bindsym $mod+d focus child
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# switch to relative workspace
+bindsym $mod+s workspace next
+bindsym $mod+w workspace prev
+bindsym $mod+tab workspace back_and_forth
+bindsym $mod+z exec swaymsg workspace $(seq 1 100 | while read i; do swaymsg -t get_workspaces -r | jq -e --argjson n $i '.[] | select(.num == $n)' > /dev/null 2>&1 || { echo $i; break; }; done)
+
+# move focused container to workspace
+bindsym Ctrl+Shift+1 move container to workspace number $ws1
+bindsym Ctrl+Shift+2 move container to workspace number $ws2
+bindsym Ctrl+Shift+3 move container to workspace number $ws3
+bindsym Ctrl+Shift+4 move container to workspace number $ws4
+bindsym Ctrl+Shift+5 move container to workspace number $ws5
+bindsym Ctrl+Shift+6 move container to workspace number $ws6
+bindsym Ctrl+Shift+7 move container to workspace number $ws7
+bindsym Ctrl+Shift+8 move container to workspace number $ws8
+bindsym Ctrl+Shift+9 move container to workspace number $ws9
+bindsym Ctrl+Shift+0 move container to workspace number $ws10
+
+gaps inner 16
+gaps top -5
+# gaps outer 0
+
+blur enable
+corner_radius 7
+default_border pixel 4
+
+set $opacity 0.9
+for_window [app_id="foot"] opacity 0.6
+for_window [class=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity
+for_window [app_id="dev.zed.Zed"] opacity 0.7
+
+# reload the configuration file
+bindsym $mod+r reload
+bindsym $mod+Shift+r restart
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
