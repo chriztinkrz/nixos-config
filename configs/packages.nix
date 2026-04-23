@@ -38,6 +38,7 @@
   services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
 
   # fonts
+  fonts.fontconfig.enable = true;
   fonts.packages = with pkgs; [
     inter
     hermit
@@ -51,19 +52,20 @@
     adwaita-fonts
     dejavu_fonts
     liberation_ttf
-    aileron
+    /* (pkgs.google-fonts.override {
+      fonts = [ "Michroma" ];
+    }) */
 
-    # gravitas one
-    (pkgs.runCommand "gravitas-one" { } ''
-      mkdir -p $out/share/fonts/truetype
-      cp ${pkgs.fetchurl {
-        url = "https://github.com/google/fonts/raw/main/ofl/gravitasone/GravitasOne.ttf";
-        sha256 = "sha256-tA3EXzNU8oIQcoas8VQgctJYxxfI7fHRGO8BBfJeYns=";
-      }} $out/share/fonts/truetype/GravitasOne.ttf
-    '')
+  # gravitas one
+  (pkgs.runCommand "gravitas-one" { } ''
+    mkdir -p $out/share/fonts/truetype
+    cp ${pkgs.fetchurl {
+      url = "https://github.com/google/fonts/raw/main/ofl/gravitasone/GravitasOne.ttf";
+      sha256 = "sha256-tA3EXzNU8oIQcoas8VQgctJYxxfI7fHRGO8BBfJeYns=";
+    }} $out/share/fonts/truetype/GravitasOne.ttf
+  '')
 
   ];
-  fonts.fontconfig.enable = true;
 
   # packages
   environment.systemPackages = with pkgs; [

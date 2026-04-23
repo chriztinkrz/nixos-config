@@ -12,7 +12,7 @@ exec hyprlock --immediate
 exec ~/.config/hypr/scripts/startup_script.sh
 exec avizo-service
 exec wl-paste --watch cliphist store
-exec quickshell -p ~/.config/hypr/qs-hyprview/shell.qml
+# exec quickshell -p ~/.config/hypr/qs-hyprview/shell.qml
 
 # audio and brightness controls
 bindsym $alt+f2 exec volumectl -u up
@@ -46,7 +46,7 @@ bindsym $mod+escape exec rofi-power
 # bindsym $mod+shift+c exec rofi -show calc -theme-str 'window { width: 15%; }' -theme-str 'listview {lines: 0;}'
 
 # other stuff to escape quickshell
-bindsym $mod+l exec hyprlock --immediate
+bindsym $mod+l exec hyprlock
 bindsym $mod+n exec makoctl dismiss -a
 bindsym $mod+f5 exec gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'
 bindsym $mod+f4 exec pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'
