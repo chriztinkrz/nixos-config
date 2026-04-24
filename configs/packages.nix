@@ -12,6 +12,7 @@
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
   programs.steam.enable = true;
+  programs.nix-index-database.comma.enable = true;
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
@@ -52,18 +53,23 @@
     adwaita-fonts
     dejavu_fonts
     liberation_ttf
-    /* (pkgs.google-fonts.override {
-      fonts = [ "Michroma" ];
-    }) */
+    (pkgs.google-fonts.override {
+      fonts = [
+        "Gravitas One"
+        "Zalando Sans Expanded"
+        "Special Gothic Expanded One"
+      ];
+    })
 
-  # gravitas one
-  (pkgs.runCommand "gravitas-one" { } ''
+  /* font install template ig
+  (pkgs.runCommand "" {
+    nativeBuildInputs = [ pkgs.unzip ]; } ''
     mkdir -p $out/share/fonts/truetype
-    cp ${pkgs.fetchurl {
-      url = "https://github.com/google/fonts/raw/main/ofl/gravitasone/GravitasOne.ttf";
-      sha256 = "sha256-tA3EXzNU8oIQcoas8VQgctJYxxfI7fHRGO8BBfJeYns=";
-    }} $out/share/fonts/truetype/GravitasOne.ttf
-  '')
+    unzip -d $out/share/fonts/truetype ${pkgs.fetchurl {
+      url = "";
+      sha256 = "";
+    }}
+  '') */
 
   ];
 
