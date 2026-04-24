@@ -6,12 +6,9 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # boot thingies
-  boot = {
-    initrd.systemd.enable = true;
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
   };
 
   # required for boot entry label ig?
@@ -19,7 +16,7 @@
   label = builtins.getEnv "NIXOS_LABEL";
   in if label != "" then label else "unlabeled";
 
-  /* plymouth
+  /* mac-style-plymouth
   boot = {
     plymouth = {
       enable = true;
@@ -38,6 +35,29 @@
 
     consoleLogLevel = 0;
   }; */
+
+  # nixos wiki plymouth
+  boot = {
+    plymouth = {
+      enable = true;
+      theme = "rings";
+      themePackages = [
+        (pkgs.adi1090x-plymouth-themes.override {
+          selected_themes = [ "rings" ];
+        })
+      ];
+    };
+    kernelParams = [
+      "quiet"
+      "splash"
+      "boot.shell_on_fail"
+      "loglevel=3"
+      "rd.systemd.show_status=false"
+      "rd.udev.log_level=3"
+      "udev.log_priority=3"
+    ];
+    consoleLogLevel = 0;
+  };
 
   # garbage collection and nh
   programs.nh = {
