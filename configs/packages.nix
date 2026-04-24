@@ -53,13 +53,13 @@
     adwaita-fonts
     dejavu_fonts
     liberation_ttf
-    (pkgs.google-fonts.override {
-      fonts = [
-        "Gravitas One"
-        "Zalando Sans Expanded"
-        "Special Gothic Expanded One"
-      ];
-    })
+
+    # zalando sans
+    (pkgs.runCommand "zalando-sans" { } ''
+      mkdir -p $out/share/fonts/opentype
+      cp -v ${../home-manager/zalando-sans}/*.otf $out/share/fonts/opentype/
+    '')
+  ];
 
   /* font install template ig
   (pkgs.runCommand "" {
@@ -70,8 +70,6 @@
       sha256 = "";
     }}
   '') */
-
-  ];
 
   # packages
   environment.systemPackages = with pkgs; [

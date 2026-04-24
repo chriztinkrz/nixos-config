@@ -2,8 +2,8 @@
 
 /* font declared */
 * {
-    font-family: "Inter";
-    font-size: 15px;
+    font-family: "Zalando Sans Expanded";
+    font-size: 14px;
 }
 
 /* idk what all this does */
@@ -100,11 +100,11 @@ button {
 /* module general styles */
 
 #wireplumber {
-    min-width: 172px;
+    min-width: 202px;
 }
 
 #battery {
-    min-width: 165px;
+    min-width: 202px;
 }
 
 #workspaces {

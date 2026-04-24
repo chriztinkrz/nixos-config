@@ -10,7 +10,7 @@
     color7: #%%color7%%;
     color8: #%%color8%%;
 
-    font: "Inter 15";
+    font: "Zalando Sans Expanded 15";
     background-color: transparent;
     text-color: @fg;
 }
