@@ -20,5 +20,5 @@
     "i915.enable_psr=0"
     ];
   boot.blacklistedKernelModules = [ "amdgpu" "radeon" ];
-  programs.nh.clean.extraArgs = lib.mkForce "--keep 35";
+  programs.nh.clean.extraArgs = lib.mkForce "--keep 20";
 }
