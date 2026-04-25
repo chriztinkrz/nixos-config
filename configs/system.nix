@@ -16,7 +16,7 @@
   label = builtins.getEnv "NIXOS_LABEL";
   in if label != "" then label else "unlabeled";
 
-  /* mac-style-plymouth
+  # mac-style-plymouth
   boot = {
     plymouth = {
       enable = true;
@@ -34,16 +34,16 @@
     ];
 
     consoleLogLevel = 0;
-  }; */
+  };
 
-  # nixos wiki plymouth
+  /* nixos wiki plymouth
   boot = {
     plymouth = {
       enable = true;
-      theme = "rings";
+      theme = "lone";
       themePackages = [
         (pkgs.adi1090x-plymouth-themes.override {
-          selected_themes = [ "rings" ];
+          selected_themes = [ "lone" ];
         })
       ];
     };
@@ -57,7 +57,7 @@
       "udev.log_priority=3"
     ];
     consoleLogLevel = 0;
-  };
+  }; */
 
   # garbage collection and nh
   programs.nh = {

@@ -60,7 +60,7 @@ spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &";
 spawn-at-startup "avizo-service"
 spawn-sh-at-startup "input-remapper-control --command autoload"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-spawn-at-startup "wl-paste" "--pwl-pasterimary" "--watch" "cliphist" "store"  
+spawn-at-startup "wl-paste" "--pwl-pasterimary" "--watch" "cliphist" "store"
 screenshot-path "~/Pictures/Screenshots/%d.%m.%Y %I:%M %p.png"
 // spawn-at-startup "qs" "-c" "noctalia-shell"
 
@@ -73,7 +73,7 @@ binds {
     // SUPER+N { spawn-sh "qs -c noctalia-shell ipc call notifications dismissAll"; };
     // SUPER+GRAVE { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; };
     SUPER+I hotkey-overlay-title="noctalia-settings" { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; };
-    // SUPER+Escape hotkey-overlay-title="noctalia-power-menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }; 
+    // SUPER+Escape hotkey-overlay-title="noctalia-power-menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; };
     // SUPER+L allow-when-locked=true hotkey-overlay-title="Lock Screen: noctalia-lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; };
 
 
@@ -172,7 +172,7 @@ binds {
     // workspace switching //
     SUPER+W { focus-workspace-up; };
     SUPER+S { focus-workspace-down; };
-    SUPER+CONTROL+SHIFT+ALT+Z cooldown-ms=300 { focus-workspace-up; }; 
+    SUPER+CONTROL+SHIFT+ALT+Z cooldown-ms=300 { focus-workspace-up; };
     SUPER+CONTROL+SHIFT+ALT+X cooldown-ms=300 { focus-workspace-down; };
     SUPER+WheelScrollUp   cooldown-ms=160 { focus-workspace-up; }
     SUPER+WheelScrollDown cooldown-ms=160 { focus-workspace-down; }
@@ -270,7 +270,7 @@ layout {
 
 //  animation settings //
 animations {
-slowdown 2
+slowdown 1.5
 window-resize {
         spring damping-ratio=0.7 stiffness=37 epsilon=0.0001
     }
@@ -305,7 +305,7 @@ window-resize {
             coords = rotate * coords;
             coords_geo = vec3(coords / size_geo.xy + vec2(0.5, 0.0), 1.0);
             vec3 coords_tex = niri_geo_to_tex * coords_geo;
-            return texture2D(niri_tex, coords_tex.st); 
+            return texture2D(niri_tex, coords_tex.st);
         }
         vec4 open_color(vec3 coords_geo, vec3 size_geo) {
             return fall_from_top(coords_geo, size_geo);
@@ -344,7 +344,7 @@ window-resize {
 //  window rules  //
 window-rule {
     geometry-corner-radius 3.5;
-    clip-to-geometry true; 
+    clip-to-geometry true;
 }
 window-rule {
     match app-id="foot"
