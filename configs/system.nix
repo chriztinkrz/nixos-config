@@ -145,6 +145,10 @@
     enable = true;
     package = pkgs.swayfx;
   };
+  # hy3
+  environment.etc."hypr/plugins.conf".text = ''
+    plugin = ${pkgs.hyprlandPlugins.hy3}/lib/libhy3.so
+  '';
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
