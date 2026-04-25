@@ -3,7 +3,7 @@
 CURRENT=$(hyprctl getoption general:layout | awk '/str:/ {print $2}')
 
 if [ "$CURRENT" = "scrolling" ]; then
-    NEW_LAYOUT="dwindle"
+    NEW_LAYOUT="hy3"
 else
     NEW_LAYOUT="scrolling"
 fi
