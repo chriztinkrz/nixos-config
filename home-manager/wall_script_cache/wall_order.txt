@@ -141,3 +141,4 @@ cloudy_sky.jpg
 night_landscape.jpeg
 blacky_hole.jpg
 thunderstorm-sea.png
+mojave_dark_dunes.jpg
