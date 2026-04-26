@@ -140,3 +140,4 @@ a_house_with_a_bike_and_a_chair.jpg
 cloudy_sky.jpg
 night_landscape.jpeg
 blacky_hole.jpg
+thunderstorm-sea.png
