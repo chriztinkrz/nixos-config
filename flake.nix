@@ -41,10 +41,12 @@
         nixosbtw = mkSystem [
           ./configs/hardware/hardware.nix
           ./configs/hardware/elitebook.nix
+          ./configs/hardware/laptop.nix
         ];
 
         vostro = mkSystem [
           ./configs/hardware/hardware_vostro.nix
+          ./configs/hardware/laptop.nix
           ./configs/hardware/vostro.nix
         ];
 
