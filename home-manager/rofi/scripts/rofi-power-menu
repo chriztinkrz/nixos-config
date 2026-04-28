@@ -267,6 +267,7 @@ else
                 echo "Selected: $entry" >&2
             else
                 # Perform the action
+                hyprsession save
                 ${actions[$entry]}
             fi
             exit 0

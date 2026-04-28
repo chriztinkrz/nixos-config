@@ -25,6 +25,7 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprsession.url = "github:joshurtree/hyprsession";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:

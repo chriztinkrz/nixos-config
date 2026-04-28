@@ -216,6 +216,7 @@
   unimatrix
   libreoffice
   socat
+  inputs.hyprsession.packages.${pkgs.stdenv.hostPlatform.system}.default
 
   /* these both are required for input-remapper along with the service
   input-remapper
