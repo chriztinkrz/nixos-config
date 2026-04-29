@@ -4,6 +4,4 @@ sleep 1
 waybar &
 awww-daemon &
 awww img "$HOME/.cache/current_wallpaper.png" --transition-type grow --transition-duration 1.75 &
-hyprsession &
-hyprsession load &
 wait
