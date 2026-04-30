@@ -8,7 +8,11 @@
   programs.niri.useNautilus = true;
   programs.gpu-screen-recorder.enable = true;
   programs.foot.enable = true;
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+  };
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
   programs.steam.enable = true;

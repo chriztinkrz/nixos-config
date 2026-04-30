@@ -1,6 +1,13 @@
 {
   description = "flake config";
 
+  nixConfig = {
+    substituters = [ "https://hyprland.cachix.org" ];
+    trusted-substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = [ "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs=" ];
+    trusted-users = [ "chriz" ];
+  };
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
@@ -25,6 +32,7 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -52,10 +60,6 @@
 
         common = mkSystem [
           ./configs/hardware/hardware.nix
-          {
-            services.displayManager.autoLogin.user = "chriz";
-            users.users.chriz.isNormalUser = true;
-          }
         ];
       };
     };

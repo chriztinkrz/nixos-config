@@ -32,7 +32,6 @@
       "rd.udev.log_level=3"
       "udev.log_priority=3"
     ];
-
     consoleLogLevel = 0;
   };
 
