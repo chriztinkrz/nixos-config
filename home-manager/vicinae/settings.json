@@ -26,6 +26,10 @@
     "opacity": 0.3,
     "client_side_decorations": {
       "enabled": true
+    },
+    "size": {
+      "width": 847,
+      "height": 528
     }
   },
   "favorites": [],
