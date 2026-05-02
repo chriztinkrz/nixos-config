@@ -30,60 +30,8 @@
    },
    "favorites": [],
    "providers": {
-      "@Gelei/store.vicinae.bluetooth": {
-         "entrypoints": {
-            "bluetooth-off": {
-               "enabled": false
-            },
-            "bluetooth-on": {
-               "enabled": false
-            },
-            "discoverable": {
-               "enabled": false
-            }
-         }
-      },
-      "@leonkohli/store.vicinae.process-manager": {
-         "entrypoints": {
-            "kill": {
-               "enabled": false
-            }
-         }
-      },
-      "@rastsislaux/store.vicinae.pulseaudio": {
-         "entrypoints": {
-            "configuration": {
-               "enabled": false
-            },
-            "outputDevices": {
-               "alias": "s"
-            },
-            "playback": {
-               "alias": "S"
-            },
-            "recording": {
-               "enabled": false
-            }
-         }
-      },
       "@sovereign/store.vicinae.awww-switcher": {
-         "preferences": {
-            "colorGenTool": "none",
-            "wallpaperPath": "/home/chriz/Pictures/Pictures/wallpapers",
-            "gridRows": "3",
-            "postProduction": "no",
-            "showImageDetails": false,
-            "toggleVicinaeSetting": false,
-            "transitionDuration": "2",
-            "transitionFPS": "60",
-            "transitionStep": "120",
-            "transitionType": "grow",
-            "postCommand": "hellwal -i ${wallpaper} && ln -sf \"${wallpaper}\" \"$HOME/.cache/current_wallpaper.png\" && ~/.config/vicinae/scripts/post_wp.sh"
-         },
          "entrypoints": {
-            "wpgrid": {
-               "alias": "w"
-            },
             "wprandom": {
                "enabled": false
             }

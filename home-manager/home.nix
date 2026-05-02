@@ -49,6 +49,7 @@ in
     ".cache/wall_order.txt".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wall_script_cache/wall_order.txt";
     ".cache/wallthumbs".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wall_script_cache/wallthumbs/";
     ".local/share/vicinae/themes/hellwal.toml".source = config.lib.file.mkOutOfStoreSymlink "${hellwalCache}/vicinae.toml";
+    ".local/share/vicinae/extensions".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/vicinae/extensions";
   };
 
 }
