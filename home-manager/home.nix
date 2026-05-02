@@ -14,6 +14,11 @@ in
     # ./sway.nix
   ];
 
+  programs.vicinae = {
+    enable = true;
+    systemd.enable = true;
+  };
+
   home.username = "chriz";
   home.homeDirectory = pkgs.lib.mkDefault "/home/${config.home.username}";
   home.stateVersion = "25.11";

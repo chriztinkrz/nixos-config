@@ -140,14 +140,9 @@
   };
 
   # system stuff
-  programs.sway = {
-    enable = true;
-    package = pkgs.swayfx;
-  };
-  # hy3
   environment.etc."hypr/plugins.conf".text = ''
     plugin = ${pkgs.hyprlandPlugins.hy3}/lib/libhy3.so
-  '';
+  ''; # hy3
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -165,9 +160,8 @@
     powerOnBoot = true;
     settings = {
       General = {
-        ControllerMode = "dual";
+        ControllerMode = "bredr";
         Experimental = true;
-        JustWorksRepairing = "always";
       };
     };
   };
