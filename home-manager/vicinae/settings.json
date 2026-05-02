@@ -9,106 +9,119 @@
 // Learn more about configuration at https://docs.vicinae.com/config
 
 {
-  "$schema": "https://vicinae.com/schemas/config.json",
-  "pop_to_root_on_close": true,
-  "font": {
-    "normal": {
-      "family": "Inter",
-      "size": 13
-    }
-  },
-  "theme": {
-    "dark": {
-      "name": "vicinae-dark"
-    }
-  },
-  "launcher_window": {
-    "opacity": 0.5,
-    "client_side_decorations": {
-      "enabled": false
-    }
-  },
-  "providers": {
-    "@sovereign/store.vicinae.awww-switcher": {
-      "preferences": {
-        "colorGenTool": "matugen",
-        "wallpaperPath": "/home/chriz/Pictures/Pictures/wallpapers"
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "pop_to_root_on_close": true,
+   "font": {
+      "normal": {
+         "family": "Inter",
+         "size": 13
       }
-    },
-    "browser-extension": {
-      "enabled": false
-    },
-    "core": {
-      "entrypoints": {
-        "about": {
-          "enabled": false
-        },
-        "documentation": {
-          "enabled": false
-        },
-        "list-extensions": {
-          "enabled": false
-        },
-        "manage-fallback": {
-          "enabled": false
-        },
-        "oauth-token-store": {
-          "enabled": false
-        },
-        "open-config-file": {
-          "enabled": false
-        },
-        "open-default-config": {
-          "enabled": false
-        },
-        "prune-memory": {
-          "enabled": false
-        },
-        "refresh-apps": {
-          "enabled": false
-        },
-        "reload-scripts": {
-          "enabled": false
-        },
-        "report-bug": {
-          "enabled": false
-        },
-        "search-builtin-icons": {
-          "enabled": false
-        },
-        "sponsor": {
-          "enabled": false
-        }
+   },
+   "theme": {
+      "dark": {
+         "name": "vicinae-dark"
       }
-    },
-    "manage-shortcuts": {
-      "entrypoints": {
-        "create": {
-          "enabled": false
-        },
-        "manage": {
-          "enabled": false
-        }
+   },
+   "launcher_window": {
+      "opacity": 0.3,
+      "client_side_decorations": {
+         "enabled": false
       }
-    },
-    "power": {
-      "entrypoints": {
-        "hibernate": {
-          "enabled": false
-        },
-        "lock": {
-          "enabled": false
-        },
-        "sleep": {
-          "enabled": false
-        },
-        "soft-reboot": {
-          "enabled": false
-        },
-        "suspend": {
-          "enabled": false
-        }
+   },
+   "providers": {
+      "@sovereign/store.vicinae.awww-switcher": {
+         "preferences": {
+            "colorGenTool": "none",
+            "wallpaperPath": "/home/chriz/Pictures/Pictures/wallpapers",
+            "gridRows": "3",
+            "postProduction": "no",
+            "showImageDetails": false,
+            "toggleVicinaeSetting": true,
+            "transitionDuration": "2",
+            "transitionFPS": "60",
+            "transitionStep": "90",
+            "transitionType": "grow"
+         },
+         "entrypoints": {
+            "wprandom": {
+               "enabled": false
+            }
+         }
+      },
+      "browser-extension": {
+         "enabled": false
+      },
+      "core": {
+         "entrypoints": {
+            "about": {
+               "enabled": false
+            },
+            "documentation": {
+               "enabled": false
+            },
+            "list-extensions": {
+               "enabled": false
+            },
+            "manage-fallback": {
+               "enabled": false
+            },
+            "oauth-token-store": {
+               "enabled": false
+            },
+            "open-config-file": {
+               "enabled": false
+            },
+            "open-default-config": {
+               "enabled": false
+            },
+            "prune-memory": {
+               "enabled": false
+            },
+            "refresh-apps": {
+               "enabled": false
+            },
+            "reload-scripts": {
+               "enabled": false
+            },
+            "report-bug": {
+               "enabled": false
+            },
+            "search-builtin-icons": {
+               "enabled": false
+            },
+            "sponsor": {
+               "enabled": false
+            }
+         }
+      },
+      "manage-shortcuts": {
+         "entrypoints": {
+            "create": {
+               "enabled": false
+            },
+            "manage": {
+               "enabled": false
+            }
+         }
+      },
+      "power": {
+         "entrypoints": {
+            "hibernate": {
+               "enabled": false
+            },
+            "lock": {
+               "enabled": false
+            },
+            "sleep": {
+               "enabled": false
+            },
+            "soft-reboot": {
+               "enabled": false
+            },
+            "suspend": {
+               "enabled": false
+            }
+         }
       }
-    }
-  }
+   }
 }
