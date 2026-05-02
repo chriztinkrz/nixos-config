@@ -1,12 +1,13 @@
 { config, pkgs, ... }:
 
 let
-  # Fetch the main repo once to use for multiple extensions
-  vicinae-src = pkgs.fetchFromGitHub {
+  # The new official extensions repository
+  extensions-src = pkgs.fetchFromGitHub {
     owner = "vicinaehq";
     repo = "extensions";
     rev = "main";
-    hash = "sha256-Dc9owWnADBcKQx0Dk0tsRICa6VHt/WsD7ew1XqwcNlc=";
+    # Use an empty hash initially to get the correct one from the error message
+    hash = "sha256-LfqeVlMwclHJKsJu5jJoztjlaCeIasQsiv3P9+eKDNw=";
   };
 in
 {
@@ -16,31 +17,31 @@ in
       # Bluetooth Extension
       (config.lib.vicinae.mkExtension {
         name = "bluetooth";
-        src = "${vicinae-src}/extensions/bluetooth";
+        src = "${extensions-src}/extensions/bluetooth";
       })
 
       # Nix Search Extension
       (config.lib.vicinae.mkExtension {
-        name = "nix-search";
-        src = "${vicinae-src}/extensions/nix-search";
+        name = "nix";
+        src = "${extensions-src}/extensions/nix";
       })
 
       # PulseAudio Extension
       (config.lib.vicinae.mkExtension {
         name = "pulseaudio";
-        src = "${vicinae-src}/extensions/pulseaudio";
+        src = "${extensions-src}/extensions/pulseaudio";
       })
 
-      # AWWW Switcher (Wallpaper)
+      # AWWW Switcher (Updated path and name)
       (config.lib.vicinae.mkExtension {
         name = "awww";
-        src = "${vicinae-src}/extensions/awww-switcher";
+        src = "${extensions-src}/extensions/awww-switcher";
       })
 
       # Process Manager
       (config.lib.vicinae.mkExtension {
         name = "process-manager";
-        src = "${vicinae-src}/extensions/process-manager";
+        src = "${extensions-src}/extensions/process-manager";
       })
     ];
   };
