@@ -11,9 +11,11 @@ in
     ./zen.nix
     ./git/git.nix
     ./gtk.nix
-    ./vicinae.nix
+    # ./vicinae.nix
     # ./sway.nix
   ];
+
+  programs.vicinae.enable = true;
 
   home.username = "chriz";
   home.homeDirectory = pkgs.lib.mkDefault "/home/${config.home.username}";
