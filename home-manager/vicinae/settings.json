@@ -52,11 +52,17 @@
       },
       "@rastsislaux/store.vicinae.pulseaudio": {
          "entrypoints": {
+            "configuration": {
+               "enabled": false
+            },
             "outputDevices": {
                "alias": "s"
             },
             "playback": {
                "alias": "S"
+            },
+            "recording": {
+               "enabled": false
             }
          }
       },
