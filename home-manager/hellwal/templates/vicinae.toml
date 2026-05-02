@@ -1,0 +1,19 @@
+[meta]
+version = 1
+name = "Hellwal-Generated-Theme"
+description = "Dynamically generated colors from wallpaper"
+variant = "dark"
+inherits = "vicinae-dark"
+
+[colors.core]
+# Using your primary background and foreground
+background = "%%background.hex%%"
+foreground = "%%foreground.hex%%"
+# Using color4 (usually blue/accent) for the highlights
+accent = "%%color4.hex%%"
+
+[colors.text]
+# Standard text variations
+primary = "%%foreground.hex%%"
+secondary = "%%color7.hex%%"
+muted = "%%color8.hex%%"

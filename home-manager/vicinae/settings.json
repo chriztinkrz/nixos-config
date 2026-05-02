@@ -29,6 +29,16 @@
       }
    },
    "providers": {
+      "@rastsislaux/store.vicinae.pulseaudio": {
+         "entrypoints": {
+            "outputDevices": {
+               "alias": "s"
+            },
+            "playback": {
+               "alias": "S"
+            }
+         }
+      },
       "@sovereign/store.vicinae.awww-switcher": {
          "preferences": {
             "colorGenTool": "none",
@@ -89,8 +99,18 @@
             "search-builtin-icons": {
                "enabled": false
             },
+            "search-emojis": {
+               "alias": "E"
+            },
             "sponsor": {
                "enabled": false
+            }
+         }
+      },
+      "files": {
+         "entrypoints": {
+            "search": {
+               "alias": "e"
             }
          }
       },
