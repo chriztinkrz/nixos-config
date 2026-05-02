@@ -13,8 +13,8 @@
    "pop_to_root_on_close": true,
    "font": {
       "normal": {
-         "family": "Inter",
-         "size": 13
+         "family": "Zalando Sans Expanded",
+         "size": 16
       }
    },
    "theme": {
@@ -28,7 +28,28 @@
          "enabled": false
       }
    },
+   "favorites": [],
    "providers": {
+      "@Gelei/store.vicinae.bluetooth": {
+         "entrypoints": {
+            "bluetooth-off": {
+               "enabled": false
+            },
+            "bluetooth-on": {
+               "enabled": false
+            },
+            "discoverable": {
+               "enabled": false
+            }
+         }
+      },
+      "@leonkohli/store.vicinae.process-manager": {
+         "entrypoints": {
+            "kill": {
+               "enabled": false
+            }
+         }
+      },
       "@rastsislaux/store.vicinae.pulseaudio": {
          "entrypoints": {
             "outputDevices": {
@@ -46,13 +67,17 @@
             "gridRows": "3",
             "postProduction": "no",
             "showImageDetails": false,
-            "toggleVicinaeSetting": true,
+            "toggleVicinaeSetting": false,
             "transitionDuration": "2",
             "transitionFPS": "60",
-            "transitionStep": "90",
-            "transitionType": "grow"
+            "transitionStep": "120",
+            "transitionType": "grow",
+            "postCommand": "hellwal -i ${wallpaper} && ln -sf \"${wallpaper}\" \"$HOME/.cache/current_wallpaper.png\" && ~/.config/vicinae/scripts/post_wp.sh"
          },
          "entrypoints": {
+            "wpgrid": {
+               "alias": "w"
+            },
             "wprandom": {
                "enabled": false
             }
@@ -60,6 +85,22 @@
       },
       "browser-extension": {
          "enabled": false
+      },
+      "clipboard": {
+         "preferences": {
+            "encryption": false,
+            "eraseOnStartup": false,
+            "ignorePasswords": false,
+            "monitoring": true
+         },
+         "entrypoints": {
+            "history": {
+               "alias": "v",
+               "preferences": {
+                  "defaultAction": "copy"
+               }
+            }
+         }
       },
       "core": {
          "entrypoints": {
@@ -100,7 +141,11 @@
                "enabled": false
             },
             "search-emojis": {
-               "alias": "E"
+               "alias": "E",
+               "preferences": {
+                  "defaultAction": "paste",
+                  "skinTone": "light"
+               }
             },
             "sponsor": {
                "enabled": false
@@ -108,6 +153,11 @@
          }
       },
       "files": {
+         "preferences": {
+            "autoIndexing": true,
+            "paths": "/home/chriz",
+            "watcherPaths": ""
+         },
          "entrypoints": {
             "search": {
                "alias": "e"
@@ -131,6 +181,24 @@
             },
             "lock": {
                "enabled": false
+            },
+            "logout": {
+               "alias": "l",
+               "preferences": {
+                  "confirm": false
+               }
+            },
+            "power-off": {
+               "alias": "p",
+               "preferences": {
+                  "confirm": false
+               }
+            },
+            "reboot": {
+               "alias": "r",
+               "preferences": {
+                  "confirm": false
+               }
             },
             "sleep": {
                "enabled": false
