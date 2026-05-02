@@ -89,6 +89,31 @@
             }
          }
       },
+      "applications": {
+         "preferences": {
+            "defaultAction": "launch",
+            "paths": [
+               "/home/chriz/.local/share/applications",
+               "/nix/store/vppi7y5xzji7i8s13ma6yg66l3m9fwyq-vicinae-0.20.14/share/applications",
+               "/nix/store/82ijqnr2xdzw65vsbjvgcbb7s0xrzh81-cups-2.4.16/share/applications",
+               "/nix/store/7cyfjdf16s9fwny90wa7ybdmpbq5fgd4-cups-2.4.16-lib/share/applications",
+               "/nix/store/bg6ms0vw071g1fdbx2my6bbzsk62p6vd-fontconfig-2.17.1-lib/share/applications",
+               "/nix/store/4iazbvz8d907sdvbq6x9s39qcmi7bqi2-util-linux-2.42-lib/share/applications",
+               "/nix/store/9rpism89x6lyjcwzzkp6kana25rs03nn-systemd-260.1/share/applications",
+               "/nix/store/zcmsivndca5wmam9nwnbjrm0zkgykwfz-glib-2.86.3/share/applications",
+               "/nix/store/ypj27q94ay0ybq9aa14gk0cxjv9d7z4m-gettext-1.0/share/applications",
+               "/nix/store/mmzq1kq1zb40l95qf81l7cnrvgxnkp0x-libqalculate-5.10.0/share/applications",
+               "/nix/store/b8fp6mv40s5xfpdzc1h8hqi6rfgsliwb-syntax-highlighting-6.25.0/share/applications",
+               "/nix/store/mhwryznfy54xadxiq5afpfazli8pd7yq-desktops/share/applications",
+               "/home/chriz/.nix-profile/share/applications",
+               "/nix/profile/share/applications",
+               "/home/chriz/.local/state/nix/profile/share/applications",
+               "/etc/profiles/per-user/chriz/share/applications",
+               "/nix/var/nix/profiles/default/share/applications",
+               "/run/current-system/sw/share/applications"
+            ]
+         }
+      },
       "browser-extension": {
          "enabled": false
       },
@@ -117,7 +142,7 @@
                "enabled": false
             },
             "list-extensions": {
-               "enabled": false
+               "enabled": true
             },
             "manage-fallback": {
                "enabled": false
