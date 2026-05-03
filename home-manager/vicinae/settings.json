@@ -25,7 +25,8 @@
   "launcher_window": {
     "opacity": 0.3,
     "client_side_decorations": {
-      "enabled": true
+      "enabled": true,
+      "rounding": 11
     },
     "size": {
       "width": 847,
