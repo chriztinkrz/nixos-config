@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+
+vicinae theme set hellwal
+pkill -USR1 cava
+pkill -USR2 btop
+makoctl reload
+pkill -USR2 waybar
+
 # zed reload
 cat "$HOME/.cache/hellwal/zed.json" > "$HOME/.config/zed/settings.json"
 touch "$HOME/.config/zed/settings.json"
@@ -7,11 +14,6 @@ touch "$HOME/.config/zed/settings.json"
 if [ -f "$HOME/.cache/hellwal/terminal.sh" ]; then
     sh "$HOME/.cache/hellwal/terminal.sh" > /dev/tty
 fi
-
-pkill -USR1 cava
-pkill -USR2 btop
-makoctl reload
-pkill -USR2 waybar
 
 sleep 0.15
 
