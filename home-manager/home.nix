@@ -43,6 +43,7 @@ in
     "niri/scripts/".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/niri/scripts/";
     "qt5ct".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/qt5ct";
     "sway".source = lib.mkForce (config.lib.file.mkOutOfStoreSymlink "${configDirectory}/sway");
+    "zed/keymap.json".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/zed/keymap.json";
   };
 
   home.file = {
