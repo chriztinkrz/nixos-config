@@ -142,3 +142,15 @@ night_landscape.jpeg
 blacky_hole.jpg
 thunderstorm-sea.png
 mojave_dark_dunes.jpg
+hong_kong.jpg
+cliffy_islands.jpg
+gargantua.png
+satelitte.jpg
+elfy_girl.jpg
+cave.jpg
+floating_girl.jpg
+freebsd.png
+leaves2.jpg
+miyazaki_hayao.png
+painter_on_cliff.jpg
+rainbow_eyes.jpg
