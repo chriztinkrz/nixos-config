@@ -7,8 +7,8 @@ inherits = "vicinae-dark"
 
 [colors.core]
 background = "%%background%%"
-foreground = "%%color6%%"
+foreground = "%%color7%%"
 
 [colors.list.item.selection]
 background = "%%color6%%"
-foreground = "%%color7%%"
+foreground = "%%color15%%"
