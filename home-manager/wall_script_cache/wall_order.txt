@@ -155,3 +155,4 @@ miyazaki_hayao.png
 painter_on_cliff.jpg
 rainbow_eyes.jpg
 rain.jpg
+window.jpg
