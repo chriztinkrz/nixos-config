@@ -163,14 +163,11 @@
   # normal packages
   xdg-desktop-portal-gnome
   xdg-desktop-portal-gtk
-  cliphist
   nautilus
   awww
   playerctl
   ffmpegthumbnailer
   bluez
-  choose
-  fd
   adw-gtk3
   adwaita-qt
   adwaita-qt6
@@ -178,15 +175,12 @@
   gnome-themes-extra
   libadwaita
   loupe
-  xsel
   brightnessctl
   tty-clock
   imagemagick
   ghostscript # for pdf conversion with imagemagick
   mpv
   gammastep
-  wl-clipboard
-  pulseaudio
   killall
   gpu-screen-recorder
   yt-dlp
