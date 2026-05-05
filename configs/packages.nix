@@ -203,7 +203,6 @@
   zed-editor
   nixd
   nixpkgs-fmt
-  steam-run
   tree
   grim
   slurp
