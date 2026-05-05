@@ -4,6 +4,7 @@
 
 window {
     background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
 }
 
 button {
@@ -23,7 +24,7 @@ button:hover,
 button:focus {
     background-color: #262626;
     border: 3px solid #ffffff;
-    background-size: 20%;
+    background-size: 25%;
 }
 
 #shutdown {
