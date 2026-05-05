@@ -24,7 +24,7 @@ button:hover,
 button:focus {
     background-color: #262626;
     border: 3px solid #ffffff;
-    background-size: 25%;
+    background-size: 22%;
 }
 
 #shutdown {
