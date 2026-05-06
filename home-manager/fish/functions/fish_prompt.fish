@@ -1,3 +1,3 @@
 function fish_prompt
-    echo -n '❯ '
+    echo -n ' '
 end
