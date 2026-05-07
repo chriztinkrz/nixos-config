@@ -156,3 +156,10 @@ painter_on_cliff.jpg
 rainbow_eyes.jpg
 rain.jpg
 window.jpg
+blacky_hole2.jpg
+blacky_hole3.jpg
+blacky_hole4.png
+space.png
+space2.jpg
+space3.jpg
+space4.png
