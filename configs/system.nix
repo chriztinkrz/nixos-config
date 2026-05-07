@@ -16,7 +16,7 @@
   label = builtins.getEnv "NIXOS_LABEL";
   in if label != "" then label else "unlabeled";
 
-  # mac-style-plymouth
+  /* mac-style-plymouth
   boot = {
     plymouth = {
       enable = true;
@@ -33,7 +33,7 @@
       "udev.log_priority=3"
     ];
     consoleLogLevel = 0;
-  };
+  }; */
 
   /* nixos wiki plymouth
   boot = {
