@@ -12,6 +12,7 @@
   programs.waybar.enable = true;
   programs.steam.enable = true;
   programs.nix-index-database.comma.enable = true;
+  services.qbittorrent.enable = true; # small exception 👍🏻
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
@@ -212,6 +213,8 @@
   wlogout
   pulseaudio
   cliphist
+  lutris-unwrapped
+  qbittorrent
 
   /* these both are required for input-remapper along with the service
   input-remapper

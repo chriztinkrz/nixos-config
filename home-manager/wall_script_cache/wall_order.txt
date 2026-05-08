@@ -167,3 +167,6 @@ asuka.jpg
 eren_freedom.png
 marble.jpg
 gameboy.png
+fluid11.jpg
+ascii-kangawa_wave.png
+lain.jpg

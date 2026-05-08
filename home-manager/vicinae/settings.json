@@ -282,7 +282,11 @@
       "system": {
          "entrypoints": {
             "browse-apps": {
-               "enabled": true
+               "enabled": true,
+               "preferences": {
+                  "showHidden": false,
+                  "sortAlphabetically": true
+               }
             },
             "run": {
                "enabled": false
