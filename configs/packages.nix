@@ -214,8 +214,6 @@
   pulseaudio
   cliphist
   qbittorrent
-  # lutris
-  komikku
   wl-clipboard
 
   /* these both are required for input-remapper along with the service
