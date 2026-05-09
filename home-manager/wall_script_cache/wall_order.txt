@@ -170,3 +170,4 @@ gameboy.png
 fluid11.jpg
 ascii-kangawa_wave.png
 lain.jpg
+ajitani_hifumi.png

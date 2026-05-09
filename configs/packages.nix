@@ -213,8 +213,10 @@
   wlogout
   pulseaudio
   cliphist
-  lutris-unwrapped
   qbittorrent
+  # lutris
+  komikku
+  wl-clipboard
 
   /* these both are required for input-remapper along with the service
   input-remapper
