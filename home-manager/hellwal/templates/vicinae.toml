@@ -10,5 +10,5 @@ background = "%%color1%%"
 foreground = "%%color7%%"
 
 [colors.list.item.selection]
-background = "%%color2%%"
-foreground = "%%color7%%"
+background = "%%color3%%"
+foreground = "%%color15%%"
