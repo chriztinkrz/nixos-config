@@ -21,6 +21,7 @@ border = "%%color3%%"
 border = "%%color3%%"
 
 [colors.accents]
+blue = "%%color4%%"
 green = "%%color4%%"
 magenta = "%%color4%%"
 orange = "%%color4%%"
