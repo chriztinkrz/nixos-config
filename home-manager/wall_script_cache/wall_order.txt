@@ -174,3 +174,4 @@ ajitani_hifumi.png
 bored_maid.png
 forest.jpg
 buildings.jpg
+clouds.png
