@@ -182,7 +182,7 @@
   programs.dconf.enable = true;
   services.avahi.enable = true;
   services.avahi.nssmdns4 = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1"; # for vscode?
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   programs.fish = {
   enable = true;
   interactiveShellInit = ''
