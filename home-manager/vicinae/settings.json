@@ -26,7 +26,8 @@
     "opacity": 1,
     "client_side_decorations": {
       "enabled": true,
-      "rounding": 8
+      "rounding": 8,
+      "border_width": 3
     },
     "size": {
       "width": 785,

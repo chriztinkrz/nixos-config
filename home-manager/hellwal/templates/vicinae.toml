@@ -13,3 +13,18 @@ secondary_background = "%%color1%%"
 [colors.list.item.selection]
 background = "%%color3%%"
 foreground = "%%color15%%"
+
+[colors.main_window]
+border = "%%color3%%"
+
+[colors.settings_window]
+border = "%%color3%%"
+
+[colors.accents]
+green = "%%color4%%"
+magenta = "%%color4%%"
+orange = "%%color4%%"
+purple = "%%color4%%"
+red = "%%color4%%"
+yellow = "%%color4%%"
+cyan = "%%color4%%"
