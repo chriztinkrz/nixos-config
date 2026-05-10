@@ -26,10 +26,10 @@
     "opacity": 1,
     "client_side_decorations": {
       "enabled": true,
-      "rounding": 11
+      "rounding": 8
     },
     "size": {
-      "width": 765,
+      "width": 785,
       "height": 400
     }
   },
