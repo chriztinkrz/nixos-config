@@ -27,7 +27,7 @@
     "client_side_decorations": {
       "enabled": true,
       "rounding": 8,
-      "border_width": 3
+      "border_width": 4
     },
     "size": {
       "width": 900,
