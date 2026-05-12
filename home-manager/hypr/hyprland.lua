@@ -1,3 +1,6 @@
+local home = os.getenv("HOME")
+dofile(home .. "/.cache/hellwal/hyprland.lua")
+
 -- require("~/.cache/hellwal/hyprland.lua")
 -- require("/etc/hypr/plugins.conf")
 
@@ -14,9 +17,9 @@
 -- Example (replace with actual hellwal lua output):
 -- local colors = require("~/.cache/hellwal/colors") -- adjust as needed
 -- For now, placeholders matching the variable names:
-local color1 = "0xff000000" -- replace with actual hellwal output
-local color3 = "0xff000000"
-local color7 = "0xffffffff"
+-- local color1 = "0xff000000" -- replace with actual hellwal output
+-- local color3 = "0xff000000"
+-- local color7 = "0xffffffff"
 
 
 ------------------

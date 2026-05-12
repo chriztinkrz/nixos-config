@@ -1,3 +1,3 @@
-local color1 = rgb(%%color1%%)
-local color7 = rgb(%%color7%%)
-local color3 = rgb(%%color3%%)
+local color1 = '0xff%%color1.hex%%'
+local color7 = '0xff%%color7.hex%%'
+local color3 = '0xff%%color3.hex%%'
