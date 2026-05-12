@@ -177,3 +177,12 @@ buildings.jpg
 clouds.png
 starfield.png
 black_hole_kurzgesagt.png
+jet.png
+fluid12.jpg
+sushi.jpg
+blonde_girl.jpg
+clouds2.jpg
+meteors.jpg
+leaves3.jpg
+fire_horse.jpg
+dragon.jpg
