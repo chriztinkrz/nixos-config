@@ -1,5 +1,5 @@
-local home = os.getenv("HOME")
-dofile(home .. "/.cache/hellwal/hyprland.lua")
+-- local home = os.getenv("HOME")
+-- dofile(home .. "/.cache/hellwal/hyprland.lua")
 
 -- require("~/.cache/hellwal/hyprland.lua")
 -- require("/etc/hypr/plugins.conf")
@@ -141,7 +141,12 @@ hl.config({
 hl.config({
     general = {
         gaps_in          = 9,
-        gaps_out         = 13, 18, 18, 18,
+        gaps_out         = {
+            top    = 13,
+            right  = 18,
+            bottom = 18,
+            left   = 18
+        },
 
         border_size      = 4,
 
