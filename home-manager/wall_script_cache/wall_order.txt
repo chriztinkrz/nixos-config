@@ -176,3 +176,4 @@ forest.jpg
 buildings.jpg
 clouds.png
 starfield.png
+black_hole_kurzgesagt.png
