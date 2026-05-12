@@ -1,5 +1,5 @@
-require("~/.cache/hellwal/hyprland.lua")
-require("/etc/hypr/plugins.conf")
+-- require("~/.cache/hellwal/hyprland.lua")
+-- require("/etc/hypr/plugins.conf")
 
 -- hyprland.lua - converted from hyprland.conf
 -- Refer to https://wiki.hypr.land/Configuring/Start/
@@ -77,10 +77,12 @@ hl.env("HYPRCURSOR_THEME", "ComixCursors-Opaque-Black")
 hl.config({
     scrolling = {
         column_width             = 0.3333,
-        explicit_column_widths   = { 0.3333, 0.5, 0.667 },
+        explicit_column_widths   = "0.3333, 0.5, 0.667",
         follow_min_visible       = 0.15,
         direction                = "right",
         fullscreen_on_one_column = false,
+        wrap_focus               = false,
+        wrap_swapcol             = false,
     },
 })
 
@@ -93,7 +95,7 @@ hl.config({
     },
 })
 
--- hy3 plugin config
+--[[ hy3 plugin config
 hl.config({
     plugin = {
         hy3 = {
@@ -115,7 +117,7 @@ hl.config({
             },
         },
     },
-})
+}) ]]
 
 hl.config({
     group = {
@@ -136,7 +138,7 @@ hl.config({
 hl.config({
     general = {
         gaps_in          = 9,
-        gaps_out         = { 13, 18, 18, 18 },
+        gaps_out         = 13, 18, 18, 18,
 
         border_size      = 4,
 
@@ -148,7 +150,7 @@ hl.config({
         resize_on_border = false,
         allow_tearing    = false,
 
-        layout           = "hy3",
+        layout           = "scrolling",
     },
 })
 
@@ -288,7 +290,7 @@ hl.bind("ALT + A", hl.dsp.focus({ direction = "left" }))
 hl.bind("ALT + D", hl.dsp.focus({ direction = "right" }))
 hl.bind("ALT + W", hl.dsp.focus({ direction = "up" }))
 hl.bind("ALT + S", hl.dsp.focus({ direction = "down" }))
-hl.bind("ALT + Tab", hl.dsp.focus({ target = "currentorlast" }))
+-- hl.bind("ALT + Tab", hl.dsp.focus({ target = "currentorlast" }))
 
 -- Focus first/last window in workspace (raw dispatch for complex inline shell)
 hl.bind(mainMod .. " + A",
