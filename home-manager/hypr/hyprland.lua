@@ -1,11 +1,6 @@
 local home = os.getenv("HOME")
 dofile(home .. "/.cache/hellwal/hyprland.lua")
 
---[[ local color1 = "0xff233932"
-local color3 = "0xff757b62"
-local color7 = "0xffffffa1" ]]
-
-
 ------------------
 ---- MONITORS ----
 ------------------

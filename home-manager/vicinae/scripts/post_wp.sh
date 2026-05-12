@@ -1,10 +1,11 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 
 vicinae theme set hellwal
 pkill -USR1 cava
 pkill -USR2 btop
 makoctl reload
 pkill -USR2 waybar
+hyprctl reload
 
 # zed reload
 cat "$HOME/.cache/hellwal/zed.json" > "$HOME/.config/zed/settings.json"
