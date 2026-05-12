@@ -1,25 +1,9 @@
--- local home = os.getenv("HOME")
--- dofile(home .. "/.cache/hellwal/hyprland.lua")
+local home = os.getenv("HOME")
+dofile(home .. "/.cache/hellwal/hyprland.lua")
 
--- require("~/.cache/hellwal/hyprland.lua")
--- require("/etc/hypr/plugins.conf")
-
--- hyprland.lua - converted from hyprland.conf
--- Refer to https://wiki.hypr.land/Configuring/Start/
-
--- Source theme colors (hellwal generates this)
--- NOTE: hl.source() may not exist yet; if not, inline your colors or use dofile()
--- hl.source("~/.cache/hellwal/hyprland.lua") -- update path/extension as needed
--- hl.source("/etc/hypr/plugins.conf")         -- same here
-
--- Colors from hellwal are referenced as $color1, $color7 etc. in the original.
--- You'll need to define them here or load them from hellwal's lua output.
--- Example (replace with actual hellwal lua output):
--- local colors = require("~/.cache/hellwal/colors") -- adjust as needed
--- For now, placeholders matching the variable names:
--- local color1 = "0xff000000" -- replace with actual hellwal output
--- local color3 = "0xff000000"
--- local color7 = "0xffffffff"
+--[[ local color1 = "0xff233932"
+local color3 = "0xff757b62"
+local color7 = "0xffffffa1" ]]
 
 
 ------------------
@@ -489,6 +473,11 @@ hl.window_rule({
     name    = "nautilus-opacity",
     match   = { class = "org.gnome.Nautilus" },
     opacity = "0.78 override 0.78 override 0.78 override"
+})
+hl.window_rule({
+    name = "nautilus-width",
+    match = { class = "org.gnome.Nautilus" },
+    scrolling_width = 0.1675,
 })
 
 -- Layer rules

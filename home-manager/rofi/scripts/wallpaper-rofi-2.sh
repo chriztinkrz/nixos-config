@@ -107,6 +107,7 @@ if [ -n "$chosen" ]; then
         hellwal -i "$full"
 
         vicinae theme set hellwal
+        hyprctl reload
 
         # zed reload
         cat "$HOME/.cache/hellwal/zed.json" > "$HOME/.config/zed/settings.json"
