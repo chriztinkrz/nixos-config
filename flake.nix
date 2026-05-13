@@ -25,11 +25,11 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # hyprland.url = "github:hyprwm/Hyprland";
-    /* hy3 = {
+    /* hyprland.url = "github:hyprwm/Hyprland";
+    hy3 = {
       url = "github:outfoxxed/hy3";
       inputs.hyprland.follows = "hyprland";
-      }; */
+    }; */
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
