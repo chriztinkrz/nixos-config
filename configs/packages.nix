@@ -219,6 +219,7 @@
   cliphist
   qbittorrent
   wl-clipboard
+  mangohud
 
   /* these both are required for input-remapper along with the service
   input-remapper
