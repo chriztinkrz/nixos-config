@@ -38,7 +38,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wl-paste --watch cliphist store")
     hl.exec_cmd("quickshell -p ~/.config/hypr/qs-hyprview/shell.qml")
     hl.exec_cmd("~/nixos-config/home-manager/hypr/scripts/wrap_cursor_new_window.sh")
-    hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad.sh")
+    hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad_lua.sh")
 end)
 
 
@@ -368,7 +368,7 @@ hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Scratchpad
-hl.bind("ALT + SHIFT + S", hl.dsp.exec_cmd(".config/hypr/scripts/warp_cursor_scratchpad.sh"))
+hl.bind("ALT + SHIFT + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind("SUPER + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Audio and brightness
