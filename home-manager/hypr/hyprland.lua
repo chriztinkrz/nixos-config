@@ -2,6 +2,7 @@ local home = os.getenv("HOME")
 dofile(home .. "/.cache/hellwal/hyprland.lua")
 local move_all_windows_to_workspace = require("scripts.move_all_windows_in_workspace_lua")
 local focus_first_and_last = require("scripts.focus_first_and_last")
+local capture_youtube_music = require("scripts.ytm_scratchpad_lua-2")
 
 ------------------
 ---- MONITORS ----
@@ -40,7 +41,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wl-paste --watch cliphist store")
     hl.exec_cmd("quickshell -p ~/.config/hypr/qs-hyprview/shell.qml")
     hl.exec_cmd("~/nixos-config/home-manager/hypr/scripts/wrap_cursor_new_window.sh")
-    hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad_lua.sh")
+    -- hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad_lua.sh")
 end)
 
 
