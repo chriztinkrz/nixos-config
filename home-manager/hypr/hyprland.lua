@@ -106,13 +106,17 @@ hl.config({
         ["col.border_active"]   = color7,
         ["col.border_inactive"] = color3,
         groupbar                = {
-            font_family      = "Zalando Sans Expanded",
-            font_size        = 17,
-            height           = 22,
-            ["col.active"]   = color7,
-            ["col.inactive"] = color3,
-            text_color       = color7,
-            blur             = true,
+            font_family                  = "Zalando Sans Expanded",
+            font_size                    = 17,
+            height                       = 22,
+            ["col.active"]               = color3,
+            ["col.inactive"]             = color1,
+            text_color                   = color7,
+            blur                         = true,
+            gradients                    = true,
+            keep_upper_gap               = false,
+            gradient_rounding            = true,
+            gradient_round_only_edges = false,
         },
     },
 })
@@ -234,42 +238,44 @@ hl.device({
     name        = "msft0001:00-06cb:7e7e-touchpad",
     sensitivity = 0.6,
 })
+hl.gesture({
+    fingers = 3,
+    direction = "vertical",
+    action = "workspace",
+})
 
 
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
 
-local mainMod = "SUPER"
-
 -- Rofi
-hl.bind(mainMod .. " + GRAVE", hl.dsp.exec_cmd("~/.config/rofi/scripts/wallpaper-rofi-2.sh"))
+hl.bind("SUPER + GRAVE", hl.dsp.exec_cmd("~/.config/rofi/scripts/wallpaper-rofi-2.sh"))
 
 -- Vicinae
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("vicinae vicinae://launch/system/browse-apps"))
-hl.bind(mainMod .. " + ALT + SPACE", hl.dsp.exec_cmd("vicinae toggle"))
-hl.bind(mainMod .. " + SHIFT + GRAVE", hl.dsp.exec_cmd("vicinae vicinae://extensions/sovereign/awww-switcher/wprandom"))
-hl.bind("CTRL + ALT + S", hl.dsp.exec_cmd("vicinae vicinae://extensions/rastsislaux/pulseaudio/outputDevices"))
-hl.bind("ALT + CTRL + SHIFT + S", hl.dsp.exec_cmd("vicinae vicinae://extensions/rastsislaux/pulseaudio/playback"))
-hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("vicinae vicinae://extensions/Gelei/bluetooth/devices"))
-hl.bind(mainMod .. " + CTRL + SHIFT + B", hl.dsp.exec_cmd("vicinae vicinae://extensions/Gelei/bluetooth/scan"))
-hl.bind(mainMod .. " + ALT + E", hl.dsp.exec_cmd("vicinae vicinae://launch/files/search"))
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/history"))
-hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("vicinae vicinae://launch/core/search-emojis"))
+hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("vicinae vicinae://launch/system/browse-apps"))
+hl.bind("SUPER + ALT + SPACE", hl.dsp.exec_cmd("vicinae toggle"))
+hl.bind("SUPER + SHIFT + GRAVE", hl.dsp.exec_cmd("vicinae vicinae://extensions/sovereign/awww-switcher/wprandom"))
+hl.bind("CTRL + ALT + S", hl.dsp.exec_cmd("vicinae vicinae://launch/@rastsislaux/store.vicinae.pulseaudio/outputDevices"))
+hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd("vicinae vicinae://launch/@Gelei/store.vicinae.bluetooth/devices"))
+hl.bind("SUPER + CTRL + SHIFT + B", hl.dsp.exec_cmd("vicinae vicinae://extensions/Gelei/bluetooth/scan"))
+hl.bind("SUPER + ALT + E", hl.dsp.exec_cmd("vicinae vicinae://launch/files/search"))
+hl.bind("SUPER + V", hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/history"))
+hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("vicinae vicinae://launch/core/search-emojis"))
 
 -- Misc binds
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("makoctl dismiss -a"))
-hl.bind(mainMod .. " + F5",
+hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind("SUPER + N", hl.dsp.exec_cmd("makoctl dismiss -a"))
+hl.bind("SUPER + F5",
     hl.dsp.exec_cmd(
         "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"))
-hl.bind(mainMod .. " + F4", hl.dsp.exec_cmd("pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"))
-hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("wlogout"))
+hl.bind("SUPER + F4", hl.dsp.exec_cmd("pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"))
+hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
 
 -- Applications
-hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("foot"))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("zen-beta"))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("nautilus --new-window"))
+hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))
+hl.bind("SUPER + B", hl.dsp.exec_cmd("zen-beta"))
+hl.bind("SUPER + E", hl.dsp.exec_cmd("nautilus --new-window"))
 hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("~/nixos-config/home-manager/hypr/scripts/toggle_waybar.sh"))
 
 -- Focus window
@@ -279,84 +285,91 @@ hl.bind("ALT + W", hl.dsp.focus({ direction = "up" }))
 hl.bind("ALT + S", hl.dsp.focus({ direction = "down" }))
 -- hl.bind("ALT + Tab", hl.dsp.focus({ target = "currentorlast" }))
 
--- Focus first/last window in workspace (raw dispatch for complex inline shell)
-hl.bind(mainMod .. " + A",
+-- Focus first/last window in workspace
+hl.bind("SUPER + A",
     hl.dsp.exec_cmd(
         "hyprctl dispatch focuswindow address:$(hyprctl clients -j | jq -r '[.[] | select(.workspace.id == '$(hyprctl activeworkspace -j | jq .id)') ] | sort_by(.at[0]) | first | .address')"))
-hl.bind(mainMod .. " + D",
+hl.bind("SUPER + D",
     hl.dsp.exec_cmd(
         "hyprctl dispatch focuswindow address:$(hyprctl clients -j | jq -r '[.[] | select(.workspace.id == '$(hyprctl activeworkspace -j | jq .id)') ] | sort_by(.at[0]) | last | .address')"))
 
 -- Switch workspace by number
 for i = 1, 10 do
     local key = i % 10
-    hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+    hl.bind("SUPER + " .. key, hl.dsp.focus({ workspace = i }))
 end
 
 -- Switch workspaces relatively
-hl.bind(mainMod .. " + W", hl.dsp.focus({ workspace = "r-1" }), { repeating = true })
-hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
-hl.bind(mainMod .. " + Tab", hl.dsp.focus({ workspace = "previous" }))
-hl.bind(mainMod .. " + Z", hl.dsp.focus({ workspace = "empty" }))
+hl.bind("SUPER + W", hl.dsp.focus({ workspace = "r-1" }), { repeating = true })
+hl.bind("SUPER + S", hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
+hl.bind("SUPER + Tab", hl.dsp.focus({ workspace = "previous" }))
+hl.bind("SUPER + Z", hl.dsp.focus({ workspace = "empty" }))
 
 -- Scroll through workspaces with super + mouse scroll
-hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "r+1" }), { mouse = true })
-hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "r-1" }), { mouse = true })
+hl.bind("SUPER + mouse_up", hl.dsp.focus({ workspace = "r+1" }), { mouse = true })
+hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r-1" }), { mouse = true })
 
 -- Move window to workspace
 for i = 1, 10 do
     local key = i % 10
     hl.bind("CTRL + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.window.move({ workspace = "r-1" }))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "r+1" }))
-hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.window.move({ workspace = "empty" }))
+hl.bind("SUPER + SHIFT + W", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("SUPER + SHIFT + Z", hl.dsp.window.move({ workspace = "empty" }))
 
 -- Move all windows to workspace
 for i = 1, 10 do
     local key = i % 10
-    hl.bind(mainMod .. " + CTRL + SHIFT + " .. key,
+    hl.bind("SUPER + CTRL + SHIFT + " .. key,
         hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh " .. i))
 end
-hl.bind(mainMod .. " + ALT + W", hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh -1"))
-hl.bind(mainMod .. " + ALT + S", hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh +1"))
+hl.bind("SUPER + ALT + W", hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh -1"))
+hl.bind("SUPER + ALT + S", hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh +1"))
 
 -- Move window
 hl.bind("CTRL + SHIFT + A", hl.dsp.layout("swapcol l"))
 hl.bind("CTRL + SHIFT + D", hl.dsp.layout("swapcol r"))
 hl.bind("CTRL + SHIFT + W", hl.dsp.window.move({ direction = "up" }))
 hl.bind("CTRL + SHIFT + S", hl.dsp.window.move({ direction = "down" }))
-hl.bind(mainMod .. " + CTRL + SHIFT + Q", hl.dsp.window.move({ direction = "left" }))
-hl.bind(mainMod .. " + CTRL + SHIFT + W", hl.dsp.window.move({ direction = "right" }))
+hl.bind("SUPER + CTRL + SHIFT + Q", hl.dsp.window.move({ direction = "left" }))
+hl.bind("SUPER + CTRL + SHIFT + W", hl.dsp.window.move({ direction = "right" }))
 
 -- Layout controls
-hl.bind(mainMod .. " + CTRL + X", hl.dsp.layout("fit visible"))
-hl.bind(mainMod .. " + CTRL + Z", hl.dsp.layout("fit all"))
-hl.bind(mainMod .. " + CTRL + Q", hl.dsp.layout("fit tobeg"))
-hl.bind(mainMod .. " + CTRL + W", hl.dsp.layout("fit toend"))
-hl.bind(mainMod .. " + T", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(".config/hypr/scripts/toggle_layout.sh"))
+hl.bind("SUPER + CTRL + X", hl.dsp.layout("fit visible"))
+hl.bind("SUPER + CTRL + Z", hl.dsp.layout("fit all"))
+hl.bind("SUPER + CTRL + Q", hl.dsp.layout("fit tobeg"))
+hl.bind("SUPER + CTRL + W", hl.dsp.layout("fit toend"))
+hl.bind("SUPER + T", hl.dsp.window.float({ action = "toggle" }))
+hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = 0 }))
+hl.bind("SUPER + Q", hl.dsp.exec_cmd(".config/hypr/scripts/toggle_layout.sh"))
 hl.bind("ALT + GRAVE",
     hl.dsp.exec_cmd("quickshell ipc -p ~/.config/hypr/qs-hyprview/shell.qml call expose toggle justified"))
 hl.bind("CTRL + SHIFT + Z", hl.dsp.window.close())
-hl.bind(mainMod .. " + CTRL + SHIFT + S", hl.dsp.exec_cmd("hyprctl dispatch togglegroup"))
-hl.bind(mainMod .. " + CTRL + SHIFT + A", hl.dsp.exec_cmd("hyprctl dispatch changegroupactive f"))
-hl.bind(mainMod .. " + CTRL + SHIFT + D", hl.dsp.exec_cmd("hyprctl dispatch changegroupactive b"))
+hl.bind("SUPER + CTRL + SHIFT + S", hl.dsp.exec_cmd("hyprctl dispatch togglegroup"))
+hl.bind("SUPER + CTRL + SHIFT + A", hl.dsp.exec_cmd("hyprctl dispatch changegroupactive f"))
+hl.bind("SUPER + CTRL + SHIFT + D", hl.dsp.exec_cmd("hyprctl dispatch changegroupactive b"))
+
+-- group
+hl.bind("SUPER+CTRL+SHIFT+S", hl.dsp.group.toggle({ window }))
+hl.bind("SUPER+CTRL+SHIFT+A", hl.dsp.group.next({ window }))
+hl.bind("SUPER+CTRL+SHIFT+D", hl.dsp.group.prev({ window }))
+hl.bind("SUPER+ALT+SHIFT+D", hl.dsp.group.move_window({ forward, window }))
+hl.bind("SUPER+ALT+SHIFT+A", hl.dsp.group.move_window({ backward, window }))
 
 -- Resize window (scrolling layout)
-hl.bind(mainMod .. " + CTRL + SHIFT + Z", hl.dsp.layout("colresize +conf"))
-hl.bind(mainMod .. " + CTRL + D", hl.dsp.layout("colresize +0.03"), { repeating = true })
-hl.bind(mainMod .. " + CTRL + A", hl.dsp.layout("colresize -0.03"), { repeating = true })
-hl.bind(mainMod .. " + CTRL + SHIFT + X", hl.dsp.layout("fit active"))
+hl.bind("SUPER + CTRL + SHIFT + Z", hl.dsp.layout("colresize +conf"))
+hl.bind("SUPER + CTRL + D", hl.dsp.layout("colresize +0.03"), { repeating = true })
+hl.bind("SUPER + CTRL + A", hl.dsp.layout("colresize -0.03"), { repeating = true })
+hl.bind("SUPER + CTRL + SHIFT + X", hl.dsp.layout("fit active"))
 
 -- Move/resize with mouse
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
+hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Scratchpad
 hl.bind("ALT + SHIFT + S", hl.dsp.exec_cmd(".config/hypr/scripts/warp_cursor_scratchpad.sh"))
-hl.bind(mainMod .. " + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+hl.bind("SUPER + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Audio and brightness
 hl.bind("ALT + F2", hl.dsp.exec_cmd("volumectl -u up"), { repeating = true })
@@ -375,29 +388,29 @@ hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("lightctl up"), { repeating = tru
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("lightctl down"), { repeating = true })
 
 -- Zoom (mouse)
-hl.bind(mainMod .. " + SHIFT + mouse_down",
+hl.bind("SUPER + SHIFT + mouse_down",
     hl.dsp.exec_cmd(
         "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 1.1; print (v > 3 ? 3 : v)}')"),
     { mouse = true })
-hl.bind(mainMod .. " + SHIFT + mouse_up",
+hl.bind("SUPER + SHIFT + mouse_up",
     hl.dsp.exec_cmd(
         "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 0.9; print (v < 1 ? 1 : v)}')"),
     { mouse = true })
 
 -- Zoom (keyboard)
-hl.bind(mainMod .. " + F1", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1"))
-hl.bind(mainMod .. " + F2",
+hl.bind("SUPER + F1", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1"))
+hl.bind("SUPER + F2",
     hl.dsp.exec_cmd(
         "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 1.1; print (v > 3 ? 3 : v)}')"),
     { repeating = true })
-hl.bind(mainMod .. " + F3", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1.75"))
+hl.bind("SUPER + F3", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1.75"))
 
 -- Screenshots
-hl.bind(mainMod .. " + F8", hl.dsp.exec_cmd("hypr-screenshot output"))
-hl.bind(mainMod .. " + F7", hl.dsp.exec_cmd("hypr-screenshot region"))
-hl.bind(mainMod .. " + F6", hl.dsp.exec_cmd("hypr-screenshot window"))
+hl.bind("SUPER + F8", hl.dsp.exec_cmd("hypr-screenshot output"))
+hl.bind("SUPER + F7", hl.dsp.exec_cmd("hypr-screenshot region"))
+hl.bind("SUPER + F6", hl.dsp.exec_cmd("hypr-screenshot window"))
 
--- hy3 plugin binds
+--[[ hy3 plugin binds
 hl.bind("ALT + SHIFT + X", hl.dsp.exec_cmd("hyprctl dispatch hy3:makegroup v"))
 hl.bind("ALT + SHIFT + C", hl.dsp.exec_cmd("hyprctl dispatch hy3:makegroup h"))
 hl.bind("ALT + CTRL + SHIFT + X", hl.dsp.exec_cmd("hyprctl dispatch hy3:changefocus raise"))
@@ -410,11 +423,10 @@ hl.bind("ALT + SHIFT + CTRL + D", hl.dsp.exec_cmd("hyprctl dispatch resizeactive
 hl.bind("ALT + SHIFT + CTRL + A", hl.dsp.exec_cmd("hyprctl dispatch resizeactive -30 0"), { repeating = true })
 hl.bind("ALT + SHIFT + CTRL + W", hl.dsp.exec_cmd("hyprctl dispatch resizeactive 0 30"), { repeating = true })
 hl.bind("ALT + SHIFT + CTRL + S", hl.dsp.exec_cmd("hyprctl dispatch resizeactive 0 -30"), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd("hyprctl dispatch hy3:togglefocuslayer"))
+hl.bind("SUPER + SHIFT + T", hl.dsp.exec_cmd("hyprctl dispatch hy3:togglefocuslayer"))
 hl.bind("ALT + SHIFT + Z", hl.dsp.exec_cmd("hyprctl dispatch hy3:expand expand"))
 hl.bind("ALT + CTRL + SHIFT + Z", hl.dsp.exec_cmd("hyprctl dispatch hy3:expand shrink"))
-hl.bind("ALT + SHIFT + V", hl.dsp.exec_cmd("hyprctl dispatch hy3:equalize workspace"))
-
+hl.bind("ALT + SHIFT + V", hl.dsp.exec_cmd("hyprctl dispatch hy3:equalize workspace")) ]]
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
