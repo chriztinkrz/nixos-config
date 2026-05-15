@@ -146,7 +146,7 @@
     trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   }; # for hyprland flake
   environment.etc."hypr/plugins.conf".text = ''
-    plugin = ${pkgs.hyprlandPlugins.hy3}/lib/libhy3.so
+    plugin = ${inputs.hy3.packages.${pkgs.stdenv.hostPlatform.system}.hy3}/lib/libhy3.so
   ''; # hy3
   hardware.graphics = {
     enable = true;

@@ -3,6 +3,12 @@ dofile(home .. "/.cache/hellwal/hyprland.lua")
 local move_all_windows_to_workspace = require("scripts.move_all_windows_in_workspace_lua")
 local focus_first_and_last = require("scripts.focus_first_and_last")
 local capture_youtube_music = require("scripts.ytm_scratchpad_lua-2")
+local f = io.open("/etc/hypr/plugins.conf", "r")
+local line = f:read("*l")
+f:close()
+local path = line:match("plugin = (.+)")
+hl.plugin.load(path)
+local hy3 = hl.plugin.hy3
 
 ------------------
 ---- MONITORS ----
@@ -115,7 +121,7 @@ hl.config({
             },
         },
     },
-}) ]]
+    }) ]]
 
 hl.config({
     group = {
@@ -426,23 +432,23 @@ hl.bind("SUPER + F8", hl.dsp.exec_cmd("hypr-screenshot output"))
 hl.bind("SUPER + F7", hl.dsp.exec_cmd("hypr-screenshot region"))
 hl.bind("SUPER + F6", hl.dsp.exec_cmd("hypr-screenshot window"))
 
---[[ hy3 plugin binds
-hl.bind("ALT + SHIFT + X", hl.dsp.exec_cmd("hyprctl dispatch hy3:makegroup v"))
-hl.bind("ALT + SHIFT + C", hl.dsp.exec_cmd("hyprctl dispatch hy3:makegroup h"))
-hl.bind("ALT + CTRL + SHIFT + X", hl.dsp.exec_cmd("hyprctl dispatch hy3:changefocus raise"))
-hl.bind("ALT + SHIFT + A", hl.dsp.exec_cmd("hyprctl dispatch hy3:movewindow l"))
-hl.bind("ALT + SHIFT + D", hl.dsp.exec_cmd("hyprctl dispatch hy3:movewindow r"))
-hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("hyprctl dispatch hy3:makegroup tab toggle"))
-hl.bind("ALT + SHIFT + Q", hl.dsp.exec_cmd("hyprctl dispatch hy3:focustab l"))
-hl.bind("ALT + SHIFT + E", hl.dsp.exec_cmd("hyprctl dispatch hy3:focustab r"))
-hl.bind("ALT + SHIFT + CTRL + D", hl.dsp.exec_cmd("hyprctl dispatch resizeactive 30 0"), { repeating = true })
-hl.bind("ALT + SHIFT + CTRL + A", hl.dsp.exec_cmd("hyprctl dispatch resizeactive -30 0"), { repeating = true })
-hl.bind("ALT + SHIFT + CTRL + W", hl.dsp.exec_cmd("hyprctl dispatch resizeactive 0 30"), { repeating = true })
-hl.bind("ALT + SHIFT + CTRL + S", hl.dsp.exec_cmd("hyprctl dispatch resizeactive 0 -30"), { repeating = true })
-hl.bind("SUPER + SHIFT + T", hl.dsp.exec_cmd("hyprctl dispatch hy3:togglefocuslayer"))
-hl.bind("ALT + SHIFT + Z", hl.dsp.exec_cmd("hyprctl dispatch hy3:expand expand"))
-hl.bind("ALT + CTRL + SHIFT + Z", hl.dsp.exec_cmd("hyprctl dispatch hy3:expand shrink"))
-hl.bind("ALT + SHIFT + V", hl.dsp.exec_cmd("hyprctl dispatch hy3:equalize workspace")) ]]
+-- hy3 plugin binds
+local hy3 = hl.plugin.hy3
+
+hl.bind("ALT + SHIFT + X", hy3.make_group("v"))
+hl.bind("ALT + SHIFT + C", hy3.make_group("h"))
+hl.bind("ALT + CTRL + SHIFT + X", hy3.change_focus("raise"))
+hl.bind("ALT + SHIFT + A", hy3.move_window("l"))
+hl.bind("ALT + SHIFT + D", hy3.move_window("r"))
+hl.bind("ALT + SHIFT + W", hy3.make_group("tab", { toggle = true }))
+hl.bind("ALT + SHIFT + Q", hy3.focus_tab({ direction = "l" }))
+hl.bind("ALT + SHIFT + E", hy3.focus_tab({ direction = "r" }))
+hl.bind("ALT + SHIFT + CTRL + D", hy3.move_window("r"), { repeating = true }) -- or use resizeactive if preferred
+hl.bind("ALT + SHIFT + CTRL + A", hy3.move_window("l"), { repeating = true })
+hl.bind("SUPER + SHIFT + T", hy3.toggle_focus_layer())
+hl.bind("ALT + SHIFT + Z", hy3.expand("expand"))
+hl.bind("ALT + CTRL + SHIFT + Z", hy3.expand("shrink"))
+hl.bind("ALT + SHIFT + V", hy3.equalize({ workspace = true }))
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
