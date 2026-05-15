@@ -354,8 +354,8 @@ hl.bind("SUPER + CTRL + SHIFT + D", hl.dsp.exec_cmd("hyprctl dispatch changegrou
 hl.bind("SUPER+CTRL+SHIFT+S", hl.dsp.group.toggle({ window }))
 hl.bind("SUPER+CTRL+SHIFT+A", hl.dsp.group.next({ window }))
 hl.bind("SUPER+CTRL+SHIFT+D", hl.dsp.group.prev({ window }))
-hl.bind("SUPER+ALT+SHIFT+D", hl.dsp.group.move_window({ forward, window }))
-hl.bind("SUPER+ALT+SHIFT+A", hl.dsp.group.move_window({ backward, window }))
+hl.bind("SUPER+ALT+SHIFT+D", hl.dsp.window.move({ direction = "r", group_aware = true }))
+hl.bind("SUPER+ALT+SHIFT+A", hl.dsp.window.move({ direction = "l", group_aware = true }))
 
 -- Resize window (scrolling layout)
 hl.bind("SUPER + CTRL + SHIFT + Z", hl.dsp.layout("colresize +conf"))
