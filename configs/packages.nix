@@ -6,6 +6,10 @@
   # user packages which have programs option
   programs.niri.useNautilus = true;
   programs.gpu-screen-recorder.enable = true;
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+  };
   programs.foot.enable = true;
   programs.hyprland= {
     enable = true;

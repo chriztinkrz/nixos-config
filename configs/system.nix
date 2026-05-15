@@ -191,6 +191,7 @@
   programs.fish = {
   enable = true;
   interactiveShellInit = ''
+    complete -c z -w cd
     function nixswitch
       set label ""
       set host "nixosbtw"
