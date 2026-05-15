@@ -1,5 +1,7 @@
 local home = os.getenv("HOME")
 dofile(home .. "/.cache/hellwal/hyprland.lua")
+local move_all_windows_to_workspace = require("scripts.move_all_windows_in_workspace_lua")
+local focus_first_and_last = require("scripts.focus_first_and_last")
 
 ------------------
 ---- MONITORS ----
@@ -41,6 +43,19 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad_lua.sh")
 end)
 
+
+----------------------------
+---- SCRIPTS ON STARTUP ----
+----------------------------
+
+-- warp cursor to new window
+hl.on("window.open", function(win)
+    if win and win.at and win.size then
+        local center_x = math.floor(win.at.x + (win.size.x / 2))
+        local center_y = math.floor(win.at.y + (win.size.y / 2))
+        hl.dispatch(hl.dsp.cursor.move({ x = center_x, y = center_y }))
+    end
+end)
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
@@ -286,12 +301,8 @@ hl.bind("ALT + S", hl.dsp.focus({ direction = "down" }))
 -- hl.bind("ALT + Tab", hl.dsp.focus({ target = "currentorlast" }))
 
 -- Focus first/last window in workspace
-hl.bind("SUPER + A",
-    hl.dsp.exec_cmd(
-        "hyprctl dispatch focuswindow address:$(hyprctl clients -j | jq -r '[.[] | select(.workspace.id == '$(hyprctl activeworkspace -j | jq .id)') ] | sort_by(.at[0]) | first | .address')"))
-hl.bind("SUPER + D",
-    hl.dsp.exec_cmd(
-        "hyprctl dispatch focuswindow address:$(hyprctl clients -j | jq -r '[.[] | select(.workspace.id == '$(hyprctl activeworkspace -j | jq .id)') ] | sort_by(.at[0]) | last | .address')"))
+hl.bind("SUPER + A", function() focus_first_and_last("first") end)
+hl.bind("SUPER + D", function() focus_first_and_last("last") end)
 
 -- Switch workspace by number
 for i = 1, 10 do
@@ -319,13 +330,8 @@ hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "r+1" }))
 hl.bind("SUPER + SHIFT + Z", hl.dsp.window.move({ workspace = "empty" }))
 
 -- Move all windows to workspace
-for i = 1, 10 do
-    local key = i % 10
-    hl.bind("SUPER + CTRL + SHIFT + " .. key,
-        hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh " .. i))
-end
-hl.bind("SUPER + ALT + W", hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh -1"))
-hl.bind("SUPER + ALT + S", hl.dsp.exec_cmd(".config/hypr/scripts/move_all_windows_in_workspace.sh +1"))
+hl.bind("SUPER + ALT + W", function() move_all_windows_to_workspace("-1") end)
+hl.bind("SUPER + ALT + S", function() move_all_windows_to_workspace("+1") end)
 
 -- Move window
 hl.bind("CTRL + SHIFT + A", hl.dsp.layout("swapcol l"))
@@ -368,7 +374,16 @@ hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Scratchpad
-hl.bind("ALT + SHIFT + S", hl.dsp.workspace.toggle_special("magic"))
+hl.bind("ALT + SHIFT + S", function()
+    hl.dispatch(hl.dsp.workspace.toggle_special("magic"))
+    local win = hl.get_active_window()
+    if win and win.at and win.size then
+        -- 3. Calculate the exact window center
+        local center_x = math.floor(win.at.x + (win.size.x / 2))
+        local center_y = math.floor(win.at.y + (win.size.y / 2))
+        hl.dispatch(hl.dsp.cursor.move({ x = center_x, y = center_y }))
+    end
+end)
 hl.bind("SUPER + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Audio and brightness
