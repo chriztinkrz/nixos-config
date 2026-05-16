@@ -99,7 +99,7 @@ hl.config({
     },
 })
 
---[[ hy3 plugin config
+--[[ ahy3 plugin config
 hl.config({
     plugin = {
         hy3 = {
@@ -364,11 +364,13 @@ hl.bind("SUPER + CTRL + SHIFT + A", hl.dsp.exec_cmd("hyprctl dispatch changegrou
 hl.bind("SUPER + CTRL + SHIFT + D", hl.dsp.exec_cmd("hyprctl dispatch changegroupactive b"))
 
 -- group
-hl.bind("SUPER+CTRL+SHIFT+S", hl.dsp.group.toggle({ window }))
-hl.bind("SUPER+CTRL+SHIFT+A", hl.dsp.group.next({ window }))
-hl.bind("SUPER+CTRL+SHIFT+D", hl.dsp.group.prev({ window }))
-hl.bind("SUPER+ALT+SHIFT+D", hl.dsp.window.move({ direction = "r", group_aware = true }))
-hl.bind("SUPER+ALT+SHIFT+A", hl.dsp.window.move({ direction = "l", group_aware = true }))
+hl.bind("ALT+SHIFT+W", hl.dsp.group.toggle({ window }))
+hl.bind("ALT+SHIFT+E", hl.dsp.group.next({ window }))
+hl.bind("ALT+SHIFT+Q", hl.dsp.group.prev({ window }))
+hl.bind("ALT+SHIFT+D", hl.dsp.window.move({ direction = "r", group_aware = true }))
+hl.bind("ALT+SHIFT+A", hl.dsp.window.move({ direction = "l", group_aware = true }))
+hl.bind("ALT+CTRL+SHIFT+A", hl.dsp.group.move_window({ backward }))
+hl.bind("ALT+CTRL+SHIFT+D", hl.dsp.group.move_window({ forward }))
 
 -- Resize window (scrolling layout)
 hl.bind("SUPER + CTRL + SHIFT + Z", hl.dsp.layout("colresize +conf"))
@@ -385,7 +387,6 @@ hl.bind("ALT + SHIFT + S", function()
     hl.dispatch(hl.dsp.workspace.toggle_special("magic"))
     local win = hl.get_active_window()
     if win and win.at and win.size then
-        -- 3. Calculate the exact window center
         local center_x = math.floor(win.at.x + (win.size.x / 2))
         local center_y = math.floor(win.at.y + (win.size.y / 2))
         hl.dispatch(hl.dsp.cursor.move({ x = center_x, y = center_y }))
@@ -432,7 +433,7 @@ hl.bind("SUPER + F8", hl.dsp.exec_cmd("hypr-screenshot output"))
 hl.bind("SUPER + F7", hl.dsp.exec_cmd("hypr-screenshot region"))
 hl.bind("SUPER + F6", hl.dsp.exec_cmd("hypr-screenshot window"))
 
--- hy3 plugin binds
+--[[ hy3 plugin binds
 local hy3 = hl.plugin.hy3
 
 hl.bind("ALT + SHIFT + X", hy3.make_group("v"))
@@ -448,7 +449,7 @@ hl.bind("ALT + SHIFT + CTRL + A", hy3.move_window("l"), { repeating = true })
 hl.bind("SUPER + SHIFT + T", hy3.toggle_focus_layer())
 hl.bind("ALT + SHIFT + Z", hy3.expand("expand"))
 hl.bind("ALT + CTRL + SHIFT + Z", hy3.expand("shrink"))
-hl.bind("ALT + SHIFT + V", hy3.equalize({ workspace = true }))
+hl.bind("ALT + SHIFT + V", hy3.equalize({ workspace = true })) ]]
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
