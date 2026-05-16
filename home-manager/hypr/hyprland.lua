@@ -1,3 +1,7 @@
+-------------------
+---- VARIABLES ----
+-------------------
+
 local home = os.getenv("HOME")
 dofile(home .. "/.cache/hellwal/hyprland.lua")
 local move_all_windows_to_workspace = require("scripts.move_all_windows_in_workspace_lua")
@@ -34,7 +38,6 @@ hl.monitor({
    scale    = 1.5,
 }) ]]
 
-
 -------------------
 ---- AUTOSTART ----
 -------------------
@@ -49,7 +52,6 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("~/nixos-config/home-manager/hypr/scripts/wrap_cursor_new_window.sh")
     -- hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad_lua.sh")
 end)
-
 
 ----------------------------
 ---- SCRIPTS ON STARTUP ----
@@ -71,7 +73,6 @@ end)
 hl.env("XCURSOR_SIZE", "40")
 hl.env("HYPRCURSOR_SIZE", "40")
 hl.env("HYPRCURSOR_THEME", "ComixCursors-Opaque-Black")
-
 
 -----------------------
 ---- LOOK AND FEEL ----
@@ -167,6 +168,10 @@ hl.config({
     },
 })
 
+-------------------
+---- EYE CANDY ----
+-------------------
+
 hl.config({
     decoration = {
         rounding           = 6,
@@ -200,7 +205,7 @@ hl.config({
     },
 })
 
--- Bezier curves
+-- bezier curves
 hl.curve("wind", { type = "bezier", points = { { 0.2, 0.6 }, { 0.1, 1.05 } } })
 hl.curve("wind2", { type = "bezier", points = { { 0.05, 1.1 }, { 0.1, 1.5 } } })
 hl.curve("winIn", { type = "bezier", points = { { 0.1, 1.1 }, { 0.1, 1.0175 } } })
@@ -213,7 +218,7 @@ hl.curve("winClose", { type = "bezier", points = { { 0.8, 1 }, { 0.9, 1.05 } } }
 hl.curve("spring_anim", { type = "bezier", points = { { 0.45, 1.25 }, { 0.45, 1.15 } } })
 hl.curve("overshot", { type = "bezier", points = { { 0.18, 0.95 }, { 0.22, 1.03 } } })
 
--- Animations
+-- animations
 hl.animation({ leaf = "border", enabled = true, speed = 4, bezier = "liner" })
 hl.animation({ leaf = "borderangle", enabled = true, speed = 30, bezier = "liner", style = "loop" })
 hl.animation({ leaf = "windows", enabled = true, speed = 2, bezier = "wind", style = "slide" })
@@ -271,10 +276,10 @@ hl.gesture({
 ---- KEYBINDINGS ----
 ---------------------
 
--- Rofi
+-- rofi
 hl.bind("SUPER + GRAVE", hl.dsp.exec_cmd("~/.config/rofi/scripts/wallpaper-rofi-2.sh"))
 
--- Vicinae
+-- vicinae
 hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("vicinae vicinae://launch/system/browse-apps"))
 hl.bind("SUPER + ALT + SPACE", hl.dsp.exec_cmd("vicinae toggle"))
 hl.bind("SUPER + SHIFT + GRAVE", hl.dsp.exec_cmd("vicinae vicinae://extensions/sovereign/awww-switcher/wprandom"))
@@ -285,7 +290,7 @@ hl.bind("SUPER + ALT + E", hl.dsp.exec_cmd("vicinae vicinae://launch/files/searc
 hl.bind("SUPER + V", hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/history"))
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("vicinae vicinae://launch/core/search-emojis"))
 
--- Misc binds
+-- miscellaneous binds
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + N", hl.dsp.exec_cmd("makoctl dismiss -a"))
 hl.bind("SUPER + F5",
@@ -294,40 +299,40 @@ hl.bind("SUPER + F5",
 hl.bind("SUPER + F4", hl.dsp.exec_cmd("pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"))
 hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
 
--- Applications
+-- applications
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("zen-beta"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd("nautilus --new-window"))
 hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("~/nixos-config/home-manager/hypr/scripts/toggle_waybar.sh"))
 
--- Focus window
+-- focus window
 hl.bind("ALT + A", hl.dsp.focus({ direction = "left" }))
 hl.bind("ALT + D", hl.dsp.focus({ direction = "right" }))
 hl.bind("ALT + W", hl.dsp.focus({ direction = "up" }))
 hl.bind("ALT + S", hl.dsp.focus({ direction = "down" }))
 -- hl.bind("ALT + Tab", hl.dsp.focus({ target = "currentorlast" }))
 
--- Focus first/last window in workspace
+-- focus first/last window in workspace
 hl.bind("SUPER + A", function() focus_first_and_last("first") end)
 hl.bind("SUPER + D", function() focus_first_and_last("last") end)
 
--- Switch workspace by number
+-- switch workspace by number
 for i = 1, 10 do
     local key = i % 10
     hl.bind("SUPER + " .. key, hl.dsp.focus({ workspace = i }))
 end
 
--- Switch workspaces relatively
+-- switch workspaces relatively
 hl.bind("SUPER + W", hl.dsp.focus({ workspace = "r-1" }), { repeating = true })
 hl.bind("SUPER + S", hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
 hl.bind("SUPER + Tab", hl.dsp.focus({ workspace = "previous" }))
 hl.bind("SUPER + Z", hl.dsp.focus({ workspace = "empty" }))
 
--- Scroll through workspaces with super + mouse scroll
+-- scroll through workspaces with mouse scroll
 hl.bind("SUPER + mouse_up", hl.dsp.focus({ workspace = "r+1" }), { mouse = true })
 hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r-1" }), { mouse = true })
 
--- Move window to workspace
+-- move window to workspace
 for i = 1, 10 do
     local key = i % 10
     hl.bind("CTRL + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
@@ -336,11 +341,11 @@ hl.bind("SUPER + SHIFT + W", hl.dsp.window.move({ workspace = "r-1" }))
 hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "r+1" }))
 hl.bind("SUPER + SHIFT + Z", hl.dsp.window.move({ workspace = "empty" }))
 
--- Move all windows to workspace
+-- move all windows to workspace
 hl.bind("SUPER + ALT + W", function() move_all_windows_to_workspace("-1") end)
 hl.bind("SUPER + ALT + S", function() move_all_windows_to_workspace("+1") end)
 
--- Move window
+-- move window
 hl.bind("CTRL + SHIFT + A", hl.dsp.layout("swapcol l"))
 hl.bind("CTRL + SHIFT + D", hl.dsp.layout("swapcol r"))
 hl.bind("CTRL + SHIFT + W", hl.dsp.window.move({ direction = "up" }))
@@ -348,7 +353,7 @@ hl.bind("CTRL + SHIFT + S", hl.dsp.window.move({ direction = "down" }))
 hl.bind("SUPER + CTRL + SHIFT + Q", hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER + CTRL + SHIFT + W", hl.dsp.window.move({ direction = "right" }))
 
--- Layout controls
+-- layout controls
 hl.bind("SUPER + CTRL + X", hl.dsp.layout("fit visible"))
 hl.bind("SUPER + CTRL + Z", hl.dsp.layout("fit all"))
 hl.bind("SUPER + CTRL + Q", hl.dsp.layout("fit tobeg"))
@@ -372,17 +377,17 @@ hl.bind("ALT+SHIFT+A", hl.dsp.window.move({ direction = "l", group_aware = true 
 hl.bind("ALT+CTRL+SHIFT+A", hl.dsp.group.move_window({ backward }))
 hl.bind("ALT+CTRL+SHIFT+D", hl.dsp.group.move_window({ forward }))
 
--- Resize window (scrolling layout)
+-- resize window (scrolling layout)
 hl.bind("SUPER + CTRL + SHIFT + Z", hl.dsp.layout("colresize +conf"))
 hl.bind("SUPER + CTRL + D", hl.dsp.layout("colresize +0.03"), { repeating = true })
 hl.bind("SUPER + CTRL + A", hl.dsp.layout("colresize -0.03"), { repeating = true })
 hl.bind("SUPER + CTRL + SHIFT + X", hl.dsp.layout("fit active"))
 
--- Move/resize with mouse
+-- move/resize with mouse
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
--- Scratchpad
+-- scratchpad
 hl.bind("ALT + SHIFT + S", function()
     hl.dispatch(hl.dsp.workspace.toggle_special("magic"))
     local win = hl.get_active_window()
@@ -394,7 +399,7 @@ hl.bind("ALT + SHIFT + S", function()
 end)
 hl.bind("SUPER + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
--- Audio and brightness
+-- audio and brightness
 hl.bind("ALT + F2", hl.dsp.exec_cmd("volumectl -u up"), { repeating = true })
 hl.bind("ALT + F1", hl.dsp.exec_cmd("volumectl -u down"), { repeating = true })
 hl.bind("ALT + F3", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
@@ -404,13 +409,13 @@ hl.bind("F3", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("SHIFT + F2", hl.dsp.exec_cmd("lightctl up"), { repeating = true })
 hl.bind("SHIFT + F1", hl.dsp.exec_cmd("lightctl down"), { repeating = true })
 
--- Laptop keys
+-- laptop keys
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("volumectl -u up"), { repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("volumectl -u down"), { repeating = true })
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("lightctl up"), { repeating = true })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("lightctl down"), { repeating = true })
 
--- Zoom (mouse)
+-- zoom (mouse)
 hl.bind("SUPER + SHIFT + mouse_down",
     hl.dsp.exec_cmd(
         "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 1.1; print (v > 3 ? 3 : v)}')"),
@@ -420,7 +425,7 @@ hl.bind("SUPER + SHIFT + mouse_up",
         "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 0.9; print (v < 1 ? 1 : v)}')"),
     { mouse = true })
 
--- Zoom (keyboard)
+-- zoom (keyboard)
 hl.bind("SUPER + F1", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1"))
 hl.bind("SUPER + F2",
     hl.dsp.exec_cmd(
@@ -428,7 +433,7 @@ hl.bind("SUPER + F2",
     { repeating = true })
 hl.bind("SUPER + F3", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1.75"))
 
--- Screenshots
+-- screenshots
 hl.bind("SUPER + F8", hl.dsp.exec_cmd("hypr-screenshot output"))
 hl.bind("SUPER + F7", hl.dsp.exec_cmd("hypr-screenshot region"))
 hl.bind("SUPER + F6", hl.dsp.exec_cmd("hypr-screenshot window"))
@@ -460,7 +465,6 @@ hl.window_rule({
     match          = { class = ".*" },
     suppress_event = "maximize",
 })
-
 hl.window_rule({
     name     = "fix-xwayland-drags",
     match    = {
@@ -473,32 +477,27 @@ hl.window_rule({
     },
     no_focus = true,
 })
-
 hl.window_rule({
     name  = "move-hyprland-run",
     match = { class = "hyprland-run" },
     move  = "20 monitor_h-120",
     float = true,
 })
-
 hl.window_rule({
     name         = "scratchpad-stay-focused",
     match        = { workspace = "special:magic" },
     stay_focused = true,
 })
-
 hl.window_rule({
     name    = "foot-opacity",
     match   = { class = "foot" },
     opacity = "0.6 override 0.6 override 0.6 override"
 })
-
 hl.window_rule({
     name    = "zed-opacity",
     match   = { class = "dev.zed.Zed" },
     opacity = "0.75 override 0.75 override 0.75 override"
 })
-
 hl.window_rule({
     name    = "nautilus-opacity",
     match   = { class = "org.gnome.Nautilus" },
@@ -539,19 +538,16 @@ hl.config({
         disable_splash_rendering = true,
     },
 })
-
 hl.config({
     xwayland = {
         force_zero_scaling = true,
     },
 })
-
 hl.config({
     binds = {
         scroll_event_delay = 0,
     },
 })
-
 hl.config({
     cursor = {
         zoom_rigid               = true,
