@@ -400,14 +400,14 @@ end)
 hl.bind("SUPER + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- audio and brightness
-hl.bind("ALT + F2", hl.dsp.exec_cmd("volumectl -u up"), { repeating = true })
-hl.bind("ALT + F1", hl.dsp.exec_cmd("volumectl -u down"), { repeating = true })
+hl.bind("ALT + F2", hl.dsp.exec_cmd("volumectl -u up"), { repeating = true, locked = true })
+hl.bind("ALT + F1", hl.dsp.exec_cmd("volumectl -u down"), { repeating = true, locked = true })
 hl.bind("ALT + F3", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
 hl.bind("F2", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("F1", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 hl.bind("F3", hl.dsp.exec_cmd("playerctl next"), { locked = true })
-hl.bind("SHIFT + F2", hl.dsp.exec_cmd("lightctl up"), { repeating = true })
-hl.bind("SHIFT + F1", hl.dsp.exec_cmd("lightctl down"), { repeating = true })
+hl.bind("SHIFT + F2", hl.dsp.exec_cmd("lightctl up"), { repeating = true, locked = true })
+hl.bind("SHIFT + F1", hl.dsp.exec_cmd("lightctl down"), { repeating = true, locked = true })
 
 -- laptop keys
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("volumectl -u up"), { repeating = true })
