@@ -9,6 +9,7 @@
   programs.zoxide = {
     enable = true;
     enableFishIntegration = true;
+    flags = [ "--cmd cd" ];
   };
   programs.foot.enable = true;
   programs.hyprland= {

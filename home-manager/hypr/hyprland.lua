@@ -7,6 +7,7 @@ dofile(home .. "/.cache/hellwal/hyprland.lua")
 local move_all_windows_to_workspace = require("scripts.move_all_windows_in_workspace_lua")
 local focus_first_and_last = require("scripts.focus_first_and_last")
 local capture_youtube_music = require("scripts.ytm_scratchpad_lua-2")
+local move_retain, track_resize, window_widths = require("scripts.workspace_move_same_width")
 local f = io.open("/etc/hypr/plugins.conf", "r")
 local line = f:read("*l")
 f:close()
@@ -49,7 +50,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("avizo-service")
     hl.exec_cmd("wl-paste --watch cliphist store")
     hl.exec_cmd("quickshell -p ~/.config/hypr/qs-hyprview/shell.qml")
-    hl.exec_cmd("~/nixos-config/home-manager/hypr/scripts/wrap_cursor_new_window.sh")
+    -- hl.exec_cmd("~/nixos-config/home-manager/hypr/scripts/wrap_cursor_new_window.sh")
     -- hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad_lua.sh")
 end)
 
@@ -74,9 +75,9 @@ hl.env("XCURSOR_SIZE", "40")
 hl.env("HYPRCURSOR_SIZE", "40")
 hl.env("HYPRCURSOR_THEME", "ComixCursors-Opaque-Black")
 
------------------------
----- LOOK AND FEEL ----
------------------------
+-----------------
+---- LAYOUTS ----
+-----------------
 
 -- Layout settings
 hl.config({
@@ -90,7 +91,6 @@ hl.config({
         wrap_swapcol             = false,
     },
 })
-
 hl.config({
     master = {
         new_status                    = "inherit",
@@ -99,8 +99,7 @@ hl.config({
         mfact                         = 0.33333,
     },
 })
-
---[[ ahy3 plugin config
+--[[ hy3 plugin config
 hl.config({
     plugin = {
         hy3 = {
@@ -123,6 +122,10 @@ hl.config({
         },
     },
     }) ]]
+
+-------------------
+---- EYE CANDY ----
+-------------------
 
 hl.config({
     group = {
@@ -168,9 +171,6 @@ hl.config({
     },
 })
 
--------------------
----- EYE CANDY ----
--------------------
 
 hl.config({
     decoration = {
@@ -298,6 +298,12 @@ hl.bind("SUPER + F5",
         "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"))
 hl.bind("SUPER + F4", hl.dsp.exec_cmd("pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"))
 hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
+hl.bind("SUPER + P", function()
+    local win = hl.get_active_window()
+    local f = io.open("/tmp/hypr_debug.txt", "a")
+    f:write("address=" .. tostring(win.address) .. " tracked=" .. tostring(window_widths[win.address]) .. "\n")
+    f:close()
+end)
 
 -- applications
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))
@@ -337,8 +343,8 @@ for i = 1, 10 do
     local key = i % 10
     hl.bind("CTRL + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
-hl.bind("SUPER + SHIFT + W", hl.dsp.window.move({ workspace = "r-1" }))
-hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("SUPER + SHIFT + W", function() move_retain("-1", window_widths) end)
+hl.bind("SUPER + SHIFT + S", function() move_retain("+1", window_widths) end)
 hl.bind("SUPER + SHIFT + Z", hl.dsp.window.move({ workspace = "empty" }))
 
 -- move all windows to workspace
@@ -379,9 +385,18 @@ hl.bind("ALT+CTRL+SHIFT+D", hl.dsp.group.move_window({ forward }))
 
 -- resize window (scrolling layout)
 hl.bind("SUPER + CTRL + SHIFT + Z", hl.dsp.layout("colresize +conf"))
-hl.bind("SUPER + CTRL + D", hl.dsp.layout("colresize +0.03"), { repeating = true })
-hl.bind("SUPER + CTRL + A", hl.dsp.layout("colresize -0.03"), { repeating = true })
 hl.bind("SUPER + CTRL + SHIFT + X", hl.dsp.layout("fit active"))
+hl.bind("SUPER + CTRL + D", function()
+    local win = hl.get_active_window()
+    if win then track_resize(win.address, 0.03) end
+    hl.dispatch(hl.dsp.layout("colresize +0.03"))
+end, { repeating = true })
+
+hl.bind("SUPER + CTRL + A", function()
+    local win = hl.get_active_window()
+    if win then track_resize(win.address, -0.03) end
+    hl.dispatch(hl.dsp.layout("colresize -0.03"))
+end, { repeating = true })
 
 -- move/resize with mouse
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
