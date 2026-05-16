@@ -13,13 +13,17 @@ local function capture_youtube_music()
     end
 
     if target_win then
+        if target_win.workspace and target_win.workspace.name == "special:magic" then
+            return
+        end
+
         hl.dispatch(hl.dsp.window.move({
             workspace = "special:magic",
             window = target_win,
             follow = false
         }))
 
-        hl.dispatch(hl.dsp.window.float({ action = "toggle", window = target_win }))
+        hl.dispatch(hl.dsp.window.float({ action = "set", window = target_win }))
 
         hl.timer(function()
             hl.dispatch(hl.dsp.window.resize({
@@ -30,7 +34,7 @@ local function capture_youtube_music()
             }))
 
             hl.dispatch(hl.dsp.window.center({ window = target_win }))
-        end, { timeout = 20, type = "oneshot" })
+        end, { timeout = 80, type = "oneshot" })
 
         return
     end

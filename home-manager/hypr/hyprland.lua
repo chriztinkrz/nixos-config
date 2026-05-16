@@ -386,17 +386,9 @@ hl.bind("ALT+CTRL+SHIFT+D", hl.dsp.group.move_window({ forward }))
 -- resize window (scrolling layout)
 hl.bind("SUPER + CTRL + SHIFT + Z", hl.dsp.layout("colresize +conf"))
 hl.bind("SUPER + CTRL + SHIFT + X", hl.dsp.layout("fit active"))
-hl.bind("SUPER + CTRL + D", function()
-    local win = hl.get_active_window()
-    if win then track_resize(win.address, 0.03) end
-    hl.dispatch(hl.dsp.layout("colresize +0.03"))
-end, { repeating = true })
+hl.bind("SUPER + CTRL + D", hl.dsp.layout("colresize +0.03"), { repeating = true })
+hl.bind("SUPER + CTRL + A", hl.dsp.layout("colresize -0.03"), { repeating = true })
 
-hl.bind("SUPER + CTRL + A", function()
-    local win = hl.get_active_window()
-    if win then track_resize(win.address, -0.03) end
-    hl.dispatch(hl.dsp.layout("colresize -0.03"))
-end, { repeating = true })
 
 -- move/resize with mouse
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
