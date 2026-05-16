@@ -8,6 +8,7 @@ local move_all_windows_to_workspace = require("scripts.move_all_windows_in_works
 local focus_first_and_last = require("scripts.focus_first_and_last")
 local capture_youtube_music = require("scripts.ytm_scratchpad_lua-2")
 local move_retain, track_resize, window_widths = require("scripts.workspace_move_same_width")
+local move_all_windows_to_workspace_by_no = require("scripts.move_all_windows_in_workspace_by_no_lua")
 local f = io.open("/etc/hypr/plugins.conf", "r")
 local line = f:read("*l")
 f:close()
@@ -350,6 +351,14 @@ hl.bind("SUPER + SHIFT + Z", hl.dsp.window.move({ workspace = "empty" }))
 -- move all windows to workspace
 hl.bind("SUPER + ALT + W", function() move_all_windows_to_workspace("-1") end)
 hl.bind("SUPER + ALT + S", function() move_all_windows_to_workspace("+1") end)
+    for i = 1, 9 do
+        hl.bind("SUPER + CTRL + SHIFT" .. " + " .. i, function()
+            move_all_windows_to_workspace(i)
+        end)
+    end
+    hl.bind("SUPER + CTRL + SHIFT" .. " + 0", function()
+        move_all_windows_to_workspace(10)
+    end)
 
 -- move window
 hl.bind("CTRL + SHIFT + A", hl.dsp.layout("swapcol l"))
