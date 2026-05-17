@@ -311,6 +311,7 @@ hl.bind("ALT + A", hl.dsp.focus({ direction = "left" }))
 hl.bind("ALT + D", hl.dsp.focus({ direction = "right" }))
 hl.bind("ALT + W", hl.dsp.focus({ direction = "up" }))
 hl.bind("ALT + S", hl.dsp.focus({ direction = "down" }))
+hl.bind("ALT + TAB", hl.dsp.focus({ last = true }))
 -- hl.bind("ALT + Tab", hl.dsp.focus({ target = "currentorlast" }))
 
 -- focus first/last window in workspace
