@@ -144,12 +144,12 @@ hl.config({
 
 hl.config({
     general = {
-        gaps_in          = 9,
+        gaps_in          = 10,
         gaps_out         = {
             top    = 13,
-            right  = 18,
-            bottom = 18,
-            left   = 18
+            right  = 20,
+            bottom = 20,
+            left   = 20
         },
 
         border_size      = 4,
@@ -293,12 +293,6 @@ hl.bind("SUPER + F5",
         "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"))
 hl.bind("SUPER + F4", hl.dsp.exec_cmd("pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"))
 hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
-hl.bind("SUPER + P", function()
-    local win = hl.get_active_window()
-    local f = io.open("/tmp/hypr_debug.txt", "a")
-    f:write("address=" .. tostring(win.address) .. " tracked=" .. tostring(window_widths[win.address]) .. "\n")
-    f:close()
-end)
 
 -- applications
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))
