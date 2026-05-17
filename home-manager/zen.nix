@@ -40,6 +40,7 @@
         "toolkit.zoomManager.fallbackLocalZoom" = 133;
         "browser.zoom.siteSpecific" = false;
         "privacy.resistFingerprinting" = false;
+        "full-screen-api.warning.timeout" = 0;
 
         # --- Tab & Workspace Management ---
         "zen.workspaces.continue-where-left-off" = true;
