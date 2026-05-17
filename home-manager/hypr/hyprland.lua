@@ -9,12 +9,6 @@ local focus_first_and_last = require("scripts.focus_first_and_last")
 local capture_youtube_music = require("scripts.ytm_scratchpad_lua-2")
 local move_retain, track_resize, window_widths = require("scripts.workspace_move_same_width")
 local move_all_windows_to_workspace_by_no = require("scripts.move_all_windows_in_workspace_by_no_lua")
-local f = io.open("/etc/hypr/plugins.conf", "r")
-local line = f:read("*l")
-f:close()
-local path = line:match("plugin = (.+)")
-hl.plugin.load(path)
-local hy3 = hl.plugin.hy3
 
 ------------------
 ---- MONITORS ----
