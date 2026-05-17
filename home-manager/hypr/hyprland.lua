@@ -156,7 +156,7 @@ hl.config({
 
         col              = {
             active_border   = color7,
-            inactive_border = color1,
+            inactive_border = color3,
         },
 
         resize_on_border = false,
