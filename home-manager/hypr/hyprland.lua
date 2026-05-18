@@ -144,12 +144,12 @@ hl.config({
 
 hl.config({
     general = {
-        gaps_in          = 10,
+        gaps_in          = 0.5,
         gaps_out         = {
             top    = 13,
-            right  = 20,
-            bottom = 20,
-            left   = 20
+            right  = 1,
+            bottom = 1,
+            left   = 1
         },
 
         border_size      = 4,
