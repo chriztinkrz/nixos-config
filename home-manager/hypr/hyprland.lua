@@ -225,7 +225,7 @@ hl.animation({ leaf = "layersIn", enabled = true, speed = 9, bezier = "menu_dece
 hl.animation({ leaf = "layersOut", enabled = true, speed = 9, bezier = "menu_decel", style = "slide" })
 hl.animation({ leaf = "fadeLayersIn", enabled = true, speed = 2, bezier = "menu_decel" })
 hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 4.5, bezier = "menu_accel" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 10, bezier = "workspace", style = "slidevert" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 9, bezier = "workspace", style = "slidevert" })
 hl.animation({ leaf = "zoomFactor", enabled = true, speed = 12, bezier = "workspace" })
 
 
