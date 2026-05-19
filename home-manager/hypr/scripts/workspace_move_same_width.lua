@@ -10,9 +10,9 @@ local function move_window_retain_width(direction)
     local screen_width = monitor and monitor.size and monitor.size.x or 1920
     local scale = monitor and monitor.scale or 1
 
-    local gaps_out_left  = 16.25
-    local gaps_out_right = 16.25
-    local gaps_in        = 7
+    local gaps_out_left  = 34
+    local gaps_out_right = 34
+    local gaps_in        = 0
     local border_size    = 4
 
     -- total width taken by outer gaps
