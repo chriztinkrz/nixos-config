@@ -330,7 +330,9 @@ hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r-1" }), { mouse = tru
 -- move window to workspace
 for i = 1, 10 do
     local key = i % 10
-    hl.bind("CTRL + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+    hl.bind("CTRL + SHIFT + " .. key, function()
+        move_retain(i)
+    end)
 end
 hl.bind("SUPER + SHIFT + W", function() move_retain("-1", window_widths) end)
 hl.bind("SUPER + SHIFT + S", function() move_retain("+1", window_widths) end)
