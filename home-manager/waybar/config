@@ -4,7 +4,7 @@
     "layer":"top",
     "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
     "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
-    "margin-bottom": 0,
+    "margin-bottom": 13,
     "margin-top": 13,
     "margin-left": 425,
     "margin-right": 425,

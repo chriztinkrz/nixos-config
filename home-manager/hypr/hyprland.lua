@@ -146,7 +146,7 @@ hl.config({
     general = {
         gaps_in          = 0.5,
         gaps_out         = {
-            top    = 13,
+            top    = 0,
             right  = 1,
             bottom = 1,
             left   = 1
