@@ -44,7 +44,7 @@
     in {
       nixosConfigurations = {
         nixosbtw = mkSystem [
-          ./configs/hardware/hardware.nix
+          ./configs/hardware/elitebook_hardware.nix
           ./configs/hardware/elitebook.nix
           ./configs/hardware/laptop.nix
         ];
@@ -56,7 +56,7 @@
         ];
 
         common = mkSystem [
-          ./configs/hardware/hardware.nix
+          ./configs/hardware/common_hardware.nix
         ];
       };
     };
