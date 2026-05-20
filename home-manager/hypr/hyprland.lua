@@ -10,6 +10,7 @@ local capture_youtube_music = require("scripts.ytm_scratchpad_lua-2")
 local move_retain, track_resize, window_widths = require("scripts.workspace_move_same_width")
 local move_all_windows_to_workspace_by_no = require("scripts.move_all_windows_in_workspace_by_no_lua")
 local toggle_focus_tile_floating = require("scripts.focus_floating")
+local navigate = require("scripts.navigate_scrolling")
 
 ------------------
 ---- MONITORS ----
@@ -302,8 +303,8 @@ hl.bind("SUPER + E", hl.dsp.exec_cmd("nautilus --new-window"))
 hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("~/nixos-config/home-manager/hypr/scripts/toggle_waybar.sh"))
 
 -- focus window
-hl.bind("ALT + A", hl.dsp.focus({ direction = "left" }))
-hl.bind("ALT + D", hl.dsp.focus({ direction = "right" }))
+hl.bind("ALT + A", function() navigate("left") end)
+hl.bind("ALT + D", function() navigate("right") end)
 hl.bind("ALT + W", hl.dsp.focus({ direction = "up" }))
 hl.bind("ALT + S", hl.dsp.focus({ direction = "down" }))
 hl.bind("ALT + TAB", hl.dsp.focus({ last = true }))
