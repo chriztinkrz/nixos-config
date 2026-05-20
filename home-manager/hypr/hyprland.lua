@@ -11,6 +11,7 @@ local move_retain, track_resize, window_widths = require("scripts.workspace_move
 local move_all_windows_to_workspace_by_no = require("scripts.move_all_windows_in_workspace_by_no_lua")
 local toggle_focus_tile_floating = require("scripts.focus_floating")
 local navigate = require("scripts.navigate_scrolling")
+local zoom = require("scripts.zoom")
 
 ------------------
 ---- MONITORS ----
@@ -267,6 +268,20 @@ hl.gesture({
     direction = "vertical",
     action = "workspace",
 })
+hl.gesture({
+    fingers = 2,
+    direction = "pinchin",
+    action = "cursorZoom",
+    zoom_level = 1.25,
+    mode = "mult",
+})
+hl.gesture({
+    fingers = 2,
+    direction = "pinch",
+    action = "cursorZoom",
+    zoom_level = 1,
+    mode = "live",
+})
 
 
 ---------------------
@@ -421,23 +436,15 @@ hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("volumectl -u down"), { repeatin
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("lightctl up"), { repeating = true })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("lightctl down"), { repeating = true })
 
--- zoom (mouse)
-hl.bind("SUPER + SHIFT + mouse_down",
-    hl.dsp.exec_cmd(
-        "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 1.1; print (v > 3 ? 3 : v)}')"),
-    { mouse = true })
-hl.bind("SUPER + SHIFT + mouse_up",
-    hl.dsp.exec_cmd(
-        "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 0.9; print (v < 1 ? 1 : v)}')"),
-    { mouse = true })
-
 -- zoom (keyboard)
-hl.bind("SUPER + F1", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1"))
-hl.bind("SUPER + F2",
-    hl.dsp.exec_cmd(
-        "hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor | awk '/^float.*/ {v = $2 * 1.1; print (v > 3 ? 3 : v)}')"),
-    { repeating = true })
-hl.bind("SUPER + F3", hl.dsp.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1.75"))
+hl.bind("SUPER + F2", function() zoom.zoom_in() end, { repeating = true })
+hl.bind("SUPER + F1", function() zoom.zoom_out() end, { repeating = true } )
+hl.bind("SUPER + F3", function() zoom.zoom_reset() end, { repeating = true } )
+
+-- zoom (mouse)
+hl.bind("SUPER + SHIFT + mouse_down", function() zoom.zoom_in() end, { repeating = true } )
+hl.bind("SUPER + SHIFT + mouse_up", function() zoom.zoom_out() end, { repeating = true } )
+hl.bind("SUPER + SHIFT + mouse:272", function() zoom.zoom_reset() end, { repeating = true })
 
 -- screenshots
 hl.bind("SUPER + F8", hl.dsp.exec_cmd("hypr-screenshot output"))
