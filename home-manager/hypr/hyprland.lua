@@ -9,6 +9,7 @@ local focus_first_and_last = require("scripts.focus_first_and_last")
 local capture_youtube_music = require("scripts.ytm_scratchpad_lua-2")
 local move_retain, track_resize, window_widths = require("scripts.workspace_move_same_width")
 local move_all_windows_to_workspace_by_no = require("scripts.move_all_windows_in_workspace_by_no_lua")
+local toggle_focus_tile_floating = require("scripts.focus_floating")
 
 ------------------
 ---- MONITORS ----
@@ -218,7 +219,7 @@ hl.animation({ leaf = "border", enabled = true, speed = 4, bezier = "liner" })
 hl.animation({ leaf = "borderangle", enabled = true, speed = 30, bezier = "liner", style = "loop" })
 hl.animation({ leaf = "windows", enabled = true, speed = 2, bezier = "wind", style = "slide" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 10, bezier = "winIn", style = "slide" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 7, bezier = "overshot", style = "slide" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 8, bezier = "overshot", style = "slide" })
 hl.animation({ leaf = "windowsMove", enabled = true, speed = 17, bezier = "wind", style = "popins" })
 hl.animation({ leaf = "fade", enabled = true, speed = 3, bezier = "md3_decel" })
 hl.animation({ leaf = "layersIn", enabled = true, speed = 9, bezier = "menu_decel", style = "slide" })
@@ -306,6 +307,7 @@ hl.bind("ALT + D", hl.dsp.focus({ direction = "right" }))
 hl.bind("ALT + W", hl.dsp.focus({ direction = "up" }))
 hl.bind("ALT + S", hl.dsp.focus({ direction = "down" }))
 hl.bind("ALT + TAB", hl.dsp.focus({ last = true }))
+hl.bind("SUPER + SHIFT + T", toggle_focus_tile_floating) -- toggle focus tiled/floating
 
 -- focus first/last window in workspace
 hl.bind("SUPER + A", function() focus_first_and_last("first") end)
@@ -369,9 +371,6 @@ hl.bind("SUPER + Q", hl.dsp.exec_cmd(".config/hypr/scripts/toggle_layout.sh"))
 hl.bind("ALT + GRAVE",
     hl.dsp.exec_cmd("quickshell ipc -p ~/.config/hypr/qs-hyprview/shell.qml call expose toggle justified"))
 hl.bind("CTRL + SHIFT + Z", hl.dsp.window.close())
-hl.bind("SUPER + CTRL + SHIFT + S", hl.dsp.exec_cmd("hyprctl dispatch togglegroup"))
-hl.bind("SUPER + CTRL + SHIFT + A", hl.dsp.exec_cmd("hyprctl dispatch changegroupactive f"))
-hl.bind("SUPER + CTRL + SHIFT + D", hl.dsp.exec_cmd("hyprctl dispatch changegroupactive b"))
 
 -- group
 hl.bind("ALT+SHIFT+W", hl.dsp.group.toggle({ window }))
