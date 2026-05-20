@@ -13,6 +13,7 @@ local toggle_focus_tile_floating = require("scripts.focus_floating")
 local navigate = require("scripts.navigate_scrolling")
 local zoom = require("scripts.zoom")
 local center_cursor = require("scripts.center_cursor")
+local toggle_magic_scratchpad = require("scripts.toggle_special_warp")
 
 ------------------
 ---- MONITORS ----
@@ -332,7 +333,6 @@ hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("zen-beta"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd("nautilus --new-window"))
-hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("~/nixos-config/home-manager/hypr/scripts/toggle_waybar.sh"))
 
 -- focus window
 hl.bind("ALT + A", function() navigate("left") end)
@@ -376,14 +376,14 @@ hl.bind("SUPER + SHIFT + Z", hl.dsp.window.move({ workspace = "empty" }))
 -- move all windows to workspace
 hl.bind("SUPER + ALT + W", function() move_all_windows_to_workspace("-1") end)
 hl.bind("SUPER + ALT + S", function() move_all_windows_to_workspace("+1") end)
-    for i = 1, 9 do
-        hl.bind("SUPER + CTRL + SHIFT" .. " + " .. i, function()
-            move_all_windows_to_workspace(i)
-        end)
-    end
-    hl.bind("SUPER + CTRL + SHIFT" .. " + 0", function()
-        move_all_windows_to_workspace(10)
+for i = 1, 9 do
+    hl.bind("SUPER + CTRL + SHIFT" .. " + " .. i, function()
+        move_all_windows_to_workspace(i)
     end)
+end
+hl.bind("SUPER + CTRL + SHIFT" .. " + 0", function()
+    move_all_windows_to_workspace(10)
+end)
 
 -- move window
 hl.bind("CTRL + SHIFT + A", hl.dsp.layout("swapcol l"))
@@ -400,9 +400,7 @@ hl.bind("SUPER + CTRL + Q", hl.dsp.layout("fit tobeg"))
 hl.bind("SUPER + CTRL + W", hl.dsp.layout("fit toend"))
 hl.bind("SUPER + T", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = 0 }))
-hl.bind("SUPER + Q", hl.dsp.exec_cmd(".config/hypr/scripts/toggle_layout.sh"))
-hl.bind("ALT + GRAVE",
-    hl.dsp.exec_cmd("quickshell ipc -p ~/.config/hypr/qs-hyprview/shell.qml call expose toggle justified"))
+hl.bind("ALT + GRAVE", hl.dsp.exec_cmd("quickshell ipc -p ~/.config/hypr/qs-hyprview/shell.qml call expose toggle justified"))
 hl.bind("CTRL + SHIFT + Z", hl.dsp.window.close())
 
 -- group
@@ -425,15 +423,7 @@ hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- scratchpad
-hl.bind("ALT + SHIFT + S", function()
-    hl.dispatch(hl.dsp.workspace.toggle_special("magic"))
-    local win = hl.get_active_window()
-    if win and win.at and win.size then
-        local center_x = math.floor(win.at.x + (win.size.x / 2))
-        local center_y = math.floor(win.at.y + (win.size.y / 2))
-        hl.dispatch(hl.dsp.cursor.move({ x = center_x, y = center_y }))
-    end
-end)
+hl.bind("ALT + SHIFT + S", toggle_magic_scratchpad)
 hl.bind("SUPER + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- audio and brightness
