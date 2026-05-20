@@ -12,6 +12,7 @@ local move_all_windows_to_workspace_by_no = require("scripts.move_all_windows_in
 local toggle_focus_tile_floating = require("scripts.focus_floating")
 local navigate = require("scripts.navigate_scrolling")
 local zoom = require("scripts.zoom")
+local center_cursor = require("scripts.center_cursor")
 
 ------------------
 ---- MONITORS ----
@@ -48,36 +49,40 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("avizo-service")
     hl.exec_cmd("wl-paste --watch cliphist store")
     hl.exec_cmd("quickshell -p ~/.config/hypr/qs-hyprview/shell.qml")
-    -- hl.exec_cmd("~/nixos-config/home-manager/hypr/scripts/wrap_cursor_new_window.sh")
-    -- hl.exec_cmd("~/.config/hypr/scripts/ytm_scratchpad_lua.sh")
 end)
+hl.on("window.open", center_cursor)
+
 
 ----------------------------
 ---- SCRIPTS ON STARTUP ----
 ----------------------------
 
--- warp cursor to new window
+
+--[[ warp cursor to new window
 hl.on("window.open", function(win)
     if win and win.at and win.size then
         local center_x = math.floor(win.at.x + (win.size.x / 2))
         local center_y = math.floor(win.at.y + (win.size.y / 2))
         hl.dispatch(hl.dsp.cursor.move({ x = center_x, y = center_y }))
     end
-end)
+end) ]]
+
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
 
+
 hl.env("XCURSOR_SIZE", "40")
 hl.env("HYPRCURSOR_SIZE", "40")
 hl.env("HYPRCURSOR_THEME", "ComixCursors-Opaque-Black")
+
 
 -----------------
 ---- LAYOUTS ----
 -----------------
 
--- Layout settings
+
 hl.config({
     scrolling = {
         column_width             = 0.3333,
@@ -121,9 +126,11 @@ hl.config({
     },
     }) ]]
 
+
 -------------------
 ---- EYE CANDY ----
 -------------------
+
 
 hl.config({
     group = {
@@ -144,7 +151,6 @@ hl.config({
         },
     },
 })
-
 hl.config({
     general = {
         gaps_in          = 7,
@@ -168,8 +174,6 @@ hl.config({
         layout           = "scrolling",
     },
 })
-
-
 hl.config({
     decoration = {
         rounding           = 6,
@@ -197,12 +201,17 @@ hl.config({
     },
 })
 
+
+---------------------
+---- ANIMATIONS -----
+---------------------
+
+
 hl.config({
     animations = {
         enabled = true,
     },
 })
-
 -- bezier curves
 hl.curve("wind", { type = "bezier", points = { { 0.2, 0.6 }, { 0.1, 1.05 } } })
 hl.curve("wind2", { type = "bezier", points = { { 0.05, 1.1 }, { 0.1, 1.5 } } })
@@ -236,6 +245,7 @@ hl.animation({ leaf = "zoomFactor", enabled = true, speed = 12, bezier = "worksp
 ---- INPUT ----
 ---------------
 
+
 hl.config({
     input = {
         kb_layout     = "us",
@@ -254,7 +264,6 @@ hl.config({
         },
     },
 })
-
 hl.device({
     name        = "syna30b0:00-06cb:ce08-2",
     sensitivity = 0.7,
@@ -263,6 +272,13 @@ hl.device({
     name        = "msft0001:00-06cb:7e7e-touchpad",
     sensitivity = 0.6,
 })
+
+
+------------------
+---- GESTURES ----
+------------------
+
+
 hl.gesture({
     fingers = 3,
     direction = "vertical",
@@ -287,6 +303,7 @@ hl.gesture({
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
+
 
 -- rofi
 hl.bind("SUPER + GRAVE", hl.dsp.exec_cmd("~/.config/rofi/scripts/wallpaper-rofi-2.sh"))
@@ -403,7 +420,6 @@ hl.bind("SUPER + CTRL + SHIFT + X", hl.dsp.layout("fit active"))
 hl.bind("SUPER + CTRL + D", hl.dsp.layout("colresize +0.03"), { repeating = true })
 hl.bind("SUPER + CTRL + A", hl.dsp.layout("colresize -0.03"), { repeating = true })
 
-
 -- move/resize with mouse
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
@@ -469,9 +485,11 @@ hl.bind("ALT + SHIFT + Z", hy3.expand("expand"))
 hl.bind("ALT + CTRL + SHIFT + Z", hy3.expand("shrink"))
 hl.bind("ALT + SHIFT + V", hy3.equalize({ workspace = true })) ]]
 
+
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
+
 
 hl.window_rule({
     name           = "suppress-maximize-events",
@@ -522,7 +540,7 @@ hl.window_rule({
     scrolling_width = 0.1675,
 })
 
--- Layer rules
+-- layer rules
 hl.layer_rule({ match = { namespace = "rofi" }, dim_around = true })
 hl.layer_rule({ match = { namespace = "^(quickshell:expose)$" }, dim_around = true })
 hl.layer_rule({ match = { namespace = "wayfreeze" }, no_anim = true })
@@ -541,6 +559,7 @@ hl.layer_rule({ match = { namespace = "logout_dialog" }, ignore_alpha = 0.5 })
 --------------
 ---- MISC ----
 --------------
+
 
 hl.config({
     misc = {
