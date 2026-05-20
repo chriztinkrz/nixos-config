@@ -4,50 +4,87 @@ hl.config({
     },
 })
 
-hl.curve("wind",
-    {   type = "bezier",
-        points = { { 0.2,  0.6  }, { 0.1,  1.05   } }
-})
+-- curves
 hl.curve("wind2",
     {   type = "bezier",
-        points = { { 0.05, 1.1 }, { 0.1, 1.5 } },
-})
+        points = {
+            { 0.05, 1.1 },
+            { 0.1,  1.5 },
+        }
+    }
+)
 hl.curve("winIn",
     {   type = "bezier",
-        points = { { 0.1, 1.1 }, { 0.1, 1.0175 } },
-})
+        points = {
+            { 0.1, 1.1    },
+            { 0.1, 1.0175 },
+        }
+    }
+)
 hl.curve("liner",
     {   type = "bezier",
-        points = { { 1, 1 }, { 1, 1 } },
-})
+        points = {
+            { 1, 1 },
+            { 1, 1 },
+        }
+    }
+)
 hl.curve("md3_decel",
     {   type = "bezier",
-        points = { { 0.05, 0.7 }, { 0.1, 1 } },
-})
+        points = {
+            { 0.05, 0.7 },
+            { 0.1,  1   },
+        }
+    }
+)
 hl.curve("menu_decel",
     {   type = "bezier",
-        points = { { 0.1, 1 }, { 0, 1 } },
-})
+        points = {
+            { 0.1, 1 },
+            { 0,   1 },
+        }
+    }
+)
 hl.curve("menu_accel",
     {   type = "bezier",
-        points = { { 0.38, 0.04 }, { 1, 0.07 } },
-})
+        points = {
+            { 0.38, 0.04 },
+            { 1,    0.07 },
+        }
+    }
+)
 hl.curve("workspace",
     {   type = "bezier",
-        points = { { 0.22, 1 }, { 0.36, 1.0175 } },
-})
+        points = {
+            { 0.22, 1      },
+            { 0.36, 1.0175 },
+        }
+    }
+)
 hl.curve("winClose",
     {   type = "bezier",
-        points = { { 0.8, 1 }, { 0.9, 1.05 } },
-})
+        points = {
+            { 0.8, 1    },
+            { 0.9, 1.05 },
+        }
+    }
+)
 hl.curve("spring_anim",
     {   type = "bezier",
-        points = { { 0.45, 1.25 }, { 0.45, 1.15 } },
-})
+        points = {
+            { 0.45, 1.25 },
+            { 0.45, 1.15 },
+        }
+    }
+)
 hl.curve("overshot",
     {   type = "bezier",
-        points = { { 0.18, 0.95 }, { 0.22, 1.03 } },
-})
+        points = {
+            { 0.18, 0.95 },
+            { 0.22, 1.03 },
+        }
+    }
+)
 
 -- animations
 hl.animation({
