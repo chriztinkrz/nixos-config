@@ -189,3 +189,4 @@ dragon.jpg
 furina.jpg
 fluid13.jpg
 hill.jpg
+fire_village.jpg
