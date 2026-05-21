@@ -5,6 +5,14 @@ hl.config({
 })
 
 -- curves
+hl.curve("wind",
+    {   type = "bezier",
+        points = {
+            { 0.2, 0.6 },
+            { 0.1, 1.05 },
+        }
+    }
+)
 hl.curve("wind2",
     {   type = "bezier",
         points = {
