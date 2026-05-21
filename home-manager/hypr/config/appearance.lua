@@ -20,9 +20,17 @@ hl.config({
 hl.config({
     general = {
         gaps_in     = 7,
-        gaps_out    = { top = 0, right = 14, bottom = 14, left = 14 },
+        gaps_out    = {
+            top     = 0,
+            right   = 14,
+            bottom  = 14,
+            left    = 14,
+        },
         border_size = 4,
-        col         = { active_border = color7, inactive_border = color3 },
+        col                 = {
+            active_border   = color7,
+            inactive_border = color3,
+        },
         resize_on_border = false,
         allow_tearing    = false,
         layout           = "scrolling",
@@ -35,7 +43,20 @@ hl.config({
         fullscreen_opacity = 1.0,
         dim_modal          = true,
         dim_special        = 0.3,
-        shadow = { enabled = true, range = 4, render_power = 3, color = 0xee1a1a1a },
-        blur   = { enabled = true, xray = true, size = 2, passes = 2, ignore_opacity = true, vibrancy = 0.1696, popups = true },
+        shadow             = {
+            enabled      = true,
+            range        = 4,
+            render_power = 3,
+            color        = 0xee1a1a1a,
+        },
+        blur               = {
+            enabled = true,
+            xray = true,
+            size = 2,
+            passes = 2,
+            ignore_opacity = true,
+            vibrancy = 0.1696,
+            popups = true,
+        },
     },
 })

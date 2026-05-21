@@ -1,32 +1,34 @@
 local function setup_binds(deps)
-    local navigate               = deps.navigate
-    local focus_first_and_last   = deps.focus_first_and_last
-    local move_retain            = deps.move_retain
-    local window_widths          = deps.window_widths
-    local move_all               = deps.move_all
-    local toggle_focus           = deps.toggle_focus
+    local navigate                = deps.navigate
+    local focus_first_and_last    = deps.focus_first_and_last
+    local move_retain             = deps.move_retain
+    local window_widths           = deps.window_widths
+    local move_all                = deps.move_all
+    local toggle_focus            = deps.toggle_focus
     local toggle_magic_scratchpad = deps.toggle_magic_scratchpad
-    local zoom                   = deps.zoom
+    local zoom                    = deps.zoom
+    local record_cmd              = "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"
+    local record_stop_cmd         = "pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"
 
     -- rofi
     hl.bind("SUPER + GRAVE", hl.dsp.exec_cmd("~/.config/rofi/scripts/wallpaper-rofi-2.sh"))
 
     -- vicinae
-    hl.bind("SUPER + SPACE",          hl.dsp.exec_cmd("vicinae vicinae://launch/system/browse-apps"))
-    hl.bind("SUPER + ALT + SPACE",    hl.dsp.exec_cmd("vicinae toggle"))
-    hl.bind("SUPER + SHIFT + GRAVE",  hl.dsp.exec_cmd("vicinae vicinae://launch/@sovereign/store.vicinae.awww-switcher/wprandom"))
-    hl.bind("CTRL + ALT + S",         hl.dsp.exec_cmd("vicinae vicinae://launch/@rastsislaux/store.vicinae.pulseaudio/outputDevices"))
-    hl.bind("SUPER + SHIFT + B",      hl.dsp.exec_cmd("vicinae vicinae://launch/@Gelei/store.vicinae.bluetooth/devices"))
+    hl.bind("SUPER + SPACE",            hl.dsp.exec_cmd("vicinae vicinae://launch/system/browse-apps"))
+    hl.bind("SUPER + ALT + SPACE",      hl.dsp.exec_cmd("vicinae toggle"))
+    hl.bind("SUPER + SHIFT + GRAVE",    hl.dsp.exec_cmd("vicinae vicinae://launch/@sovereign/store.vicinae.awww-switcher/wprandom"))
+    hl.bind("CTRL + ALT + S",           hl.dsp.exec_cmd("vicinae vicinae://launch/@rastsislaux/store.vicinae.pulseaudio/outputDevices"))
+    hl.bind("SUPER + SHIFT + B",        hl.dsp.exec_cmd("vicinae vicinae://launch/@Gelei/store.vicinae.bluetooth/devices"))
     hl.bind("SUPER + CTRL + SHIFT + B", hl.dsp.exec_cmd("vicinae vicinae://extensions/Gelei/bluetooth/scan"))
-    hl.bind("SUPER + ALT + E",        hl.dsp.exec_cmd("vicinae vicinae://launch/files/search"))
-    hl.bind("SUPER + V",              hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/history"))
-    hl.bind("SUPER + SHIFT + V",      hl.dsp.exec_cmd("vicinae vicinae://launch/core/search-emojis"))
+    hl.bind("SUPER + ALT + E",          hl.dsp.exec_cmd("vicinae vicinae://launch/files/search"))
+    hl.bind("SUPER + V",                hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/history"))
+    hl.bind("SUPER + SHIFT + V",        hl.dsp.exec_cmd("vicinae vicinae://launch/core/search-emojis"))
 
     -- miscellaneous
     hl.bind("SUPER + L",      hl.dsp.exec_cmd("hyprlock"))
     hl.bind("SUPER + N",      hl.dsp.exec_cmd("makoctl dismiss -a"))
-    hl.bind("SUPER + F5",     hl.dsp.exec_cmd("gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"))
-    hl.bind("SUPER + F4",     hl.dsp.exec_cmd("pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"))
+    hl.bind("SUPER + F5",     hl.dsp.exec_cmd(record_cmd))
+    hl.bind("SUPER + F4",     hl.dsp.exec_cmd(record_stop_cmd))
     hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
 
     -- apps
@@ -35,14 +37,14 @@ local function setup_binds(deps)
     hl.bind("SUPER + E",      hl.dsp.exec_cmd("nautilus --new-window"))
 
     -- focus l/r/alt tab/toggle float & tile/ last & first
-    hl.bind("ALT + A",        hl.dsp.focus({ direction = "left" }))
-    hl.bind("ALT + D",        hl.dsp.focus({ direction = "right" }))
-    hl.bind("ALT + W",        hl.dsp.focus({ direction = "up" }))
-    hl.bind("ALT + S",        hl.dsp.focus({ direction = "down" }))
-    hl.bind("ALT + TAB",      hl.dsp.focus({ last = true }))
-    hl.bind("SUPER + SHIFT + T", toggle_focus)
-    hl.bind("SUPER + A", function() focus_first_and_last("first") end)
-    hl.bind("SUPER + D", function() focus_first_and_last("last") end)
+    hl.bind("ALT + A",            hl.dsp.focus({ direction = "left" }))
+    hl.bind("ALT + D",            hl.dsp.focus({ direction = "right" }))
+    hl.bind("ALT + W",            hl.dsp.focus({ direction = "up" }))
+    hl.bind("ALT + S",            hl.dsp.focus({ direction = "down" }))
+    hl.bind("ALT + TAB",          hl.dsp.focus({ last = true }))
+    hl.bind("SUPER + SHIFT + T",  toggle_focus)
+    hl.bind("SUPER + A",          function() focus_first_and_last("first") end)
+    hl.bind("SUPER + D",          function() focus_first_and_last("last") end)
 
     -- ws switch by no.
     for i = 1, 10 do
@@ -51,10 +53,10 @@ local function setup_binds(deps)
     end
 
     -- relative ws switch
-    hl.bind("SUPER + W",   hl.dsp.focus({ workspace = "r-1" }), { repeating = true })
-    hl.bind("SUPER + S",   hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
-    hl.bind("SUPER + Tab", hl.dsp.focus({ workspace = "previous" }))
-    hl.bind("SUPER + Z",   hl.dsp.focus({ workspace = "empty" }))
+    hl.bind("SUPER + W",          hl.dsp.focus({ workspace = "r-1" }), { repeating = true })
+    hl.bind("SUPER + S",          hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
+    hl.bind("SUPER + Tab",        hl.dsp.focus({ workspace = "previous" }))
+    hl.bind("SUPER + Z",          hl.dsp.focus({ workspace = "empty" }))
     hl.bind("SUPER + mouse_up",   hl.dsp.focus({ workspace = "r+1" }), { mouse = true })
     hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r-1" }), { mouse = true })
 
@@ -141,9 +143,9 @@ local function setup_binds(deps)
     hl.bind("SUPER + F3", function() zoom.zoom_reset() end, { repeating = true })
 
     -- zoom mouse
-    hl.bind("SUPER + SHIFT + mouse_down",  function() zoom.zoom_in()    end, { repeating = true })
-    hl.bind("SUPER + SHIFT + mouse_up",    function() zoom.zoom_out()   end, { repeating = true })
-    hl.bind("SUPER + SHIFT + mouse:272",   function() zoom.zoom_reset() end, { repeating = true })
+    hl.bind("SUPER + SHIFT + mouse_down",  function() zoom.zoom_in()    end, {})
+    hl.bind("SUPER + SHIFT + mouse_up",    function() zoom.zoom_out()   end, {})
+    hl.bind("SUPER + SHIFT + mouse:272",   function() zoom.zoom_reset() end, {})
 
     -- screenshot
     hl.bind("SUPER + F8", hl.dsp.exec_cmd("hypr-screenshot output"))
