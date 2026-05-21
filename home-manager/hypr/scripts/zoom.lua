@@ -2,21 +2,18 @@ local M = {}
 
 function M.zoom_in()
   local current = hl.get_config("cursor.zoom_factor")
-  if current < 1 then
-    current = 1
+  if current <= 1.0 then
+    hl.config({ cursor = { zoom_factor = 1.5 } })
+  else
+    hl.config({ cursor = { zoom_factor = current * 1.08 } })
   end
-  hl.config({ cursor = { zoom_factor = current * 1.08 } })
 end
 
 function M.zoom_out()
   local current = hl.get_config("cursor.zoom_factor")
-  if current < 1 then
-    current = 1
-  end
+  if current < 1 then current = 1 end
   local new_zoom = current / 1.08
-  if new_zoom < 1 then
-    new_zoom = 1.0
-  end
+  if new_zoom < 1 then new_zoom = 1.0 end
   hl.config({ cursor = { zoom_factor = new_zoom } })
 end
 
