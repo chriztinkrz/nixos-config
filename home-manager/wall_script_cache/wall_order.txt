@@ -191,3 +191,5 @@ fluid13.jpg
 hill.jpg
 fire_village.jpg
 vulkiri.png
+my_neighbor_totoro.png
+astronaut.png

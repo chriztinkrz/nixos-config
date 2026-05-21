@@ -4,7 +4,6 @@
   nixpkgs.config.allowUnfree = true;
 
   # user packages which have programs option
-  programs.niri.useNautilus = true;
   programs.gpu-screen-recorder.enable = true;
   programs.zoxide = {
     enable = true;
