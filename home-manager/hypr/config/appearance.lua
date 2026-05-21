@@ -38,7 +38,7 @@ hl.config({
 })
 hl.config({
     decoration = {
-        rounding           = 6,
+        rounding           = 7,
         rounding_power     = 13,
         fullscreen_opacity = 1.0,
         dim_modal          = true,

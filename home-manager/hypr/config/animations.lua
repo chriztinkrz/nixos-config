@@ -65,7 +65,7 @@ hl.curve("workspace",
     {   type = "bezier",
         points = {
             { 0.22, 1      },
-            { 0.36, 1.0175 },
+            { 0.36, 1.0125 },
         }
     }
 )
