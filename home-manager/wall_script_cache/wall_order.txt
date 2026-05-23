@@ -193,3 +193,4 @@ fire_village.jpg
 vulkiri.png
 my_neighbor_totoro.png
 astronaut.png
+clouds3.jpg

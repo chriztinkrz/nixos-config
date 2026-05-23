@@ -1,3 +1,4 @@
+-- window rules --
 hl.window_rule({
     name = "suppress-maximize-events",
     match = { class = ".*" },
@@ -39,7 +40,13 @@ hl.window_rule({
     match = { class = "org.gnome.Nautilus" },
     scrolling_width = 0.1675,
 })
+hl.window_rule({
+    name = "steam-width",
+    match = { class = "steam" },
+    scrolling_width = 0.5,
+})
 
+-- layer rules --
 hl.layer_rule({
     match = { namespace = "rofi" },
     dim_around = true,
