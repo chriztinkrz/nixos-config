@@ -194,3 +194,9 @@ vulkiri.png
 my_neighbor_totoro.png
 astronaut.png
 clouds3.jpg
+purple_clouds.png
+sea.jpg
+shutter.jpg
+sea2.jpg
+moon_window.jpg
+sea_clouds.png
