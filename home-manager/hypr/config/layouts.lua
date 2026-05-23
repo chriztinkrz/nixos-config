@@ -17,3 +17,8 @@ hl.config({
         mfact                         = 0.33333,
     },
 })
+hl.config({
+    general = {
+        layout = "scrolling"
+    }
+})
