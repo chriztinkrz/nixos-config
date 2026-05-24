@@ -20,8 +20,8 @@
   boot = {
     plymouth = {
       enable = true;
-      theme = "mac-style";
-      themePackages = with pkgs; [ mac-style-plymouth ];
+      themePackages = [ pkgs.mikuPlymouth ];
+      theme = "MikuPlymouth";
     };
     kernelParams = [
       "quiet"

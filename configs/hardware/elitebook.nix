@@ -1,6 +1,6 @@
  { config, pkgs, lib, ... }:
 {
-  boot = {
+  /* boot = {
     kernelModules = [ "amdgpu" ];
     plymouth.enable = lib.mkForce false;
     kernelParams = lib.mkForce [
@@ -10,5 +10,5 @@
       "rd.udev.log_level=3"
     ];
     consoleLogLevel = lib.mkForce 4;
-  };
+    }; */
 }
