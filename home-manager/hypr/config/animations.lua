@@ -94,6 +94,43 @@ hl.curve("overshot",
     }
 )
 
+-- spring curves
+hl.curve("spring_menu",
+    {   type = "spring",
+        mass = 1,
+        stiffness = 80,
+        dampening = 14,
+    }
+)
+hl.curve("spring_window",
+    {   type = "spring",
+        mass = 1,
+        stiffness = 30,
+        dampening = 8,
+    }
+)
+hl.curve("spring_open",
+    {   type = "spring",
+        mass = 1,
+        stiffness = 30,
+        dampening = 8,
+    }
+)
+hl.curve("spring_workspace",
+    {   type = "spring",
+        mass = 1.2,
+        stiffness = 30,
+        dampening = 10,
+    }
+)
+hl.curve("spring_special",
+    {   type = "spring",
+        mass = 1,
+        stiffness = 30,
+        dampening = 8,
+    }
+)
+
 -- animations
 hl.animation({
     leaf    = "border",
@@ -171,9 +208,9 @@ hl.animation({
 hl.animation({
     leaf    = "workspaces",
     enabled = true,
-    speed   = 8,
+    speed   = 9,
     bezier  = "workspace",
-    style   = "slidevert",
+    style   = "slidefadevert 25%",
 })
 hl.animation({
     leaf    = "zoomFactor",
