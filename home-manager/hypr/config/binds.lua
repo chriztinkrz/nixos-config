@@ -30,6 +30,7 @@ local function setup_binds(deps)
     hl.bind("SUPER + F5",     hl.dsp.exec_cmd(record_cmd))
     hl.bind("SUPER + F4",     hl.dsp.exec_cmd(record_stop_cmd))
     hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
+    hl.bind("ALT + F4",       hl.dsp.exec_cmd("pkill steam"))
 
     -- apps
     hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))

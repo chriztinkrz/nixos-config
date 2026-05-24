@@ -45,6 +45,11 @@ hl.window_rule({
     match = { class = "steam" },
     scrolling_width = 0.5,
 })
+hl.window_rule {
+    name = "gtav-tile",
+    match = { class = "steam_app_2754765368" },
+    tile = true,
+}
 
 -- layer rules --
 hl.layer_rule({
