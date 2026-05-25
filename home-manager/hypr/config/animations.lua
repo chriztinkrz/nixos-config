@@ -119,7 +119,7 @@ hl.curve("spring_open",
 hl.curve("spring_workspace",
     {   type = "spring",
         mass = 1.2,
-        stiffness = 13,
+        stiffness = 14,
         dampening = 6,
     }
 )
@@ -210,7 +210,7 @@ hl.animation({
 hl.animation({
     leaf    = "workspaces",
     enabled = true,
-    speed   = 15,
+    speed   = 3,
     spring  = "spring_workspace",
     style   = "slidefadevert 15%",
 })
