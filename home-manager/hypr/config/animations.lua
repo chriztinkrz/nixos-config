@@ -4,7 +4,7 @@ hl.config({
     },
 })
 
--- curves
+-- bezier curves
 hl.curve("wind",
     {   type = "bezier",
         points = {
@@ -126,8 +126,8 @@ hl.curve("spring_workspace",
 hl.curve("spring_special",
     {   type = "spring",
         mass = 1,
-        stiffness = 30,
-        dampening = 8,
+        stiffness = 10,
+        dampening = 5,
     }
 )
 
@@ -155,22 +155,24 @@ hl.animation({
 hl.animation({
     leaf    = "windowsIn",
     enabled = true,
-    speed   = 6,
-    spring  = "spring_open",
+    speed   = 10,
+    -- spring  = "spring_open",
+    bezier  = "winIn",
     style   = "slide",
 })
 hl.animation({
     leaf    = "windowsOut",
     enabled = true,
     speed   = 8,
-    bezier  = "overshot",
+    spring  = "spring_window",
     style   = "slide",
 })
 hl.animation({
     leaf    = "windowsMove",
     enabled = true,
     speed   = 25,
-    spring  = "spring_window",
+    -- spring  = "spring_window",
+    bezier  = "wind",
     style   = "popins",
 })
 hl.animation({
@@ -217,4 +219,11 @@ hl.animation({
     enabled = true,
     speed   = 12,
     bezier  = "workspace",
+})
+hl.animation({
+    leaf    = "specialWorkspace",
+    enabled = true,
+    speed   = 10,
+    spring  = "spring_special",
+    style   = "slidevert 50%"
 })
