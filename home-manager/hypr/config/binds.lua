@@ -35,6 +35,7 @@ local function setup_binds(deps)
     -- apps
     hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))
     hl.bind("SUPER + B",      hl.dsp.exec_cmd("zen-beta"))
+    hl.bind("SUPER + CTRL + B",      hl.dsp.exec_cmd("zen-beta --private-window"))
     hl.bind("SUPER + E",      hl.dsp.exec_cmd("nautilus --new-window"))
 
     -- focus l/r/alt tab/toggle float & tile/ last & first
