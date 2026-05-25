@@ -126,8 +126,8 @@ hl.curve("spring_workspace",
 hl.curve("spring_special",
     {   type = "spring",
         mass = 1,
-        stiffness = 10,
-        dampening = 5,
+        stiffness = 8,
+        dampening = 4,
     }
 )
 
@@ -212,7 +212,7 @@ hl.animation({
     enabled = true,
     speed   = 15,
     spring  = "spring_workspace",
-    style   = "slidefadevert 25%",
+    style   = "slidefadevert 15%",
 })
 hl.animation({
     leaf    = "zoomFactor",
@@ -225,5 +225,5 @@ hl.animation({
     enabled = true,
     speed   = 10,
     spring  = "spring_special",
-    style   = "slidevert 50%"
+    style   = "slidevert 35%"
 })
