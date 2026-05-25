@@ -116,6 +116,13 @@ hl.curve("spring_open",
         dampening = 5,
     }
 )
+hl.curve("spring_move",
+    {   type = "spring",
+        mass = 1,
+        stiffness = 4,
+        dampening = 3,
+    }
+)
 hl.curve("spring_workspace",
     {   type = "spring",
         mass = 1.2,
@@ -155,9 +162,9 @@ hl.animation({
 hl.animation({
     leaf    = "windowsIn",
     enabled = true,
-    speed   = 10,
-    -- spring  = "spring_open",
-    bezier  = "winIn",
+    speed   = 5,
+    spring  = "spring_open",
+    -- bezier  = "winIn",
     style   = "slide",
 })
 hl.animation({
@@ -171,8 +178,8 @@ hl.animation({
     leaf    = "windowsMove",
     enabled = true,
     speed   = 25,
-    -- spring  = "spring_window",
-    bezier  = "wind",
+    spring  = "spring_move",
+    -- bezier  = "wind",
     style   = "popins",
 })
 hl.animation({
@@ -185,7 +192,8 @@ hl.animation({
     leaf    = "layersIn",
     enabled = true,
     speed   = 9,
-    bezier  = "menu_decel",
+    -- bezier  = "menu_decel",
+    spring  = "spring_open",
     style   = "slide",
 })
 hl.animation({
