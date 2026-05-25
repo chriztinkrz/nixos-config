@@ -177,9 +177,9 @@ hl.animation({
 hl.animation({
     leaf    = "windowsMove",
     enabled = true,
-    speed   = 25,
-    spring  = "spring_move",
-    -- bezier  = "wind",
+    speed   = 15,
+    -- spring  = "spring_move",
+    bezier  = "wind",
     style   = "popins",
 })
 hl.animation({
