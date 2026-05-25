@@ -170,7 +170,7 @@ hl.animation({
 hl.animation({
     leaf    = "windowsOut",
     enabled = true,
-    speed   = 8,
+    speed   = 2,
     spring  = "spring_window",
     style   = "slide",
 })
@@ -185,8 +185,8 @@ hl.animation({
 hl.animation({
     leaf    = "fade",
     enabled = true,
-    speed   = 3,
-    bezier  = "md3_decel",
+    speed   = 15,
+    spring  = "spring_move",
 })
 hl.animation({
     leaf    = "layersIn",
