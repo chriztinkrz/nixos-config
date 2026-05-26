@@ -116,6 +116,13 @@ hl.curve("spring_open",
         dampening = 5,
     }
 )
+hl.curve("spring_open_layer",
+    {   type = "spring",
+        mass = 1,
+        stiffness = 18,
+        dampening = 7,
+    }
+)
 hl.curve("spring_move",
     {   type = "spring",
         mass = 1,
@@ -191,9 +198,9 @@ hl.animation({
 hl.animation({
     leaf    = "layersIn",
     enabled = true,
-    speed   = 9,
+    speed   = 15,
     -- bezier  = "menu_decel",
-    spring  = "spring_open",
+    spring  = "spring_open_layer",
     style   = "slide",
 })
 hl.animation({
