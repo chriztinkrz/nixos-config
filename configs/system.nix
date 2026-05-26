@@ -17,7 +17,7 @@
   in if label != "" then label else "unlabeled";
 
   # mac-style-plymouth
-  boot = {
+  /* boot = {
     plymouth = {
       enable = true;
       themePackages = [ pkgs.mikuPlymouth ];
@@ -33,7 +33,7 @@
       "udev.log_priority=3"
     ];
     consoleLogLevel = 0;
-  };
+  }; */
 
   /* nixos wiki plymouth
   boot = {

@@ -20,7 +20,9 @@
     },
     "home-manager": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1779213149,
@@ -39,7 +41,9 @@
     "mac-style-plymouth": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1756677116,
@@ -52,25 +56,6 @@
       "original": {
         "owner": "SergioRibera",
         "repo": "s4rchiso-plymouth-theme",
-        "type": "github"
-      }
-    },
-    "mikuPlymouth": {
-      "inputs": {
-        "nixpkgs": ["nixpkgs"],
-        "utils": "utils"
-      },
-      "locked": {
-        "lastModified": 1779711578,
-        "narHash": "sha256-w4l75VNGzism+gOyuem/GtbKRZcMRRlRhWZ4UvFHZHI=",
-        "owner": "Thang1191",
-        "repo": "MikuPlymouth",
-        "rev": "2ffca526cc3c0fffb95dd2b8c0fd2bc11377a5db",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Thang1191",
-        "repo": "MikuPlymouth",
         "type": "github"
       }
     },
@@ -91,7 +76,9 @@
     },
     "nix-index-database": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1778999127,
@@ -127,7 +114,6 @@
       "inputs": {
         "home-manager": "home-manager",
         "mac-style-plymouth": "mac-style-plymouth",
-        "mikuPlymouth": "mikuPlymouth",
         "nix-flatpak": "nix-flatpak",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",
@@ -137,7 +123,9 @@
     },
     "silentSDDM": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1779116225,
@@ -168,43 +156,14 @@
         "type": "github"
       }
     },
-    "systems_2": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "utils": {
-      "inputs": {
-        "systems": "systems_2"
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "zen-browser": {
       "inputs": {
-        "home-manager": ["home-manager"],
-        "nixpkgs": ["nixpkgs"]
+        "home-manager": [
+          "home-manager"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1778799443,
