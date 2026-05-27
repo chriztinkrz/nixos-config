@@ -205,3 +205,4 @@ yuri_ig.png
 interstellar.jpg
 interstellar2.jpg
 interstellar3.jpg
+clannad_op.png
