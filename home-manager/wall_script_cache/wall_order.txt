@@ -200,3 +200,4 @@ shutter.jpg
 sea2.jpg
 moon_window.jpg
 sea_clouds.png
+guy_drinking_with_cat.jpg
