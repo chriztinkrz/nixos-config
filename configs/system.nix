@@ -17,11 +17,11 @@
   in if label != "" then label else "unlabeled";
 
   # mac-style-plymouth
-  /* boot = {
+  boot = {
     plymouth = {
       enable = true;
-      themePackages = [ pkgs.mikuPlymouth ];
-      theme = "MikuPlymouth";
+      themePackages = with pkgs; [ mac-style-plymouth ];
+      theme = "mac-style";
     };
     kernelParams = [
       "quiet"
@@ -33,10 +33,10 @@
       "udev.log_priority=3"
     ];
     consoleLogLevel = 0;
-  }; */
+  };
 
-  /* nixos wiki plymouth
-  boot = {
+  # nixos wiki plymouth
+  /* boot = {
     plymouth = {
       enable = true;
       theme = "lone";
@@ -57,6 +57,25 @@
     ];
     consoleLogLevel = 0;
   }; */
+
+  # mikuPlymouth
+  /* boot = {
+      plymouth = {
+        enable = true;
+        themePackages = [ pkgs.mikuPlymouth ];
+        theme = "MikuPlymouth";
+      };
+      kernelParams = [
+        "quiet"
+        "splash"
+        "boot.shell_on_fail"
+        "loglevel=3"
+        "rd.systemd.show_status=false"
+        "rd.udev.log_level=3"
+        "udev.log_priority=3"
+      ];
+      consoleLogLevel = 0;
+    }; */
 
   # garbage collection and nh
   programs.nh = {
