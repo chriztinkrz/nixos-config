@@ -33,10 +33,10 @@ local function setup_binds(deps)
     hl.bind("ALT + F4",       hl.dsp.exec_cmd("pkill steam"))
 
     -- apps
-    hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("foot"))
-    hl.bind("SUPER + B",      hl.dsp.exec_cmd("zen-beta"))
-    hl.bind("SUPER + CTRL + B",      hl.dsp.exec_cmd("zen-beta --private-window"))
-    hl.bind("SUPER + E",      hl.dsp.exec_cmd("nautilus --new-window"))
+    hl.bind("SUPER + RETURN",   hl.dsp.exec_cmd("foot"))
+    hl.bind("SUPER + B",        hl.dsp.exec_cmd("zen-beta"))
+    hl.bind("SUPER + CTRL + B", hl.dsp.exec_cmd("zen-beta --private-window"))
+    hl.bind("SUPER + E",        hl.dsp.exec_cmd("nautilus --new-window"))
 
     -- focus l/r/alt tab/toggle float & tile/ last & first
     hl.bind("ALT + A",            hl.dsp.focus({ direction = "left" }))
@@ -79,7 +79,7 @@ local function setup_binds(deps)
     for i = 1, 9 do
         hl.bind("SUPER + CTRL + SHIFT + " .. i, function() move_all(i) end)
     end
-    hl.bind("SUPER + CTRL + SHIFT + 0", function() move_all(10) end)
+    hl.bind("SUPER + CTRL + SHIFT + 0",         function() move_all(10) end)
 
     -- move window
     hl.bind("CTRL + SHIFT + A",         hl.dsp.layout("swapcol l"))
