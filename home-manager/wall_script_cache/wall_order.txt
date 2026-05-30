@@ -206,3 +206,7 @@ interstellar.jpg
 interstellar2.jpg
 interstellar3.jpg
 clannad_op.png
+violet_evergarden.jpg
+katana.png
+abstract.jpg
+london.jpg

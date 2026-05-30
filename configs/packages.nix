@@ -223,7 +223,6 @@
   cliphist
   qbittorrent
   wl-clipboard
-  mangohud
   onlyoffice-desktopeditors
 
   /* these both are required for input-remapper along with the service
