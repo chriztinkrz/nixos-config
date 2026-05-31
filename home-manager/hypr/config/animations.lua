@@ -224,7 +224,7 @@ hl.animation({
 })
 hl.animation({
     leaf    = "workspaces",
-    enabled = true,
+    enabled = false,
     speed   = 3,
     spring  = "spring_workspace",
     style   = "slidefadevert 15%",

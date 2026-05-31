@@ -14,5 +14,5 @@ hl.config({
 hl.device({ name = "syna30b0:00-06cb:ce08-2",       sensitivity = 0.7 })
 hl.device({ name = "msft0001:00-06cb:7e7e-touchpad", sensitivity = 0.6 })
 hl.gesture({ fingers = 3, direction = "vertical",  action = "workspace" })
-hl.gesture({ fingers = 2, direction = "pinchin",   action = "cursorZoom", zoom_level = 1.25, mode = "mult" })
-hl.gesture({ fingers = 2, direction = "pinch",     action = "cursorZoom", zoom_level = 1,    mode = "live" })
+--[[ hl.gesture({ fingers = 2, direction = "pinchin",   action = "cursorZoom", zoom_level = 1.25, mode = "mult" })
+hl.gesture({ fingers = 2, direction = "pinch",     action = "cursorZoom", zoom_level = 1,    mode = "live" }) ]]
