@@ -224,10 +224,10 @@ hl.animation({
 })
 hl.animation({
     leaf    = "workspaces",
-    enabled = false,
-    speed   = 3,
-    spring  = "spring_workspace",
-    style   = "slidefadevert 15%",
+    enabled = true,
+    speed   = 5,
+    bezier  = "wind",
+    style   = "fade",
 })
 hl.animation({
     leaf    = "zoomFactor",
