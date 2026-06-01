@@ -1,68 +1,75 @@
 -- window rules --
 hl.window_rule{
-    name = "suppress-maximize-events",
-    match = { class = ".*" },
+    name           = "suppress-maximize-events",
+    match          = { class = ".*" },
     suppress_event = "maximize",
 }
 hl.window_rule{
-    name  = "fix-xwayland-drags",
-    match = { class = "^$", title = "^$", xwayland = true, float = true, fullscreen = false, pin = false },
+    name     = "fix-xwayland-drags",
+    match    = { class = "^$",
+        title      = "^$",
+        xwayland   = true,
+        float      = true,
+        fullscreen = false,
+        pin        = false,
+    },
     no_focus = true,
 }
 hl.window_rule{
-    name = "move-hyprland-run",
+    name  = "move-hyprland-run",
     match = { class = "hyprland-run" },
-    move = "20 monitor_h-120",
+    move  = "20 monitor_h-120",
     float = true,
 }
 hl.window_rule{
-    name = "scratchpad-stay-focused",
-    match = { workspace = "special:magic" },
+    name         = "scratchpad-stay-focused",
+    match        = { workspace = "special:magic" },
     stay_focused = true,
 }
 hl.window_rule{
-    name = "foot-opacity",
-    match = { class = "foot" },
+    name    = "foot-opacity",
+    match   = { class = "foot" },
     opacity = "0.6 override 0.6 override 0.6 override",
 }
 hl.window_rule{
-    name = "zed-opacity",
-    match = { class = "dev.zed.Zed" },
+    name    = "zed-opacity",
+    match   = { class = "dev.zed.Zed" },
     opacity = "0.75 override 0.75 override 0.75 override",
 }
 hl.window_rule{
-    name = "nautilus-opacity",
-    match = { class = "org.gnome.Nautilus" },
+    name    = "nautilus-opacity",
+    match   = { class = "org.gnome.Nautilus" },
     opacity = "0.78 override 0.78 override 0.78 override",
 }
 hl.window_rule{
-    name = "nautilus-width",
-    match = { class = "org.gnome.Nautilus" },
+    name            = "nautilus-width",
+    match           = { class = "org.gnome.Nautilus" },
     scrolling_width = 0.1675,
 }
 hl.window_rule{
-    name = "steam-width",
-    match = { class = "steam" },
+    name            = "steam-width",
+    match           = { class = "steam" },
     scrolling_width = 0.5,
 }
 hl.window_rule{
-    name = "gtav-tile",
-    match = { class = "steam_app_2754765368" },
-    tile = true,
+    name            = "gtav-tile",
+    match           = { class = "steam_app_2754765368" },
+    tile            = true,
+    sync_fullscreen = true,
 }
 hl.window_rule{
-    name = "onlyoffice-width",
-    match = { class = "ONLYOFFICE" },
+    name            = "onlyoffice-width",
+    match           = { class = "ONLYOFFICE" },
     scrolling_width = 0.6667,
 }
 
 -- layer rules --
 hl.layer_rule{
-    match = { namespace = "rofi" },
+    match      = { namespace = "rofi" },
     dim_around = true,
 }
 hl.layer_rule{
-    match = { namespace = "^quickshell:expose$" },
+    match      = { namespace = "^quickshell:expose$" },
     dim_around = true,
 }
 hl.layer_rule{
@@ -70,9 +77,9 @@ hl.layer_rule{
     no_anim = true,
 }
 hl.layer_rule{
-    name = "vicinae-blur",
-    match = { namespace = "vicinae" },
-    blur = true,
+    name         = "vicinae-blur",
+    match        = { namespace = "vicinae" },
+    blur         = true,
     ignore_alpha = 0,
 }
 hl.layer_rule{
@@ -88,6 +95,6 @@ hl.layer_rule{
     dim_around = true,
 }
 hl.layer_rule{
-    match = { namespace = "logout_dialog" },
+    match        = { namespace = "logout_dialog" },
     ignore_alpha = 0.5,
 }
