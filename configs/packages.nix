@@ -224,6 +224,7 @@
   qbittorrent
   wl-clipboard
   onlyoffice-desktopeditors
+  ffmpeg
 
   /* these both are required for input-remapper along with the service
   input-remapper
