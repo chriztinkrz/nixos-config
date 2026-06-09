@@ -12,12 +12,13 @@ local function setup_binds(deps)
 
     -- rofi
     hl.bind("SUPER + GRAVE", hl.dsp.exec_cmd("~/.config/rofi/scripts/wallpaper-rofi-2.sh"))
+    hl.bind("CTRL + ALT + S", hl.dsp.exec_cmd("~/.config/rofi/scripts/select-audio.sh"))
 
     -- vicinae
     hl.bind("SUPER + SPACE",            hl.dsp.exec_cmd("vicinae vicinae://launch/system/browse-apps"))
     hl.bind("SUPER + ALT + SPACE",      hl.dsp.exec_cmd("vicinae toggle"))
     hl.bind("SUPER + SHIFT + GRAVE",    hl.dsp.exec_cmd("vicinae vicinae://launch/@sovereign/store.vicinae.awww-switcher/wprandom"))
-    hl.bind("CTRL + ALT + S",           hl.dsp.exec_cmd("vicinae vicinae://launch/@rastsislaux/store.vicinae.pulseaudio/outputDevices"))
+    -- hl.bind("CTRL + ALT + S",           hl.dsp.exec_cmd("vicinae vicinae://launch/@rastsislaux/store.vicinae.pulseaudio/outputDevices"))
     hl.bind("SUPER + SHIFT + B",        hl.dsp.exec_cmd("vicinae vicinae://launch/@Gelei/store.vicinae.bluetooth/devices"))
     hl.bind("SUPER + CTRL + SHIFT + B", hl.dsp.exec_cmd("vicinae vicinae://extensions/Gelei/bluetooth/scan"))
     hl.bind("SUPER + ALT + E",          hl.dsp.exec_cmd("vicinae vicinae://launch/files/search"))
