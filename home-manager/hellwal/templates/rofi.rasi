@@ -1,14 +1,14 @@
 * {
     /* Map Hellwal colors to Rofi variables */
-    bg: #%%background%%;
-    fg: #%%foreground%%;
-    accent: #%%color2.hex%%;
-    muted: #%%color8.hex%%;
-    on-accent: #%%background%%;
+    bg: #%%color1%%;
+    fg: #%%color7%%;
+    accent: #%%color14%%;
+    muted: #%%color3%%;
+    on-accent: #%%color15%%;
     color15: #%%color15%%;
     color1: #%%color1%%;
     color7: #%%color7%%;
-    color8: #%%color8%%;
+    color8: #%%color3%%;
 
     font: "Zalando Sans Expanded 15";
     background-color: transparent;
@@ -20,7 +20,7 @@ window {
     padding: 16px;
     background-color: @color1;
     border: 2px;
-    border-color: @color7;
+    border-color: @color8; /* Swapped to color8/color3 for the matching theme border */
     border-radius: 6px;
 }
 
@@ -36,14 +36,14 @@ element {
     border-radius: 6px;
 }
 
-/* Selected item gets the vibrant primary color background */
+/* Selected item gets the dynamic list selection values */
 element selected {
-    background-color: @color7;
-    text-color: @color1;
+    background-color: @color8;
+    text-color: @color15;
 }
 
 element-text selected {
-    text-color: @color1;
+    text-color: @color15;
 }
 
 element-icon {
