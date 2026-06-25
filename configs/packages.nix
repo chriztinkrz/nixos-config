@@ -61,6 +61,7 @@
     adwaita-fonts
     dejavu_fonts
     liberation_ttf
+    courier-prime
 
     # zalando sans
     (pkgs.runCommand "zalando-sans" { } ''

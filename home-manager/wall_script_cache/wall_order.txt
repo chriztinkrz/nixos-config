@@ -233,3 +233,5 @@ bocchi.jpg
 bocchi2.jpg
 bocchi3.jpg
 looking.png
+ancient-mac-vs-knight-6.png
+ryo_yamada.png
