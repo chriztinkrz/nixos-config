@@ -108,7 +108,7 @@
   networking.networkmanager.enable = true;
 
   # set your time zone.
-  time.timeZone = "Asia/Muscat";
+  time.timeZone = "Asia/Kolkata";
 
   # internationalisation properties
   i18n.defaultLocale = "en_US.UTF-8";
