@@ -224,6 +224,8 @@
             set host "nixosbtw"
           case "-v"
             set host "vostro"
+          case "-t"
+            set host "3018tu"
           case "*"
             set label $argv[$i]
         end

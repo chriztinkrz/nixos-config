@@ -58,6 +58,11 @@
           ./configs/hardware/laptop.nix
           ./configs/hardware/vostro.nix
         ];
+        "3018tu" = mkSystem [
+          ./configs/hardware/3018tu_hardware.nix
+          ./configs/hardware/laptop.nix
+          ./configs/hardware/3018tu.nix
+        ];
 
         common = mkSystem [
           ./configs/hardware/common_hardware.nix
