@@ -5,7 +5,7 @@
 }
 {
     "label" : "logout",
-    "action" : "pkill Hyprland",
+    "action" : "pkill hyprland",
     "keybind" : "e"
 }
 {

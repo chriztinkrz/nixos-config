@@ -201,6 +201,13 @@
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   services.devmon.enable = true;
+  /* services.xserver = {
+    enable = true;
+    desktopManager = {
+      xterm.enable = false;
+      xfce.enable = true;
+    };
+    }; */
   programs.xwayland.enable = true;
   services.blueman.enable = true;
   programs.dconf.enable = true;

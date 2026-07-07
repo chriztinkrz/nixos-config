@@ -1,3 +1,4 @@
+
 [{
     "height": 24,
     "spacing": 0,
@@ -16,6 +17,7 @@
         "custom/music",
     ],
     "modules-center": [
+        "niri/workspaces",
         "hyprland/workspaces",
         "sway/workspaces",
         "clock",

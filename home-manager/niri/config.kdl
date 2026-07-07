@@ -6,7 +6,9 @@ input {
             layout "us"; // Use the US keyboard layout
         };
         numlock; // Enable numlock on startup
-};
+        repeat-delay 250
+        repeat-rate 30
+    };
     mouse {
     	accel-speed -0.15
     	accel-profile "flat"
@@ -19,6 +21,7 @@ input {
         scroll-factor 0.35
     };
     focus-follows-mouse max-scroll-amount="18%"; // Automatically focus windows under the mouse pointer
+    warp-mouse-to-focus mode="center-xy-always"
     // workspace-auto-back-and-forth; // Enable workspace back & forth switching
 };
 
@@ -38,24 +41,24 @@ gestures {
 
 
 //  output configuration //
-output "HDMI-A-1" {
+/- output "HDMI-A-1" {
     mode "3840x2160@60.000"; // Set resolution and refresh rate
     scale 1.56; // No scaling (use 2 for HiDPI) // 1.375 for extremely close //
     focus-at-startup
 }
 output "eDP-1" {
-    mode "1920x1080@60.002";
-    scale 0.93;
+    mode "1920x1080@60.003";
+    scale 0.625;
 }
 
 
 
 //  startup applications  //
-spawn-at-startup "~/.config/niri/scripts/startup_script.sh"
+spawn-at-startup "~/.config/hypr/scripts/startup_script.sh"
 // spawn-at-startup "hyprlock"
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &";
 // spawn-at-startup "swww-daemon"
-// spawn-at-startup "swww-daemon" "-n" "overlay"
+spawn-at-startup "swww-daemon" "-n" "overlay"
 // spawn-at-startup "waybar"
 spawn-at-startup "avizo-service"
 spawn-sh-at-startup "input-remapper-control --command autoload"
@@ -68,58 +71,49 @@ screenshot-path "~/Pictures/Screenshots/%d.%m.%Y %I:%M %p.png"
 
 //  keybindings //
 binds {
-    // noctalia stuff  //
-    // SUPER+F5 { spawn-sh "qs -c noctalia-shell ipc call plugin:screen-recorder toggle"; };
-    // SUPER+N { spawn-sh "qs -c noctalia-shell ipc call notifications dismissAll"; };
-    // SUPER+GRAVE { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; };
-    SUPER+I hotkey-overlay-title="noctalia-settings" { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; };
-    // SUPER+Escape hotkey-overlay-title="noctalia-power-menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; };
-    // SUPER+L allow-when-locked=true hotkey-overlay-title="Lock Screen: noctalia-lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; };
 
 
 
-    // rofi stuff //
-    SUPER+V hotkey-overlay-title="rofi-cliphist" { spawn "~/.config/rofi/scripts/clipboard.sh"; }; // requires cliphist
-    SUPER+SHIFT+V hotkey-overlay-title="rofi-emoji" { spawn-sh "rofi -modi emoji -show emoji -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 30%;}'"; }; // requires rofi-emoji
-    SUPER+Escape { spawn-sh "rofi-power"; };
-    SUPER+SHIFT+C { spawn-sh "rofi -show calc -theme-str 'window { width: 15%; }' -theme-str 'listview {lines: 1;}'"; }; // requires rofi-calc
-    // ALT+TAB { spawn-sh "rofi -show window -theme-str 'window { width: 62%; }' -theme-str 'listview {lines: 15;}'"; };
-    SUPER+SHIFT+B { spawn-sh "~/.config/rofi/scripts/rofi-bluetooth-claude.sh"; };
+    // vicinae stuff //
+    SUPER+V { spawn-sh "vicinae vicinae://launch/clipboard/history"; };
+    SUPER+SHIFT+V { spawn-sh "vicinae vicinae://launch/core/search-emojis"; };
+    SUPER+Escape { spawn-sh "wlogout"; };
+    SUPER+SHIFT+B { spawn-sh "vicinae vicinae://launch/@Gelei/store.vicinae.bluetooth/devices"; };
+    SUPER+CTRL+SHIFT+B { spawn-sh "vicinae vicinae://extensions/Gelei/bluetooth/scan"; };
+    SUPER+SPACE { spawn-sh "vicinae vicinae://launch/system/browse-apps"; };
+    SUPER+ALT+SPACE { spawn-sh "vicinae toggle"; };
+    SUPER+SHIFT+GRAVE { spawn-sh "vicinae vicinae://launch/@sovereign/store.vicinae.awww-switcher/wprandom"; };
+    SUPER+ALT+E { spawn-sh "vicinae vicinae://launch/files/search"; };
+
+
+
+    // rofi stuff
+    SUPER+SHIFT+C { spawn-sh "rofi -show calc -theme-str 'window { width: 15%; }' -theme-str 'listview {lines: 1;}'"; }; // preserved original as no hyprland counterpart was provided
     ALT+CONTROL+S { spawn-sh "~/.config/rofi/scripts/select-audio.sh"; };
-    SUPER+SPACE hotkey-overlay-title="Open App Launcher: rofi_drun" { spawn-sh "rofi -show drun -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 17%;}'"; };
     SUPER+GRAVE { spawn-sh "~/.config/rofi/scripts/wallpaper-rofi-2.sh"; };
-    SUPER+ALT+E { spawn-sh "~/.config/rofi/scripts/file-selector/rofi-file-selector.sh"; };
 
 
 
     // other stuff to escape quickshell
     SUPER+L allow-when-locked=true { spawn "hyprlock"; };
     SUPER+N { spawn-sh "makoctl dismiss -a"; };
-    SUPER+F5 { spawn-sh "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"; };
+    SUPER+F5 { spawn-sh "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"; };
     SUPER+F4 { spawn-sh "pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"; };
-
-
-
-    // dms stuff //
-    // SUPER+L allow-when-locked=true { spawn-sh "dms ipc call lock lock"; };
-    // SUPER+I { spawn-sh "dms ipc call settings toggle"; };
-    // SUPER+N { spawn-sh "dms ipc call notifications dismissAllPopups"; };
-    // SUPER+V { spawn-sh "dms ipc call clipboard toggle"; };
-    // SUPER+Escape { spawn-sh "dms ipc call powermenu toggle"; };
-    // SUPER+GRAVE { spawn-sh "dms ipc call dankdash wallpaper"; };
-
-
-
-    // brightness controls //
-    SHIFT+F2 allow-when-locked=true hotkey-overlay-title="increase_brightness" { spawn-sh "lightctl up" ; };
-    SHIFT+F1 allow-when-locked=true hotkey-overlay-title="decrease_brightness" { spawn-sh "lightctl down" ; };
+    ALT+F4 { spawn-sh "pkill steam"; };
 
 
 
     // applications //
     SUPER+RETURN hotkey-overlay-title="Open Terminal: foot" { spawn-sh "foot"; };
     SUPER+B hotkey-overlay-title="Open Browser: zen" { spawn-sh "zen-beta"; };
+    SUPER+CTRL+B { spawn-sh "zen-beta --private-window"; };
     SUPER+E hotkey-overlay-title="File Manager: nautilus" { spawn-sh "nautilus --new-window"; };
+
+
+
+    // brightness controls //
+    SHIFT+F2 allow-when-locked=true hotkey-overlay-title="increase_brightness" { spawn-sh "lightctl up" ; };
+    SHIFT+F1 allow-when-locked=true hotkey-overlay-title="decrease_brightness" { spawn-sh "lightctl down" ; };
 
 
 
@@ -137,20 +131,20 @@ binds {
 
     // window movement and focus //
     CTRL+SHIFT+Z { close-window; };
-    SUPER+CTRL+SHIFT+Q { consume-window-into-column; };
-    SUPER+CTRL+SHIFT+W { expel-window-from-column; };
+    SUPER+CTRL+SHIFT+W { consume-or-expel-window-right; };
+    // SUPER+CTRL+SHIFT+Q { expel-window-from-column; };
     SUPER+SHIFT+X { switch-focus-between-floating-and-tiling;};
     ALT+A { focus-column-left; };
     ALT+D { focus-column-right; };
     ALT+W { focus-window-up; };
     ALT+S { focus-window-down; };
-    SUPER+SHIFT+LEFT { move-column-left; };
+    // SUPER+SHIFT+LEFT { move-column-left; };
     CTRL+SHIFT+A { move-column-left; };
-    SUPER+SHIFT+RIGHT { move-column-right; };
+    // SUPER+SHIFT+RIGHT { move-column-right; };
     CTRL+SHIFT+D { move-column-right; };
-    SUPER+SHIFT+UP { move-window-up; };
+    // SUPER+SHIFT+UP { move-window-up; };
     CTRL+SHIFT+W { move-window-up; };
-    SUPER+SHIFT+DOWN { move-window-down; };
+    // SUPER+SHIFT+DOWN { move-window-down; };
     CTRL+SHIFT+S { move-window-down; };
     SUPER+A { focus-column-first; };
     SUPER+D { focus-column-last; };
@@ -166,14 +160,13 @@ binds {
     SUPER+CTRL+SHIFT+WHEELSCROLLUP { move-column-left; };
     SUPER+CTRL+SHIFT+X { maximize-column; };
     SUPER+CTRL+SHIFT+Z { switch-preset-column-width; };
+    ALT+TAB { focus-window-previous; };
 
 
 
     // workspace switching //
     SUPER+W { focus-workspace-up; };
     SUPER+S { focus-workspace-down; };
-    SUPER+CONTROL+SHIFT+ALT+Z cooldown-ms=300 { focus-workspace-up; };
-    SUPER+CONTROL+SHIFT+ALT+X cooldown-ms=300 { focus-workspace-down; };
     SUPER+WheelScrollUp   cooldown-ms=160 { focus-workspace-up; }
     SUPER+WheelScrollDown cooldown-ms=160 { focus-workspace-down; }
     SUPER+1 { focus-workspace 1; };
@@ -210,11 +203,11 @@ binds {
     SUPER+CTRL+C { center-visible-columns; };
     SUPER+CTRL+A { set-column-width "-3%"; };
     SUPER+CTRL+D { set-column-width "+3%"; };
-    SUPER+CTRL+S { set-window-height "-3%"; };
     SUPER+CTRL+W { set-window-height "+3%"; };
+    SUPER+CTRL+S { set-window-height "-3%"; };
     SUPER+T { toggle-window-floating; };
     SUPER+F { fullscreen-window; };
-    SUPER+Z { toggle-column-tabbed-display; };
+    SUPER+SHIFT+T { toggle-column-tabbed-display; };
     ALT+SHIFT+S repeat=false { toggle-overview; };
     SUPER+CTRL+Z { spawn "~/.config/niri/scripts/fit_all.sh"; };
 
@@ -228,9 +221,10 @@ binds {
 
 
     // exit / power //
-    CTRL+ALT+DELETE { quit; }; // Also quits Niri
+    CTRL+ALT+DELETE { quit; };
     SUPER+Q { power-off-monitors; };
-   }
+}
+
 
 
 
@@ -240,7 +234,7 @@ overview {
 	backdrop-color "#141414"
 }
 layout {
-    gaps 3; // Gap between windows
+    gaps 15; // Gap between windows
     center-focused-column "never";
     background-color "transparent"
     preset-column-widths {
@@ -270,7 +264,7 @@ layout {
 
 //  animation settings //
 animations {
-slowdown 1.5
+slowdown 1.3
 window-resize {
         spring damping-ratio=0.7 stiffness=37 epsilon=0.0001
     }
@@ -343,7 +337,7 @@ window-resize {
 
 //  window rules  //
 window-rule {
-    geometry-corner-radius 3.5;
+    geometry-corner-radius 4;
     clip-to-geometry true;
 }
 window-rule {
@@ -351,11 +345,17 @@ window-rule {
     match app-id="Alacritty"
     match app-id="kitty"
     opacity 0.8
+    background-effect {
+      blur true
+    }
 }
 window-rule {
     match app-id="org.gnome.Nautilus"
     match app-id="org.gnome.Calculator"
     default-column-width { proportion 0.18; };
+    background-effect {
+      blur true
+    }
 }
 window-rule {
     match app-id="ONLYOFFICE"
@@ -465,12 +465,18 @@ recent-windows {
     }
 }
 cursor {
-    xcursor-theme "ComixCursors-Black"
+    xcursor-theme "ComixCursors-Opaque-Black"
     xcursor-size 40
 }
 debug {
-        honor-xdg-activation-with-invalid-serial
-            }
+    honor-xdg-activation-with-invalid-serial
+}
+blur {
+    passes 2
+    offset 1
+    noise 0.02
+    saturation 1.5
+}
 
 prefer-no-csd
 include "../../.cache/hellwal/niri.kdl"

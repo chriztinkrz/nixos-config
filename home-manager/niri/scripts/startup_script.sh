@@ -5,14 +5,14 @@ hyprctl setcursor ComixCursors-Black 40
 
 # 1. Start hyprlock strictly first
 # It runs in the background so the script can proceed with timers
-hyprlock & 
+hyprlock &
 
 # 2. WAIT 2.5 seconds (1.5s + 1.0s extra)
 # This gives you plenty of time to start typing before Waybar launches
 # sleep 2.5
 
 # 3. Start Waybar
-waybar &
+# waybar &
 
 # 4. WAIT 1.5 seconds (0.5s + 1.0s extra)
 # Added extra time before swww starts to ensure Waybar is settled
@@ -22,6 +22,8 @@ waybar &
 swww-daemon &
 swww-daemon -n overlay &
 swww img "$HOME/.cache/current_wallpaper.png" --transition-type grow --transition-duration 1.75 &
+
+vicinae server
 
 # 6. Final initialization and transition
 # Give daemons a moment to open their sockets before sending the image
