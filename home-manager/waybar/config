@@ -17,7 +17,7 @@
         "custom/music",
     ],
     "modules-center": [
-        "niri/workspaces",
+        // "niri/workspaces",
         "hyprland/workspaces",
         "sway/workspaces",
         "clock",
