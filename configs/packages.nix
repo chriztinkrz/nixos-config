@@ -16,7 +16,7 @@
     /* package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland; */
   };
-  programs.niri.enable = true;
+  # programs.niri.enable = true;
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
   programs.steam.enable = true;
