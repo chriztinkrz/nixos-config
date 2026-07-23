@@ -18,5 +18,6 @@ hl.config({
         zoom_detached_camera = false,
         persistent_warps = true,
         warp_on_change_workspace = true,
+        inactive_timeout = 15
     },
 })

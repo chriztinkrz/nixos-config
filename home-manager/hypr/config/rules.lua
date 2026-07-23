@@ -62,6 +62,11 @@ hl.window_rule{
     match           = { class = "ONLYOFFICE" },
     scrolling_width = 0.6667,
 }
+--[[ hl.window_rule{
+    name    = "zathura opacity",
+    match   = { class = "org.pwmt.zathura" },
+    opacity = "0.75 override 0.75 override 0.75 override",
+} ]]
 
 -- layer rules --
 hl.layer_rule{
