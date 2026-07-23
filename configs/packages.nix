@@ -228,7 +228,6 @@
   onlyoffice-desktopeditors
   ffmpeg
   upower
-  zathura
 
   /* these both are required for input-remapper along with the service
   input-remapper
