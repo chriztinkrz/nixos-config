@@ -124,8 +124,8 @@ local function setup_binds(deps)
     hl.bind("SUPER + ALT + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
     -- bright / loud
-    hl.bind("ALT + F2",   hl.dsp.exec_cmd("volumectl -u up"),                            { repeating = true, locked = true })
-    hl.bind("ALT + F1",   hl.dsp.exec_cmd("volumectl -u down"),                          { repeating = true, locked = true })
+    hl.bind("ALT + F2",   hl.dsp.exec_cmd("volumectl -u up 2"),                            { repeating = true, locked = true })
+    hl.bind("ALT + F1",   hl.dsp.exec_cmd("volumectl -u down 2"),                          { repeating = true, locked = true })
     hl.bind("ALT + F3",   hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
     hl.bind("F2",         hl.dsp.exec_cmd("playerctl play-pause"),                       { locked = true })
     hl.bind("F1",         hl.dsp.exec_cmd("playerctl previous"),                         { locked = true })
