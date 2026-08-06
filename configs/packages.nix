@@ -228,6 +228,7 @@
   onlyoffice-desktopeditors
   ffmpeg
   upower
+  easyeffects
 
   /* these both are required for input-remapper along with the service
   input-remapper
