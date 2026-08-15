@@ -213,6 +213,21 @@
   programs.dconf.enable = true;
   services.avahi.enable = true;
   services.avahi.nssmdns4 = true;
+  services.keyd = {
+    enable = true;
+    keyboards = {
+      default = {
+        ids = [ "*" ];
+        settings = {
+          main = {
+            capslock = "backspace";
+            "\\" = "capslock";
+            insert = "\\";
+          };
+        };
+      };
+    };
+  };
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   programs.fish = {
   enable = true;
