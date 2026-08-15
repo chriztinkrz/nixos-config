@@ -223,6 +223,7 @@
             capslock = "backspace";
             "\\" = "capslock";
             insert = "\\";
+            rightalt = "rightcontrol";
           };
         };
       };
