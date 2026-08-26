@@ -221,14 +221,20 @@
         settings = {
           main = {
             capslock = "backspace";
-            "\\" = "capslock";
-            insert = "\\";
-            rightalt = "rightshift";
-            rightmeta = "rightcontrol";
+            rightalt = "overload(nav_layer, oneshot(shift))";
+            rightmeta = "capslock";
+          };
+          "nav_layer:C" = {
+            j = "down";
+            k = "up";
+            l = "left";
+            ";" = "right";
+            i = "home";
+            o = "end";
           };
         };
       };
-    };
+      };
   };
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   programs.fish = {
