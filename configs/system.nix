@@ -231,6 +231,8 @@
             ";" = "right";
             i = "home";
             o = "end";
+            n = "pagedown";
+            p = "pageup";
           };
         };
       };
