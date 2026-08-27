@@ -119,8 +119,8 @@ hl.curve("spring_open",
 hl.curve("spring_open_layer",
     {   type = "spring",
         mass = 1,
-        stiffness = 18,
-        dampening = 7,
+        stiffness = 75,
+        dampening = 13,
     }
 )
 hl.curve("spring_move",
