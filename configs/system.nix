@@ -145,7 +145,7 @@
     }; */
 
   # appimage
-  programs.appimage.enable = true;
+  /*programs.appimage.enable = true;
   programs.appimage.binfmt = true;
   programs.appimage.package = pkgs.appimage-run.override
   {
@@ -156,7 +156,7 @@
       pkgs.python312
       pkgs.python312Packages.torch
     ];
-  };
+  }; */
 
   # system stuff
   nix.settings = {

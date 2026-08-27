@@ -27,8 +27,9 @@
     name = "ComixCursors-Opaque-Black";
     package = pkgs.comixcursors.Opaque_Black;
     size = 28;
-    gtk.enable = true;
-    x11.enable = true; # needed for some apps
+    enable = true;
+    # gtk.enable = true;
+    # x11.enable = true; # needed for some apps
   };
 
   # dark theme but dconf basically

@@ -44,8 +44,8 @@
     ];
   };
 
-  /* plotter things
-  services.udev.packages = with pkgs; [ arduino-ide ugs ]; */
+  # plotter things
+  # services.udev.packages = with pkgs; [ arduino-ide ugs ];
 
   # fonts
   fonts.fontconfig.enable = true;
@@ -84,8 +84,8 @@
   # packages
   environment.systemPackages = with pkgs; [
 
-  /* svg2gcode
-  (rustPlatform.buildRustPackage rec {
+  # svg2gcode
+  /* (rustPlatform.buildRustPackage rec {
       pname = "svg2gcode-cli";
       version = "0.0.18";
       src = pkgs.fetchurl {
@@ -96,7 +96,7 @@
       cargoHash = "sha256-txGRVby8MUzycgYY8OYXU6OIt9PBUDyFFHPWysp0KCI=";
       nativeBuildInputs = [ pkg-config ];
       buildInputs = [ openssl ];
-    }) */
+  }) */
 
   # rofi-power
   (pkgs.writeShellScriptBin "rofi-power" ''
@@ -169,7 +169,7 @@
       ${pkgs.wl-clipboard}/bin/wl-copy < "$FILE"
       ${pkgs.libnotify}/bin/notify-send "Screenshot" "$MODE captured & copied to clipboard" -i "$FILE"
     fi
-  '')
+    '')
 
   # normal packages
   xdg-desktop-portal-gnome
@@ -229,14 +229,6 @@
   ffmpeg
   upower
   easyeffects
-
-  /* these both are required for input-remapper along with the service
-  input-remapper
-  polkit_gnome */
-
-  /* plotter thingies
-  arduino-ide
-  inkscape */
 
   ]++ (import ./legacy_launcher/legacy_launcher.nix { inherit pkgs; });
 }

@@ -4,7 +4,7 @@
     ./system.nix
     ./silentsddm/sddm.nix
     ./packages.nix
-    inputs.nix-flatpak.nixosModules.nix-flatpak
+    # inputs.nix-flatpak.nixosModules.nix-flatpak
     inputs.home-manager.nixosModules.home-manager
     inputs.nix-index-database.nixosModules.default
     # inputs.mikuPlymouth.nixosModules.default
@@ -18,6 +18,6 @@
     extraSpecialArgs = { inherit inputs; };
     users.chriz = import ../home-manager/home.nix;
     backupFileExtension = "backup";
-  };
+    };
 
 }
