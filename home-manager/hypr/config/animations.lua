@@ -105,15 +105,15 @@ hl.curve("spring_menu",
 hl.curve("spring_window",
     {   type = "spring",
         mass = 1,
-        stiffness = 4,
+        stiffness = 15,
         dampening = 4,
     }
 )
 hl.curve("spring_open",
     {   type = "spring",
         mass = 1,
-        stiffness = 10,
-        dampening = 5,
+        stiffness = 50,
+        dampening = 10,
     }
 )
 hl.curve("spring_open_layer",
@@ -126,7 +126,7 @@ hl.curve("spring_open_layer",
 hl.curve("spring_move",
     {   type = "spring",
         mass = 1,
-        stiffness = 3,
+        stiffness = 15,
         dampening = 3,
     }
 )
@@ -140,8 +140,8 @@ hl.curve("spring_workspace",
 hl.curve("spring_special",
     {   type = "spring",
         mass = 1,
-        stiffness = 8,
-        dampening = 4,
+        stiffness = 60,
+        dampening = 10,
     }
 )
 
