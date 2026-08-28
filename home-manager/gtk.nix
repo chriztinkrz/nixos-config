@@ -36,4 +36,9 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = { color-scheme = "prefer-dark"; };
   };
+
+  home.sessionVariables = {
+    ADW_DISABLE_PORTAL = "1";
+  };
+
 }
