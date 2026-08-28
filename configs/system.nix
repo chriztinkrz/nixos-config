@@ -16,6 +16,9 @@
   label = builtins.getEnv "NIXOS_LABEL";
   in if label != "" then label else "unlabeled";
 
+  # no usb autosuspend
+  boot.kernelParams = [ "usbcore.autosuspend=-1" ];
+
   # mac-style-plymouth
   /* boot = {
     plymouth = {
