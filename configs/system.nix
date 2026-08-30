@@ -224,8 +224,11 @@
         settings = {
           main = {
             capslock = "backspace";
-            rightalt = "overload(nav_layer, oneshot(shift))";
+            rightalt = "overload(nav_layer, oneshot(custom_shift))";
             rightmeta = "capslock";
+          };
+          "custom_shift:S" = {
+            tab = "clear()";
           };
           "nav_layer:C" = {
             j = "down";
@@ -236,7 +239,6 @@
             o = "end";
             n = "pagedown";
             p = "pageup";
-            tab = "clear()";
           };
         };
       };
