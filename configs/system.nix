@@ -236,11 +236,13 @@
             o = "end";
             n = "pagedown";
             p = "pageup";
+            tab = "clear()";
           };
         };
       };
-      };
+    };
   };
+
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   programs.fish = {
   enable = true;
