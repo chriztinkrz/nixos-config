@@ -216,34 +216,6 @@
   programs.dconf.enable = true;
   services.avahi.enable = true;
   services.avahi.nssmdns4 = true;
-  services.keyd = {
-    enable = true;
-    keyboards = {
-      default = {
-        ids = [ "*" ];
-        settings = {
-          main = {
-            capslock = "backspace";
-            rightalt = "overload(nav_layer, oneshot(custom_shift))";
-            rightmeta = "capslock";
-          };
-          "custom_shift:S" = {
-            tab = "clear()";
-          };
-          "nav_layer:C" = {
-            j = "down";
-            k = "up";
-            l = "left";
-            ";" = "right";
-            i = "home";
-            o = "end";
-            n = "pagedown";
-            p = "pageup";
-          };
-        };
-      };
-    };
-  };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   programs.fish = {
