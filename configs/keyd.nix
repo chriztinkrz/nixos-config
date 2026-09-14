@@ -36,8 +36,8 @@
             "0" = "f10";
             "-" = "f11";
             "=" = "f12";
-            "q" = "escape";
-            "g" = "enter";
+            "g" = "escape";
+            "d" = "enter";
           };
           "num_layer" = {
             a = "1";
