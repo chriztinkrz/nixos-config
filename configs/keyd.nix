@@ -13,10 +13,10 @@
             rightmeta = "overload(num_layer, rightmeta)";
 
             # left hand home row mods
-            a = "lettermod(meta, a, 50, 175)";
-            s = "lettermod(alt, s, 50, 175)";
-            d = "lettermod(shift, d, 50, 175)";
-            f = "lettermod(control, f, 50, 175)";
+            a = "lettermod(meta, a, 50, 150)";
+            s = "lettermod(alt, s, 50, 150)";
+            d = "lettermod(shift, d, 50, 150)";
+            f = "lettermod(control, f, 50, 150)";
 
             # right hand home row mods
             j = "lettermod(control, j, 80, 175)";
