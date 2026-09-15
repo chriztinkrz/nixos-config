@@ -13,16 +13,16 @@
             rightmeta = "overload(num_layer, rightmeta)";
 
             # left hand home row mods
-            a = "lettermod(meta, a, 150, 200)";
-            s = "lettermod(alt, s, 150, 200)";
-            d = "lettermod(shift, d, 150, 200)";
-            f = "lettermod(control, f, 150, 200)";
+            a = "lettermod(meta, a, 50, 175)";
+            s = "lettermod(alt, s, 50, 175)";
+            d = "lettermod(shift, d, 50, 175)";
+            f = "lettermod(control, f, 50, 175)";
 
             # right hand home row mods
-            j = "lettermod(control, j, 150, 200)";
-            k = "lettermod(shift, k, 150, 200)";
-            l = "lettermod(alt, l, 150, 200)";
-            ";" = "lettermod(meta, semicolon, 150, 200)";
+            j = "lettermod(control, j, 80, 175)";
+            k = "lettermod(shift, k, 80, 175)";
+            l = "lettermod(alt, l, 80, 175)";
+            ";" = "lettermod(meta, semicolon, 80, 175)";
           };
           "custom_shift:S" = {
             tab = "clear()";
