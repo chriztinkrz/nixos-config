@@ -11,6 +11,7 @@
             backspace = "capslock";
             rightalt = "overload(nav_layer, oneshot(custom_shift))";
             rightmeta = "overload(num_layer, rightmeta)";
+            tab = "overload(func_layer, tab)";
 
             # left hand home row mods
             a = "lettermod(meta, a, 150, 200)";
@@ -24,9 +25,11 @@
             l = "lettermod(alt, l, 150, 200)";
             ";" = "lettermod(meta, semicolon, 150, 200)";
           };
+
           "custom_shift:S" = {
             tab = "clear()";
           };
+
           "nav_layer:C" = {
             j = "down";
             k = "up";
@@ -51,6 +54,7 @@
             "g" = "escape";
             "d" = "enter";
           };
+
           "num_layer" = {
             a = "1";
             s = "2";
@@ -62,8 +66,35 @@
             k = "8";
             l = "9";
             ";" = "0";
-            w = "-";
-            e = "=";
+            "'" = "-";
+            "\\" = "=";
+            "q" = "!";
+            "w" = "@";
+            "e" = "#";
+            "r" = "$";
+            "t" = "%";
+            "y" = "^";
+            "u" = "&";
+            "i" = "*";
+            "o" = "(";
+            "p" = ")";
+            "[" = "_";
+            "]" = "+";
+          };
+
+          "func_layer" = {
+            q = "f1";
+            w = "f2";
+            e = "f3";
+            r = "f4";
+            t = "f5";
+            y = "f6";
+            u = "f7";
+            i = "f8";
+            o = "f9";
+            p = "f10";
+            "[" = "f11";
+            "]" = "f12";
           };
         };
       };
