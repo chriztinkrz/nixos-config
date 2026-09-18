@@ -242,3 +242,7 @@ hl.animation({
     spring  = "spring_special",
     style   = "slidevert 35%"
 })
+hl.layer_rule({
+    match = { namespace = "^(selection)$" },
+    no_anim = true
+})
