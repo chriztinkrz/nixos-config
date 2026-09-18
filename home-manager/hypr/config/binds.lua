@@ -31,7 +31,15 @@ local function setup_binds(deps)
     hl.bind("SUPER + F5",     hl.dsp.exec_cmd(record_cmd))
     hl.bind("SUPER + F4",     hl.dsp.exec_cmd(record_stop_cmd))
     hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
-    hl.bind("ALT + F4",       hl.dsp.exec_cmd("pkill steam"))
+    hl.bind("ALT + F4", hl.dsp.exec_cmd("pkill steam"))
+
+    -- mouse controls
+    hl.bind("SUPER + I",              hl.dsp.exec_cmd("wlrctl pointer move 0 -50"), { repeating = true })
+    hl.bind("SUPER + U",              hl.dsp.exec_cmd("wlrctl pointer move 0 50"), { repeating = true })
+    hl.bind("SUPER + O",              hl.dsp.exec_cmd("wlrctl pointer move -50 0"), { repeating = true })
+    hl.bind("SUPER + P",              hl.dsp.exec_cmd("wlrctl pointer move 50 0"), { repeating = true })
+    -- hl.bind("SUPER + Y",               hl.dsp.exec_cmd("wlrctl pointer click left"))
+    hl.bind("SUPER + J",              hl.dsp.exec_cmd("wl-kbptr -o modes=floating,click -o mode_floating.source=detect"), { repeating = true })
 
     -- apps
     hl.bind("SUPER + RETURN",   hl.dsp.exec_cmd("foot"))

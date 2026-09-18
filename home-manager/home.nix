@@ -41,6 +41,7 @@ in
     "sway".source = lib.mkForce (config.lib.file.mkOutOfStoreSymlink "${configDirectory}/sway");
     "zed/keymap.json".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/zed/keymap.json";
     "wlogout".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wlogout";
+    "wl-kbptr".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wl-kbptr";
   };
 
   home.file = {
