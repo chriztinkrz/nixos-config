@@ -39,6 +39,7 @@ local function setup_binds(deps)
     hl.bind("SUPER + O",              hl.dsp.exec_cmd("wlrctl pointer move -50 0"), { repeating = true })
     hl.bind("SUPER + P",              hl.dsp.exec_cmd("wlrctl pointer move 50 0"), { repeating = true })
     hl.bind("SUPER + H",              hl.dsp.exec_cmd("wlrctl pointer click left"), { repeating = true })
+    hl.bind("SUPER + K",              hl.dsp.exec_cmd("wl-kbptr"), { repeating = true })
     hl.bind("SUPER + J",              hl.dsp.exec_cmd("wl-kbptr -o modes=floating,click -o mode_floating.source=detect"), { repeating = true })
     hl.bind("SUPER + SEMICOLON",      hl.dsp.exec_cmd("wl-kbptr && wlrctl pointer click left"))
 
@@ -69,8 +70,8 @@ local function setup_binds(deps)
     hl.bind("SUPER + S",          hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
     hl.bind("SUPER + Tab",        hl.dsp.focus({ workspace = "previous" }))
     hl.bind("SUPER + Z",          hl.dsp.focus({ workspace = "empty" }))
-    hl.bind("SUPER + mouse_up",   hl.dsp.focus({ workspace = "r+1" }), { mouse = true })
-    hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r-1" }), { mouse = true })
+    -- hl.bind("SUPER + mouse_up",   hl.dsp.focus({ workspace = "r+1" }), { mouse = true })
+    -- hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r-1" }), { mouse = true })
 
     -- move window to ws
     for i = 1, 10 do
