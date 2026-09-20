@@ -1,7 +1,7 @@
 
 [general]
 home_row_keys=
-modes=floating
+modes=tile
 cancellation_status_code=0
 
 [mode_tile]
@@ -11,7 +11,7 @@ unselectable_bg_color=#2226
 selectable_bg_color=#0304
 selectable_border_color=#040c
 label_font_family=sans-serif
-label_font_size=8 50% 100
+label_font_size=10 50% 100
 label_symbols=abcdefghijklmnopqrstuvwxyz
 
 [mode_floating]
@@ -19,7 +19,7 @@ source=stdin
 label_color=#FFFFFFFF
 label_select_color=#FFFF00FF
 unselectable_bg_color=#00000000
-selectable_bg_color=#000000FF
+selectable_bg_color=#000000AA
 selectable_border_color=#00FF00FF
 label_font_family=hermit
 label_font_size=22 70% 100

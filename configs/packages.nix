@@ -231,6 +231,7 @@
   easyeffects
   wl-kbptr
   wlrctl
+  ydotool
 
   ]++ (import ./legacy_launcher/legacy_launcher.nix { inherit pkgs; });
 }

@@ -38,8 +38,9 @@ local function setup_binds(deps)
     hl.bind("SUPER + U",              hl.dsp.exec_cmd("wlrctl pointer move 0 50"), { repeating = true })
     hl.bind("SUPER + O",              hl.dsp.exec_cmd("wlrctl pointer move -50 0"), { repeating = true })
     hl.bind("SUPER + P",              hl.dsp.exec_cmd("wlrctl pointer move 50 0"), { repeating = true })
-    -- hl.bind("SUPER + Y",               hl.dsp.exec_cmd("wlrctl pointer click left"))
+    hl.bind("SUPER + H",              hl.dsp.exec_cmd("wlrctl pointer click left"), { repeating = true })
     hl.bind("SUPER + J",              hl.dsp.exec_cmd("wl-kbptr -o modes=floating,click -o mode_floating.source=detect"), { repeating = true })
+    hl.bind("SUPER + SEMICOLON",      hl.dsp.exec_cmd("wl-kbptr && wlrctl pointer click left"))
 
     -- apps
     hl.bind("SUPER + RETURN",   hl.dsp.exec_cmd("foot"))
@@ -124,7 +125,7 @@ local function setup_binds(deps)
     hl.bind("SUPER + CTRL + A",         hl.dsp.layout("colresize -0.03"), { repeating = true })
 
     -- scrolling resize but mouse
-    hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+    -- hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true })
     hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
     -- scratchpad
