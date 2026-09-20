@@ -2,17 +2,17 @@
 [general]
 home_row_keys=
 modes=tile
-cancellation_status_code=0
+cancellation_status_code=1
 
 [mode_tile]
-label_color=#fffd
-label_select_color=#fd0d
-unselectable_bg_color=#2226
-selectable_bg_color=#0304
-selectable_border_color=#040c
-label_font_family=sans-serif
-label_font_size=10 50% 100
+label_color=#ffffffCC
+label_select_color=#ffffffFF
+unselectable_bg_color=#0000001A
+selectable_border_color=#00000000
+label_font_family=zalando sans expanded
+label_font_size=30 100% 30
 label_symbols=abcdefghijklmnopqrstuvwxyz
+
 
 [mode_floating]
 source=stdin
