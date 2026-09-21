@@ -21,7 +21,7 @@ label_select_color=#FFFF00FF
 unselectable_bg_color=#00000000
 selectable_bg_color=#000000AA
 selectable_border_color=#00FF00FF
-label_font_family=hermit
+label_font_family=zalando sans expanded
 label_font_size=22 70% 100
 label_symbols=abcdefghijklmnopqrstuvwxyz;
 
