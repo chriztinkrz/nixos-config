@@ -10,6 +10,7 @@
             capslock = "backspace";
             backspace = "capslock";
             rightalt = "overload(nav_layer, oneshot(custom_shift))";
+            leftalt = "layer(num_layer)";
             rightmeta = "overload(num_layer, rightmeta)";
             tab = "overload(func_layer, tab)";
 
@@ -51,7 +52,7 @@
             "0" = "f10";
             "-" = "f11";
             "=" = "f12";
-            "g" = "escape";
+            "s" = "escape";
             "d" = "enter";
           };
 
