@@ -28,7 +28,7 @@
           };
 
           "custom_shift:S" = {
-            tab = "clear()";
+            rightalt = "clear()";
           };
 
           "nav_layer:C" = {
