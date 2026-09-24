@@ -34,7 +34,7 @@ hl.window_rule{
 hl.window_rule{
     name    = "zed-opacity",
     match   = { class = "dev.zed.Zed" },
-    opacity = "0.75 override 0.75 override 0.75 override",
+    opacity = "0.8 override 0.8 override 0.8 override",
 }
 hl.window_rule{
     name    = "nautilus-opacity",
