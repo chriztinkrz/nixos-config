@@ -34,11 +34,12 @@
       url = "github:Thang1191/MikuPlymouth";
       inputs.nixpkgs.follows = "nixpkgs";
       }; */
+    nixpkgs-2605.url = "github:nixos/nixpkgs/nixos-26.05";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { ... }@inputs:
     let
-      mkSystem = extraModules: nixpkgs.lib.nixosSystem {
+      mkSystem = extraModules: inputs.nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.hostPlatform = "x86_64-linux"; }

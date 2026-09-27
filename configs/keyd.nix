@@ -13,6 +13,7 @@
             leftalt = "layer(num_layer)";
             rightmeta = "overload(num_layer, rightmeta)";
             tab = "overload(func_layer, tab)";
+            space = "lettermod(space_layer, space, 150, 200)";
 
             # left hand home row mods
             a = "lettermod(meta, a, 150, 200)";
@@ -29,6 +30,27 @@
 
           "custom_shift:S" = {
             rightalt = "clear()";
+          };
+
+          "space_layer:C" = {
+            j = "down";
+            k = "up";
+            l = "left";
+            ";" = "right";
+            i = "home";
+            o = "end";
+            n = "pagedown";
+            p = "pageup";
+            a = "left";
+            s = "right";
+            d = "up";
+            f = "down";
+            w = "home";
+            e = "end";
+            v = "pagedown";
+            z = "pageup";
+            h = "enter";
+            g = "escape";
           };
 
           "nav_layer:C" = {
