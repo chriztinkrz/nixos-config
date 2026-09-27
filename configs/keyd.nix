@@ -13,7 +13,7 @@
             leftalt = "layer(num_layer)";
             rightmeta = "overload(num_layer, rightmeta)";
             tab = "overload(func_layer, tab)";
-            space = "lettermod(space_layer, space, 150, 200)";
+            space = "lettermod(space_layer, space, 125, 175)";
 
             # left hand home row mods
             a = "lettermod(meta, a, 150, 200)";
@@ -32,7 +32,7 @@
             rightalt = "clear()";
           };
 
-          "space_layer:C" = {
+          "space_layer" = {
             j = "down";
             k = "up";
             l = "left";
@@ -62,18 +62,6 @@
             o = "end";
             n = "pagedown";
             p = "pageup";
-            "1" = "f1";
-            "2" = "f2";
-            "3" = "f3";
-            "4" = "f4";
-            "5" = "f5";
-            "6" = "f6";
-            "7" = "f7";
-            "8" = "f8";
-            "9" = "f9";
-            "0" = "f10";
-            "-" = "f11";
-            "=" = "f12";
             "s" = "escape";
             "d" = "enter";
           };
