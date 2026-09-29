@@ -19,7 +19,7 @@
   # programs.niri.enable = true;
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
-  programs.steam.enable = true;
+  # programs.steam.enable = true;
   programs.nix-index-database.comma.enable = true;
   services.qbittorrent.enable = true; # small exception 👍🏻
   programs.nix-ld = {
@@ -79,8 +79,8 @@
       url = "";
       sha256 = "";
     }}
-  '') */
 
+  '') */
   # packages
   environment.systemPackages = with pkgs; [
 
@@ -231,6 +231,14 @@
   easyeffects
   wl-kbptr
   wlrctl
+  heroic
+
+    (lib.hiPrio (pkgs.runCommand "patched-heroic-desktop" {} ''
+      mkdir -p $out/share/applications
+      sed 's|^Exec=.*|Exec=heroic --enable-features=UseOzonePlatform --ozone-platform=x11|' \
+        ${pkgs.heroic}/share/applications/com.heroicgameslauncher.hgl.desktop \
+        > $out/share/applications/com.heroicgameslauncher.hgl.desktop
+    ''))
 
   ]++ (import ./legacy_launcher/legacy_launcher.nix { inherit pkgs; });
 }
