@@ -52,6 +52,9 @@
          }
       },
       "@dagimg-dot/store.vicinae.wifi-commander": {
+         "preferences": {
+            "network-cli-tool": "nmcli"
+         },
          "entrypoints": {
             "manage-saved-networks": {
                "enabled": false

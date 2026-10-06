@@ -13,7 +13,7 @@
             leftalt = "layer(num_layer)";
             rightmeta = "overload(num_layer, rightmeta)";
             tab = "overload(func_layer, tab)";
-            space = "lettermod(space_layer, space, 125, 175)";
+            # space = "lettermod(space_layer, space, 125, 175)";
 
             # left hand home row mods
             a = "lettermod(meta, a, 150, 200)";
