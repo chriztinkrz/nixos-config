@@ -14,6 +14,7 @@
             rightmeta = "overload(num_layer, rightmeta)";
             tab = "overload(func_layer, tab)";
             # space = "lettermod(space_layer, space, 125, 175)";
+            grave = "toggle(nomods)";
 
             # left hand home row mods
             a = "lettermod(meta, a, 150, 200)";
@@ -107,6 +108,18 @@
             p = "f10";
             "[" = "f11";
             "]" = "f12";
+          };
+
+          "nomods" = {
+            a = "a";
+            s = "s";
+            d = "d";
+            f = "f";
+            j = "j";
+            k = "k";
+            l = "l";
+            ";" = "semicolon";
+            grave = "toggle(main)";
           };
         };
       };
