@@ -7,8 +7,9 @@ local function setup_binds(deps)
     local toggle_focus            = deps.toggle_focus
     local toggle_magic_scratchpad = deps.toggle_magic_scratchpad
     local zoom                    = deps.zoom
-    local record_cmd              = "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"
-    local record_stop_cmd         = "pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"
+    local record_cmd              = "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/gpu-screen-recorder/whatsapp_raw.mp4 & notify-send 'recording started'"
+    local record_stop_cmd         = "killall gpu-screen-recorder; notify-send 'recording stopped'; sleep 1 && ffmpeg -i ~/Videos/gpu-screen-recorder/whatsapp_raw.mp4 -c:v libx264 -profile:v main -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart ~/Videos/gpu-screen-recorder/$(date +%d.%m.%Y_%I:%M%p).mp4 && rm ~/Videos/gpu-screen-recorder/whatsapp_raw.mp4"
+
 
     -- rofi
     hl.bind("SUPER + GRAVE", hl.dsp.exec_cmd("~/.config/rofi/scripts/wallpaper-rofi-2.sh"))
