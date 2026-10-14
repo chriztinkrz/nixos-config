@@ -26,7 +26,7 @@ hl.window_rule{
     match        = { workspace = "special:magic" },
     stay_focused = true,
 }
-hl.window_rule{
+--[[hl.window_rule{
     name    = "foot-opacity",
     match   = { class = "foot" },
     opacity = "0.6 override 0.6 override 0.6 override",
@@ -35,7 +35,7 @@ hl.window_rule{
     name    = "zed-opacity",
     match   = { class = "dev.zed.Zed" },
     opacity = "0.8 override 0.8 override 0.8 override",
-}
+} ]]
 hl.window_rule{
     name    = "nautilus-opacity",
     match   = { class = "org.gnome.Nautilus" },
