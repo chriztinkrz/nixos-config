@@ -48,37 +48,37 @@
   "theme_overrides": {
     "Ayu Dark": {
       /* 1. Window & Editor Surfaces */
-      "background": "#%%color0.hex%%F2",
-      "editor.background": "#%%color0.hex%%E6",
+      "background": "#%%color1.hex%%F2",
+      "editor.background": "#%%color1.hex%%E6",
 
       /* 2. Top/Bottom Frames */
-      "title_bar.background": "#%%color0.hex%%",
-      "title_bar.inactive_background": "#%%color0.hex%%",
-      "status_bar.background": "#%%color0.hex%%",
+      "title_bar.background": "#%%color1.hex%%",
+      "title_bar.inactive_background": "#%%color1.hex%%",
+      "status_bar.background": "#%%color1.hex%%",
 
       /* 3. The Explorer (Project Panel) Fix */
-      "project_panel.background": "#%%color0.hex%%E6",
+      "project_panel.background": "#%%color1.hex%%E6",
       "project_panel.indent_guide": "#%%color7.hex%%33",
-      "panel.background": "#%%color0.hex%%E6",
-      "left_dock.background": "#%%color0.hex%%E6",
+      "panel.background": "#%%color1.hex%%E6",
+      "left_dock.background": "#%%color1.hex%%E6",
 
       /* 4. Tabs & Filename Strip */
       "tab_bar.background": "#00000000",
-      "tab.active_background": "#%%color2.hex%%80",
+      "tab.active_background": "#%%color5.hex%%80",
       "tab.inactive_background": "#00000000",
       "tab.border": "#00000000",
       "toolbar.background": "#00000000",
       "pane_header.background": "#00000000",
 
       /* 5. Gutter */
-      "editor.gutter.background": "#%%color0.hex%%E6",
+      "editor.gutter.background": "#%%color1.hex%%E6",
       "editor.line_number": "#%%color7.hex%%80",
       "editor.active_line_number": "#%%color7.hex%%",
 
       /* 6. Syntax */
       "syntax": {
         "comment": { "color": "#%%color6.hex%%A6" },
-        "string": { "color": "#%%color14.hex%%" },
+        "string": { "color": "#%%color7.hex%%" },
         "function": { "color": "#%%color15.hex%%" },
         "keyword": { "color": "#%%color7.hex%%" },
         "type": { "color": "#%%color6.hex%%" },

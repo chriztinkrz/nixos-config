@@ -7,7 +7,7 @@ printf "\033]4;2;#%%color2.hex%%\033\\"
 printf "\033]4;3;#%%color3.hex%%\033\\"
 printf "\033]4;4;#%%color4.hex%%\033\\"
 printf "\033]4;5;#%%color5.hex%%\033\\"
-printf "\033]4;6;#%%color6.hex%%\033\\"
+printf "\033]4;6;#%%color7.hex%%\033\\"
 printf "\033]4;7;#%%color7.hex%%\033\\"
 printf "\033]4;8;#%%color8.hex%%\033\\"
 printf "\033]4;9;#%%color9.hex%%\033\\"
@@ -19,7 +19,7 @@ printf "\033]4;14;#%%color14.hex%%\033\\"
 printf "\033]4;15;#%%color15.hex%%\033\\"
 
 # Background
-printf "\033]11;#%%background%%\033\\";
+printf "\033]11;#%%color1%%\033\\";
 
 # Foreground
 printf "\033]10;#%%foreground%%\033\\";

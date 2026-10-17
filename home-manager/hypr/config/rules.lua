@@ -26,7 +26,7 @@ hl.window_rule{
     match        = { workspace = "special:magic" },
     stay_focused = true,
 }
---[[hl.window_rule{
+--[[ hl.window_rule{
     name    = "foot-opacity",
     match   = { class = "foot" },
     opacity = "0.6 override 0.6 override 0.6 override",
