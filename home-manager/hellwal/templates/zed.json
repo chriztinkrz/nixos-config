@@ -77,7 +77,7 @@
 
       /* 6. Syntax */
       "syntax": {
-        "comment": { "color": "#%%color6.hex%%" },
+        "comment": { "color": "#%%color7.hex%%" },
         "string": { "color": "#%%color7.hex%%" },
         "function": { "color": "#%%color15.hex%%" },
         "keyword": { "color": "#%%color7.hex%%" },
