@@ -11,8 +11,8 @@ foreground = "%%color7%%"
 secondary_background = "%%color1%%"
 
 [colors.list.item.selection]
-background = "%%color3%%"
-foreground = "%%color15%%"
+background = "%%color7%%"
+foreground = "%%color1%%"
 
 [colors.main_window]
 border = "%%color3%%"
