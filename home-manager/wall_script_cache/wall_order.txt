@@ -202,3 +202,5 @@ river.png
 river2.png
 river3.png
 river4.png
+wallhaven-q68p65.jpg
+orange-red_gradient.jpg
