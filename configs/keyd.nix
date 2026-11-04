@@ -10,7 +10,7 @@
             capslock = "backspace";
             backspace = "capslock";
             rightalt = "overload(nav_layer, oneshot(custom_shift))";
-            leftalt = "layer(num_layer)";
+            leftalt = "overload(num_layer, enter)";
             rightmeta = "overload(num_layer, rightmeta)";
             tab = "overload(func_layer, tab)";
             # space = "lettermod(space_layer, space, 125, 175)";
