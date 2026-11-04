@@ -240,5 +240,8 @@
         > $out/share/applications/com.heroicgameslauncher.hgl.desktop
     ''))
 
+  powertop
+  acpi
+
   ]++ (import ./legacy_launcher/legacy_launcher.nix { inherit pkgs; });
 }
