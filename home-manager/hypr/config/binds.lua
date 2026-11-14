@@ -32,7 +32,8 @@ local function setup_binds(deps)
     hl.bind("SUPER + F5",     hl.dsp.exec_cmd(record_cmd))
     hl.bind("SUPER + F4",     hl.dsp.exec_cmd(record_stop_cmd))
     hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
-    hl.bind("SUPER + C",      hl.dsp.exec_cmd("fish -c toggle_effects"))
+    hl.bind("SUPER + C", hl.dsp.exec_cmd("fish -c toggle_effects"))
+    hl.bind("SUPER + F4",     hl.dsp.exec_cmd("pkill wl"))
 
     -- mouse controls
     hl.bind("SUPER + I",              hl.dsp.exec_cmd("wlrctl pointer move 0 -50"), { repeating = true })

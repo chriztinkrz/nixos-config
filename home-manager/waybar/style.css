@@ -144,6 +144,14 @@ button {
     border-radius: 0 5px 5px 0;
 }
 
+#battery.charging.high,
+#battery.plugged.high {
+    background-color: @color1;
+    color: @color7;
+    border-radius: 0 5px 5px 0;
+    animation: blink 0.3s steps(20) infinite alternate;
+}
+
 @keyframes blink {
     to {
         background-color: @second-background;

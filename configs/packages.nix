@@ -242,6 +242,7 @@
 
   powertop
   acpi
+  kdePackages.kdenlive
 
   ]++ (import ./legacy_launcher/legacy_launcher.nix { inherit pkgs; });
 }
