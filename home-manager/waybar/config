@@ -93,7 +93,7 @@
     "max-length": 5,
     "states": {
         "warning": 30,
-        "critical": 15,
+        "critical": 20,
         "normal": 79,
         "high": 100
     },
