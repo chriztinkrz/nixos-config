@@ -33,7 +33,7 @@ local function setup_binds(deps)
     hl.bind("SUPER + F4",     hl.dsp.exec_cmd(record_stop_cmd))
     hl.bind("SUPER + ESCAPE", hl.dsp.exec_cmd("wlogout"))
     hl.bind("SUPER + C", hl.dsp.exec_cmd("fish -c toggle_effects"))
-    hl.bind("SUPER + F4",     hl.dsp.exec_cmd("pkill wl"))
+    hl.bind("CONTROL + F4",     hl.dsp.exec_cmd("pkill wl"))
 
     -- mouse controls
     hl.bind("SUPER + I",              hl.dsp.exec_cmd("wlrctl pointer move 0 -50"), { repeating = true })
@@ -143,8 +143,10 @@ local function setup_binds(deps)
     hl.bind("F2",         hl.dsp.exec_cmd("playerctl play-pause"),                       { locked = true })
     hl.bind("F1",         hl.dsp.exec_cmd("playerctl previous"),                         { locked = true })
     hl.bind("F3",         hl.dsp.exec_cmd("playerctl next"),                             { locked = true })
-    hl.bind("SHIFT + F2", hl.dsp.exec_cmd("lightctl up"),                                { repeating = true, locked = true })
-    hl.bind("SHIFT + F1", hl.dsp.exec_cmd("lightctl down"),                              { repeating = true, locked = true })
+    hl.bind("SHIFT + F2", hl.dsp.exec_cmd("lightctl up 5"),                                { repeating = true, locked = true })
+    hl.bind("SHIFT + F1", hl.dsp.exec_cmd("lightctl down 5"),                              { repeating = true, locked = true })
+    hl.bind("ALT + SHIFT + F2", hl.dsp.exec_cmd("lightctl up 1"),                                { repeating = true, locked = true })
+    hl.bind("ALT +SHIFT + F1", hl.dsp.exec_cmd("lightctl down 1"),                              { repeating = true, locked = true })
 
 
     -- laptop bright / loud

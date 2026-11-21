@@ -210,3 +210,4 @@ scenery.jpg
 86_4.jpg
 scenery.png
 scenery2.jpg
+winning_is_the_only_option.png
