@@ -36,11 +36,11 @@ hl.window_rule{
     match   = { class = "dev.zed.Zed" },
     opacity = "0.8 override 0.8 override 0.8 override",
 } ]]
-hl.window_rule{
+--[[ hl.window_rule{
     name    = "nautilus-opacity",
     match   = { class = "org.gnome.Nautilus" },
     opacity = "0.78 override 0.78 override 0.78 override",
-}
+} ]]
 hl.window_rule{
     name            = "nautilus-width",
     match           = { class = "org.gnome.Nautilus" },
