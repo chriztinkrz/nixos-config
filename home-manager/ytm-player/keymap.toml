@@ -1,2 +1,3 @@
 [keys]
 like_toggle = ["C-l"]
+volume_up = ["="]
