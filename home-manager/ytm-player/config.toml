@@ -1,7 +1,7 @@
 [general]
 startup_page = "liked_songs"
 playback_bar_position = "bottom"
-brand_account_id = ""
+brand_account_id = "108324046785073566831"
 check_for_updates = false
 
 [playback]
@@ -19,7 +19,7 @@ sync_history_to_ytmusic = true
 [yt_dlp]
 cookies_file = ""
 use_session_cookies = false
-cookie_browser = ""
+cookie_browser = "zen"
 ca_bundle = ""
 remote_components = ""
 js_runtimes = ""
@@ -36,7 +36,7 @@ prefetch_next = true
 location = ""
 
 [ui]
-theme = "ansi-light"
+theme = "ansi-dark"
 album_art = false
 progress_style = "line"
 sidebar_width = 25
