@@ -42,7 +42,8 @@ in
     "zed/keymap.json".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/zed/keymap.json";
     "wlogout".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wlogout";
     "wl-kbptr".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/wl-kbptr";
-    "ytm-player".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/ytm-player";
+    "ytm-player/config.toml".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/ytm-player/config.toml";
+    "ytm-player/keymap.toml".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/ytm-player/keymap.toml";
   };
 
   home.file = {

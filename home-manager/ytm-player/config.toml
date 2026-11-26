@@ -2,7 +2,7 @@
 startup_page = "liked_songs"
 playback_bar_position = "bottom"
 brand_account_id = ""
-check_for_updates = true
+check_for_updates = false
 
 [playback]
 audio_quality = "high"
@@ -39,7 +39,7 @@ location = ""
 theme = "ansi-light"
 album_art = false
 progress_style = "line"
-sidebar_width = 30
+sidebar_width = 25
 col_index = 1
 col_title = 5
 col_artist = 8
@@ -54,7 +54,7 @@ show_queue_source = true
 
 [notifications]
 enabled = true
-timeout_seconds = 3
+timeout_seconds = 2
 format = "{title} — {artist}"
 
 [mpris]
