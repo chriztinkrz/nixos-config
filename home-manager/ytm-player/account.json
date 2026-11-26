@@ -1,0 +1,11 @@
+{
+    "auth_sha256": "6df27e35651635ff4bfebaa54281ac7c2c05af43ba62aaeaa45e452ed3d0325e",
+    "channel_id": "UC-NhbINJA3Bb8hEDJZOLlzQ",
+    "handle": "@chriztinkrz",
+    "name": "chriz",
+    "revision": "9b8452551c84f966b507210e06cc6d3c",
+    "schema_version": 1,
+    "stream_sha256": "c84605ee3fe5b62362463275f7013808c313244a15982b4c034e0be7aeee4bfc",
+    "verified": true,
+    "x-goog-authuser": "0"
+}

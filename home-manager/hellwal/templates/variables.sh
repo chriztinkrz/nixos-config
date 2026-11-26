@@ -7,7 +7,7 @@ foreground='%%foreground%%'
 cursor='%%cursor%%'
 border='%%border%%'
 
-color0='%%color0.hex%%'
+color0='%%color1.hex%%'
 color1='%%color1.hex%%'
 color2='%%color2.hex%%'
 color3='%%color3.hex%%'

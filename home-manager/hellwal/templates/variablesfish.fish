@@ -7,7 +7,7 @@ set foreground '%%foreground%%'
 set cursor '%%cursor%%'
 set border '%%border%%'
 
-set color0 '%%color0.hex%%'
+set color0 '%%color1.hex%%'
 set color1 '%%color1.hex%%'
 set color2 '%%color2.hex%%'
 set color3 '%%color3.hex%%'
