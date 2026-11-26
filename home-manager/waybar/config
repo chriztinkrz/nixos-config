@@ -82,7 +82,8 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p, %A %d.%m.20%g}",
+        "format": "{:%I:%M:%S %p, %A %d.%m.20%g}",
+        "interval": 1,
         "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor r-1",
         "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor r+1",
         "tooltip": false,

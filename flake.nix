@@ -35,6 +35,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       }; */
     nixpkgs-2605.url = "github:nixos/nixpkgs/nixos-26.05";
+    ytm-player.url = "github:peternaame-boop/ytm-player";
   };
 
   outputs = { ... }@inputs:

@@ -243,6 +243,7 @@
   powertop
   acpi
   kdePackages.kdenlive
+  ytm-player
 
   ]++ (import ./legacy_launcher/legacy_launcher.nix { inherit pkgs; });
 }

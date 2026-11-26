@@ -11,7 +11,10 @@
     # inputs.mikuPlymouth.nixosModules.default
   ];
 
-  nixpkgs.overlays = [ inputs.mac-style-plymouth.overlays.default ];
+  nixpkgs.overlays = [
+    inputs.mac-style-plymouth.overlays.default
+    inputs.ytm-player.overlays.default
+  ];
 
   home-manager = {
     useGlobalPkgs = true;

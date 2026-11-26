@@ -211,3 +211,5 @@ scenery.jpg
 scenery.png
 scenery2.jpg
 winning_is_the_only_option.png
+winning_is_the_only_option_kanagawa_wave.png
+winning_is_the_only_option_kanagawa_wave_monochrome.png
