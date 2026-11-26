@@ -236,44 +236,79 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   programs.fish = {
-  enable = true;
-  interactiveShellInit = ''
-    complete -c z -w cd
-    function nixswitch
-      set label ""
-      set host "nixosbtw"
+    enable = true;
+    interactiveShellInit = ''
+      complete -c z -w cd
 
-      set i 1
-      while test $i -le (count $argv)
-        switch $argv[$i]
-          case "-c"
-            set host "common"
-          case "-e"
-            set host "nixosbtw"
-          case "-v"
-            set host "vostro"
-          case "-t"
-            set host "3018tu"
-          case "*"
-            set label $argv[$i]
+      function nixswitch
+        set label ""
+        set host "nixosbtw"
+
+        set i 1
+        while test $i -le (count $argv)
+          switch $argv[$i]
+            case "-c"
+              set host "common"
+            case "-e"
+              set host "nixosbtw"
+            case "-v"
+              set host "vostro"
+            case "-t"
+              set host "3018tu"
+            case "*"
+              set label $argv[$i]
+          end
+          set i (math $i + 1)
         end
-        set i (math $i + 1)
+
+        set dt (date "+%I:%M%p")
+        if test -z "$label"
+          set full_label "$dt"
+        else
+          set safe_label (string replace -a -r -- '[^a-zA-Z0-9:_.-]' '_' $label)
+          set full_label "$dt"_"$safe_label"
+        end
+
+        cd ~/nixos-config
+        git add -A
+        NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#$host --impure
       end
 
-      set dt (date "+%I:%M%p")
-      if test -z "$label"
-        set full_label "$dt"
-      else
-        set safe_label (string replace -a -r -- '[^a-zA-Z0-9:_.-]' '_' $label)
-        set full_label "$dt"_"$safe_label"
-      end
+      function nixtest
+        set label ""
+        set host "nixosbtw"
 
-      cd ~/nixos-config
-      git add -A
-      NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild switch --flake .#$host --impure
-    end
-'';
-};
+        set i 1
+        while test $i -le (count $argv)
+          switch $argv[$i]
+            case "-c"
+              set host "common"
+            case "-e"
+              set host "nixosbtw"
+            case "-v"
+              set host "vostro"
+            case "-t"
+              set host "3018tu"
+            case "*"
+              set label $argv[$i]
+          end
+          set i (math $i + 1)
+        end
+
+        set dt (date "+%I:%M%p")
+        if test -z "$label"
+          set full_label "$dt"
+        else
+          set safe_label (string replace -a -r -- '[^a-zA-Z0-9:_.-]' '_' $label)
+          set full_label "$dt"_"$safe_label"
+        end
+
+        cd ~/nixos-config
+        git add -A
+        NIXOS_LABEL="$full_label" sudo --preserve-env=NIXOS_LABEL nixos-rebuild test --flake .#$host --impure
+      end
+    '';
+  };
 
   # user account
   users.users.chriz = {

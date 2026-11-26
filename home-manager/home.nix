@@ -51,4 +51,6 @@ in
     ".local/share/vicinae/extensions".source = config.lib.file.mkOutOfStoreSymlink "${configDirectory}/vicinae/extensions";
   };
 
+  services.playerctld.enable = true;
+
 }
