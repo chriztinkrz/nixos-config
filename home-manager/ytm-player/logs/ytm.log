@@ -142,3 +142,470 @@ TimeoutError
 2026-11-26 15:22:35 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] SadcHoC0-NA: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
 2026-11-26 15:23:24 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] saDmN2f3HI0: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
 2026-11-26 15:23:26 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] SadcHoC0-NA: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 15:29:06 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] 0JuI1v1eIuM: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 15:51:40 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] ZTYAU2ZEtTg: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 15:51:42 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] PvzBWFGEz8M: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 15:55:07 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] bCsal-Ik_no: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 15:55:08 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] M3tYa3-YMHA: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 15:58:16 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] JsyZxQckTOE: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 16:02:53 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] cINg8nw0s34: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 16:05:01 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] IBXo7uEHjCM: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 16:07:06 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] D1CPJr5DZjc: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 16:10:55 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] CYfWW0gx5e0: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 16:14:26 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] li0nqmPWHJc: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 16:17:55 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] -XDn4DXamLU: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 16:23:39 [ERROR] [MPVEventHandlerThread] ytm_player.services.player: mpv[ffmpeg]: tcp: Failed to getaddrinfo local addr: :: port: (null) err: Address family for hostname not supported
+2026-11-26 16:23:41 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] CHwlQH5SWkU: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 17:03:25 [WARNING] [asyncio_0] ytm_player.services.auth: Automatic session renewal refused: the browser's accounts no longer include the one this session was set up with. Run `ytm setup` to sign in again.
+2026-11-26 17:03:25 [WARNING] [MainThread] ytm_player.app._app: Auth validation failed at startup — session expired.
+2026-11-26 17:03:26 [ERROR] [MainThread] ytm_player.services.ytmusic: ytmusicapi call failed (func=get_liked_songs, consecutive_failures=1)
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCOje2I3ZpZgDFRTfQgUd17Az8Q==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwjo3tiN2aWYAxUU30IFHdewM_HKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwjo3tiN2aWYAxUU30IFHdewM_E='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCOje2I3ZpZgDFRTfQgUd17Az8Q=='}}], 'trackingParams': 'CAIQui8iEwjo3tiN2aWYAxUU30IFHdewM_E='}}, 'trackingParams': 'CAEQ8JMBGAAiEwjo3tiN2aWYAxUU30IFHdewM_E='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:03:26 [ERROR] [MainThread] ytm_player.services.ytmusic: Authentication refresh notification failed
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCOje2I3ZpZgDFRTfQgUd17Az8Q==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwjo3tiN2aWYAxUU30IFHdewM_HKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwjo3tiN2aWYAxUU30IFHdewM_E='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCOje2I3ZpZgDFRTfQgUd17Az8Q=='}}], 'trackingParams': 'CAIQui8iEwjo3tiN2aWYAxUU30IFHdewM_E='}}, 'trackingParams': 'CAEQ8JMBGAAiEwjo3tiN2aWYAxUU30IFHdewM_E='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 316, in _renewed_client_for
+    await self._on_auth_refresh()
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/app/_app.py", line 613, in _notify_auth_refresh
+    await self.wait_for_refresh()
+  File "/nix/store/2iffzyaffhdjmr94jx297isna5n0n2w5-python3.13-textual-8.2.8/lib/python3.13/site-packages/textual/message_pump.py", line 481, in wait_for_refresh
+    self._task is not None
+AssertionError: Node must be running before calling wait_for_refresh
+2026-11-26 17:03:33 [WARNING] [asyncio_1] ytm_player.services.auth: Automatic session renewal refused: the browser's accounts no longer include the one this session was set up with. Run `ytm setup` to sign in again.
+2026-11-26 17:03:33 [WARNING] [MainThread] ytm_player.services.ytmusic: Automatic YouTube Music session refresh failed
+2026-11-26 17:03:33 [ERROR] [MainThread] ytm_player.services.ytmusic: get_liked_songs failed
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 447, in get_liked_songs
+    playlist = await self._call(self.client.get_liked_songs, timeout=timeout, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 265, in _call
+    client = await self._renewed_client_for(failed_client, exc, method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 322, in _renewed_client_for
+    raise error
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCOje2I3ZpZgDFRTfQgUd17Az8Q==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwjo3tiN2aWYAxUU30IFHdewM_HKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwjo3tiN2aWYAxUU30IFHdewM_E='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCOje2I3ZpZgDFRTfQgUd17Az8Q=='}}], 'trackingParams': 'CAIQui8iEwjo3tiN2aWYAxUU30IFHdewM_E='}}, 'trackingParams': 'CAEQ8JMBGAAiEwjo3tiN2aWYAxUU30IFHdewM_E='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:04:04 [ERROR] [MainThread] ytm_player.services.ytmusic: ytmusicapi call failed (func=get_liked_songs, consecutive_failures=2)
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCLzLi6DZpZgDFcx1egUdUuIbug==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwi8y4ug2aWYAxXMdXoFHVLiG7rKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwi8y4ug2aWYAxXMdXoFHVLiG7o='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCLzLi6DZpZgDFcx1egUdUuIbug=='}}], 'trackingParams': 'CAIQui8iEwi8y4ug2aWYAxXMdXoFHVLiG7o='}}, 'trackingParams': 'CAEQ8JMBGAAiEwi8y4ug2aWYAxXMdXoFHVLiG7o='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:04:04 [WARNING] [MainThread] ytm_player.services.ytmusic: YouTube Music session expired; the last automatic renewal failed, not trying again for another 29s
+2026-11-26 17:04:04 [ERROR] [MainThread] ytm_player.services.ytmusic: get_liked_songs failed
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 447, in get_liked_songs
+    playlist = await self._call(self.client.get_liked_songs, timeout=timeout, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 265, in _call
+    client = await self._renewed_client_for(failed_client, exc, method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 312, in _renewed_client_for
+    raise error
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCLzLi6DZpZgDFcx1egUdUuIbug==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwi8y4ug2aWYAxXMdXoFHVLiG7rKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwi8y4ug2aWYAxXMdXoFHVLiG7o='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCLzLi6DZpZgDFcx1egUdUuIbug=='}}], 'trackingParams': 'CAIQui8iEwi8y4ug2aWYAxXMdXoFHVLiG7o='}}, 'trackingParams': 'CAEQ8JMBGAAiEwi8y4ug2aWYAxXMdXoFHVLiG7o='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:04:56 [WARNING] [asyncio_0] ytm_player.services.auth: Automatic session renewal refused: the browser's accounts no longer include the one this session was set up with. Run `ytm setup` to sign in again.
+2026-11-26 17:04:56 [WARNING] [MainThread] ytm_player.app._app: Auth validation failed at startup — session expired.
+2026-11-26 17:04:57 [ERROR] [MainThread] ytm_player.services.ytmusic: ytmusicapi call failed (func=get_liked_songs, consecutive_failures=1)
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCNyyiLnZpZgDFZ5NQQId-GkYiw==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwjcsoi52aWYAxWeTUECHfhpGIvKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwjcsoi52aWYAxWeTUECHfhpGIs='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCNyyiLnZpZgDFZ5NQQId-GkYiw=='}}], 'trackingParams': 'CAIQui8iEwjcsoi52aWYAxWeTUECHfhpGIs='}}, 'trackingParams': 'CAEQ8JMBGAAiEwjcsoi52aWYAxWeTUECHfhpGIs='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:04:57 [ERROR] [MainThread] ytm_player.services.ytmusic: Authentication refresh notification failed
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCNyyiLnZpZgDFZ5NQQId-GkYiw==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwjcsoi52aWYAxWeTUECHfhpGIvKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwjcsoi52aWYAxWeTUECHfhpGIs='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCNyyiLnZpZgDFZ5NQQId-GkYiw=='}}], 'trackingParams': 'CAIQui8iEwjcsoi52aWYAxWeTUECHfhpGIs='}}, 'trackingParams': 'CAEQ8JMBGAAiEwjcsoi52aWYAxWeTUECHfhpGIs='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 316, in _renewed_client_for
+    await self._on_auth_refresh()
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/app/_app.py", line 613, in _notify_auth_refresh
+    await self.wait_for_refresh()
+  File "/nix/store/2iffzyaffhdjmr94jx297isna5n0n2w5-python3.13-textual-8.2.8/lib/python3.13/site-packages/textual/message_pump.py", line 481, in wait_for_refresh
+    self._task is not None
+AssertionError: Node must be running before calling wait_for_refresh
+2026-11-26 17:05:04 [WARNING] [asyncio_1] ytm_player.services.auth: Automatic session renewal refused: the browser's accounts no longer include the one this session was set up with. Run `ytm setup` to sign in again.
+2026-11-26 17:05:04 [WARNING] [MainThread] ytm_player.services.ytmusic: Automatic YouTube Music session refresh failed
+2026-11-26 17:05:04 [ERROR] [MainThread] ytm_player.services.ytmusic: get_liked_songs failed
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 447, in get_liked_songs
+    playlist = await self._call(self.client.get_liked_songs, timeout=timeout, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 265, in _call
+    client = await self._renewed_client_for(failed_client, exc, method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 322, in _renewed_client_for
+    raise error
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCNyyiLnZpZgDFZ5NQQId-GkYiw==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwjcsoi52aWYAxWeTUECHfhpGIvKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwjcsoi52aWYAxWeTUECHfhpGIs='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCNyyiLnZpZgDFZ5NQQId-GkYiw=='}}], 'trackingParams': 'CAIQui8iEwjcsoi52aWYAxWeTUECHfhpGIs='}}, 'trackingParams': 'CAEQ8JMBGAAiEwjcsoi52aWYAxWeTUECHfhpGIs='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:05:15 [ERROR] [MainThread] ytm_player.services.ytmusic: ytmusicapi call failed (func=get_liked_songs, consecutive_failures=1)
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCKf58sHZpZgDFeSUfAYduJMV6A==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwin-fLB2aWYAxXklHwGHbiTFejKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwin-fLB2aWYAxXklHwGHbiTFeg='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCKf58sHZpZgDFeSUfAYduJMV6A=='}}], 'trackingParams': 'CAIQui8iEwin-fLB2aWYAxXklHwGHbiTFeg='}}, 'trackingParams': 'CAEQ8JMBGAAiEwin-fLB2aWYAxXklHwGHbiTFeg='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:05:15 [ERROR] [MainThread] ytm_player.services.ytmusic: Authentication refresh notification failed
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCKf58sHZpZgDFeSUfAYduJMV6A==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwin-fLB2aWYAxXklHwGHbiTFejKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwin-fLB2aWYAxXklHwGHbiTFeg='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCKf58sHZpZgDFeSUfAYduJMV6A=='}}], 'trackingParams': 'CAIQui8iEwin-fLB2aWYAxXklHwGHbiTFeg='}}, 'trackingParams': 'CAEQ8JMBGAAiEwin-fLB2aWYAxXklHwGHbiTFeg='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 316, in _renewed_client_for
+    await self._on_auth_refresh()
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/app/_app.py", line 613, in _notify_auth_refresh
+    await self.wait_for_refresh()
+  File "/nix/store/2iffzyaffhdjmr94jx297isna5n0n2w5-python3.13-textual-8.2.8/lib/python3.13/site-packages/textual/message_pump.py", line 481, in wait_for_refresh
+    self._task is not None
+AssertionError: Node must be running before calling wait_for_refresh
+2026-11-26 17:05:23 [WARNING] [asyncio_0] ytm_player.services.auth: Automatic session renewal refused: the browser's accounts no longer include the one this session was set up with. Run `ytm setup` to sign in again.
+2026-11-26 17:05:23 [WARNING] [MainThread] ytm_player.services.ytmusic: Automatic YouTube Music session refresh failed
+2026-11-26 17:05:23 [ERROR] [MainThread] ytm_player.services.ytmusic: get_liked_songs failed
+Traceback (most recent call last):
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 140, in nav
+    root = root[k]
+           ~~~~^^^
+KeyError: 'twoColumnBrowseResultsRenderer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 447, in get_liked_songs
+    playlist = await self._call(self.client.get_liked_songs, timeout=timeout, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 265, in _call
+    client = await self._renewed_client_for(failed_client, exc, method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 322, in _renewed_client_for
+    raise error
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dd3mankpg035arpp49bkfvihrblpjg4d-ytm-player-2.3.0/lib/python3.13/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/7jydrdpxlsqjdlrxxxy15i5vw4bad4rs-python3-3.13.15/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 243, in get_liked_songs
+    return self.get_playlist("LM", limit)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/mixins/playlists.py", line 157, in get_playlist
+    header_data = nav(response, [*TWO_COLUMN_RENDERER, *TAB_CONTENT, *SECTION_LIST_ITEM])
+  File "/nix/store/dpj27lpp90flfmgb3dja7wqvrqr4mf2m-python3.13-ytmusicapi-1.12.2/lib/python3.13/site-packages/ytmusicapi/navigation.py", line 144, in nav
+    raise type(e)(f"Unable to find '{k}' using path {items!r} on {root!r}, exception: {e}")
+KeyError: "Unable to find 'twoColumnBrowseResultsRenderer' using path ['contents', 'twoColumnBrowseResultsRenderer', 'tabs', 0, 'tabRenderer', 'content', 'sectionListRenderer', 'contents', 0] on {'singleColumnBrowseResultsRenderer': {'tabs': [{'tabRenderer': {'selected': True, 'content': {'sectionListRenderer': {'contents': [{'itemSectionRenderer': {'contents': [{'messageRenderer': {'text': {'runs': [{'text': 'Looking for what you’ve liked?'}]}, 'icon': {'iconType': 'LIKE'}, 'trackingParams': 'CAQQljsYACITCKf58sHZpZgDFeSUfAYduJMV6A==', 'button': {'buttonRenderer': {'style': 'STYLE_DEFAULT', 'isDisabled': False, 'text': {'runs': [{'text': 'Sign in'}]}, 'navigationEndpoint': {'clickTrackingParams': 'CAUQ8FsiEwin-fLB2aWYAxXklHwGHbiTFejKAQR6nJJw', 'signInEndpoint': {'hack': True}}, 'trackingParams': 'CAUQ8FsiEwin-fLB2aWYAxXklHwGHbiTFeg='}}, 'subtext': {'messageSubtextRenderer': {'text': {'runs': [{'text': 'Sign in to listen to your liked tracks'}]}}}, 'style': {'value': 'RENDER_STYLE_VERTICAL_CENTERED'}}}], 'trackingParams': 'CAMQuy8YACITCKf58sHZpZgDFeSUfAYduJMV6A=='}}], 'trackingParams': 'CAIQui8iEwin-fLB2aWYAxXklHwGHbiTFeg='}}, 'trackingParams': 'CAEQ8JMBGAAiEwin-fLB2aWYAxXklHwGHbiTFeg='}}]}}, exception: 'twoColumnBrowseResultsRenderer'"
+2026-11-26 17:06:59 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] li0nqmPWHJc: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 17:07:01 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] -XDn4DXamLU: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 17:07:51 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] 9ELaTGB32kw: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+2026-11-26 17:10:23 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] vlOdmPG4xC8: Some android client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
